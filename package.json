@@ -1,0 +1,35 @@
+{
+  "name": "bilogweb",
+  "version": "1.0.0",
+  "description": "Bilog - Web site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next",
+    "build": "next build",
+    "start": "next start -p 8000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juanpernu/BilogWeb.git"
+  },
+  "keywords": [
+    "Bilog",
+    "Web",
+    "Next",
+    "JavaScript",
+    "HTML",
+    "CSS"
+  ],
+  "author": "Juan Manuel Pernumian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juanpernu/BilogWeb/issues"
+  },
+  "homepage": "https://github.com/juanpernu/BilogWeb#readme",
+  "dependencies": {
+    "next": "8.0.3",
+    "react": "16.8.3",
+    "react-dom": "16.8.3"
+  }
+}
