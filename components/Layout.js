@@ -16,9 +16,10 @@ const Layout = ({children}) => (
     {`
       @import url('https://fonts.googleapis.com/css?family=Nunito:300,600,800');
       :global(body) {
+        font-family: 'Nunito', sans-serif;
         margin: 0;
         padding: 0;
-        font-family: 'Nunito', sans-serif;
+        text-rendering: optimizeLegibility;
       }
       {/* STYLES FOR MOBILE */}
       @media only screen and (max-width: 750px) {
