@@ -133,6 +133,7 @@ class Header extends React.Component {
               left: 0;
               padding: 0;
               position: absolute;
+              z-index: 200;
               top: 85px;
               width: 100%;
               box-shadow: 0 10px 20px rgba(0,0,0,0.16);

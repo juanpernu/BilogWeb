@@ -38,6 +38,10 @@ const Button = ({children, customClass}) => (
           color: #000;
           background: #fff;
         }
+        .button.success {
+          color: #fff;
+          background: #38b775;
+        }
       }
 
       {/* STYLES FOR DESKTOP */}
@@ -78,6 +82,10 @@ const Button = ({children, customClass}) => (
         .button.secondary {
           color: #000;
           background: #fff;
+        }
+        .button.success {
+          color: #fff;
+          background: #38b775;
         }
       }
     `}

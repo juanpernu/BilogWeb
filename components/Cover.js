@@ -13,7 +13,7 @@ class Cover extends React.Component {
           <h1 className="title">Más tiempo libre, mayor control y mejor gestión de tu consultorio o clínica.</h1>
           <p>Tecnología de vanguardia para la odontología.</p>
           <div className="cover--container-cta">
-          <Button customClass="primary">Contratar ahora</Button>
+          <Button customClass="success">Contratar ahora</Button>
           <Button customClass="secondary">Ver casos de éxito</Button>
           </div>
         </div>
@@ -32,6 +32,8 @@ class Cover extends React.Component {
             }
             .cover--container-cta {
               padding: 10px 0;
+              position: relative;
+              z-index: 100;
             }
             .title {
               padding: 0;
