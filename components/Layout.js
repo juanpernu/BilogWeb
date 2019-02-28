@@ -21,6 +21,12 @@ const Layout = ({children}) => (
         padding: 0;
         text-rendering: optimizeLegibility;
       }
+      :global(a.link--primary) {
+        color: rgb(6, 125, 247);
+        text-decoration: none;
+        margin-bottom: 24px;
+        display: inline-block;
+      }
       {/* STYLES FOR MOBILE */}
       @media only screen and (max-width: 750px) {
       }
