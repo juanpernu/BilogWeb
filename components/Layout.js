@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Header from './Header'
+import Footer from './Footer'
 
 const Layout = ({children}) => (
   <div className="layout">
@@ -12,6 +13,7 @@ const Layout = ({children}) => (
     </Head>
     <Header />
     {children}
+    <Footer />
     <style jsx>
     {`
       @import url('https://fonts.googleapis.com/css?family=Nunito:300,600,800');
@@ -20,12 +22,6 @@ const Layout = ({children}) => (
         margin: 0;
         padding: 0;
         text-rendering: optimizeLegibility;
-      }
-      :global(a.link--primary) {
-        color: rgb(6, 125, 247);
-        text-decoration: none;
-        margin-bottom: 24px;
-        display: inline-block;
       }
       {/* STYLES FOR MOBILE */}
       @media only screen and (max-width: 750px) {

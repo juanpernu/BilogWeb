@@ -7,7 +7,6 @@ const FeatureItem = ({title, description}) => (
       {/* STYLES FOR MOBILE */}
       @media only screen and (max-width: 750px) {
         .feature-item--title {
-          color: rgb(0, 0, 0);
           font-size: 18px;
           margin: 0 0 10px;
           padding: 0;
@@ -16,7 +15,6 @@ const FeatureItem = ({title, description}) => (
         .feature-item--description {
           font-size: 14px;
           line-height: 25px;
-          color: rgb(102, 102, 102);
           margin: 0 0 24px;
           padding: 0;
         }
@@ -24,7 +22,17 @@ const FeatureItem = ({title, description}) => (
 
       {/* STYLES FOR DESKTOP */}
       @media only screen and (min-width: 751px) {
-        
+        .feature-item {
+          margin: 0 30px;
+          text-align: left;
+          max-width: 400px;
+        }
+        .feature-item--title {
+          font-size: 20px;
+          font-weight: 600;
+          margin-top: 26px;
+          margin-bottom: 13px;
+        }
       }
     `}
     </style>

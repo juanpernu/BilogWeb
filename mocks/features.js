@@ -29,12 +29,16 @@ module.exports = {
       },
       featureItems: [
         {
-          title: "Funcion numero 1",
-          description: "Description del feature item para pasar",
+          title: "Tablas",
+          description: "Desde el menú Tablas se definen todos los parámetros de carga de datos del sistema, como ser Profesionales, Obras Sociales, Feriados, Especialidades, etc.",
         },
         {
-          title: "Funcion numero 2",
-          description: "Description del feature item para pasar",
+          title: "Informes",
+          description: "Los informes son los que organizan y exhiben la información contenida en una base de datos. Pueden ser la conclusión de una investigación previa o adoptar una estructura de problema-solución en base a una serie de preguntas.",
+        },
+        {
+          title: "Pacientes",
+          description: "Nuestro software facilita la carga de los datos personales del Paciente. Para ayudarlo a mantener un mejor control sobre el Paciente siempre tendra en pantalla el Saldo Actual del mismo. También podrá agregar la foto del paciente, enviarle un mail sin salir del sistema y enviarle un SMS.",
         }
       ],
     },
