@@ -87,7 +87,7 @@ class Feature extends React.Component {
                 .feature-section .feature {
                   width: 100%;
                   margin: 0 auto;
-                  padding: 10rem 1rem;
+                  padding: 180px 0;
                   max-width: 1024px;
                   text-align: center;
                 }

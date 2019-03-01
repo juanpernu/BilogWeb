@@ -26,7 +26,9 @@ class Header extends React.Component {
     return(
       <header className="header">
         <nav className="menu" onClick={this.showMenuHandler}>
-          <img className="logo" src="/static/logo-bilog.png" alt="Bilog" />
+          <Link href="/">
+            <img className="logo" src="/static/logo-bilog.png" alt="Bilog" />
+          </Link>
           <div className={`menu--wraper ${this.state.showMenu == false ? '' : 'expanded'}`}>
             <div className="line top"></div>
             <div className="line bottom"></div>
@@ -42,7 +44,7 @@ class Header extends React.Component {
                 <Link href="/odontologica">
                 <a className="sublink">Gestión Odontológica</a>
                 </Link>
-                <Link href="/auditor">
+                <Link href="/auditoria">
                 <a className="sublink">Auditoría Odontológica</a>
                 </Link>
               </div>
@@ -64,7 +66,7 @@ class Header extends React.Component {
             <Link href="/odontologica">
             <a className="sublink">Gestión Odontológica</a>
             </Link>
-            <Link href="/auditor">
+            <Link href="/auditoria">
             <a className="sublink">Auditoría Odontológica</a>
             </Link>
           </div>
