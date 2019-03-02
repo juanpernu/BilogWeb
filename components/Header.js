@@ -178,6 +178,9 @@ class Header extends React.Component {
               width: auto;
               margin: 0 30px 0 20px;
             }
+            .logo:hover {
+              cursor: pointer;
+            }
             .menu {
               width: 1040px;
               margin: 0 auto;
