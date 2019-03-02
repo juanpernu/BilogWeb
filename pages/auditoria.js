@@ -1,5 +1,11 @@
-import Layout from '../components/Layout.js'
-import Cover from '../components/Cover/Cover.js'
+import Layout from '../components/Layout'
+import Cover from '../components/Cover/Cover'
+import Feature from '../components/Feature/Feature'
+import FeatureImg from '../components/Feature/FeatureImg'
+
+import MockedFeatures from '../mocks/auditoriaFeatures'
+
+const FeaturesProps = MockedFeatures;
 
 export default () => (
     <Layout>
@@ -9,6 +15,13 @@ export default () => (
         position="lf"
         gradientBg="redish"
         hasButtons={true}
+      />
+      <Feature {...FeaturesProps} />
+      <FeatureImg
+        imgSrc="http://www.wifers.com/images/login.png"
+        imgHref="/"
+        imgAlt="Image feature"
+        copy="¿Qué es?"
       />
     </Layout>
 )

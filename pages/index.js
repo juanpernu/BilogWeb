@@ -1,7 +1,7 @@
-import Layout from '../components/Layout.js'
-import Cover from '../components/Cover/Cover.js'
-import Feature from '../components/Feature.js'
-import MockedFeatures from '../mocks/features.js'
+import Layout from '../components/Layout'
+import Cover from '../components/Cover/Cover'
+import Feature from '../components/Feature/Feature'
+import MockedFeatures from '../mocks/indexFeatures'
 
 const FeaturesProps = MockedFeatures;
 

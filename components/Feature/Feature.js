@@ -19,7 +19,7 @@ class Feature extends React.Component {
     return null
   }
 
-  render() {
+  render() { 
     const { features } = this.props;
     return(
       features.map((feature, index) => {
