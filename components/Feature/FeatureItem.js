@@ -1,3 +1,5 @@
+import Button from '../Button'
+
 const FeatureItem = ({title, description}) => (
   <div className="feature-item">
     <h3 className="feature-item--title">{title}</h3>

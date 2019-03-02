@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import FeatureItem from '../Feature/FeatureItem'
+import Button from '../Button'
 import Image from '../Image'
 
 class Feature extends React.Component {
@@ -9,7 +10,7 @@ class Feature extends React.Component {
   }
 
   render() {
-    const { imgSrc, imgHref, imgAlt, copy} = this.props;
+    const { imgSrc, imgHref, imgAlt, copy, hasCta } = this.props;
     return(
       <section className="feature-image">
         <Link href={imgHref}>
@@ -17,7 +18,18 @@ class Feature extends React.Component {
         </Link>
         <div className="feature-image-content">
           <p className="feature-image-content--copy">{copy}</p>
-          <FeatureItem title="Un atrctivo software de gestión" description="Crea una conexión liberada que le permite a los usuarios conectarse a Wi-Fi sin tener que consultarle la contraseña al encargado." />
+          {/* Pasar todo el content de este componente a un json */}
+          <FeatureItem
+            title="Un atractivo software de gestión"
+            description="Crea una conexión liberada que le permite a los usuarios conectarse a Wi-Fi sin tener que consultarle la contraseña al encargado."
+          />
+          {
+            hasCta ?
+            <div className="feature-image--cta">
+              <Button customClass="success">Contratar ahora</Button>
+            </div> :
+            null
+          }
         </div>
         <style jsx>
         {`
@@ -54,6 +66,13 @@ class Feature extends React.Component {
             }
             .feature-image-content--copy {
               margin: 0 30px;
+              font-weight: 400;
+              line-height: 0.3;
+              color: #96a1a3;
+            }
+            .feature-image--cta {
+              margin: 0 20px;
+              max-width: 230px;
             }
           }
         `}

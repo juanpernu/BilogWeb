@@ -1,6 +1,7 @@
 import Layout from '../components/Layout'
 import Cover from '../components/Cover/Cover'
 import Feature from '../components/Feature/Feature'
+import FeatureImg from '../components/Feature/FeatureImg'
 import MockedFeatures from '../mocks/indexFeatures'
 
 const FeaturesProps = MockedFeatures;
@@ -13,5 +14,12 @@ export default () => (
         hasButtons={true}
       />
       <Feature {...FeaturesProps} />
+      <FeatureImg
+        imgSrc="http://www.wifers.com/images/login.png"
+        imgHref="/"
+        imgAlt="Image feature"
+        copy="¿Qué es?"
+        hasCta={true}
+      />
     </Layout>
 )

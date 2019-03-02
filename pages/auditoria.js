@@ -22,6 +22,7 @@ export default () => (
         imgHref="/"
         imgAlt="Image feature"
         copy="¿Qué es?"
+        hasCta={true}
       />
     </Layout>
 )
