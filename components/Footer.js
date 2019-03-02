@@ -1,6 +1,7 @@
 import React from 'react'
-import Link from 'next/link'
 import FooterWrapper from './FooterWrapper'
+import Column from './Column'
+
 
 import { versions, support, contact } from '../mocks/footer.js'
 
@@ -12,44 +13,10 @@ class Footer extends React.Component {
   render() {
     return(
       <footer className="footer light">
-        {/* Componentizar este componente column */}
         <div className="footer--links">
-          <div className="column">
-            <h4 className="title">Versiones</h4>
-            {
-              versions.map((FooterItem, index) => {
-                return(
-                  <Link key={index} href={`${FooterItem.href}`}>
-                    <a className="link">{FooterItem.text}</a>
-                  </Link>
-                )
-              })
-            }
-          </div>
-          <div className="column">
-            <h4 className="title">Soporte</h4>
-            {
-              support.map((FooterItem, index) => {
-                return(
-                  <Link key={index} href={`${FooterItem.href}`}>
-                    <a className="link">{FooterItem.text}</a>
-                  </Link>
-                )
-              })
-            }
-          </div>
-          <div className="column">
-            <h4 className="title">Contacto</h4>
-            {
-              contact.map((FooterItem, index) => {
-                return(
-                  <Link key={index} href={`${FooterItem.href}`}>
-                    <a className="link">{FooterItem.text}</a>
-                  </Link>
-                )
-              })
-            }
-          </div>
+          <Column title="Versiones" items={versions} />
+          <Column title="Soporte" items={support} />
+          <Column title="Contacto" items={contact} />
         </div>
         <FooterWrapper />
         <style jsx>
@@ -59,24 +26,6 @@ class Footer extends React.Component {
             .footer.light {
               background: #fafafa;
               border-top: 1px solid #eaeaea;
-            }
-            .column {
-              display: inline-block;
-              justify-content: left;
-              padding: 20px 30px 0;
-            }
-            .link {
-              font-size: 14px;
-              padding: 0.3em;
-              color: #999;
-              text-decoration: none;
-              transition: 0.3s ease;
-              margin-top: 0;
-              margin-bottom: 0.25rem;
-              display: block;
-            }
-            .link:hover {
-              color: #0090ff;
             }
           }
 
@@ -96,24 +45,6 @@ class Footer extends React.Component {
             .footer.light {
               background: #fafafa;
               border-top: 1px solid #eaeaea;
-            }
-            .column {
-              display: inline-block;
-              justify-content: left;
-              padding: 50px 50px 0;
-            }
-            .link {
-              font-size: 14px;
-              padding: 0.3em;
-              color: #999;
-              text-decoration: none;
-              transition: 0.3s ease;
-              margin-top: 0;
-              margin-bottom: 0.25rem;
-              display: block;
-            }
-            .link:hover {
-              color: #0090ff;
             }
         `}
         </style>
