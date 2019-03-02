@@ -9,7 +9,6 @@ class Cover extends React.Component {
 
   render() {
     const { gradientBg, position, text, paragraph, hasButtons } = this.props;
-    console.log(hasButtons);
     
     return(
       <section className={`cover ${gradientBg}`}>

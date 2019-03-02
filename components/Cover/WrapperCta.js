@@ -1,8 +1,8 @@
 import Button from '../Button'
 
-const WrapperCta = ({ }) => {
+const WrapperCta = ({ position }) => {
   return(
-    <div className="cover--container-cta">
+    <div className={`cover--container-cta ${position}`}>
       <Button customClass="success">Contratar ahora</Button>
       <Button customClass="secondary">Ver casos de éxito</Button>
       <style jsx>
@@ -14,6 +14,9 @@ const WrapperCta = ({ }) => {
             position: relative;
             z-index: 100;
           }
+          .cover--container-cta.lf {
+            margin: 0;
+          }
         }
 
         {/* STYLES FOR DESKTOP */}
@@ -23,6 +26,9 @@ const WrapperCta = ({ }) => {
             margin: 0 auto;
             display: flex;
             flex-direction: row;
+          }
+          .cover--container-cta.lf {
+            margin: 0;
           }
         }
       `}

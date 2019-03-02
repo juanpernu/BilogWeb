@@ -3,6 +3,9 @@ const Button = ({children, customClass}) => (
     <p>{children}</p>
     <style jsx>
     {`
+      :global(.cover.redish .button){
+        border: 1px solid #bc4e9c;
+      }
       {/* STYLES FOR MOBILE */}
       @media only screen and (max-width: 750px) {
         .button {
@@ -14,7 +17,7 @@ const Button = ({children, customClass}) => (
           margin: 20px auto;
           padding: 0 25px;
           outline: none;
-          border: 1px solid #007aff;
+          border: 1px solid #007aff;  
           font-size: 12px;
           justify-content: center;
           text-transform: uppercase;

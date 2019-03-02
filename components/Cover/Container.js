@@ -6,7 +6,7 @@ const Container = ({ text, paragraph, position, hasButtons }) => {
   const renderButtons = (hasButtons) => {
     if(hasButtons){
       return (
-        <WrapperCta />
+        <WrapperCta position={position} />
       )
     }
     return null;
