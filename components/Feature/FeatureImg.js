@@ -1,40 +1,46 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Link from 'next/link'
 import FeatureItem from '../Feature/FeatureItem'
 import Button from '../Button'
 import Image from '../Image'
 
-class Feature extends React.Component {
+class FeatureImage extends React.Component {
   constructor(){
     super();
   }
 
   render() {
-    const { imgSrc, imgHref, imgAlt, copy, hasCta } = this.props;
+    const { imgSrc, imgHref, imgAlt, copy, hasCta, imageAlign, bgGrey } = this.props;
     return(
-      <section className="feature-image">
-        <Link href={imgHref}>
-          <Image src={imgSrc} alt={imgAlt} />
-        </Link>
-        <div className="feature-image-content">
-          <p className="feature-image-content--copy">{copy}</p>
-          {/* Pasar todo el content de este componente a un json */}
-          <FeatureItem
-            title="Un atractivo software de gestión"
-            description="Crea una conexión liberada que le permite a los usuarios conectarse a Wi-Fi sin tener que consultarle la contraseña al encargado."
-          />
-          {
-            hasCta ?
-            <div className="feature-image--cta">
-              <Button customClass="success">Contratar ahora</Button>
-            </div> :
-            null
-          }
+      <section className={`feature-image--container ${bgGrey && 'bg-grey'}`}>
+        <div className={`feature-image ${imageAlign}`}>
+          <Link href={imgHref}>
+            <Image src={imgSrc} alt={imgAlt} />
+          </Link>
+          <div className="feature-image-content">
+            <p className="feature-image-content--copy">{copy}</p>
+            {/* Pasar todo el content de este componente a un json */}
+            <FeatureItem
+              title="Un atractivo software de gestión"
+              description="Crea una conexión liberada que le permite a los usuarios conectarse a Wi-Fi sin tener que consultarle la contraseña al encargado."
+            />
+            {
+              hasCta ?
+              <div className="feature-image--cta">
+                <Button customClass="terciary">Contratar ahora</Button>
+              </div> :
+              null
+            }
+          </div>
         </div>
         <style jsx>
         {`
           {/* STYLES FOR MOBILE */}
           @media only screen and (max-width: 750px) {
+            .feature-image--container.bg-grey {
+              background-color: rgb(250, 251, 252);
+            }
             .feature-image {
               padding: 40px 30px;
             }
@@ -48,14 +54,27 @@ class Feature extends React.Component {
 
           {/* STYLES FOR DESKTOP */}
           @media only screen and (min-width: 751px) {
+            .feature-image--container {
+              width: 100%;
+              border-top: 1px solid #eaeaea;
+            }
+            .feature-image--container.bg-grey {
+              background-color: rgb(250, 251, 252);
+            }
             .feature-image {
               display: flex;
-              flex-direction: row;
               width: 100%;
               margin: 0 auto;
-              padding: 180px 0;
+              padding: 60px 0;
               max-width: 1024px;
               text-align: center;
+            }
+            .feature-image.left {
+              flex-direction: row;
+            }
+            .feature-image.right {
+              flex-direction: row-reverse;
+              justify-content: flex-end;
             }
             .feature-image-content {
               display: flex;
@@ -82,4 +101,14 @@ class Feature extends React.Component {
   }
 }
 
-export default Feature
+FeatureImage.propTypes = {
+  imageAlign: PropTypes.string,
+  bgGrey: PropTypes.bool,
+}
+
+FeatureImage.defaultProps = {
+  imageAlign: 'left',
+  bgGrey: false,
+}
+
+export default FeatureImage

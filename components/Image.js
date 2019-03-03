@@ -28,6 +28,11 @@ const Image = ({ src, alt}) => {
               position: relative;
               right: 100px;
             }
+            :global(.feature-image.right .image-container img) {
+              height: 400px;
+              position: relative;
+              right: 0;
+            }
           }
         `}
         </style>

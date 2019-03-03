@@ -1,5 +1,6 @@
-import Layout from '../components/Layout.js'
-import Cover from '../components/Cover/Cover.js'
+import Layout from '../components/Layout'
+import Cover from '../components/Cover/Cover'
+import FeatureImg from '../components/Feature/FeatureImg'
 
 export default () => (
     <Layout>
@@ -8,6 +9,14 @@ export default () => (
         paragraph="Tené en una sola ventana todo el control de tu clínica o consultorio con estadísticas para una mejor gestión."
         position="lf"
         hasButtons={true}
+      />
+      <FeatureImg
+        imgSrc="http://www.wifers.com/images/login.png"
+        imgHref="/"
+        imgAlt="Image feature"
+        copy="¿Qué es?"
+        hasCta={true}
+        imageAlign="left"
       />
     </Layout>
 )
