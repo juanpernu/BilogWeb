@@ -18,7 +18,7 @@ class Feature extends React.Component {
             alignCenter={true}
           />
           <div className="versions--container-cards">
-            {/* Pasar toda esta info a un mock */}
+            {/* TODO: Pasar toda esta info a un mock */}
             <Card
               smallText="Para un solo profesional"
               title="Versión Small"
@@ -47,7 +47,7 @@ class Feature extends React.Component {
           <div className="versions--more-info">
             <p>¿Todavía no te decidiste?</p>
             <Button
-              buttonHref="/versions"
+              buttonHref="/versions-detail"
               customClass="secondary">
               Ver más info
             </Button>
