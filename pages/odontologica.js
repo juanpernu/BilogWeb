@@ -1,6 +1,7 @@
 import Layout from '../components/Layout'
 import Cover from '../components/Cover/Cover'
 import FeatureImg from '../components/Feature/FeatureImg'
+import Versions from '../components/Version/Versions'
 
 export default () => (
     <Layout>
@@ -10,6 +11,7 @@ export default () => (
         position="lf"
         hasButtons={true}
       />
+      <Versions />
       <FeatureImg
         imgSrc="http://www.wifers.com/images/login.png"
         imgHref="/"

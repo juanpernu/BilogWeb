@@ -20,7 +20,7 @@ class FeatureImage extends React.Component {
           </Link>
           <div className="feature-image-content">
             <p className="feature-image-content--copy">{copy}</p>
-            {/* Pasar todo el content de este componente a un json */}
+            {/* TODO: Pasar todo el content de este componente a un json */}
             <FeatureItem
               title="Un atractivo software de gestión"
               description="Crea una conexión liberada que le permite a los usuarios conectarse a Wi-Fi sin tener que consultarle la contraseña al encargado."

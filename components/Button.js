@@ -1,6 +1,12 @@
-const Button = ({children, customClass}) => (
-  <button className={`button ${customClass}`}>
-    <p>{children}</p>
+import Link from 'next/link'
+
+const Button = ({children, customClass, buttonHref}) => (
+  <span className="button--container">
+    <Link href={buttonHref}>
+      <button className={`button ${customClass}`}>
+        <p>{children}</p>
+      </button>
+    </Link>
     <style jsx>
     {`
       :global(.cover.redish .button){
@@ -38,8 +44,9 @@ const Button = ({children, customClass}) => (
           background: #007aff;
         }
         .button.secondary {
-          color: #000;
+          border: 1px solid #fff;
           background: #fff;
+          box-shadow: 0 3px 10px rgba(0,0,0,0.12);
         }
         .button.terciary {
           color: #4b87ef;
@@ -54,13 +61,17 @@ const Button = ({children, customClass}) => (
 
       {/* STYLES FOR DESKTOP */}
       @media only screen and (min-width: 751px) {
+        .button--container {
+          margin-right: 20px;
+          display: inline-block;
+        }
         .button {
           appearance: none;
           align-items: center;
           display: flex;
           width: 100%;
           height: 40px;
-          margin: 20px 10px;
+          margin: 20px 0;
           padding: 0 25px;
           outline: none;
           border: 1px solid #007aff;
@@ -88,8 +99,12 @@ const Button = ({children, customClass}) => (
           background: #007aff;
         }
         .button.secondary {
-          color: #000;
+          border: 1px solid #fff;
           background: #fff;
+          box-shadow: 0 3px 10px rgba(0,0,0,0.12);
+        }
+        .button.secondary:hover {
+          box-shadow: 0 7px 20px rgba(0,0,0,0.12);
         }
         .button.terciary {
           color: #4b87ef;
@@ -108,7 +123,7 @@ const Button = ({children, customClass}) => (
       }
     `}
     </style>
-  </button>
+  </span>
 )
 
 export default Button

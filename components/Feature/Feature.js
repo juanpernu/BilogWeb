@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import Title from '../Title'
 import FeatureItem from './FeatureItem'
 
 class Feature extends React.Component {
@@ -26,8 +27,10 @@ class Feature extends React.Component {
         return(
           <section key={index} className={`feature-section ${feature.hasColorBackground ? "color-background" : ""}`}>
             <div className="feature">
-              <h2 className="feature--title">{feature.title}</h2>
-              <p className="feature--subtitle">{feature.description}</p>
+              <Title
+                title={feature.title}
+                subtitle={feature.description}
+              />
               {this.renderSuccessCase(feature.successCase)}
               <div className="feature-item--container">
                 {feature.featureItems.map((item, index) => {

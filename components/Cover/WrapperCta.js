@@ -22,13 +22,13 @@ const WrapperCta = ({ position }) => {
         {/* STYLES FOR DESKTOP */}
         @media only screen and (min-width: 751px) {
           .cover--container-cta {
-            width: 400px;
-            margin: 0 auto;
             display: flex;
             flex-direction: row;
+            justify-content: center;
           }
           .cover--container-cta.lf {
             margin: 0;
+            justify-content: flex-start;
           }
         }
       `}
