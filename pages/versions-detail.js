@@ -1,10 +1,8 @@
 import Layout from '../components/Layout'
-import Cover from '../components/Cover/Cover'
-import FeatureImg from '../components/Feature/FeatureImg'
-import Versions from '../components/Version/Versions'
+import VersionsExtended from '../components/Version/VersionsExtended'
 
 export default () => (
     <Layout>
-      <Versions />
+      <VersionsExtended />
     </Layout>
 )

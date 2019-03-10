@@ -2,13 +2,16 @@ import React from 'react'
 import Title from '../Title'
 import Card from '../Card'
 import Button from '../Button'
+import versionsFeatures from '../../mocks/versionsFeatures'
 
-class Feature extends React.Component {
+class Versions extends React.Component {
   constructor(){
     super();
   }
 
-  render() { 
+  render() {
+    const { small, standard, smallPremium, full } = versionsFeatures;
+
     return(
       <section className="versions">
         <div className="versions--container">
@@ -20,27 +23,27 @@ class Feature extends React.Component {
           <div className="versions--container-cards">
             {/* TODO: Pasar toda esta info a un mock */}
             <Card
-              smallText="Para un solo profesional"
-              title="Versión Small"
-              subtitle="Si sos un profesional independiente que trabaja en uno o más consultorios, éste es tu plan ideal."
+              smallText={small.data.smallText}
+              title={small.data.title}
+              subtitle={small.data.subtitle}
               hasCta={true}
             />
             <Card
-              smallText="Para un solo profesional"
-              title="Versión Standard"
-              subtitle="Si tenés un centro de una o más especialidades, con varios consultorios, éste es tu plan ideal."
+              smallText={standard.data.smallText}
+              title={standard.data.title}
+              subtitle={standard.data.subtitle}
               hasCta={true}
             />
             <Card
-              smallText="Para varios profesionales"
-              title="Versión Small Premium"
-              subtitle="Si tenés un centro de una o más especialidades, con varios consultorios, éste es tu plan ideal."
+              smallText={smallPremium.data.smallText}
+              title={smallPremium.data.title}
+              subtitle={smallPremium.data.subtitle}
               hasCta={true}
             />
             <Card
-              smallText="Para varios profesionales"
-              title="Versión Full"
-              subtitle="Si tenés un centro de una o más especialidades, con varios consultorios, éste es tu plan ideal."
+              smallText={full.data.smallText}
+              title={full.data.title}
+              subtitle={full.data.subtitle}
               hasCta={true}
             />
           </div>
@@ -60,6 +63,7 @@ class Feature extends React.Component {
               .versions {
                 text-align: center;
                 border-top: 1px solid #eee;
+                border-bottom: 1px solid #eee;
               }
               .versions--container {
                 padding: 40px 30px;
@@ -73,6 +77,7 @@ class Feature extends React.Component {
               .versions {
                 text-align: center;
                 border-top: 1px solid #eee;
+                border-bottom: 1px solid #eee;
               }
               .versions--container {
                 width: 100%;
@@ -107,4 +112,4 @@ class Feature extends React.Component {
   }
 }
 
-export default Feature
+export default Versions
