@@ -13,15 +13,15 @@ module.exports = {
       },
       {
         text: "Consultorios ilimitados",
-        check: true,
+        check: false,
       },
       {
         text: "Gestión de agenda",
-        check: true,
+        check: false,
       },
       {
         text: "Web de turnos para pacientes",
-        check: true,
+        check: false,
       },
       {
         text: "Recordatorio de turnos por mail",
@@ -113,7 +113,7 @@ module.exports = {
       },
       {
         text: "Consultorios ilimitados",
-        check: true,
+        check: false,
       },
       {
         text: "Gestión de agenda",
@@ -129,11 +129,11 @@ module.exports = {
       },
       {
         text: "Configurar horarios de atención y días no laborables",
-        check: true,
+        check: false,
       },
       {
         text: "Ingreso de demanda espontánea",
-        check: true,
+        check: false,
       },
       {
         text: "Registro de las prácticas en la Historia Clínica Digital",
@@ -159,11 +159,11 @@ module.exports = {
     features: [
       {
         text: "Cuentas de asistentes ilimitadas",
-        check: true,
+        check: false,
       },
       {
         text: "Consultorios ilimitados",
-        check: true,
+        check: false,
       },
       {
         text: "Gestión de agenda",

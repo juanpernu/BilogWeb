@@ -1,17 +1,19 @@
+import { SuccessCheck, FailureCheck } from './Check'
+
+
 const CardDetail = ({smallText, title, subtitle, features, price}) => {
-  console.log(price);
-  
+
   return(
     <div className="card">
       <small className="card--small">{smallText}</small>
       <h2 className="card--title">{title}</h2>
       <p className="card--subtitle">{subtitle}</p>
       {
-        features.map((feature) => {
+        features.map((feature, key) => {
           return (
-            <div className="card--feature-container" >
+            <div className="card--feature-container" key={key}>
               <p className="card--feature">{feature.text}</p>
-              {feature.check ? <i className="card--icon" /> : null}
+              {feature.check ? <SuccessCheck /> : <FailureCheck />}
             </div>
           )
         })
