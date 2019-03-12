@@ -42,7 +42,7 @@ const BannerCta = ({ title }) => {
             }
             .bannerCta--content {
               padding: 50px 0;
-              height: 200px;
+              height: 150px;
               max-width: 1024px;
               display: flex;
               align-items: center;
