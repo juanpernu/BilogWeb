@@ -30,6 +30,8 @@
   "dependencies": {
     "next": "8.0.3",
     "react": "16.8.3",
-    "react-dom": "16.8.3"
+    "react-dom": "16.8.3",
+    "react-swipe": "6.0.4",
+    "swipe-js-iso": "2.1.5"
   }
 }

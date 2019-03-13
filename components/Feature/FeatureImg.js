@@ -38,6 +38,9 @@ class FeatureImage extends React.Component {
         {`
           {/* STYLES FOR MOBILE */}
           @media only screen and (max-width: 750px) {
+            .feature-image--container {
+              border-bottom: 1px solid #eaeaea;
+            }
             .feature-image--container.bg-grey {
               background-color: rgb(250, 251, 252);
             }
@@ -57,6 +60,7 @@ class FeatureImage extends React.Component {
             .feature-image--container {
               width: 100%;
               border-top: 1px solid #eaeaea;
+              border-bottom: 1px solid #eaeaea;
             }
             .feature-image--container.bg-grey {
               background-color: rgb(250, 251, 252);

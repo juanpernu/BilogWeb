@@ -1,5 +1,5 @@
 import React from 'react'
-import Container from './Container.js'
+import Container from './Container'
 import PropTypes from 'prop-types'
 
 class Cover extends React.Component {

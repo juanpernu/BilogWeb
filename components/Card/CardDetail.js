@@ -1,4 +1,4 @@
-import { SuccessCheck, FailureCheck } from './Check'
+import { SuccessCheck, FailureCheck } from '../Check'
 
 
 const CardDetail = ({smallText, title, subtitle, features, price}) => {

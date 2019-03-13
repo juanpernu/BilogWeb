@@ -3,6 +3,8 @@ import Cover from '../components/Cover/Cover'
 import Feature from '../components/Feature/Feature'
 import FeatureImg from '../components/Feature/FeatureImg'
 import BannerCta from '../components/BannerCta'
+import Carousel from '../components/Carousel'
+
 import MockedFeatures from '../mocks/indexFeatures'
 
 const FeaturesProps = MockedFeatures;
@@ -23,6 +25,7 @@ export default () => (
         hasCta={true}
         imageAlign="left"
       />
+      <Carousel/>
       <FeatureImg
         imgSrc="http://www.wifers.com/images/local.png"
         imgHref="/"
