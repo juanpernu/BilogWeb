@@ -23,6 +23,7 @@ const Title = ({title, subtitle, alignCenter}) => {
               text-align: center;
             }
             .text-align-center .feature--subtitle {
+              text-align: center;
               margin-bottom: 50px;
             }
             :global(.feature-section.color-background .feature--subtitle) {
@@ -46,6 +47,12 @@ const Title = ({title, subtitle, alignCenter}) => {
               margin-bottom: 50px;
             }
             .text-align-center .feature--title {
+              text-align: center;
+            }
+            .text-align-center .feature--title {
+              text-align: center;
+            }
+            .text-align-center .feature--subtitle {
               text-align: center;
             }
             :global(.feature-section.color-background .feature--subtitle) {
