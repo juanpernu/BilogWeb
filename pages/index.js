@@ -37,6 +37,7 @@ export default () => (
       />
       <BannerCta
         title="Todo el control en tus manos."
+        buttonText="Descargar demo"
       />
     </Layout>
 )

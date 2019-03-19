@@ -1,4 +1,4 @@
-const Title = ({ text, paragraph }) => {
+const Title = ({ text }) => {
   return(
     <h1 className="title">
       {text}

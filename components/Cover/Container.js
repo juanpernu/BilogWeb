@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import WrapperCta from './WrapperCta'
-import Title from './Title.js'
+import Title from './Title'
 
 const Container = ({ text, paragraph, position, hasButtons }) => {
   const renderButtons = (hasButtons) => {

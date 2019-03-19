@@ -1,6 +1,6 @@
 import React from 'react'
 import Title from '../Title'
-import Card from '../Card'
+import Card from '../Card/Card'
 import Button from '../Button'
 import versionsFeatures from '../../mocks/versionsFeatures'
 

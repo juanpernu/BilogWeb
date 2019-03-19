@@ -7,6 +7,7 @@ export default () => (
       <VersionsExtended />
       <BannerCta
         title="¿Qué estas esperando para probar Bilog?"
+        buttonText="Descargar demo"
       />
     </Layout>
 )

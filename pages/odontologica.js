@@ -2,6 +2,7 @@ import Layout from '../components/Layout'
 import Cover from '../components/Cover/Cover'
 import FeatureImg from '../components/Feature/FeatureImg'
 import Versions from '../components/Version/Versions'
+import BannerCta from '../components/BannerCta'
 
 export default () => (
     <Layout>
@@ -12,6 +13,11 @@ export default () => (
         hasButtons={true}
       />
       <Versions />
+      <BannerCta
+        title="¿Todavía tenés dudas? Probalo ahora."
+        buttonText="Descargar demo"
+        buttonHref="/descargas"
+      />
       <FeatureImg
         imgSrc="http://www.wifers.com/images/login.png"
         imgHref="/"

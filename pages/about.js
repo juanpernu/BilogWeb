@@ -1,5 +1,5 @@
-import Layout from '../components/Layout.js'
-import Cover from '../components/Cover/Cover.js'
+import Layout from '../components/Layout'
+import Cover from '../components/Cover/Cover'
 
 export default () => (
     <Layout>

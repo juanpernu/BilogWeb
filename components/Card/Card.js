@@ -1,6 +1,6 @@
 import Button from '../Button'
 
-const Card = ({smallText, title, subtitle, hasCta}) => {
+const Card = ({smallText, title, subtitle, hasCta, buttonText, buttonHref}) => {
   return(
     <div className="card">
       <small className="card--small">{smallText}</small>
@@ -9,7 +9,12 @@ const Card = ({smallText, title, subtitle, hasCta}) => {
       {
         hasCta ?
         <div className="feature-image--cta">
-          <Button customClass="primary">Contratar ahora</Button>
+          <Button
+            customClass="primary"
+            buttonHref={buttonHref}
+          >
+            {buttonText}
+          </Button>
         </div> :
         null
       }

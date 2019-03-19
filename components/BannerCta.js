@@ -1,12 +1,17 @@
 import Button from './Button'
 
-const BannerCta = ({ title }) => {
+const BannerCta = ({ title, buttonText, buttonHref }) => {
   return(
     <div className="bannerCta--container">
       <div className="bannerCta--content">
         <h4 className="bannerCta--title">{title}</h4>
         <div className="bannerCta--buttons">
-          <Button customClass="terciary">Contratar ahora</Button>
+          <Button
+            customClass="terciary"
+            buttonHref={buttonHref}
+          >
+            {buttonText}
+          </Button>
         </div>
       </div>
       <style jsx>
