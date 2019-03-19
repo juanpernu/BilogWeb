@@ -21,29 +21,32 @@ class Versions extends React.Component {
             alignCenter={true}
           />
           <div className="versions--container-cards">
-            {/* TODO: Pasar toda esta info a un mock */}
             <Card
               smallText={small.data.smallText}
               title={small.data.title}
               subtitle={small.data.subtitle}
+              buttonText="Ver más"
               hasCta={true}
             />
             <Card
               smallText={standard.data.smallText}
               title={standard.data.title}
               subtitle={standard.data.subtitle}
+              buttonText="Ver más"
               hasCta={true}
             />
             <Card
               smallText={smallPremium.data.smallText}
               title={smallPremium.data.title}
               subtitle={smallPremium.data.subtitle}
+              buttonText="Ver más"
               hasCta={true}
             />
             <Card
               smallText={full.data.smallText}
               title={full.data.title}
               subtitle={full.data.subtitle}
+              buttonText="Ver más"
               hasCta={true}
             />
           </div>
@@ -104,6 +107,9 @@ class Versions extends React.Component {
                 margin: 0;
                 font-size: 14px;
               }
+              :global(.versions--container-cards .button--container) {
+                  margin: 0;
+                }
             }
           `}
           </style>

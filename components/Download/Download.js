@@ -1,6 +1,5 @@
 import React from 'react'
 import Title from '../Title'
-import Card from '../Card/Card'
 import DownloadUtils from './DownloadUtils'
 
 class Download extends React.Component {
@@ -100,7 +99,7 @@ class Download extends React.Component {
                 .download-section {
                   width: 100%;
                   margin: 0 auto;
-                  padding: 180px 0;
+                  padding-top: 180px;
                   max-width: 1024px;
                   text-align: center;
                 }

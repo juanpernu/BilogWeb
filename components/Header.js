@@ -55,6 +55,9 @@ class Header extends React.Component {
             <Link href="/contact">
               <a className="link">Contacto</a>
             </Link>
+            <Link href="/downloads">
+              <a className="link special">Descargas</a>
+            </Link>
           </aside>
         </nav>
         <aside className={`menu--mobile ${this.state.showMenu == false ? 'closed' : 'open'}`}>
@@ -75,6 +78,9 @@ class Header extends React.Component {
           </Link>
           <Link href="/contact">
             <a className="link">Contacto</a>
+          </Link>
+          <Link href="/downloads">
+            <a className="link special">Descargas</a>
           </Link>
         </aside>
         <style jsx>
@@ -162,6 +168,9 @@ class Header extends React.Component {
               line-height: 16px;
               white-space: nowrap;
             }
+            .link.special {
+              color: #0076ff;
+            }
           }
 
           {/* STYLES FOR DESKTOP */}
@@ -241,6 +250,9 @@ class Header extends React.Component {
             .link .title,
             .link .title {
               cursor: pointer;
+            }
+            .link.special {
+              color: #0076ff;
             }
             .title {
               display: inline-block;

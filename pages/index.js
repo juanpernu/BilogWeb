@@ -7,8 +7,6 @@ import Carousel from '../components/Carousel'
 
 import MockedFeatures from '../mocks/indexFeatures'
 
-const FeaturesProps = MockedFeatures;
-
 export default () => (
     <Layout>
       <Cover
@@ -16,7 +14,7 @@ export default () => (
         paragraph="Tecnología de vanguardia para la odontología."
         hasButtons={true}
       />
-      <Feature {...FeaturesProps} />
+      <Feature {...MockedFeatures} />
       <FeatureImg
         imgSrc="http://www.wifers.com/images/login.png"
         imgHref="/"
