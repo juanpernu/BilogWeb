@@ -11,15 +11,16 @@ class Header extends React.Component {
   }
 
   showMenuHandler(ev) {
-    ev.preventDefault();
-    if(this.state.showMenu == false){
-      return this.setState({
+    const showMenu = this.state.showMenu;
+    if(!showMenu){
+      this.setState({
         showMenu: true,
       });
+    } else {
+      this.setState({
+        showMenu: false,
+      });
     }
-    this.setState({
-      showMenu: false,
-    });
   }
 
   render() {

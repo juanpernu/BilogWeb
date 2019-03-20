@@ -1,6 +1,7 @@
 import React from 'react'
 import Title from '../Title'
 import DownloadUtils from './DownloadUtils'
+import ExternalButton from '../ExternalButton'
 
 class Download extends React.Component {
   render() { 
@@ -11,13 +12,10 @@ class Download extends React.Component {
           subtitle="La mejor forma de conocer Bilog, es usándolo."
           alignCenter={true}
         />
-        <span className="button--container">
-          <button className="button primary">
-            <a href="http://bilog.com.ar.tapir.avnam.net/clientes/public_html/DescargarPartes/NetFramework.rar">
-              <p>Descargar demo</p>
-            </a>
-          </button>
-        </span>
+        <ExternalButton
+          externalLink="http://bilog.com.ar.tapir.avnam.net/clientes/public_html/DescargarPartes/NetFramework.rar"
+          text="Descargar demo"
+        />
         <div className="download-image">
           <img src="/static/bilog-desktop-mac.png" alt="Descargar demo"/>
         </div>

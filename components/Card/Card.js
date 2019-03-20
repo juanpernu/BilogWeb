@@ -1,23 +1,37 @@
 import Button from '../Button'
+import ExternalButton from '../ExternalButton'
 
-const Card = ({smallText, title, subtitle, hasCta, buttonText, buttonHref}) => {
+const Card = ({smallText, title, subtitle, hasCta, external, buttonText, buttonHref}) => {
+
+  const renderCtaButton = () => {
+    return (
+      <div className="feature-image--cta">
+        <Button
+          customClass="primary"
+          buttonHref={buttonHref}
+        >
+          {buttonText}
+        </Button>
+      </div>
+    )
+  }
+
+  const renderExternalLink = () => {
+    return (
+      <ExternalButton
+        externalLink={buttonHref}
+        text={buttonText}
+      />
+    )
+  }
+
   return(
     <div className="card">
       <small className="card--small">{smallText}</small>
       <h2 className="card--title">{title}</h2>
       <p className="card--subtitle">{subtitle}</p>
-      {
-        hasCta ?
-        <div className="feature-image--cta">
-          <Button
-            customClass="primary"
-            buttonHref={buttonHref}
-          >
-            {buttonText}
-          </Button>
-        </div> :
-        null
-      }
+      {hasCta ? renderCtaButton() : null}
+      {external ? renderExternalLink() : null}
       <style jsx>
       {`
         {/* STYLES FOR MOBILE */}

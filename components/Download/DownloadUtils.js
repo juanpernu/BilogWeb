@@ -20,7 +20,7 @@ class DownloadUtils extends React.Component {
             subtitle="La solución “todo en uno” líder en el mercado. Compre o actualice hoy mismo o descárguelo gratis para uso personal."
             buttonText="Ir al enlace"
             buttonHref="https://get.teamviewer.com/BilogQS"
-            hasCta={true}
+            external={true}
           />
           <Card
             smallText="Video conferencia"
@@ -28,7 +28,7 @@ class DownloadUtils extends React.Component {
             subtitle="La solución “todo en uno” líder en el mercado. Compre o actualice hoy mismo o descárguelo gratis para uso personal."
             buttonText="Ir al enlace"
             buttonHref="https://go.teamviewer.com/bilogreunion"
-            hasCta={true}
+            external={true}
           />
         </div>
         <style jsx>
