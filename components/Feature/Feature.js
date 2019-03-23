@@ -34,7 +34,7 @@ class Feature extends React.Component {
               {this.renderSuccessCase(feature.successCase)}
               <div className="feature-item--container">
                 {feature.featureItems.map((item, index) => {
-                  return <FeatureItem key={index} title={item.title} description={item.description}/>
+                  return <FeatureItem key={index} icons={item.icon} title={item.title} description={item.description}/>
                 })}
               </div>
             </div>

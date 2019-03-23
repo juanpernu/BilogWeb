@@ -1,5 +1,8 @@
-const FeatureItem = ({title, description}) => (
+import Icons from '../Icons/Icons'
+
+const FeatureItem = ({title, description, icons}) => (
   <div className="feature-item">
+    {icons && <Icons type={icons}/>}
     <h3 className="feature-item--title">{title}</h3>
     <p className="feature-item--description">{description}</p>
     <style jsx>

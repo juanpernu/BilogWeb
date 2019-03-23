@@ -12,14 +12,17 @@ module.exports = {
         {
           title: "Accesible y Segura",
           description: "Ingresá desde cualquier dispositivo, donde quiera que te encuentres. Con Geblix tu información siempre estará disponible y segura.",
+          icon: 'access',
         },
         {
           title: "Completa",
           description: "Encontrá soluciones diseñadas junto a profesionales como vos. Relevamos cada una de tus tareas y desarrollamos herramientas que ayudan a realizarlas de forma eficiente.",
+          icon: 'complete',
         },
         {
           title: "Simple",
           description: "Trabajamos día a día con una premisa, hacerlo simple. Con Geblix, la gestión de tus tareas será muy fácil e intuitiva.",
+          icon: 'cross',
         }
       ],
     },
@@ -35,10 +38,12 @@ module.exports = {
         {
           title: "Tablas",
           description: "Desde el menú Tablas se definen todos los parámetros de carga de datos del sistema, como ser Profesionales, Obras Sociales, Feriados, Especialidades, etc.",
+          icon: 'check',
         },
         {
           title: "Informes",
           description: "Los informes son los que organizan y exhiben la información contenida en una base de datos. Pueden ser la conclusión de una investigación previa o adoptar una estructura de problema-solución en base a una serie de preguntas.",
+          icon: 'check',
         }
       ],
     },

@@ -1,4 +1,4 @@
-import { SuccessCheck, FailureCheck } from '../Check'
+import Icons from '../Icons/Icons'
 
 
 const CardDetail = ({smallText, title, subtitle, features, price}) => {
@@ -13,7 +13,7 @@ const CardDetail = ({smallText, title, subtitle, features, price}) => {
           return (
             <div className="card--feature-container" key={key}>
               <p className="card--feature">{feature.text}</p>
-              {feature.check ? <SuccessCheck /> : <FailureCheck />}
+              {feature.check ? <Icons type="check"/> : <Icons type="cross"/>}
             </div>
           )
         })
