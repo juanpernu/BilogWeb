@@ -11,7 +11,7 @@ const Carousel = () => {
   return (
     <div className="testimonial--container">
       <Title
-        title="¿Qué piensan nuestros usuarios?"
+        title="¿Qué dicen nuestros usuarios?"
         subtitle="Miles de profesionales como vos usan Bilog"
         alignCenter={true}
       />

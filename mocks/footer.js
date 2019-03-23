@@ -2,7 +2,11 @@ module.exports = {
   versions: [
     {
       text:"Odontología",
-      href: "/odontología",
+      href: "/odontologica",
+    },
+    {
+      text:"Laboratorios",
+      href: "/laboratorios",
     },
     {
       text:"Auditoría",

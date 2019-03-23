@@ -1,8 +1,8 @@
 module.exports = {
   features: [
     {
-      title: "Hacemos fácil la administración de tu clínica",
-      description: "Es el software ideal para llevar la gestión completa de tu consultorio o clínica.",
+      title: "Hacemos fácil la gestión de la odontología",
+      description: "Es el software ideal para llevar la administración de tu consultorio o clínica.",
       hasColorBackground: false,
       successCase: {
         text: "Mira cómo Dandy generó más de 50 mil contactos en un mes",

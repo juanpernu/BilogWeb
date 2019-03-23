@@ -13,7 +13,7 @@ class Product extends React.Component {
         <div className="product--container">
           <Title
             title="Nos adaptamos a todas tus necesidades"
-            subtitle="Podés elegir entre los diferentes softwares que mejor se adapten a tus necesidades."
+            subtitle="Podés elegir entre los diferentes softwares que mejor se adapten a lo que necesitás."
             alignCenter={true}
           />
           <div className="product--container-cards">
@@ -26,7 +26,7 @@ class Product extends React.Component {
               buttonHref="/odontologica"
             />
             <Card
-              smallText="Lo mejor en auditoría"
+              smallText="La auditoría, al máximo"
               title="Auditoría Odontológica"
               subtitle="Perfecto para círculos, gerenciadoras y prepagas. Recibe, audita y paga liquidaciones de prestadores."
               buttonText="Ver más"
@@ -34,7 +34,7 @@ class Product extends React.Component {
               buttonHref="/auditoria"
             />
             <Card
-              smallText="Tu laboratorio, al máximo"
+              smallText="Lo mejor para tu laboratorio"
               title="Laboratórios Dentales"
               subtitle="Es un software simple y fácil de utilizar, que te ayudará a manejar los pedidos de tus clientes."
               buttonText="Ver más"
