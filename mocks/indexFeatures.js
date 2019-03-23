@@ -22,7 +22,7 @@ module.exports = {
         {
           title: "Simple",
           description: "Trabajamos día a día con una premisa, hacerlo simple. Con Geblix, la gestión de tus tareas será muy fácil e intuitiva.",
-          icon: 'cross',
+          icon: 'simple',
         }
       ],
     },

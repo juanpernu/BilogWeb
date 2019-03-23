@@ -33,7 +33,7 @@ const FeatureItem = ({title, description, icons}) => (
         .feature-item--title {
           font-size: 20px;
           font-weight: 600;
-          margin-top: 26px;
+          margin-top: 16px;
           margin-bottom: 13px;
         }
       }

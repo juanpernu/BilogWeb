@@ -111,6 +111,7 @@ class Feature extends React.Component {
                   color: rgba(255,255,255,0.8);
                 }
                 .feature-item--container {
+                  padding-top: 26px;
                   display: flex;
                   flex-direction: row;
                   justify-content: space-around;

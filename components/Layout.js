@@ -22,6 +22,7 @@ const Layout = ({children}) => (
         margin: 0;
         padding: 0;
         text-rendering: optimizeLegibility;
+        box-sizing: border-box;
       }
       {/* STYLES FOR MOBILE */}
       @media only screen and (max-width: 750px) {

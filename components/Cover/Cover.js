@@ -8,10 +8,10 @@ class Cover extends React.Component {
   }
 
   render() {
-    const { gradientBg, position, text, paragraph, hasButtons } = this.props;
+    const { gradientBg, position, text, paragraph, hasButtons, bgImg } = this.props;
     
     return(
-      <section className={`cover ${gradientBg}`}>
+      <section className={`cover ${gradientBg} ${bgImg && `bgImg-${bgImg}`}`}>
         <Container
           text={text}
           paragraph={paragraph}
@@ -35,6 +35,18 @@ class Cover extends React.Component {
             .cover.sea {
               background: radial-gradient(ellipse farthest-side at 100% 100%,#dbf6c8 5%,#1cafc6 50%,#012690 110%);
             }
+            .cover.bgImg-01 {
+              background: url('http://www.wifers.com/images/bg-04.jpg') no-repeat center center;
+              background-size: cover;
+            }
+            .cover.bgImg-02 {
+              background: url('http://www.wifers.com/images/bg-09.jpg') no-repeat center center;
+              background-size: cover;
+            }
+            .cover.bgImg-03 {
+              background: url('http://www.wifers.com/images/bg-08.jpg') no-repeat center center;
+              background-size: cover;
+            }
           }
 
           {/* STYLES FOR DESKTOP */}
@@ -50,6 +62,18 @@ class Cover extends React.Component {
             }
             .cover.sea {
               background: radial-gradient(ellipse farthest-side at 100% 100%,#dbf6c8 5%,#1cafc6 50%,#012690 110%);
+            }
+            .cover.bgImg-01 {
+              background: url('http://www.wifers.com/images/bg-04.jpg') no-repeat center center;
+              background-size: cover;
+            }
+            .cover.bgImg-02 {
+              background: url('http://www.wifers.com/images/bg-09.jpg') no-repeat center center;
+              background-size: cover;
+            }
+            .cover.bgImg-03 {
+              background: url('http://www.wifers.com/images/bg-08.jpg') no-repeat center center;
+              background-size: cover;
             }
           }
         `}

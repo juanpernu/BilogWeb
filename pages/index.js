@@ -13,6 +13,7 @@ export default () => (
         text="Más tiempo libre, mayor control y mejor gestión de tu consultorio o clínica."
         paragraph="Tecnología de vanguardia para la odontología."
         hasButtons={true}
+        bgImg='03'
       />
       <Feature {...MockedFeatures} />
       <FeatureImg

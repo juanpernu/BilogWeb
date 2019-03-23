@@ -7,12 +7,14 @@ import Check from './Check'
 import Cross from './Cross'
 import Access from './Access'
 import Complete from './Complete'
+import Simple from './Simple'
 
 const icons = {
   check: Check,
   cross: Cross,
   access: Access,
   complete: Complete,
+  simple: Simple,
 };
 
 /**
@@ -25,7 +27,12 @@ const icons = {
  */
 const GeneratedIcon = ({ type, width, height, colorStroke, colorFill }) => {
   const Icon = icons[type];
-  return <Icon width={width} height={height} colorStroke={colorStroke} colorFill={colorFill} />;
+  return <Icon
+    width={width}
+    height={height}
+    colorStroke={colorStroke}
+    colorFill={colorFill}
+  />;
 };
 
 GeneratedIcon.propTypes = {
@@ -34,7 +41,7 @@ GeneratedIcon.propTypes = {
   color: PropTypes.string,
   colorStroke: PropTypes.string,
   colorFill: PropTypes.string,
-  type: PropTypes.oneOf(['check', 'cross', 'access', 'complete']).isRequired,
+  type: PropTypes.oneOf(['check', 'cross', 'access', 'complete', 'simple']).isRequired,
 };
 
 GeneratedIcon.defaultProps = {
