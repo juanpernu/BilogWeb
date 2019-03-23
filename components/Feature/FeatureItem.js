@@ -11,7 +11,7 @@ const FeatureItem = ({title, description, icons}) => (
       @media only screen and (max-width: 750px) {
         .feature-item--title {
           font-size: 18px;
-          margin: 0 0 10px;
+          margin: 10px 0 10px;
           padding: 0;
           font-weight: 600;
         }

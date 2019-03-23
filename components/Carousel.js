@@ -69,7 +69,7 @@ const Carousel = () => {
           {/* STYLES FOR DESKTOP */}
           @media only screen and (min-width: 751px) {
             .testimonial--container {
-              padding: 50px 0;
+              padding: 90px 0 50px;
               background: #fff;
               border-bottom: 1px solid #eaeaea;
             }

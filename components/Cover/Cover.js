@@ -25,7 +25,6 @@ class Cover extends React.Component {
             .cover {
               height: 100%;
               background: linear-gradient(to right, #0794f8, #174fce);
-              padding-top: 86px;
             }
             .cover.default {
               background: linear-gradient(to right, #0794f8, #174fce);
@@ -54,6 +53,7 @@ class Cover extends React.Component {
           @media only screen and (min-width: 751px) {
             .cover {
               background: linear-gradient(to right, #0794f8, #174fce);
+              padding-top: 100px;
             }
             .cover.default {
               background: linear-gradient(to right, #0794f8, #174fce);

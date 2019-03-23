@@ -2,7 +2,7 @@ import Layout from '../components/Layout'
 import Cover from '../components/Cover/Cover'
 import Feature from '../components/Feature/Feature'
 import Carousel from '../components/Carousel'
-import Versions from '../components/Version/Versions'
+import Products from '../components/Product/Products'
 
 import MockedFeatures from '../mocks/indexFeatures'
 
@@ -11,11 +11,11 @@ export default () => (
       <Cover
         text="Más tiempo libre, mayor control y mejor gestión de tu consultorio o clínica."
         paragraph="Somos la empresa número uno en desarrollo de software para Odontología."
-        hasButtons={true}
+        hasButtons={false}
         bgImg='03'
       />
       <Feature {...MockedFeatures} />
-      <Versions />
+      <Products />
       <Carousel/>
     </Layout>
 )

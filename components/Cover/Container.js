@@ -26,7 +26,7 @@ const Container = ({ text, paragraph, position, hasButtons }) => {
         {/* STYLES FOR MOBILE */}
         @media only screen and (max-width: 750px) {
           .cover--container {
-            padding: 120px 30px 40px;
+            padding: 120px 30px 70px;
             text-align: left;
             color: #fff;
           }

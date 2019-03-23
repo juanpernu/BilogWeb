@@ -20,7 +20,7 @@ module.exports = {
           icon: 'complete',
         },
         {
-          title: "Innvoador",
+          title: "Innovador",
           description: "Llevá tu consultorio o clínica al siguiente nivel con nuestra tecnología de vanguardia y hace que tus pacientes vivan una gran experiencia.",
           icon: 'innovation',
         }
