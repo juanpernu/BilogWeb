@@ -3,200 +3,296 @@ module.exports = {
     data: {
       smallText: "Para un solo profesional",
       title: "Small",
-      subtitle: "Si sos un profesional independiente que trabaja en uno o más consultorios, éste es tu plan ideal.",
+      subtitle: "Lo pensamos y desarrollamos para consultorios odontológicos pequeños y jóvenes profesionales como vos que recién empiezan.",
       price: "$300.-",
     },
     features: [
       {
-        text: "Cuentas de asistentes ilimitadas",
+        text: "Envio de SMS",
         check: true,
       },
       {
-        text: "Consultorios ilimitados",
+        text: "Copia de Seguridad On-Line",
+        check: true,
+      },
+      {
+        text: "Agenda de Turnos Diaria",
+        check: true,
+      },
+      {
+        text: "Imágenes",
+        check: true,
+      },
+      {
+        text: "Presupuestos",
+        check: true,
+      },
+      {
+        text: "Cta. Cte. de Pacientes",
+        check: true,
+      },
+      {
+        text: "Informe de Saldos Deudores",
+        check: true,
+      },
+      {
+        text: "Liquidación a Auditor Bilog",
+        check: true,
+      },
+      {
+        text: "Agenda de Turnos Semanal",
         check: false,
       },
       {
-        text: "Gestión de agenda",
+        text: "Estadísticas de Turnos y Recitado",
         check: false,
       },
       {
-        text: "Web de turnos para pacientes",
+        text: "Estadísticas Generales",
         check: false,
       },
       {
-        text: "Recordatorio de turnos por mail",
-        check: true,
+        text: "Stock",
+        check: false,
       },
       {
-        text: "Configurar horarios de atención y días no laborables",
-        check: true,
+        text: "Laboratorios",
+        check: false,
       },
       {
-        text: "Ingreso de demanda espontánea",
-        check: true,
+        text: "Especialidades",
+        check: false,
       },
       {
-        text: "Registro de las prácticas en la Historia Clínica Digital",
-        check: true,
+        text: "Control de Facturación a O.S.",
+        check: false,
       },
       {
-        text: "Adjuntar archivos a la História Clínica",
-        check: true,
+        text: "Liquidación a Profesionales",
+        check: false,
       },
-      {
-        text: "Ficha de admisión editable",
-        check: true,
-      }
     ]
   },
   standard: {
     data: {
       smallText: "Para un solo profesional",
       title: "Standard",
-      subtitle: "Si tenés un centro de una o más especialidades, con varios consultorios, éste es tu plan ideal.",
+      subtitle: "Optimizá tus tareas con herramientas que manejan todos los procesos diarios de tu consultorio odontológico.",
       price: "$400.-",
     },
     features: [
       {
-        text: "Cuentas de asistentes ilimitadas",
+        text: "Envio de SMS",
         check: true,
       },
       {
-        text: "Consultorios ilimitados",
+        text: "Copia de Seguridad On-Line",
         check: true,
       },
       {
-        text: "Gestión de agenda",
+        text: "Agenda de Turnos Diaria",
         check: true,
       },
       {
-        text: "Web de turnos para pacientes",
+        text: "Imágenes",
         check: true,
       },
       {
-        text: "Recordatorio de turnos por mail",
+        text: "Presupuestos",
         check: true,
       },
       {
-        text: "Configurar horarios de atención y días no laborables",
+        text: "Cta. Cte. de Pacientes",
         check: true,
       },
       {
-        text: "Ingreso de demanda espontánea",
+        text: "Informe de Saldos Deudores",
         check: true,
       },
       {
-        text: "Registro de las prácticas en la Historia Clínica Digital",
+        text: "Liquidación a Auditor Bilog",
         check: true,
       },
       {
-        text: "Adjuntar archivos a la História Clínica",
+        text: "Agenda de Turnos Semanal",
         check: true,
       },
       {
-        text: "Ficha de admisión editable",
+        text: "Estadísticas de Turnos y Recitado",
         check: true,
-      }
+      },
+      {
+        text: "Estadísticas Generales",
+        check: true,
+      },
+      {
+        text: "Stock",
+        check: true,
+      },
+      {
+        text: "Laboratorios",
+        check: true,
+      },
+      {
+        text: "Especialidades",
+        check: true,
+      },
+      {
+        text: "Control de Facturación a O.S.",
+        check: true,
+      },
+      {
+        text: "Liquidación a Profesionales",
+        check: false,
+      },
     ]
   },
   smallPremium: {
     data: {
       smallText: "Para varios profesionales",
       title: "Small Premium",
-      subtitle: "Si tenés un centro de una o más especialidades, con varios consultorios, éste es tu plan ideal.",
+      subtitle: "Igual a la versión Small pero podés gestionar varios profesionales y tener varias agendas.",
       price: "$600.-",
     },
     features: [
       {
-        text: "Cuentas de asistentes ilimitadas",
+        text: "Envio de SMS",
         check: true,
       },
       {
-        text: "Consultorios ilimitados",
+        text: "Copia de Seguridad On-Line",
+        check: true,
+      },
+      {
+        text: "Agenda de Turnos Diaria",
+        check: true,
+      },
+      {
+        text: "Imágenes",
+        check: true,
+      },
+      {
+        text: "Presupuestos",
+        check: true,
+      },
+      {
+        text: "Cta. Cte. de Pacientes",
+        check: true,
+      },
+      {
+        text: "Informe de Saldos Deudores",
+        check: true,
+      },
+      {
+        text: "Liquidación a Auditor Bilog",
+        check: true,
+      },
+      {
+        text: "Agenda de Turnos Semanal",
         check: false,
       },
       {
-        text: "Gestión de agenda",
-        check: true,
-      },
-      {
-        text: "Web de turnos para pacientes",
-        check: true,
-      },
-      {
-        text: "Recordatorio de turnos por mail",
-        check: true,
-      },
-      {
-        text: "Configurar horarios de atención y días no laborables",
+        text: "Estadísticas de Turnos y Recitado",
         check: false,
       },
       {
-        text: "Ingreso de demanda espontánea",
+        text: "Estadísticas Generales",
         check: false,
       },
       {
-        text: "Registro de las prácticas en la Historia Clínica Digital",
-        check: true,
+        text: "Stock",
+        check: false,
       },
       {
-        text: "Adjuntar archivos a la História Clínica",
-        check: true,
+        text: "Laboratorios",
+        check: false,
       },
       {
-        text: "Ficha de admisión editable",
-        check: true,
-      }
+        text: "Especialidades",
+        check: false,
+      },
+      {
+        text: "Control de Facturación a O.S.",
+        check: false,
+      },
+      {
+        text: "Liquidación a Profesionales",
+        check: false,
+      },
     ]
   },
   full: {
     data: {
       smallText: "Para varios profesionales",
       title: "Full",
-      subtitle: "Si tenés un centro de una o más especialidades, con varios consultorios, éste es tu plan ideal.",
+      subtitle: "Ideal para consultorios odontológicos y clínicas dentales. Vas a poder manejar las agendas de varios profesionales y realizar sus liquidaciones.",
       price: "$1.000.-",
     },
     features: [
       {
-        text: "Cuentas de asistentes ilimitadas",
-        check: false,
-      },
-      {
-        text: "Consultorios ilimitados",
-        check: false,
-      },
-      {
-        text: "Gestión de agenda",
+        text: " Envio de SMS",
         check: true,
       },
       {
-        text: "Web de turnos para pacientes",
+        text: "Copia de Seguridad On-Line",
         check: true,
       },
       {
-        text: "Recordatorio de turnos por mail",
+        text: "Agenda de Turnos Diaria",
         check: true,
       },
       {
-        text: "Configurar horarios de atención y días no laborables",
+        text: "Imágenes",
         check: true,
       },
       {
-        text: "Ingreso de demanda espontánea",
+        text: "Presupuestos",
         check: true,
       },
       {
-        text: "Registro de las prácticas en la Historia Clínica Digital",
+        text: "Cta. Cte. de Pacientes",
         check: true,
       },
       {
-        text: "Adjuntar archivos a la História Clínica",
+        text: "Informe de Saldos Deudores",
         check: true,
       },
       {
-        text: "Ficha de admisión editable",
+        text: "Liquidación a Auditor Bilog",
         check: true,
-      }
+      },
+      {
+        text: "Agenda de Turnos Semanal",
+        check: true,
+      },
+      {
+        text: "Estadísticas de Turnos y Recitado",
+        check: true,
+      },
+      {
+        text: "Estadísticas Generales",
+        check: true,
+      },
+      {
+        text: "Stock",
+        check: true,
+      },
+      {
+        text: "Laboratorios",
+        check: true,
+      },
+      {
+        text: "Especialidades",
+        check: true,
+      },
+      {
+        text: "Control de Facturación a O.S.",
+        check: true,
+      },
+      {
+        text: "Liquidación a Profesionales",
+        check: true,
+      },
     ]
   }
 };

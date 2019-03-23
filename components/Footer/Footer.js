@@ -14,7 +14,7 @@ class Footer extends React.Component {
     return(
       <footer className="footer light">
         <div className="footer--links">
-          <Column title="Versiones" items={versions} />
+          <Column title="Sistemas" items={versions} />
           <Column title="Soporte" items={support} />
           <Column title="Contacto" items={contact} />
         </div>

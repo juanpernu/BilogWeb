@@ -16,7 +16,7 @@ class Versions extends React.Component {
       <section className="versions">
         <div className="versions--container">
           <Title
-            title="Hay un plan pensado especialmente para vos"
+            title="Hay una versión pensada especialmente para vos"
             subtitle="Bilog es perfecto para clínicas de cualquier tamaño."
             alignCenter={true}
           />
@@ -26,28 +26,24 @@ class Versions extends React.Component {
               title={small.data.title}
               subtitle={small.data.subtitle}
               buttonText="Ver más"
-              hasCta={true}
             />
             <Card
               smallText={standard.data.smallText}
               title={standard.data.title}
               subtitle={standard.data.subtitle}
               buttonText="Ver más"
-              hasCta={true}
             />
             <Card
               smallText={smallPremium.data.smallText}
               title={smallPremium.data.title}
               subtitle={smallPremium.data.subtitle}
               buttonText="Ver más"
-              hasCta={true}
             />
             <Card
               smallText={full.data.smallText}
               title={full.data.title}
               subtitle={full.data.subtitle}
               buttonText="Ver más"
-              hasCta={true}
             />
           </div>
           <div className="versions--more-info">

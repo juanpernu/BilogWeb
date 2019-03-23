@@ -99,10 +99,10 @@ Access.propTypes = {
 };
 
 Access.defaultProps = {
-  width: 36,
-  height: 36,
+  width: 40,
+  height: 40,
   colorStroke: '#FFF',
-  colorFill: '#50e38b',
+  colorFill: '#067df7',
 };
 
 export default Access

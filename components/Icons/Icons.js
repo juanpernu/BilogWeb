@@ -8,6 +8,8 @@ import Cross from './Cross'
 import Access from './Access'
 import Complete from './Complete'
 import Simple from './Simple'
+import Innovation from './Innovation'
+import Focus from './Focus'
 
 const icons = {
   check: Check,
@@ -15,6 +17,8 @@ const icons = {
   access: Access,
   complete: Complete,
   simple: Simple,
+  innovation: Innovation,
+  focus: Focus,
 };
 
 /**
@@ -41,7 +45,7 @@ GeneratedIcon.propTypes = {
   color: PropTypes.string,
   colorStroke: PropTypes.string,
   colorFill: PropTypes.string,
-  type: PropTypes.oneOf(['check', 'cross', 'access', 'complete', 'simple']).isRequired,
+  type: PropTypes.oneOf(['check', 'cross', 'access', 'complete', 'simple', 'innovation', 'focus']).isRequired,
 };
 
 GeneratedIcon.defaultProps = {

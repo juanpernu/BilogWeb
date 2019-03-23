@@ -22,16 +22,16 @@ class Versions extends React.Component {
               price={small.data.price}
             />
             <CardDetail
-              smallText={standard.data.smallText}
-              title={standard.data.title}
-              features={standard.features}
-              price={standard.data.price}
-            />
-            <CardDetail
               smallText={smallPremium.data.smallText}
               title={smallPremium.data.title}
               features={smallPremium.features}
               price={smallPremium.data.price}
+            />
+            <CardDetail
+              smallText={standard.data.smallText}
+              title={standard.data.title}
+              features={standard.features}
+              price={standard.data.price}
             />
             <CardDetail
               smallText={full.data.smallText}

@@ -44,7 +44,7 @@ const Title = ({title, subtitle, alignCenter}) => {
               color: #505656;
               font-size: 20px;
               line-height: 1.5;
-              margin-bottom: 50px;
+              margin-bottom: 30px;
             }
             .text-align-center .feature--title {
               text-align: center;

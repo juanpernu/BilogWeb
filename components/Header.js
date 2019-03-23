@@ -40,7 +40,7 @@ class Header extends React.Component {
             </Link>
             <div className="link" onMouseLeave={this.showMenuHandler}>
               <p className="title" onMouseEnter={this.showMenuHandler}>
-              Versiones</p><i className="icon-arrow--down" />
+              Sistemas</p><i className="icon-arrow--down" />
               <div className={`link--dropdown ${this.state.showMenu == false ? '' : 'is-active'}`}>
                 <Link href="/odontologica">
                 <a className="sublink">Gestión Odontológica</a>
@@ -182,6 +182,11 @@ class Header extends React.Component {
               padding: 20px;
               letter-spacing: 0.2px;
               display: flex;
+              position: fixed;
+              width: 100%;
+              background: #fff;
+              z-index: 900;
+              box-shadow: 0 5px 10px rgba(0,0,0,0.12);
             }
             .logo {
               height: 45px;

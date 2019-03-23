@@ -3,7 +3,7 @@ import Button from '../Button'
 const WrapperCta = ({ position }) => {
   return(
     <div className={`cover--container-cta ${position}`}>
-      <Button customClass="success">Contratar ahora</Button>
+      <Button customClass="primary">Pedir demo</Button>
       <Button customClass="secondary">Ver casos de éxito</Button>
       <style jsx>
       {`

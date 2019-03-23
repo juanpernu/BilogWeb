@@ -26,6 +26,7 @@ export default () => (
         copy="¿Qué es?"
         hasCta={true}
         imageAlign="left"
+        bgGrey={true}
       />
     </Layout>
 )

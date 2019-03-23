@@ -23,7 +23,7 @@ class FeatureImage extends React.Component {
             {/* TODO: Pasar todo el content de este componente a un json */}
             <FeatureItem
               title="Un atractivo software de gestión"
-              description="Crea una conexión liberada que le permite a los usuarios conectarse a Wi-Fi sin tener que consultarle la contraseña al encargado."
+              description="Entrá desde tu celular, donde quieras que te estés. Mantené tu agenda siempre disponible y actualizada."
             />
             {
               hasCta ?

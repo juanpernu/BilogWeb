@@ -117,10 +117,9 @@ class Feature extends React.Component {
                   justify-content: space-around;
                 }
                 :global(a.link--primary) {
-                  margin-top: 30px;
+                  margin: 30px 0;
                   color: rgb(6, 125, 247);
                   text-decoration: none;
-                  margin-bottom: 24px;
                   display: inline-block;
                   padding: 2.5px 5px;
                   border-radius: 5px;

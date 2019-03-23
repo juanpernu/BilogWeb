@@ -1,9 +1,8 @@
 import Layout from '../components/Layout'
 import Cover from '../components/Cover/Cover'
 import Feature from '../components/Feature/Feature'
-import FeatureImg from '../components/Feature/FeatureImg'
-import BannerCta from '../components/BannerCta'
 import Carousel from '../components/Carousel'
+import Versions from '../components/Version/Versions'
 
 import MockedFeatures from '../mocks/indexFeatures'
 
@@ -11,32 +10,12 @@ export default () => (
     <Layout>
       <Cover
         text="Más tiempo libre, mayor control y mejor gestión de tu consultorio o clínica."
-        paragraph="Somos la empresa número uno en la Argentina en desarrollo de software para Odontología."
+        paragraph="Somos la empresa número uno en desarrollo de software para Odontología."
         hasButtons={true}
         bgImg='03'
       />
       <Feature {...MockedFeatures} />
-      <FeatureImg
-        imgSrc="http://www.wifers.com/images/login.png"
-        imgHref="/"
-        imgAlt="Image feature"
-        copy="¿Qué es?"
-        hasCta={true}
-        imageAlign="left"
-      />
+      <Versions />
       <Carousel/>
-      <FeatureImg
-        imgSrc="http://www.wifers.com/images/local.png"
-        imgHref="/"
-        imgAlt="Image feature"
-        copy="¿Qué es?"
-        hasCta={false}
-        imageAlign="right"
-        bgGrey={true}
-      />
-      <BannerCta
-        title="Todo el control en tus manos."
-        buttonText="Descargar demo"
-      />
     </Layout>
 )
