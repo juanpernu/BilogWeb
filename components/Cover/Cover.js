@@ -49,8 +49,37 @@ class Cover extends React.Component {
             }
           }
 
-          {/* STYLES FOR DESKTOP */}
-          @media only screen and (min-width: 751px) {
+          {/* STYLES FOR DESKTOP 1200px */}
+          @media only screen and (min-width: 751px) and (max-width: 1200px) {
+            .cover {
+              background: linear-gradient(to right, #0794f8, #174fce);
+              padding-top: 60px;
+            }
+            .cover.default {
+              background: linear-gradient(to right, #0794f8, #174fce);
+            }
+            .cover.redish {
+              background: linear-gradient(to right, #f80759, #bc4e9c);
+            }
+            .cover.sea {
+              background: radial-gradient(ellipse farthest-side at 100% 100%,#dbf6c8 5%,#1cafc6 50%,#012690 110%);
+            }
+            .cover.bgImg-01 {
+              background: url('http://www.wifers.com/images/bg-04.jpg') no-repeat center center;
+              background-size: cover;
+            }
+            .cover.bgImg-02 {
+              background: url('http://www.wifers.com/images/bg-09.jpg') no-repeat center center;
+              background-size: cover;
+            }
+            .cover.bgImg-03 {
+              background: url('http://www.wifers.com/images/bg-08.jpg') no-repeat center center;
+              background-size: cover;
+            }
+          }
+
+          {/* STYLES FOR DESKTOP +1200px */}
+          @media only screen and (min-width: 1201px) {
             .cover {
               background: linear-gradient(to right, #0794f8, #174fce);
               padding-top: 100px;

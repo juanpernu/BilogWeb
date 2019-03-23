@@ -32,7 +32,31 @@ const Container = ({ text, paragraph, position, hasButtons }) => {
           }
         }
 
-        {/* STYLES FOR DESKTOP */}
+        {/* STYLES FOR DESKTOP 1200px */}
+        @media only screen and (min-width: 751px) {
+          .cover--container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 240px 30px;
+            text-align: center;
+            color: #fff;
+          }
+          .cover--container.lf {
+            text-align: left;
+            margin: 0 auto;
+            width: 1024px;
+            padding-right: 400px;
+            box-sizing: border-box;
+          }
+          .cover--container.lf .cover--container-cta {
+            margin: 0;
+          }
+          .cover--container .cover--container-paragraph {
+            font-size: 22px;
+          }
+        }
+
+        {/* STYLES FOR DESKTOP +1200px */}
         @media only screen and (min-width: 751px) {
           .cover--container {
             width: 50%;
