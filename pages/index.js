@@ -11,7 +11,7 @@ export default () => (
     <Layout>
       <Cover
         text="Más tiempo libre, mayor control y mejor gestión de tu consultorio o clínica."
-        paragraph="Tecnología de vanguardia para la odontología."
+        paragraph="Somos la empresa número uno en la Argentina en desarrollo de software para Odontología."
         hasButtons={true}
         bgImg='03'
       />
