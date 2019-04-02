@@ -10,8 +10,8 @@ export default () => (
         text="El software que te merecés."
         paragraph="Tené en una sola ventana todo el control de tu clínica o consultorio con estadísticas para una mejor gestión."
         position="lf"
-        hasButtons={true}
-        bgImg='02'
+        hasButtons={false}
+        bgImg='10'
       />
       <Versions />
       <BannerCta

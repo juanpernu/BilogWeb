@@ -37,7 +37,7 @@ const Container = ({ text, paragraph, position, hasButtons }) => {
           .cover--container {
             width: 80%;
             margin: 0 auto;
-            padding: 240px 30px;
+            padding: 200px 30px;
             text-align: center;
             color: #fff;
           }
@@ -61,7 +61,7 @@ const Container = ({ text, paragraph, position, hasButtons }) => {
           .cover--container {
             width: 50%;
             margin: 0 auto;
-            padding: 240px 30px;
+            padding: 200px 30px;
             text-align: center;
             color: #fff;
           }

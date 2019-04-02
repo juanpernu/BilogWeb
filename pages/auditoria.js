@@ -14,7 +14,8 @@ export default () => (
         paragraph="En unos pocos minutos realizá una auditoría de las liquidaciones de los prestadores, de acuerdo a las reglas definidas anteriormente por vos."
         position="lf"
         gradientBg="redish"
-        hasButtons={true}
+        hasButtons={false}
+        bgImg='03'
       />
       <Feature {...FeaturesProps} />
       <FeatureImg

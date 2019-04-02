@@ -36,15 +36,47 @@ class Cover extends React.Component {
               background: radial-gradient(ellipse farthest-side at 100% 100%,#dbf6c8 5%,#1cafc6 50%,#012690 110%);
             }
             .cover.bgImg-01 {
-              background: url('http://www.wifers.com/images/bg-04.jpg') no-repeat center center;
+              background: url('/static/bg-01.jpg') no-repeat center center;
               background-size: cover;
             }
             .cover.bgImg-02 {
-              background: url('http://www.wifers.com/images/bg-09.jpg') no-repeat center center;
+              background: url('/static/bg-02.jpg') no-repeat center center;
               background-size: cover;
             }
             .cover.bgImg-03 {
-              background: url('http://www.wifers.com/images/bg-08.jpg') no-repeat center center;
+              background: url('/static/bg-03.jpg') no-repeat center center;
+              background-size: cover;
+            }
+            .cover.bgImg-04 {
+              background: url('/static/bg-04.jpg') no-repeat center center;
+              background-size: cover;
+            }
+            .cover.bgImg-05 {
+              background: url('/static/bg-05.jpg') no-repeat center center;
+              background-size: cover;
+            }
+            .cover.bgImg-06 {
+              background: url('/static/bg-06.jpg') no-repeat center center;
+              background-size: cover;
+            }
+            .cover.bgImg-07 {
+              background: url('/static/bg-07.jpg') no-repeat center center;
+              background-size: cover;
+            }
+            .cover.bgImg-08 {
+              background: url('/static/bg-08.jpg') no-repeat center center;
+              background-size: cover;
+            }
+            .cover.bgImg-09 {
+              background: url('/static/bg-09.jpg') no-repeat center center;
+              background-size: cover;
+            }
+            .cover.bgImg-10 {
+              background: url('/static/bg-10.jpg') no-repeat center;
+              background-size: cover;
+            }
+            .cover.bgImg-11 {
+              background: url('/static/bg-11.jpg') no-repeat center;
               background-size: cover;
             }
           }
@@ -65,15 +97,47 @@ class Cover extends React.Component {
               background: radial-gradient(ellipse farthest-side at 100% 100%,#dbf6c8 5%,#1cafc6 50%,#012690 110%);
             }
             .cover.bgImg-01 {
-              background: url('http://www.wifers.com/images/bg-04.jpg') no-repeat center center;
+              background: url('/static/bg-01.jpg') no-repeat center center;
               background-size: cover;
             }
             .cover.bgImg-02 {
-              background: url('http://www.wifers.com/images/bg-09.jpg') no-repeat center center;
+              background: url('/static/bg-02.jpg') no-repeat center center;
               background-size: cover;
             }
             .cover.bgImg-03 {
-              background: url('http://www.wifers.com/images/bg-08.jpg') no-repeat center center;
+              background: url('/static/bg-03.jpg') no-repeat center center;
+              background-size: cover;
+            }
+            .cover.bgImg-04 {
+              background: url('/static/bg-04.jpg') no-repeat center top;
+              background-size: cover;
+            }
+            .cover.bgImg-05 {
+              background: url('/static/bg-05.jpg') no-repeat center center;
+              background-size: cover;
+            }
+            .cover.bgImg-06 {
+              background: url('/static/bg-06.jpg') no-repeat center center;
+              background-size: cover;
+            }
+            .cover.bgImg-07 {
+              background: url('/static/bg-07.jpg') no-repeat center center;
+              background-size: cover;
+            }
+            .cover.bgImg-08 {
+              background: url('/static/bg-08.jpg') no-repeat center center;
+              background-size: cover;
+            }
+            .cover.bgImg-09 {
+              background: url('/static/bg-09.jpg') no-repeat center center;
+              background-size: cover;
+            }
+            .cover.bgImg-10 {
+              background: url('/static/bg-10.jpg') no-repeat center;
+              background-size: cover;
+            }
+            .cover.bgImg-11 {
+              background: url('/static/bg-11.jpg') no-repeat center;
               background-size: cover;
             }
           }
@@ -94,15 +158,47 @@ class Cover extends React.Component {
               background: radial-gradient(ellipse farthest-side at 100% 100%,#dbf6c8 5%,#1cafc6 50%,#012690 110%);
             }
             .cover.bgImg-01 {
-              background: url('http://www.wifers.com/images/bg-04.jpg') no-repeat center center;
+              background: url('/static/bg-01.jpg') no-repeat center;
               background-size: cover;
             }
             .cover.bgImg-02 {
-              background: url('http://www.wifers.com/images/bg-09.jpg') no-repeat center center;
+              background: url('/static/bg-02.jpg') no-repeat center center;
               background-size: cover;
             }
             .cover.bgImg-03 {
-              background: url('http://www.wifers.com/images/bg-08.jpg') no-repeat center center;
+              background: url('/static/bg-03.jpg') no-repeat center center;
+              background-size: cover;
+            }
+            .cover.bgImg-04 {
+              background: url('/static/bg-04.jpg') no-repeat center top;
+              background-size: cover;
+            }
+            .cover.bgImg-05 {
+              background: url('/static/bg-05.jpg') no-repeat center center;
+              background-size: cover;
+            }
+            .cover.bgImg-06 {
+              background: url('/static/bg-06.jpg') no-repeat center center;
+              background-size: cover;
+            }
+            .cover.bgImg-07 {
+              background: url('/static/bg-07.jpg') no-repeat center center;
+              background-size: cover;
+            }
+            .cover.bgImg-08 {
+              background: url('/static/bg-08.jpg') no-repeat center center;
+              background-size: cover;
+            }
+            .cover.bgImg-09 {
+              background: url('/static/bg-09.jpg') no-repeat center;
+              background-size: cover;
+            }
+            .cover.bgImg-10 {
+              background: url('/static/bg-10.jpg') no-repeat center;
+              background-size: cover;
+            }
+            .cover.bgImg-11 {
+              background: url('/static/bg-11.jpg') no-repeat center;
               background-size: cover;
             }
           }

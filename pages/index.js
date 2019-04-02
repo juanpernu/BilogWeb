@@ -12,7 +12,7 @@ export default () => (
         text="Más tiempo libre, mayor control y mejor gestión de tu consultorio o clínica."
         paragraph="Somos la empresa número uno en desarrollo de software para Odontología."
         hasButtons={false}
-        bgImg='03'
+        bgImg='01'
       />
       <Feature {...MockedFeatures} />
       <Products />
