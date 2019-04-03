@@ -27,7 +27,7 @@ const Title = ({title, subtitle, alignCenter}) => {
               margin-bottom: 50px;
             }
             :global(.feature-section.color-background .feature--subtitle) {
-              color: rgba(255,255,255,0.8);
+              color: #666;
             }
           }
 
@@ -56,7 +56,7 @@ const Title = ({title, subtitle, alignCenter}) => {
               text-align: center;
             }
             :global(.feature-section.color-background .feature--subtitle) {
-              color: rgba(255,255,255,0.8);
+              color: #666;
             }
           }
         `}

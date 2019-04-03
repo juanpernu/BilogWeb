@@ -46,20 +46,7 @@ class Feature extends React.Component {
                   padding: 30px;
                 }
                 .feature-section.color-background {
-                  background: linear-gradient(to right, #8f94fb, #4e54c8);
-                  color: #fff;
-                }
-                .feature--title {
-                  font-size: 28px;
-                  text-align: left;
-                  font-weight: 600;
-                  margin-top: 0px;
-                  margin-bottom: 24px;
-                }
-                .feature--subtitle {
-                  font-size: 16px;
-                  line-height: 26px;
-                  margin-bottom: 24px;
+                  background: #f0f9fe;
                 }
                 :global(a.link--primary) {
                   color: rgb(6, 125, 247);
@@ -70,12 +57,6 @@ class Feature extends React.Component {
                 .feature :global(a.link--primary) {
                   margin-bottom: 46px;
                 }
-                .feature-section.color-background .feature--subtitle {
-                  color: rgba(255,255,255,0.8);
-                }
-                .feature-section.color-background :global(a.link--primary) {
-                  color: #fff;
-                }
               }
     
               {/* STYLES FOR DESKTOP */}
@@ -84,8 +65,7 @@ class Feature extends React.Component {
                   border-bottom: 1px solid #dadedf;
                 }
                 .feature-section.color-background {
-                  background: linear-gradient(to right, #8f94fb, #4e54c8);
-                  color: #fff;
+                  background: #f0f9fe;
                 }
                 .feature-section .feature {
                   width: 100%;
@@ -93,22 +73,6 @@ class Feature extends React.Component {
                   padding: 180px 0;
                   max-width: 1024px;
                   text-align: center;
-                }
-                .feature--title {
-                  font-size: 40px;
-                  font-weight: 600;
-                  margin-top: 0px;
-                  margin-bottom: 24px;
-                }
-                .feature--subtitle {
-                  font-weight: 300;
-                  color: #505656;
-                  font-size: 20px;
-                  line-height: 1.5;
-                  margin-bottom: 24px;
-                }
-                .feature-section.color-background .feature--subtitle {
-                  color: rgba(255,255,255,0.8);
                 }
                 .feature-item--container {
                   padding-top: 26px;

@@ -20,8 +20,8 @@ export default () => (
       <Versions />
       <BannerCta
         title="¿Todavía tenés dudas? Probalo ahora."
-        buttonText="Descargar demo"
-        buttonHref="/descargas"
+        buttonText="Pedir una demo"
+        buttonHref="/contact"
       />
       <FeatureImg
         imgSrc="http://www.wifers.com/images/login.png"
