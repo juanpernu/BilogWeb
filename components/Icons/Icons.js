@@ -10,6 +10,11 @@ import Complete from './Complete'
 import Simple from './Simple'
 import Innovation from './Innovation'
 import Focus from './Focus'
+import Agenda from './Agenda'
+import Person from './Person'
+import Chart from './Chart'
+import Money from './Money'
+import Account from './Account';
 
 const icons = {
   check: Check,
@@ -19,6 +24,11 @@ const icons = {
   simple: Simple,
   innovation: Innovation,
   focus: Focus,
+  agenda: Agenda,
+  person: Person,
+  chart: Chart,
+  money: Money,
+  account: Account,
 };
 
 /**
@@ -45,7 +55,20 @@ GeneratedIcon.propTypes = {
   color: PropTypes.string,
   colorStroke: PropTypes.string,
   colorFill: PropTypes.string,
-  type: PropTypes.oneOf(['check', 'cross', 'access', 'complete', 'simple', 'innovation', 'focus']).isRequired,
+  type: PropTypes.oneOf([
+    'check',
+    'cross',
+    'access',
+    'account',
+    'agenda',
+    'chart',
+    'complete',
+    'simple',
+    'innovation',
+    'focus',
+    'person',
+    'money'
+  ]).isRequired,
 };
 
 GeneratedIcon.defaultProps = {

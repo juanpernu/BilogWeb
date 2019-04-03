@@ -13,7 +13,7 @@ class Product extends React.Component {
         <div className="product--container">
           <Title
             title="Nos adaptamos a todas tus necesidades"
-            subtitle="Podés elegir entre los diferentes softwares que mejor se adapten a lo que necesitás."
+            subtitle="Podés elegir entre los diferentes software que mejor se adapten a lo que necesitás."
             alignCenter={true}
           />
           <div className="product--container-cards">
@@ -35,7 +35,7 @@ class Product extends React.Component {
             />
             <Card
               smallText="Lo mejor para tu laboratorio"
-              title="Laboratórios Dentales"
+              title="Laboratorios Dentales"
               subtitle="Es un software simple y fácil de utilizar, que te ayudará a manejar los pedidos de tus clientes."
               buttonText="Ver más"
               hasCta={true}

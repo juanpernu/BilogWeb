@@ -34,6 +34,8 @@ class Footer extends React.Component {
             .footer--links {
               max-width: 1024px;
               margin: 0 auto;
+              display: flex;
+              align-items: flex-start;
             }
             .footer {
               background: #000;

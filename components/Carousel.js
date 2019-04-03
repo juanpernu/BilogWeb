@@ -18,7 +18,7 @@ const Carousel = () => {
       <ReactSwipe
         className="carousel"
         swipeOptions={{
-          continuous: false,
+          continuous: true,
           auto: 3000,
           disableScroll: false,
         }}
