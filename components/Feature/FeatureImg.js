@@ -11,24 +11,26 @@ class FeatureImage extends React.Component {
   }
 
   render() {
-    const { imgSrc, imgHref, imgAlt, copy, hasCta, imageAlign, bgGrey } = this.props;
+    const { imgSrc, imgHref, imgAlt, copy, hasCta, imageAlign, bgGrey, title, description, buttonText, buttonHref } = this.props;
     return(
       <section className={`feature-image--container ${bgGrey && 'bg-grey'}`}>
         <div className={`feature-image ${imageAlign}`}>
-          <Link href={imgHref}>
-            <Image src={imgSrc} alt={imgAlt} />
-          </Link>
+          <Image src={imgSrc} alt={imgAlt} />
           <div className="feature-image-content">
             <p className="feature-image-content--copy">{copy}</p>
-            {/* TODO: Pasar todo el content de este componente a un json */}
             <FeatureItem
-              title="Un atractivo software de gestión"
-              description="Entrá desde tu celular, donde quieras que te estés. Mantené tu agenda siempre disponible y actualizada."
+              title={title}
+              description={description}
             />
             {
               hasCta ?
               <div className="feature-image--cta">
-                <Button customClass="terciary">Contratar ahora</Button>
+                <Button
+                  customClass="terciary"
+                  buttonHref={buttonHref}
+                >
+                  {buttonText}
+                </Button>
               </div> :
               null
             }

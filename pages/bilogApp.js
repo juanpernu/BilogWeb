@@ -3,20 +3,21 @@ import Cover from '../components/Cover/Cover'
 import Feature from '../components/Feature/Feature'
 import FeatureImg from '../components/Feature/FeatureImg'
 import Carousel from '../components/Carousel'
-import Products from '../components/Product/Products'
 
-import MockedFeatures from '../mocks/indexFeatures'
+import MockedFeatures from '../mocks/appFeatures'
 
 export default () => (
   <Layout>
     <Cover
-      text="Más tiempo libre, mayor control y mejor gestión de tu consultorio o clínica."
-      paragraph="Somos la empresa número uno en desarrollo de software para Odontología."
-      hasButtons={false}
-      bgImg='01'
+      text="Presentamos Bilog App"
+      paragraph="Administrá tu consultorio en tu celular. Con tu agenda siempre disponible y actualizada organizar tu día se va a volver muy fácil."
+      hasButtons={true}
+      position="lf"
+      buttonText="Descargar App"
+      buttonHref="/bilogApp"
+      bgImg="13"
     />
     <Feature {...MockedFeatures} />
-    <Products />
     <FeatureImg
       imgSrc="http://www.wifers.com/images/login.png"
       imgAlt="Image feature"

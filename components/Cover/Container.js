@@ -2,11 +2,15 @@ import PropTypes from 'prop-types'
 import WrapperCta from './WrapperCta'
 import Title from './Title'
 
-const Container = ({ text, paragraph, position, hasButtons }) => {
+const Container = ({ text, paragraph, position, hasButtons, buttonText, buttonHref }) => {
   const renderButtons = (hasButtons) => {
     if(hasButtons){
       return (
-        <WrapperCta position={position} />
+        <WrapperCta
+          position={position}
+          buttonText={buttonText}
+          buttonHref={buttonHref}
+        />
       )
     }
     return null;

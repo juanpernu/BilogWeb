@@ -8,15 +8,17 @@ class Cover extends React.Component {
   }
 
   render() {
-    const { gradientBg, position, text, paragraph, hasButtons, bgImg } = this.props;
-    
+    const { gradientBg, position, text, paragraph, hasButtons, bgImg, product, buttonText, buttonHref } = this.props;
+
     return(
-      <section className={`cover ${gradientBg} ${bgImg && `bgImg-${bgImg}`}`}>
+      <section className={`cover ${product && 'no-padding'} ${gradientBg} ${bgImg && `bgImg-${bgImg}`}`}>
         <Container
           text={text}
           paragraph={paragraph}
           position={position}
           hasButtons={hasButtons}
+          buttonText={buttonText}
+          buttonHref={buttonHref}
         />
         <style jsx>
         {`
@@ -79,6 +81,14 @@ class Cover extends React.Component {
               background: url('/static/bg-11.jpg') no-repeat center;
               background-size: cover;
             }
+            .cover.bgImg-12 {
+              background: url('https://image.shutterstock.com/z/stock-photo--man-using-smartphone-in-railway-blank-screen-smartphone-for-graphic-display-montage-653178262.jpg') no-repeat center;
+              background-size: cover;
+            }
+            .cover.bgImg-13 {
+              background: url('https://image.shutterstock.com/z/stock-photo-businessman-waiting-business-partners-and-checking-new-mail-messages-on-his-modern-smart-phone-563715568.jpg') no-repeat center;
+              background-size: cover;
+            }
           }
 
           {/* STYLES FOR DESKTOP 1200px */}
@@ -86,6 +96,9 @@ class Cover extends React.Component {
             .cover {
               background: linear-gradient(to right, #0794f8, #174fce);
               padding-top: 60px;
+            }
+            .cover.no-padding {
+              padding-top: 0;
             }
             .cover.default {
               background: linear-gradient(to right, #0794f8, #174fce);
@@ -140,6 +153,14 @@ class Cover extends React.Component {
               background: url('/static/bg-11.jpg') no-repeat center;
               background-size: cover;
             }
+            .cover.bgImg-12 {
+              background: url('https://image.shutterstock.com/z/stock-photo--man-using-smartphone-in-railway-blank-screen-smartphone-for-graphic-display-montage-653178262.jpg') no-repeat center;
+              background-size: cover;
+            }
+            .cover.bgImg-13 {
+              background: url('https://image.shutterstock.com/z/stock-photo-businessman-waiting-business-partners-and-checking-new-mail-messages-on-his-modern-smart-phone-563715568.jpg') no-repeat center;
+              background-size: cover;
+            }
           }
 
           {/* STYLES FOR DESKTOP +1200px */}
@@ -147,6 +168,9 @@ class Cover extends React.Component {
             .cover {
               background: linear-gradient(to right, #0794f8, #174fce);
               padding-top: 100px;
+            }
+            .cover.no-padding {
+              padding-top: 0;
             }
             .cover.default {
               background: linear-gradient(to right, #0794f8, #174fce);
@@ -199,6 +223,14 @@ class Cover extends React.Component {
             }
             .cover.bgImg-11 {
               background: url('/static/bg-11.jpg') no-repeat center;
+              background-size: cover;
+            }
+            .cover.bgImg-12 {
+              background: url('https://image.shutterstock.com/z/stock-photo--man-using-smartphone-in-railway-blank-screen-smartphone-for-graphic-display-montage-653178262.jpg') no-repeat center;
+              background-size: cover;
+            }
+            .cover.bgImg-13 {
+              background: url('https://image.shutterstock.com/z/stock-photo-businessman-waiting-business-partners-and-checking-new-mail-messages-on-his-modern-smart-phone-563715568.jpg') no-repeat center;
               background-size: cover;
             }
           }

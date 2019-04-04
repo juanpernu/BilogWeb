@@ -1,10 +1,14 @@
 import Button from '../Button'
 
-const WrapperCta = ({ position }) => {
+const WrapperCta = ({ position, buttonText, buttonHref }) => {
   return(
     <div className={`cover--container-cta ${position}`}>
-      <Button customClass="primary">Pedir demo</Button>
-      <Button customClass="secondary">Ver casos de éxito</Button>
+      <Button
+        customClass="primary"
+        buttonHref={buttonHref}
+      >
+        {buttonText}
+      </Button>
       <style jsx>
       {`
         {/* STYLES FOR MOBILE */}
