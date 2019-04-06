@@ -3,7 +3,7 @@ module.exports = {
     {
       title: "Tu consultorio, a donde sea que vayas",
       description: "En una sola aplicación todo el control de tu Clínica o Consultorio.",
-      hasColorBackground: false,
+      hasColorBackground: true,
       featureItems: [
         {
           title: "Agenda de Turnos",

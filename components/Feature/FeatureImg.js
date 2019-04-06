@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Link from 'next/link'
 import FeatureItem from '../Feature/FeatureItem'
 import Button from '../Button'
 import Image from '../Image'
@@ -25,12 +24,11 @@ class FeatureImage extends React.Component {
             {
               hasCta ?
               <div className="feature-image--cta">
-                <Button
+                <ButtonLink
                   customClass="terciary"
                   buttonHref={buttonHref}
-                >
-                  {buttonText}
-                </Button>
+                  buttonText={buttonText}
+                />
               </div> :
               null
             }

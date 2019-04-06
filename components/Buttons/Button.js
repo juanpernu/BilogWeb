@@ -1,12 +1,10 @@
-import Link from 'next/link'
+import PropTypes from 'prop-types';
 
-const Button = ({children, customClass, buttonHref}) => (
-  <span className="button--container">
-    <Link href={buttonHref}>
-      <button className={`button ${customClass}`}>
-        <p>{children}</p>
-      </button>
-    </Link>
+const Button = ({children, customClass, onClick}) => (
+  <React.Fragment>
+    <button onClick={onClick} className={`button ${customClass}`}>
+      <p>{children}</p>
+    </button>
     <style jsx>
     {`
       :global(.cover.redish .button){
@@ -61,10 +59,6 @@ const Button = ({children, customClass, buttonHref}) => (
 
       {/* STYLES FOR DESKTOP */}
       @media only screen and (min-width: 751px) {
-        .button--container {
-          margin-right: 20px;
-          display: inline-block;
-        }
         .button {
           appearance: none;
           align-items: center;
@@ -123,7 +117,15 @@ const Button = ({children, customClass, buttonHref}) => (
       }
     `}
     </style>
-  </span>
+  </React.Fragment>
 )
+
+Button.propTypes = {
+  buttonHref: PropTypes.string,
+}
+
+Button.defaultProps = {
+  buttonHref: '#',
+}
 
 export default Button

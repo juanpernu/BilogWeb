@@ -1,4 +1,4 @@
-import Button from '../Button'
+import ButtonLink from '../Buttons/ButtonLink'
 import ExternalButton from '../ExternalButton'
 
 const Card = ({smallText, title, subtitle, hasCta, external, buttonText, buttonHref}) => {
@@ -6,12 +6,11 @@ const Card = ({smallText, title, subtitle, hasCta, external, buttonText, buttonH
   const renderCtaButton = () => {
     return (
       <div className="feature-image--cta">
-        <Button
+        <ButtonLink
           customClass="primary"
           buttonHref={buttonHref}
-        >
-          {buttonText}
-        </Button>
+          buttonText={buttonText}
+        />
       </div>
     )
   }

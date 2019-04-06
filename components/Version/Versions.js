@@ -1,7 +1,7 @@
 import React from 'react'
 import Title from '../Title'
 import Card from '../Card/Card'
-import Button from '../Button'
+import ButtonLink from '../Buttons/ButtonLink'
 import versionsFeatures from '../../mocks/versionsFeatures'
 
 class Versions extends React.Component {
@@ -48,11 +48,11 @@ class Versions extends React.Component {
           </div>
           <div className="versions--more-info">
             <p>¿Todavía no te decidiste?</p>
-            <Button
+            <ButtonLink
               buttonHref="/versions-detail"
-              customClass="secondary">
-              Ver más info
-            </Button>
+              customClass="secondary"
+              buttonText='Ver más info'
+            />
           </div>
         </div>
         <style jsx>

@@ -1,14 +1,13 @@
-import Button from '../Button'
+import ButtonLink from '../Buttons/ButtonLink'
 
 const WrapperCta = ({ position, buttonText, buttonHref }) => {
   return(
     <div className={`cover--container-cta ${position}`}>
-      <Button
+      <ButtonLink
         customClass="primary"
         buttonHref={buttonHref}
-      >
-        {buttonText}
-      </Button>
+        buttonText={buttonText}
+      />
       <style jsx>
       {`
         {/* STYLES FOR MOBILE */}

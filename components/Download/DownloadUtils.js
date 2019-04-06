@@ -12,8 +12,6 @@ class DownloadUtils extends React.Component {
           alignCenter={true}
         />
         <div className="download-utils--container-cards">
-          {/* LINK NO SOPORTA LINKS A EXTERNOS, TENGO QUE HACER UN COMPONENTE
-          BUTTON QUE SEA PURAMENTE UN ANCHOR, COMO EN DOWNLOADS */}
           <Card
             smallText="Control remoto"
             title="Team Viewer"

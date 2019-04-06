@@ -1,11 +1,12 @@
-import Layout from '../components/Layout'
-import Cover from '../components/Cover/Cover'
-import Versions from '../components/Version/Versions'
-import BannerCta from '../components/BannerCta'
-import Feature from '../components/Feature/Feature'
-import Carousel from '../components/Carousel'
+import Layout from '../components/Layout';
+import Cover from '../components/Cover/Cover';
+import Versions from '../components/Version/Versions';
+import BannerCta from '../components/Banner/BannerCta';
+import Feature from '../components/Feature/Feature';
+import Carousel from '../components/Carousel';
 
-import MockedFeatures from '../mocks/odontologicaFeatures'
+import GeneratedVideos from '../components/Videos/Videos'
+import MockedFeatures from '../mocks/odontologicaFeatures';
 
 export default () => (
     <Layout>
@@ -19,8 +20,9 @@ export default () => (
       <Feature {...MockedFeatures} />
       <BannerCta
         title="¿Todavía tenés dudas? Probalo ahora."
-        buttonText="Pedir una demo"
-        buttonHref="/contact"
+        buttonText="Ver demo"
+        modalContent={<GeneratedVideos type='intro'/>}
+        showModal={true}
       />
       <Versions />
       <Cover
