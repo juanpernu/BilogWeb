@@ -1,6 +1,6 @@
 import Layout from '../components/Layout'
 import VersionsExtended from '../components/Version/VersionsExtended'
-import BannerCta from '../components/BannerCta'
+import BannerCta from '../components/Banner/BannerCta'
 
 export default () => (
     <Layout>
