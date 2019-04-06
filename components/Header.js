@@ -11,6 +11,8 @@ class Header extends React.Component {
   }
 
   showMenuHandler(ev) {
+    ev.preventDefault();
+    ev.stopPropagation();
     const showMenu = this.state.showMenu;
     if(!showMenu){
       this.setState({
@@ -38,10 +40,13 @@ class Header extends React.Component {
             <Link href="/">
               <a className="link">Home</a>
             </Link>
-            <div className="link" onMouseLeave={this.showMenuHandler}>
-              <p className="title" onMouseEnter={this.showMenuHandler}>
+            <div className="link">
+              <p className="title" onMouseOver={this.showMenuHandler}>
               Sistemas</p><i className="icon-arrow--down" />
-              <div className={`link--dropdown ${this.state.showMenu == false ? '' : 'is-active'}`}>
+              <div
+                className={`link--dropdown ${this.state.showMenu == false ? '' : 'is-active'}`}
+                onMouseLeave={this.showMenuHandler}
+              >
                 <Link href="/odontologica">
                 <a className="sublink">Gestión Odontológica</a>
                 </Link>
@@ -61,7 +66,9 @@ class Header extends React.Component {
             </Link>
           </aside>
         </nav>
-        <aside className={`menu--mobile ${this.state.showMenu == false ? 'closed' : 'open'}`}>
+        <aside
+          className={`menu--mobile ${this.state.showMenu == false ? 'closed' : 'open'}`}
+        >
           <Link href="/">
             <a className="link">Home</a>
           </Link>
@@ -225,6 +232,7 @@ class Header extends React.Component {
             }
             .link:hover {
               color: #0090ff;
+              cursor: pointer;
             }
             .link--dropdown {
               opacity: 0;

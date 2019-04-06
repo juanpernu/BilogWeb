@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import FeatureItem from '../Feature/FeatureItem'
-import Button from '../Button'
+import ButtonLink from '../Buttons/ButtonLink'
 import Image from '../Image'
 
 class FeatureImage extends React.Component {
