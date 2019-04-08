@@ -15,6 +15,9 @@ import Person from './Person'
 import Chart from './Chart'
 import Money from './Money'
 import Account from './Account';
+import Instagram from './Instagram';
+import Facebook from './Facebook';
+import Twitter from './Twitter';
 
 const icons = {
   check: Check,
@@ -29,6 +32,9 @@ const icons = {
   chart: Chart,
   money: Money,
   account: Account,
+  instagram: Instagram,
+  facebook: Facebook,
+  twitter: Twitter,
 };
 
 /**
@@ -67,7 +73,10 @@ GeneratedIcon.propTypes = {
     'innovation',
     'focus',
     'person',
-    'money'
+    'money',
+    'instagram',
+    'facebook',
+    'twitter',
   ]).isRequired,
 };
 

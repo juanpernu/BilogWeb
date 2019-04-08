@@ -27,6 +27,10 @@ class Footer extends React.Component {
               background: #fafafa;
               border-top: 1px solid #eaeaea;
             }
+            .footer--links {
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+            }
           }
 
           {/* STYLES FOR DESKTOP */}

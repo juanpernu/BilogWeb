@@ -19,8 +19,8 @@ export default () => (
       />
       <Feature {...MockedFeatures} />
       <BannerCta
-        title="¿Todavía tenés dudas? Probalo ahora."
-        buttonText="Ver demo"
+        title="¿Todavía tenés dudas? Mirá la demo."
+        buttonText="Ver video"
         modalContent={<GeneratedVideos type='intro'/>}
         showModal={true}
       />
