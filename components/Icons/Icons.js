@@ -18,6 +18,7 @@ import Account from './Account';
 import Instagram from './Instagram';
 import Facebook from './Facebook';
 import Twitter from './Twitter';
+import Address from './Address';
 
 const icons = {
   check: Check,
@@ -35,6 +36,7 @@ const icons = {
   instagram: Instagram,
   facebook: Facebook,
   twitter: Twitter,
+  address: Address,
 };
 
 /**
@@ -65,6 +67,7 @@ GeneratedIcon.propTypes = {
     'check',
     'cross',
     'access',
+    'address',
     'account',
     'agenda',
     'chart',

@@ -24,6 +24,10 @@ const Layout = ({children}) => (
         text-rendering: optimizeLegibility;
         box-sizing: border-box;
       }
+      :global(::placeholder) {
+        color: #bbb;
+        opacity: 1; /* Firefox */
+      }
       {/* STYLES FOR MOBILE */}
       @media only screen and (max-width: 750px) {
       }

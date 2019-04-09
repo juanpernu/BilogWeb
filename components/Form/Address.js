@@ -1,53 +1,51 @@
 import Icons from '../Icons/Icons'
 
-const SocialMedia = ({type, href}) => {
-  const formattedType = type.toLowerCase();
-  
+const Address = () => {  
   return (
-    <a className="social_media-link" href={href}>
-      <Icons type={formattedType}/>
-      <p className="social_media-text">{type}</p>
+    <div className="address-container">
+      <Icons type='address'/>
+      <p className="address-text">José Hernandes 2276, CABA, Buenos Aires, Argentina</p>
       <style jsx>
       {`
         {/* STYLES FOR MOBILE */}
         @media only screen and (max-width: 750px) {
-          .social_media-link {
+          .address-container {
             display: flex;
             flex-direction: row;
             align-items: center;
             text-decoration: none;
           }
-          .social_media-text {
+          .address-text {
             color: #666;
             margin: 10px 15px;
             transition: all 0.2s ease-in-out;
           }
-          .social_media-text:hover {
+          .address-text:hover {
             color: #0090ff;
           }
         }
 
         {/* STYLES FOR DESKTOP */}
         @media only screen and (min-width: 751px) {
-          .social_media-link {
+          .address-container {
             display: flex;
             flex-direction: row;
             align-items: center;
             text-decoration: none;
           }
-          .social_media-text {
+          .address-text {
             color: #666;
             margin: 10px 15px;
             transition: all 0.2s ease-in-out;
           }
-          .social_media-text:hover {
+          .address-text:hover {
             color: #0090ff;
           }
         }
       `}
       </style>
-    </a>
+    </div>
   );
 }
 
-export default SocialMedia;
+export default Address;

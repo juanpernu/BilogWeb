@@ -1,6 +1,7 @@
 import React from 'react';  
 import Form from './Form';
 import SocialMedia from './SocialMedia';
+import Address from './Address';
 
 class FormContainer extends React.Component {  
   constructor(props) {
@@ -33,9 +34,11 @@ class FormContainer extends React.Component {
     return (
       <section className="form-container">
         <Form />
-        <div className="form-social_media">
-          <p className="form-social_media--title">Encontranos en</p>
+        <div className="form-aside">
+          <p className="form-aside--title">Encontranos en</p>
           {this.renderSocialMedia()}
+          <p className="form-aside--title">O vení a visitarnos</p>
+          <Address/>
         </div>
         <style jsx>
         {`
@@ -47,6 +50,11 @@ class FormContainer extends React.Component {
               margin: 0;
               padding: 60px 30px;
             }
+            .form-aside--title {
+              font-weight: 600;
+              font-size: 24px;
+              line-height: 24px;
+            }
           }
 
           {/* STYLES FOR DESKTOP */}
@@ -57,12 +65,12 @@ class FormContainer extends React.Component {
               margin: 100px auto;
               max-width: 1200px;
             }
-            .form-social_media {
+            .form-aside {
               margin-left: 60px;
               display: flex;
               flex-direction: column;
             }
-            .form-social_media--title {
+            .form-aside--title {
               font-weight: 600;
               font-size: 24px;
               line-height: 24px;
