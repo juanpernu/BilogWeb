@@ -10,8 +10,8 @@ const FeaturesProps = MockedFeatures;
 export default () => (
     <Layout>
       <Cover
-        text="Llevá innovación y eficiencia a todas tus auditorías."
-        paragraph="En unos pocos minutos realizá una auditoría de las liquidaciones de los prestadores, de acuerdo a las reglas definidas anteriormente por vos."
+        text="Innovación y eficiencia en todas tus auditorías."
+        paragraph="Hacé en pocos minutos una auditoría de las liquidaciones de los prestadores, de acuerdo a las reglas definidas anteriormente por vos."
         position="lf"
         gradientBg="redish"
         hasButtons={false}
@@ -19,11 +19,40 @@ export default () => (
       />
       <Feature {...FeaturesProps} />
       <FeatureImg
+        imgSrc="http://www.wifers.com/images/login.png" // RESPETAR EL TAMAÑO DE LA IMAGEN DE WIFERS http://www.wifers.com/images/login.png
+        imgAlt="Auditoría - Tablas"
+        copy="El proceso que seguimos"
+        title="Tablas"
+        description="Definí todas las normas y reglas, que se deben seguir para cumplir una auditoría óptima, desde una sola pantalla."
+        hasCta={false}
+        imageAlign="left"
+        bgGrey={false}
+        buttonText="Ver más"
+        buttonHref="/bilogApp"
+      />
+      <FeatureImg
         imgSrc="http://www.wifers.com/images/login.png"
-        imgHref="/"
-        imgAlt="Image feature"
-        copy="¿Qué es?"
-        hasCta={true}
+        imgAlt="Auditoría - Auditoría"
+        copy="El proceso que seguimos"
+        title="Auditoría"
+        description="Vas a ver en distintos colores el estado de los afiliados y vas a tener la posibilidad de auditar las prácticas de forma manual o dejar que el sistema lo haga por sí mismo, para luego, mandar la liquidación a la obra social y llevar un seguimiento del pago."
+        hasCta={false}
+        imageAlign="right"
+        bgGrey={true}
+        buttonText="Ver más"
+        buttonHref="/bilogApp"
+      />
+      <FeatureImg
+        imgSrc="http://www.wifers.com/images/login.png"
+        imgAlt="Auditoría - Informes"
+        copy="El proceso que seguimos"
+        title="Informes"
+        description="Vas a tener a simple vista las liquidaciones realizadas por períodos, listar los consumos por afiliado y obtener estadísticas de prácticas odontológicas realizadas por profesional para tomar decisiones más inteligentes."
+        hasCta={false}
+        imageAlign="left"
+        bgGrey={false}
+        buttonText="Ver más"
+        buttonHref="/bilogApp"
       />
     </Layout>
 )

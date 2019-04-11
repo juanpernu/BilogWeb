@@ -48,10 +48,13 @@ class Header extends React.Component {
                 onMouseLeave={this.showMenuHandler}
               >
                 <Link href="/odontologica">
-                <a className="sublink">Gestión Odontológica</a>
+                  <a className="sublink">Gestión odontológica</a>
+                </Link>
+                <Link href="/laboratorio">
+                  <a className="sublink">Laboratorios dentales</a>
                 </Link>
                 <Link href="/auditoria">
-                <a className="sublink">Auditoría Odontológica</a>
+                  <a className="sublink">Auditoría odontológica</a>
                 </Link>
               </div>
             </div>
@@ -75,10 +78,13 @@ class Header extends React.Component {
           <div className="link">
             <p className="title">Versiones</p>
             <Link href="/odontologica">
-            <a className="sublink">Gestión Odontológica</a>
+              <a className="sublink">Gestión odontológica</a>
+            </Link>
+            <Link href="/laboratorio">
+              <a className="sublink">Laboratorios dentales</a>
             </Link>
             <Link href="/auditoria">
-            <a className="sublink">Auditoría Odontológica</a>
+              <a className="sublink">Auditoría odontológica</a>
             </Link>
           </div>
           <Link href="/about">

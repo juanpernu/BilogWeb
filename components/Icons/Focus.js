@@ -72,8 +72,8 @@ Focus.propTypes = {
 };
 
 Focus.defaultProps = {
-  width: 40,
-  height: 40,
+  width: 36,
+  height: 36,
   colorStroke: '#FFF',
   colorFill: '#067df7',
 };

@@ -71,6 +71,7 @@ const BannerCta = ({ title, buttonText, buttonHref, showModal, modalContent }) =
               margin: 0;
               padding: 0;
               color: #fff;
+              max-width: 600px;
             }
         `}
         </style>

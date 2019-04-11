@@ -6,7 +6,7 @@ module.exports = {
     },
     {
       text:"Laboratorios",
-      href: "/laboratorios",
+      href: "/laboratorio",
     },
     {
       text:"Auditoría",
@@ -26,11 +26,11 @@ module.exports = {
   contact: [
     {
       text:"Contacto",
-      href: "/",
+      href: "/contact",
     },
     {
-      text:"Redes Sociales",
-      href: "/",
+      text:"Nosotros",
+      href: "/about",
     }
   ]
 };

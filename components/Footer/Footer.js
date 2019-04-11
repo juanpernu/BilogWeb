@@ -16,7 +16,7 @@ class Footer extends React.Component {
         <div className="footer--links">
           <Column title="Sistemas" items={versions} />
           <Column title="Soporte" items={support} />
-          <Column title="Contacto" items={contact} />
+          <Column title="Compañía" items={contact} />
         </div>
         <FooterWrapper />
         <style jsx>

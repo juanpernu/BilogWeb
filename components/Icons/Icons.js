@@ -19,6 +19,8 @@ import Instagram from './Instagram';
 import Facebook from './Facebook';
 import Twitter from './Twitter';
 import Address from './Address';
+import Tables from './Tables';
+import Process from './Process';
 
 const icons = {
   check: Check,
@@ -30,6 +32,7 @@ const icons = {
   focus: Focus,
   agenda: Agenda,
   person: Person,
+  process: Process,
   chart: Chart,
   money: Money,
   account: Account,
@@ -37,6 +40,7 @@ const icons = {
   facebook: Facebook,
   twitter: Twitter,
   address: Address,
+  tables: Tables,
 };
 
 /**
@@ -76,10 +80,12 @@ GeneratedIcon.propTypes = {
     'innovation',
     'focus',
     'person',
+    'process',
     'money',
     'instagram',
     'facebook',
     'twitter',
+    'tables',
   ]).isRequired,
 };
 
