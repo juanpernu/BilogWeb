@@ -11,7 +11,7 @@ const Layout = ({children}) => (
       <meta name="description" content="Bilog Soluciones Informáticas. El nuevo software para la administración del consultorio y/o clínica Odontológica." />
       <meta name="HandheldFriendly" content="True" />
       <title>Bilog - Soluciones Informáticas</title>
-      <link rel="shortcut icon" href="http://bilog.com.ar/App_Site/images/fav.png" />
+      <link rel="shortcut icon" href="/static/fav.png" />
       <link rel="canonical" href="http://www.bilog.com.ar" />
       <script src="https://www.google.com/recaptcha/api.js" async defer />
     </Head>
