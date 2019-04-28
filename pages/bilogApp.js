@@ -18,18 +18,6 @@ export default () => (
       bgImg="13"
     />
     <Feature {...MockedFeatures} />
-    <FeatureImg
-      imgSrc="http://www.wifers.com/images/login.png"
-      imgAlt="Image feature"
-      copy="Bilog App"
-      title="Tu consultorio, a donde sea que vayas."
-      description="Desde tu teléfono vas a poder llevar todo el control de tu Clínica o Consultorio."
-      hasCta={true}
-      imageAlign="left"
-      bgGrey={true}
-      buttonText="Ver más"
-      buttonHref="/bilogApp"
-    />
     <Carousel/>
   </Layout>
 )

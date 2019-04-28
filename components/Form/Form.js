@@ -146,6 +146,11 @@ class Form extends React.Component {
           value={this.state.message}
           handleChange={this.handleMessage}
         /> {/* About you */}
+        <div
+          className="g-recaptcha"
+          data-sitekey="6LfFmaAUAAAAAEdFZMoeMjsqBmszOkLJRCTymquy"
+          data-theme="dark"
+        />
         <div className="form-buttons_area">
           <Button
             customClass='primary'

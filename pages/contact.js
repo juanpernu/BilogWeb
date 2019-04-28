@@ -1,6 +1,6 @@
-import Layout from '../components/Layout'
-import Cover from '../components/Cover/Cover'
-import Form from '../components/Form/FormContainer'
+import Layout from '../components/Layout';
+import Cover from '../components/Cover/Cover';
+import Form from '../components/Form/FormContainer';
 
 export default () => (
     <Layout>

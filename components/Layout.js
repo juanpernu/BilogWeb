@@ -1,6 +1,6 @@
-import Head from 'next/head'
-import Header from './Header'
-import Footer from './Footer/Footer'
+import Head from 'next/head';
+import Header from './Header';
+import Footer from './Footer/Footer';
 
 const Layout = ({children}) => (
   <div className="layout">
@@ -8,8 +8,12 @@ const Layout = ({children}) => (
       <meta charSet="utf-8" />
       <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      <meta name="description" content="Seguí el estado de los proyectos de Ley." />
+      <meta name="description" content="Bilog Soluciones Informáticas. El nuevo software para la administración del consultorio y/o clínica Odontológica." />
+      <meta name="HandheldFriendly" content="True" />
       <title>Bilog - Soluciones Informáticas</title>
+      <link rel="shortcut icon" href="http://bilog.com.ar/App_Site/images/fav.png" />
+      <link rel="canonical" href="http://www.bilog.com.ar" />
+      <script src="https://www.google.com/recaptcha/api.js" async defer />
     </Head>
     <Header />
     {children}

@@ -1,7 +1,7 @@
 import React from 'react';  
 import Form from './Form';
 import SocialMedia from './SocialMedia';
-import Address from './Address';
+import ContactItem from './ContactItem';
 
 class FormContainer extends React.Component {  
   constructor(props) {
@@ -36,9 +36,12 @@ class FormContainer extends React.Component {
         <Form />
         <div className="form-aside">
           <p className="form-aside--title">Encontranos en</p>
+          <ContactItem
+            text="José Hernandes 2276, CABA, Buenos Aires, Argentina"
+            icon="address"
+          />
+          <p className="form-aside--title">Seguinos en</p>
           {this.renderSocialMedia()}
-          <p className="form-aside--title">O vení a visitarnos</p>
-          <Address/>
         </div>
         <style jsx>
         {`

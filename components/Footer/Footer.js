@@ -15,8 +15,8 @@ class Footer extends React.Component {
       <footer className="footer light">
         <div className="footer--links">
           <Column title="Sistemas" items={versions} />
-          <Column title="Soporte" items={support} />
           <Column title="Compañía" items={contact} />
+          <Column title="Soporte" items={support} />
         </div>
         <FooterWrapper />
         <style jsx>

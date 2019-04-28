@@ -19,7 +19,7 @@ export default () => (
       />
       <Feature {...FeaturesProps} />
       <FeatureImg
-        imgSrc="http://www.wifers.com/images/login.png" // RESPETAR EL TAMAÑO DE LA IMAGEN DE WIFERS http://www.wifers.com/images/login.png
+        imgSrc="/static/laboratorios-pedidos.png"
         imgAlt="Auditoría - Tablas"
         copy="El proceso que seguimos"
         title="Tablas"
@@ -31,7 +31,7 @@ export default () => (
         buttonHref="/bilogApp"
       />
       <FeatureImg
-        imgSrc="http://www.wifers.com/images/login.png"
+        imgSrc="/static/laboratorios-pedidos.png"
         imgAlt="Auditoría - Auditoría"
         copy="El proceso que seguimos"
         title="Auditoría"
@@ -43,7 +43,7 @@ export default () => (
         buttonHref="/bilogApp"
       />
       <FeatureImg
-        imgSrc="http://www.wifers.com/images/login.png"
+        imgSrc="/static/laboratorios-pedidos.png"
         imgAlt="Auditoría - Informes"
         copy="El proceso que seguimos"
         title="Informes"

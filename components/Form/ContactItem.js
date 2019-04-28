@@ -1,10 +1,10 @@
 import Icons from '../Icons/Icons'
 
-const Address = () => {  
+const ContactItem = ({text, icon}) => {  
   return (
     <div className="address-container">
-      <Icons type='address'/>
-      <p className="address-text">José Hernandes 2276, CABA, Buenos Aires, Argentina</p>
+      <Icons type={icon}/>
+      <p className="address-text">{text}</p>
       <style jsx>
       {`
         {/* STYLES FOR MOBILE */}
@@ -48,4 +48,4 @@ const Address = () => {
   );
 }
 
-export default Address;
+export default ContactItem;

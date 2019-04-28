@@ -39,7 +39,7 @@ class Product extends React.Component {
               subtitle="Es un software simple y fácil de utilizar, que te ayudará a manejar los pedidos de tus clientes."
               buttonText="Ver más"
               hasCta={true}
-              buttonHref="/auditoria"
+              buttonHref="/laboratorio"
             />
           </div>
         </div>

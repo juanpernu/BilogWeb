@@ -24,7 +24,7 @@ export default () => (
         showModal={true}
       />
       <FeatureImg
-        imgSrc="http://www.wifers.com/images/login.png" // RESPETAR EL TAMAÑO DE LA IMAGEN DE WIFERS http://www.wifers.com/images/login.png
+        imgSrc="/static/laboratorios-pedidos.png"
         imgAlt="Laboratorio - Pedidos"
         copy="El proceso que seguimos"
         title="Pedidos"
@@ -36,7 +36,7 @@ export default () => (
         buttonHref="/bilogApp"
       />
       <FeatureImg
-        imgSrc="http://www.wifers.com/images/login.png"
+        imgSrc="/static/laboratorios-finanzas.png"
         imgAlt="Laboratorio - Finanzas"
         copy="El proceso que seguimos"
         title="Finanzas"
@@ -48,7 +48,7 @@ export default () => (
         buttonHref="/bilogApp"
       />
       <FeatureImg
-        imgSrc="http://www.wifers.com/images/login.png"
+        imgSrc="/static/laboratorios-estadisticas.png"
         imgAlt="Laboratorio - Estadísticas"
         copy="El proceso que seguimos"
         title="Estadísticas"

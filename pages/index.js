@@ -1,11 +1,11 @@
-import Layout from '../components/Layout'
-import Cover from '../components/Cover/Cover'
-import Feature from '../components/Feature/Feature'
-import FeatureImg from '../components/Feature/FeatureImg'
-import Carousel from '../components/Carousel'
-import Products from '../components/Product/Products'
+import Layout from '../components/Layout';
+import Cover from '../components/Cover/Cover';
+import Feature from '../components/Feature/Feature';
+import FeatureImg from '../components/Feature/FeatureImg';
+import Carousel from '../components/Carousel';
+import Products from '../components/Product/Products';
 
-import MockedFeatures from '../mocks/indexFeatures'
+import MockedFeatures from '../mocks/indexFeatures';
 
 export default () => (
   <Layout>
@@ -18,7 +18,7 @@ export default () => (
     <Feature {...MockedFeatures} />
     <Products />
     <FeatureImg
-      imgSrc="http://www.wifers.com/images/login.png"
+      imgSrc="/static/bilog-app.png"
       imgAlt="Image feature"
       copy="Bilog App"
       title="Tu consultorio, a donde sea que vayas."
