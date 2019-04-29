@@ -13,7 +13,6 @@ const Layout = ({children}) => (
       <title>Bilog - Soluciones Informáticas</title>
       <link rel="shortcut icon" href="/static/fav.png" />
       <link rel="canonical" href="http://www.bilog.com.ar" />
-      <script src="https://www.google.com/recaptcha/api.js" async defer />
     </Head>
     <Header />
     {children}

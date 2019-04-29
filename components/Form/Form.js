@@ -1,7 +1,7 @@
 import React from 'react';  
+import ReCAPTCHA from "react-google-recaptcha";
 
 /* Import Components */
-import CheckBox from './Checkbox';  
 import Input from './Input';  
 import TextArea from './TextArea';  
 import Select from './Select';
@@ -19,6 +19,7 @@ class Form extends React.Component {
         expertise: '',
       },
       message: '',
+      isVerified: false,
     }
     this.handleFormSubmit = this.handleFormSubmit.bind(this);
     this.handleClearForm = this.handleClearForm.bind(this);
@@ -27,12 +28,19 @@ class Form extends React.Component {
     this.handleMessage = this.handleMessage.bind(this);
     this.handleEmail = this.handleEmail.bind(this);
     this.handlePhone = this.handlePhone.bind(this);
+    this.handleCaptchaVerification = this.handleCaptchaVerification.bind(this);
   }
 
   handleFormSubmit(e) {
     e.preventDefault();
+
+    if(!this.state.isVerified) {
+      return alert('Necesitamos saber que sos humano, por favor completá el captcha.');
+    }
+
     let userData = this.state;
     console.log(userData);
+
     /**
      * @todo Acá va el servicio que postea la data del user 
      */
@@ -50,6 +58,12 @@ class Form extends React.Component {
     //   })
     // })
   };
+
+  handleCaptchaVerification(value) {
+    console.log(this.state.isVerified);
+    value ? this.setState({isVerified: true}) : null;
+    console.log(this.state.isVerified);
+  }
 
   handleClearForm(e) {
     e.preventDefault();
@@ -146,11 +160,14 @@ class Form extends React.Component {
           value={this.state.message}
           handleChange={this.handleMessage}
         /> {/* About you */}
-        <div
-          className="g-recaptcha"
-          data-sitekey="6LfFmaAUAAAAAEdFZMoeMjsqBmszOkLJRCTymquy"
-          data-theme="dark"
-        />
+        <div className="form-captcha">
+          <ReCAPTCHA
+            sitekey="6LfFmaAUAAAAAEdFZMoeMjsqBmszOkLJRCTymquy"
+            data-theme="dark"
+            onChange={this.handleCaptchaVerification}
+            theme="dark"
+          />
+        </div>
         <div className="form-buttons_area">
           <Button
             customClass='primary'
@@ -176,6 +193,9 @@ class Form extends React.Component {
               display: flex;
               flex-direction: column;
             }
+            .form-captcha {
+              margin-top: 20px;
+            }
           }
 
           {/* STYLES FOR DESKTOP */}
@@ -195,6 +215,9 @@ class Form extends React.Component {
               display: grid;
               grid-template-columns: 1fr 1fr 1fr 1fr;
               grid-column-gap: 30px;
+            }
+            .form-captcha {
+              margin-top: 20px;
             }
           }
         `}

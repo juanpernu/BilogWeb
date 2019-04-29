@@ -31,6 +31,7 @@
     "next": "8.0.3",
     "react": "16.8.3",
     "react-dom": "16.8.3",
+    "react-google-recaptcha": "1.0.5",
     "react-responsive-modal": "3.6.0",
     "react-swipe": "6.0.4",
     "swipe-js-iso": "2.1.5"
