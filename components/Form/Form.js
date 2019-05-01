@@ -38,8 +38,8 @@ class Form extends React.Component {
       return alert('Necesitamos saber que sos humano, por favor completá el captcha.');
     }
 
-    let userData = this.state;
-    console.log(userData);
+    const { message } = this.state;
+    const { name, email, phone, expertise } = this.state.newUser;
 
     /**
      * @todo Acá va el servicio que postea la data del user 

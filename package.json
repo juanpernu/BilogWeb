@@ -29,6 +29,7 @@
   "homepage": "https://github.com/juanpernu/BilogWeb#readme",
   "dependencies": {
     "next": "8.0.3",
+    "nodemailer": "6.1.1",
     "react": "16.8.3",
     "react-dom": "16.8.3",
     "react-google-recaptcha": "1.0.5",
