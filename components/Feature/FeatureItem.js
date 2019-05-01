@@ -26,7 +26,7 @@ const FeatureItem = ({title, description, icons}) => (
       {/* STYLES FOR DESKTOP */}
       @media only screen and (min-width: 751px) {
         .feature-item {
-          margin: 0 30px;
+          margin: 0 20px;
           text-align: left;
           max-width: 400px;
         }

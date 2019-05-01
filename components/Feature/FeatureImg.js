@@ -88,7 +88,7 @@ class FeatureImage extends React.Component {
               align-self: center;
             }
             .feature-image-content--copy {
-              margin: 0 30px;
+              margin: 0 20px;
               font-weight: 400;
               line-height: 0.3;
               color: #96a1a3;
