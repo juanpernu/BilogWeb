@@ -1,12 +1,12 @@
 import Layout from '../components/Layout'
-import Download from '../components/Download/Download'
+import DownloadUtils from '../components/Download/DownloadUtils'
 import Feature from '../components/Feature/Feature'
 
 import MockedFeatures from '../mocks/downloadFeatures'
 
 export default () => (
-    <Layout>
-      <Download/>
-      <Feature {...MockedFeatures} />
-    </Layout>
+  <Layout>
+    <DownloadUtils/>
+    <Feature {...MockedFeatures} />
+  </Layout>
 )
