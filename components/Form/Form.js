@@ -1,5 +1,5 @@
 import React from 'react';  
-import ReCAPTCHA from "react-google-recaptcha";
+import ReCAPTCHA from 'react-google-recaptcha';
 
 /* Import Components */
 import Input from './Input';  
@@ -38,25 +38,16 @@ class Form extends React.Component {
       return alert('Necesitamos saber que sos humano, por favor completá el captcha.');
     }
 
-    const { message } = this.state;
-    const { name, email, phone, expertise } = this.state.newUser;
-
-    /**
-     * @todo Acá va el servicio que postea la data del user 
-     */
-    // fetch('http://example.com', {
-    //   method: "POST",
-    //   body: JSON.stringify(userData),
-    //   headers: {
-    //     'Accept': 'application/json',
-    //     'Content-Type': 'application/json'
-    //   },
-    // })
-    // .then(response => {
-    //   response.json().then(data =>{
-    //     console.log("Successful" + data);
-    //   })
-    // })
+    fetch('/api/contact', {
+      method: 'post',
+      headers: {
+        'Accept': 'application/json, text/plain, */*',
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(this.state)
+    }).then((res) => {
+      res.status === 200 ? this.setState({ submitted: true }) : ''
+    })
   };
 
   handleCaptchaVerification(value) {
