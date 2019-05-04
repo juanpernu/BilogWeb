@@ -1,4 +1,5 @@
-import React from 'react';  
+import React from 'react';
+import 'isomorphic-fetch';
 import ReCAPTCHA from 'react-google-recaptcha';
 
 /* Import Components */
@@ -42,7 +43,8 @@ class Form extends React.Component {
       method: 'post',
       headers: {
         'Accept': 'application/json, text/plain, */*',
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
+        'X-Forwarded-Proto': 'https',
       },
       body: JSON.stringify(this.state)
     }).then((res) => {

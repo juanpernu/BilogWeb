@@ -1,7 +1,7 @@
 const express = require('express');
 const next = require('next');
 const bodyParser = require('body-parser');
-const mailService = require('./services/sendMail')
+const mailService = require('./services/sendMail');
 
 const dev = process.env.NODE_ENV !== 'production';
 const app = next({ dev });
