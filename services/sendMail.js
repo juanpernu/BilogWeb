@@ -30,7 +30,7 @@ class mailService {
     // setup e-mail data with unicode symbols
     const mailOptions = {
       from: `${name} || <${email}>`, // sender address
-      to: 'juan.pernumian@gmail.com, aldo.pernumian@gmail.com', // list of receivers
+      to: 'juan.pernumian@gmail.com', // list of receivers
       subject: 'Contacto web', // Subject line
       text: `
         Nombre: ${name}
