@@ -2,10 +2,8 @@
   "name": "bilogweb",
   "version": "1.0.0",
   "description": "Bilog - Web site",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node server.js",
+    "dev": "now dev",
     "build": "next build",
     "start": "next start -p 8000"
   },
@@ -28,10 +26,8 @@
   },
   "homepage": "https://github.com/juanpernu/BilogWeb#readme",
   "dependencies": {
-    "body-parser": "1.19.0",
-    "es6-promise": "4.2.6",
-    "express": "4.16.4",
     "isomorphic-fetch": "2.2.1",
+    "micro": "9.3.4",
     "next": "8.0.3",
     "nodemailer": "6.1.1",
     "react": "16.8.3",
