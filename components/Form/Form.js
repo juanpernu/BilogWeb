@@ -39,12 +39,11 @@ class Form extends React.Component {
       return alert('Necesitamos saber que sos humano, por favor completá el captcha.');
     }
 
-    fetch('/api/contact', {
+    fetch('/api/contact.js', {
       method: 'post',
       headers: {
         'Accept': 'application/json, text/plain, */*',
         'Content-Type': 'application/json',
-        'X-Forwarded-Proto': 'https',
       },
       body: JSON.stringify(this.state)
     }).then((res) => {
@@ -53,9 +52,7 @@ class Form extends React.Component {
   };
 
   handleCaptchaVerification(value) {
-    console.log(this.state.isVerified);
     value ? this.setState({isVerified: true}) : null;
-    console.log(this.state.isVerified);
   }
 
   handleClearForm(e) {
