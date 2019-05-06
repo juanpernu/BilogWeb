@@ -3,7 +3,7 @@ import FooterWrapper from './FooterWrapper'
 import Column from '../Column'
 
 
-import { versions, support, contact } from '../../mocks/footer.js'
+import { versions, support, contact, socialMedia } from '../../mocks/footer.js'
 
 class Footer extends React.Component {
   constructor(){
@@ -17,6 +17,7 @@ class Footer extends React.Component {
           <Column title="Sistemas" items={versions} />
           <Column title="Compañía" items={contact} />
           <Column title="Soporte" items={support} />
+          <Column title="Social Media" items={socialMedia} />
         </div>
         <FooterWrapper />
         <style jsx>

@@ -5,23 +5,22 @@ class Desktop extends React.Component {
   constructor(){
     super();
     this.state = {
-      showMenu: false,
+      showSoftwares: false,
+      showDownloads: false,
     };
     this.showMenuHandler = this.showMenuHandler.bind(this);
+    this.mouseLeaveHandler = this.mouseLeaveHandler.bind(this);
   }
 
   showMenuHandler(ev) {
     ev.preventDefault();
-    ev.stopPropagation();
-    if(!this.state.showMenu){
-      this.setState({
-        showMenu: true,
-      });
-    } else {
-      this.setState({
-        showMenu: false,
-      });
-    }
+    ev.target.innerText == "DESCARGAS" && this.setState({ showDownloads: !this.state.showDownloads });
+    ev.target.innerText == "SISTEMAS" && this.setState({ showSoftwares: !this.state.showSoftwares });
+  }
+
+  mouseLeaveHandler() {
+    this.state.showDownloads && this.setState({ showDownloads: !this.state.showDownloads });
+    this.state.showSoftwares && this.setState({ showSoftwares: !this.state.showSoftwares });
   }
   
   render(){
@@ -42,8 +41,8 @@ class Desktop extends React.Component {
             <p className="title">
             Sistemas</p><i className="icon-arrow--down" />
             <div
-              className={`link--dropdown ${this.state.showMenu == false ? '' : 'is-active'}`}
-              onMouseLeave={this.showMenuHandler}
+              className={`link--dropdown ${this.state.showSoftwares == false ? '' : 'is-active'}`}
+              onMouseLeave={this.mouseLeaveHandler}
             >
               <Link href="/odontologica">
                 <a className="sublink">Gestión odontológica</a>
@@ -62,9 +61,24 @@ class Desktop extends React.Component {
           <Link href="/contact">
             <a className="link">Contacto</a>
           </Link>
-          <Link href="/downloads">
-            <a className="link special">Descargas</a>
-          </Link>
+          <div className="link special" onClick={this.showMenuHandler}>
+            <p className="title">
+            Descargas</p><i className="icon-arrow--down" />
+            <div
+              className={`link--dropdown ${this.state.showDownloads == false ? '' : 'is-active'}`}
+              onMouseLeave={this.mouseLeaveHandler}
+            >
+              <Link href="/download-go">
+                <a className="sublink">Gestión odontológica</a>
+              </Link>
+              <Link href="/download-lab">
+                <a className="sublink">Laboratorios dentales</a>
+              </Link>
+              <Link href="/utils">
+                <a className="sublink">Descargas útiles</a>
+              </Link>
+            </div>
+          </div>
         </aside>
         <style jsx>
         {`

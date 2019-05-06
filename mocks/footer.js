@@ -32,5 +32,15 @@ module.exports = {
       text:"Nosotros",
       href: "/about",
     }
+  ],
+  socialMedia: [
+    {
+      text:"Facebook",
+      href: "https://www.facebook.com/Bilog.Soluciones",
+    },
+    {
+      text:"Instagram",
+      href: "https://www.instagram.com/bilogsoftware",
+    }
   ]
 };

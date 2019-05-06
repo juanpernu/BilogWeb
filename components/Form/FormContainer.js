@@ -8,11 +8,10 @@ class FormContainer extends React.Component {
     super(props);
 
     this.state = {
-      socialMedia: ['Twitter', 'Facebook', 'Instagram'],
+      socialMedia: ['Facebook', 'Instagram'],
       socialMediaUrl: {
-        twitter: 'https://www.twitter.com',
-        facebook: 'https://www.facebook.com',
-        instagram: 'https://www.instagram.com',
+        facebook: 'https://www.facebook.com/Bilog.Soluciones',
+        instagram: 'https://www.instagram.com/bilogsoftware',
       }
     }
     this.renderSocialMedia = this.renderSocialMedia.bind(this);
