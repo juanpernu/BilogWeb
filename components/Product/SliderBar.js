@@ -1,12 +1,13 @@
 import { Slider, Rail, Handles, Tracks } from 'react-compound-slider';
 import Handle from './Handle';
 import Track from './Track';
+import InputQuestion from './InputQuestion'
 
 const sliderStyles = {
   padding: 5,
 };
 
-const SliderBar = ({ sliderbarQuestion, domain, onChangeHandler}) => (
+const SliderBar = ({ sliderbarQuestion, functionality, domain, onChangeHandler}) => (
   <div className="sliderbar-container">
     <p className="sliderbar-text">{sliderbarQuestion}</p>
     <Slider
@@ -50,6 +51,10 @@ const SliderBar = ({ sliderbarQuestion, domain, onChangeHandler}) => (
         )}
       </Tracks>
     </Slider>
+    <p className="sliderbar-text">¿Qué otras funcionalidades necesitás?</p>
+    <div className="input-questions--container">
+      {functionality.map((osFunction, key) => (<InputQuestion key= {key} functionality={osFunction}/>))}
+    </div>
     <style jsx>
     {`
       {/* STYLES FOR MOBILE */}
@@ -72,11 +77,17 @@ const SliderBar = ({ sliderbarQuestion, domain, onChangeHandler}) => (
           text-align: left;
           padding: 30px;
         }
+        .input-questions--container {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+        }
         .sliderbar-text {
           font-size: 20px;
           font-weight: 600;
-          margin-top: 16px;
-          margin-bottom: 0;
+          margin: 25px 0 15px;
+        }
+        .sliderbar-text:first-of-type {
+          margin-top: 0;
         }
         .rail {
           position: relative;

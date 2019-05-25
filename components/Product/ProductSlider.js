@@ -3,13 +3,14 @@ import SliderBar from './SliderBar';
 import Title from '../Title';
 import Button from '../Buttons/ButtonLink';
 
-import sliderbarMockedData from '../../mocks/sliderbar';
+import productQuestions from '../../mocks/productQuestions';
 
 class ProductSlider extends React.Component {
   constructor(){
     super();
     this.state = {
-      version: "Small"
+      version: "Small",
+      tooltipHover: false,
     }
 
     this.detectVersion = this.detectVersion.bind(this);
@@ -19,13 +20,7 @@ class ProductSlider extends React.Component {
 
   renderVersionsText() {
     const version = this.state.version.toLowerCase().replace(" ", "-");
-    const versionsText = {
-      "small": "Lo pensamos y desarrollamos para consultorios odontológicos pequeños y jóvenes profesionales como vos que recién empiezan.",
-      "small-premium": "Igual a la versión Small pero podés gestionar varios profesionales y tener varias agendas.",
-      "standard": "Optimizá tus tareas con herramientas que manejan todos los procesos diarios de tu consultorio odontológico.",
-      "full": "Ideal para consultorios odontológicos y clínicas dentales. Vas a poder manejar las agendas de varios profesionales y realizar sus liquidaciones.",
-    }
-    return versionsText[version];
+    return productQuestions.versionsText[version];
   }
 
   detectVersion(e) {
@@ -53,16 +48,12 @@ class ProductSlider extends React.Component {
         />
         <div className="product-slider-card">
           <div>
-            {
-              sliderbarMockedData.map((data, key) => (
-                <SliderBar
-                  key={key}
-                  sliderbarQuestion={data.sliderbarQuestion}
-                  domain={data.domain}
-                  onChangeHandler={this.detectVersion}
-                />
-              ))
-            }
+            <SliderBar
+              sliderbarQuestion={productQuestions.slideBar.question}
+              domain={productQuestions.slideBar.domain}
+              onChangeHandler={this.detectVersion}
+              functionality={productQuestions.functionality}
+            />
           </div>
           <aside className="product-slider-card-aside">
             <span>Tu versión ideal es:</span>
