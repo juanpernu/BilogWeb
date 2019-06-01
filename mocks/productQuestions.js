@@ -12,22 +12,27 @@ module.exports = {
   functionality: [
     {
       title: "Liquidación a obras sociales",
+      name: "osCheck",
       description: "El módulo de liquidación a obras sociales te permite liquidar a todas tus obras sociales."
     },
     {
       title: "Liquidación a profesionales",
+      name: "profesionalsCheck",
       description: "El módulo de liquidación a obras sociales te permite liquidar a todas tus obras sociales."
     },
     {
       title: "Módulo de auditoria",
+      name: "auditoryCheck",
       description: "El módulo de auditoria te permite vender falopa sin que se den cuenta."
     },
     {
       title: "Módulo de administración",
+      name: "adminCheck",
       description: "El módulo de auditoria te permite vender falopa sin que se den cuenta."
     },
     {
       title: "Módulo OSDE",
+      name: "OSDECheck",
       description: "El módulo de OSDE te permite lavar dinero sin que te caiga AFIP."
     }
   ]

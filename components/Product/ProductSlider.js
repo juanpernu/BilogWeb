@@ -9,32 +9,51 @@ class ProductSlider extends React.Component {
   constructor(){
     super();
     this.state = {
-      version: "Small",
       tooltipHover: false,
+      profesionals: 1,
+      osCheck: false,
+      profesionalsCheck: false,
+      auditoryCheck: false,
+      adminCheck: false,
+      OSDECheck: false,
     }
 
-    this.detectVersion = this.detectVersion.bind(this);
-    this.defineVersion = this.defineVersion.bind(this);
+    this.detectProfesionals = this.detectProfesionals.bind(this);
+    this.detectCheck = this.detectCheck.bind(this);
     this.renderVersionsText = this.renderVersionsText.bind(this);
+    this.renderVersionsTitle = this.renderVersionsTitle.bind(this);
+    this.validateVersion = this.validateVersion.bind(this);
   }
 
   renderVersionsText() {
-    const version = this.state.version.toLowerCase().replace(" ", "-");
-    return productQuestions.versionsText[version];
+    const version = this.validateVersion();
+    const renderVersion = version.toLowerCase().replace(" ", "-");
+    return productQuestions.versionsText[renderVersion];
   }
 
-  detectVersion(e) {
-    const value = e[0];
-    console.log(value);
-    this.defineVersion(value);
+  renderVersionsTitle() {
+    const version = this.validateVersion();
+    return version;
   }
 
-  defineVersion(value) {
-    value > 1 ? this.setState({
-      version: "Small Premium"
-    }) :
+  validateVersion() {
+    if(this.state.profesionals <= 1 && this.state.auditoryCheck || this.state.adminCheck || this.state.OSDECheck) { return "Full" }
+    else if(this.state.profesionals <= 1 && this.state.osCheck && this.state.profesionalsCheck) { return "Full" }
+    else if(this.state.profesionals > 1 && this.state.osCheck) { return "Standard" }
+    else if(this.state.profesionals <= 1) { return "Small" }
+    else if(this.state.profesionals > 1) { return "Small Premium" }
+  }
+
+  detectProfesionals(e) {
     this.setState({
-      version: "Small"
+      profesionals: e[0]
+    })
+  }
+
+  detectCheck(e) {
+    e.persist();
+    this.setState({
+      [e.target.value]: !this.state[e.target.value]
     });
   }
 
@@ -51,13 +70,14 @@ class ProductSlider extends React.Component {
             <SliderBar
               sliderbarQuestion={productQuestions.slideBar.question}
               domain={productQuestions.slideBar.domain}
-              onChangeHandler={this.detectVersion}
+              onChangeHandler={this.detectProfesionals}
               functionality={productQuestions.functionality}
+              checkHandler={this.detectCheck}
             />
           </div>
           <aside className="product-slider-card-aside">
             <span>Tu versión ideal es:</span>
-            <p className="product-version">{this.state.version}</p>
+            <p className="product-version">{this.renderVersionsTitle()}</p>
             <p>{this.renderVersionsText()}</p>
             <Button
               customClass="primary"

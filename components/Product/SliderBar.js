@@ -7,7 +7,7 @@ const sliderStyles = {
   padding: 5,
 };
 
-const SliderBar = ({ sliderbarQuestion, functionality, domain, onChangeHandler}) => (
+const SliderBar = ({ sliderbarQuestion, functionality, domain, onChangeHandler, checkHandler}) => (
   <div className="sliderbar-container">
     <p className="sliderbar-text">{sliderbarQuestion}</p>
     <Slider
@@ -53,7 +53,9 @@ const SliderBar = ({ sliderbarQuestion, functionality, domain, onChangeHandler})
     </Slider>
     <p className="sliderbar-text">¿Qué otras funcionalidades necesitás?</p>
     <div className="input-questions--container">
-      {functionality.map((osFunction, key) => (<InputQuestion key= {key} functionality={osFunction}/>))}
+      {functionality.map((osFunction, key) => (
+        <InputQuestion key= {key} functionality={osFunction} handleCheck={checkHandler}/>
+      ))}
     </div>
     <style jsx>
     {`

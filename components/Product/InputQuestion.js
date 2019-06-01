@@ -16,17 +16,24 @@ class InputQuestion extends React.Component {
       this.setState({
         show: !this.state.show,
       })
-    }, 200);
+    }, 300);
   }
 
   render(){
-    const {functionality} = this.props;
+    const { functionality, handleCheck } = this.props;
     return(
       <div className="input-questions--container"
         onMouseEnter={() => this.handleShowMenu()}
         onMouseLeave={() => this.handleShowMenu()}
       >
-        <input className="input-questions--text" type="checkbox" name="os" value="os"/>{functionality.title}
+        <input
+          className="input-questions--text"
+          type="checkbox"
+          name={functionality.name}
+          value={functionality.name}
+          onChange={(e) => handleCheck(e)}
+        />
+        {functionality.title}
         <Tooltip
           handleShow={this.state.show}
           description={functionality.description}
