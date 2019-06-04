@@ -37,11 +37,10 @@ class ProductSlider extends React.Component {
   }
 
   validateVersion() {
-    if(this.state.profesionals <= 1 && this.state.auditoryCheck || this.state.adminCheck || this.state.OSDECheck) { return "Full" }
-    else if(this.state.profesionals <= 1 && this.state.osCheck && this.state.profesionalsCheck) { return "Full" }
-    else if(this.state.profesionals > 1 && this.state.osCheck) { return "Standard" }
-    else if(this.state.profesionals <= 1) { return "Small" }
+    if(this.state.profesionals === 1 && (this.state.adminCheck || this.state.auditoryCheck || this.state.osCheck)) { return "Standard" }
+    else if(this.state.profesionals > 1 && (this.state.adminCheck || this.state.auditoryCheck || this.state.profesionalsCheck)) { return "Full" }
     else if(this.state.profesionals > 1) { return "Small Premium" }
+    else if(this.state.profesionals === 1) { return "Small" }
   }
 
   detectProfesionals(e) {
@@ -81,7 +80,7 @@ class ProductSlider extends React.Component {
             <p>{this.renderVersionsText()}</p>
             <Button
               customClass="primary"
-              buttonText="Contatar ahora"
+              buttonText="Contratar ahora"
               buttonHref="/contact"
             />
           </aside>
