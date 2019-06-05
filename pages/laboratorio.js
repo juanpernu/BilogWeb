@@ -14,7 +14,8 @@ export default () => (
         paragraph="Simplificá la administración de tu laboratorio con un completo conjunto de módulos e informes."
         position="lf"
         hasButtons={false}
-        bgImg='11'
+        gradientBg="violet"
+        coverImage="laboratorio"
       />
       <Feature {...MockedFeatures} />
       <BannerCta
@@ -24,7 +25,7 @@ export default () => (
         showModal={true}
       />
       <FeatureImg
-        imgSrc="/static/laboratorios-pedidos.png"
+        imgSrc="/static/illus-labo-pedidos.svg"
         imgAlt="Laboratorio - Pedidos"
         copy="El proceso que seguimos"
         title="Pedidos"
@@ -32,11 +33,9 @@ export default () => (
         hasCta={false}
         imageAlign="left"
         bgGrey={false}
-        buttonText="Ver más"
-        buttonHref="/bilogApp"
       />
       <FeatureImg
-        imgSrc="/static/laboratorios-finanzas.png"
+        imgSrc="/static/illus-labo-finanzas.svg"
         imgAlt="Laboratorio - Finanzas"
         copy="El proceso que seguimos"
         title="Finanzas"
@@ -44,11 +43,9 @@ export default () => (
         hasCta={false}
         imageAlign="right"
         bgGrey={true}
-        buttonText="Ver más"
-        buttonHref="/bilogApp"
       />
       <FeatureImg
-        imgSrc="/static/laboratorios-estadisticas.png"
+        imgSrc="/static/illus-labo-estadisticas.svg"
         imgAlt="Laboratorio - Estadísticas"
         copy="El proceso que seguimos"
         title="Estadísticas"
@@ -56,8 +53,6 @@ export default () => (
         hasCta={false}
         imageAlign="left"
         bgGrey={false}
-        buttonText="Ver más"
-        buttonHref="/bilogApp"
       />
     </Layout>
 )

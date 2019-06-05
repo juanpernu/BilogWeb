@@ -15,11 +15,12 @@ export default () => (
         position="lf"
         gradientBg="redish"
         hasButtons={false}
-        bgImg='03'
+        gradientBg="redish"
+        coverImage="auditoria"
       />
       <Feature {...FeaturesProps} />
       <FeatureImg
-        imgSrc="/static/laboratorios-pedidos.png"
+        imgSrc="/static/illus-aud-tablas.svg"
         imgAlt="Auditoría - Tablas"
         copy="El proceso que seguimos"
         title="Tablas"
@@ -31,7 +32,7 @@ export default () => (
         buttonHref="/bilogApp"
       />
       <FeatureImg
-        imgSrc="/static/laboratorios-pedidos.png"
+        imgSrc="/static/illus-aud-auditoria.svg"
         imgAlt="Auditoría - Auditoría"
         copy="El proceso que seguimos"
         title="Auditoría"
@@ -43,7 +44,7 @@ export default () => (
         buttonHref="/bilogApp"
       />
       <FeatureImg
-        imgSrc="/static/laboratorios-pedidos.png"
+        imgSrc="/static/illus-aud-informes.svg"
         imgAlt="Auditoría - Informes"
         copy="El proceso que seguimos"
         title="Informes"
