@@ -15,7 +15,8 @@ export default () => (
       position="lf"
       buttonText="Descargar App"
       buttonHref="/bilogApp"
-      bgImg="13"
+      gradientBg="blue"
+      coverImage="app"
     />
     <Feature {...MockedFeatures} />
     <Carousel/>

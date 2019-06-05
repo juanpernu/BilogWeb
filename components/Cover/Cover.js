@@ -8,18 +8,21 @@ class Cover extends React.Component {
   }
 
   render() {
-    const { gradientBg, position, text, paragraph, hasButtons, bgImg, product, buttonText, buttonHref } = this.props;
+    const { gradientBg, position, text, paragraph, hasButtons, product, buttonText, buttonHref, coverImage } = this.props;
 
     return(
-      <section className={`cover ${product && 'no-padding'} ${gradientBg} ${bgImg && `bgImg-${bgImg}`}`}>
-        <Container
-          text={text}
-          paragraph={paragraph}
-          position={position}
-          hasButtons={hasButtons}
-          buttonText={buttonText}
-          buttonHref={buttonHref}
-        />
+      <section className={`cover ${product && 'no-padding'} ${gradientBg}`}>
+        <div className={`cover-wrapper ${!coverImage && 'no-image'}`}>
+          <Container
+            text={text}
+            paragraph={paragraph}
+            position={position}
+            hasButtons={hasButtons}
+            buttonText={buttonText}
+            buttonHref={buttonHref}
+          />
+          {coverImage && <img className="cover-img" src={`/static/illus-${coverImage}.svg`} />}
+        </div>
         <style jsx>
         {`
           {/* STYLES FOR MOBILE */}
@@ -27,6 +30,15 @@ class Cover extends React.Component {
             .cover {
               height: 100%;
               background: linear-gradient(to right, #0794f8, #174fce);
+            }
+            .cover-wrapper {
+              display: flex;
+              flex-direction: column;
+            }
+            .cover-img {
+              width: 80%;
+              margin: 0 auto;
+              padding-bottom: 30px;
             }
             .cover.default {
               background: linear-gradient(to right, #0794f8, #174fce);
@@ -37,57 +49,14 @@ class Cover extends React.Component {
             .cover.sea {
               background: radial-gradient(ellipse farthest-side at 100% 100%,#dbf6c8 5%,#1cafc6 50%,#012690 110%);
             }
-            .cover.bgImg-01 {
-              background: url('/static/bg-01.jpg') no-repeat center center;
-              background-size: cover;
+            .cover.violet {
+              background: linear-gradient(to right, #8f94fb, #4e54c8);
             }
-            .cover.bgImg-02 {
-              background: url('/static/bg-02.jpg') no-repeat center center;
-              background-size: cover;
+            .cover.green {
+              background: linear-gradient(to right bottom,#58c1d2,#2288a2);
             }
-            .cover.bgImg-03 {
-              background: url('/static/bg-03.jpg') no-repeat center center;
-              background-size: cover;
-            }
-            .cover.bgImg-04 {
-              background: url('/static/bg-04.jpg') no-repeat center center;
-              background-size: cover;
-            }
-            .cover.bgImg-05 {
-              background: url('/static/bg-05.jpg') no-repeat center center;
-              background-size: cover;
-            }
-            .cover.bgImg-06 {
-              background: url('/static/bg-06.jpg') no-repeat center center;
-              background-size: cover;
-            }
-            .cover.bgImg-07 {
-              background: url('/static/bg-07.jpg') no-repeat center center;
-              background-size: cover;
-            }
-            .cover.bgImg-08 {
-              background: url('/static/bg-08.jpg') no-repeat center center;
-              background-size: cover;
-            }
-            .cover.bgImg-09 {
-              background: url('/static/bg-09.jpg') no-repeat center center;
-              background-size: cover;
-            }
-            .cover.bgImg-10 {
-              background: url('/static/bg-10.jpg') no-repeat center;
-              background-size: cover;
-            }
-            .cover.bgImg-11 {
-              background: url('/static/bg-11.jpg') no-repeat center;
-              background-size: cover;
-            }
-            .cover.bgImg-12 {
-              background: url('https://image.shutterstock.com/z/stock-photo--man-using-smartphone-in-railway-blank-screen-smartphone-for-graphic-display-montage-653178262.jpg') no-repeat center;
-              background-size: cover;
-            }
-            .cover.bgImg-13 {
-              background: url('https://image.shutterstock.com/z/stock-photo-businessman-waiting-business-partners-and-checking-new-mail-messages-on-his-modern-smart-phone-563715568.jpg') no-repeat center;
-              background-size: cover;
+            .cover.blue {
+              background: linear-gradient(to right,#07c0f8,#005aff);
             }
           }
 
@@ -97,6 +66,25 @@ class Cover extends React.Component {
               background: linear-gradient(to right, #0794f8, #174fce);
               padding-top: 60px;
             }
+            .cover-wrapper {
+              max-width: 1200px;
+              padding: 0 40px;
+              margin: 0 auto;
+              display: grid;
+              grid-template-columns: 45% 45%;
+              grid-column-gap: 10%;
+            }
+            .cover-wrapper.no-image {
+              max-width: 800px;
+              display: flex;
+              flex-direction: row;
+            }
+            .cover-img {
+              width: 100%;
+              vertical-align: middle;
+              display: inline-block;
+              height: 100%;
+            }
             .cover.no-padding {
               padding-top: 0;
             }
@@ -109,57 +97,14 @@ class Cover extends React.Component {
             .cover.sea {
               background: radial-gradient(ellipse farthest-side at 100% 100%,#dbf6c8 5%,#1cafc6 50%,#012690 110%);
             }
-            .cover.bgImg-01 {
-              background: url('/static/bg-01.jpg') no-repeat center center;
-              background-size: cover;
+            .cover.violet {
+              background: linear-gradient(to right, #8f94fb, #4e54c8);
             }
-            .cover.bgImg-02 {
-              background: url('/static/bg-02.jpg') no-repeat center center;
-              background-size: cover;
+            .cover.green {
+              background: linear-gradient(to right bottom,#58c1d2,#2288a2);
             }
-            .cover.bgImg-03 {
-              background: url('/static/bg-03.jpg') no-repeat center center;
-              background-size: cover;
-            }
-            .cover.bgImg-04 {
-              background: url('/static/bg-04.jpg') no-repeat center top;
-              background-size: cover;
-            }
-            .cover.bgImg-05 {
-              background: url('/static/bg-05.jpg') no-repeat center center;
-              background-size: cover;
-            }
-            .cover.bgImg-06 {
-              background: url('/static/bg-06.jpg') no-repeat center center;
-              background-size: cover;
-            }
-            .cover.bgImg-07 {
-              background: url('/static/bg-07.jpg') no-repeat center center;
-              background-size: cover;
-            }
-            .cover.bgImg-08 {
-              background: url('/static/bg-08.jpg') no-repeat center center;
-              background-size: cover;
-            }
-            .cover.bgImg-09 {
-              background: url('/static/bg-09.jpg') no-repeat center center;
-              background-size: cover;
-            }
-            .cover.bgImg-10 {
-              background: url('/static/bg-10.jpg') no-repeat center;
-              background-size: cover;
-            }
-            .cover.bgImg-11 {
-              background: url('/static/bg-11.jpg') no-repeat center;
-              background-size: cover;
-            }
-            .cover.bgImg-12 {
-              background: url('https://image.shutterstock.com/z/stock-photo--man-using-smartphone-in-railway-blank-screen-smartphone-for-graphic-display-montage-653178262.jpg') no-repeat center;
-              background-size: cover;
-            }
-            .cover.bgImg-13 {
-              background: url('https://image.shutterstock.com/z/stock-photo-businessman-waiting-business-partners-and-checking-new-mail-messages-on-his-modern-smart-phone-563715568.jpg') no-repeat center;
-              background-size: cover;
+            .cover.blue {
+              background: linear-gradient(to right,#07c0f8,#005aff);
             }
           }
 
@@ -169,6 +114,24 @@ class Cover extends React.Component {
               background: linear-gradient(to right, #0794f8, #174fce);
               padding-top: 100px;
             }
+            .cover-wrapper {
+              max-width: 1024px;
+              margin: 0 auto;
+              display: grid;
+              grid-template-columns: 55% 50%;
+              grid-column-gap: 10%;
+            }
+            .cover-wrapper.no-image {
+              max-width: 800px;
+              display: flex;
+              flex-direction: row;
+            }
+            .cover-img {
+              width: 100%;
+              vertical-align: middle;
+              display: inline-block;
+              height: 100%;
+            }
             .cover.no-padding {
               padding-top: 0;
             }
@@ -181,57 +144,14 @@ class Cover extends React.Component {
             .cover.sea {
               background: radial-gradient(ellipse farthest-side at 100% 100%,#dbf6c8 5%,#1cafc6 50%,#012690 110%);
             }
-            .cover.bgImg-01 {
-              background: url('/static/bg-01.jpg') no-repeat center;
-              background-size: cover;
+            .cover.violet {
+              background: linear-gradient(to right, #8f94fb, #4e54c8);
             }
-            .cover.bgImg-02 {
-              background: url('/static/bg-02.jpg') no-repeat center center;
-              background-size: cover;
+            .cover.green {
+              background: linear-gradient(to right bottom,#58c1d2,#2288a2);
             }
-            .cover.bgImg-03 {
-              background: url('/static/bg-03.jpg') no-repeat center center;
-              background-size: cover;
-            }
-            .cover.bgImg-04 {
-              background: url('/static/bg-04.jpg') no-repeat center top;
-              background-size: cover;
-            }
-            .cover.bgImg-05 {
-              background: url('/static/bg-05.jpg') no-repeat center center;
-              background-size: cover;
-            }
-            .cover.bgImg-06 {
-              background: url('/static/bg-06.jpg') no-repeat center center;
-              background-size: cover;
-            }
-            .cover.bgImg-07 {
-              background: url('/static/bg-07.jpg') no-repeat center center;
-              background-size: cover;
-            }
-            .cover.bgImg-08 {
-              background: url('/static/bg-08.jpg') no-repeat center center;
-              background-size: cover;
-            }
-            .cover.bgImg-09 {
-              background: url('/static/bg-09.jpg') no-repeat center;
-              background-size: cover;
-            }
-            .cover.bgImg-10 {
-              background: url('/static/bg-10.jpg') no-repeat center;
-              background-size: cover;
-            }
-            .cover.bgImg-11 {
-              background: url('/static/bg-11.jpg') no-repeat center;
-              background-size: cover;
-            }
-            .cover.bgImg-12 {
-              background: url('https://image.shutterstock.com/z/stock-photo--man-using-smartphone-in-railway-blank-screen-smartphone-for-graphic-display-montage-653178262.jpg') no-repeat center;
-              background-size: cover;
-            }
-            .cover.bgImg-13 {
-              background: url('https://image.shutterstock.com/z/stock-photo-businessman-waiting-business-partners-and-checking-new-mail-messages-on-his-modern-smart-phone-563715568.jpg') no-repeat center;
-              background-size: cover;
+            .cover.blue {
+              background: linear-gradient(to right,#07c0f8,#005aff);
             }
           }
         `}

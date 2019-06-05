@@ -30,7 +30,7 @@ const Container = ({ text, paragraph, position, hasButtons, buttonText, buttonHr
         {/* STYLES FOR MOBILE */}
         @media only screen and (max-width: 750px) {
           .cover--container {
-            padding: 120px 30px 70px;
+            padding: 50px 30px 0px;
             text-align: left;
             color: #fff;
           }
@@ -39,17 +39,13 @@ const Container = ({ text, paragraph, position, hasButtons, buttonText, buttonHr
         {/* STYLES FOR DESKTOP 1200px */}
         @media only screen and (min-width: 751px) {
           .cover--container {
-            width: 80%;
-            margin: 0 auto;
-            padding: 200px 30px;
+            padding: 200px 0;
             text-align: center;
             color: #fff;
           }
           .cover--container.lf {
             text-align: left;
             margin: 0 auto;
-            width: 1024px;
-            padding-right: 400px;
             box-sizing: border-box;
           }
           .cover--container.lf .cover--container-cta {
@@ -63,17 +59,13 @@ const Container = ({ text, paragraph, position, hasButtons, buttonText, buttonHr
         {/* STYLES FOR DESKTOP +1200px */}
         @media only screen and (min-width: 751px) {
           .cover--container {
-            width: 50%;
-            margin: 0 auto;
-            padding: 200px 30px;
+            padding: 200px 0;
             text-align: center;
             color: #fff;
           }
           .cover--container.lf {
             text-align: left;
             margin: 0 auto;
-            width: 1024px;
-            padding-right: 400px;
             box-sizing: border-box;
           }
           .cover--container.lf .cover--container-cta {

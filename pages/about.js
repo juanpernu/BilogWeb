@@ -7,10 +7,12 @@ export default () => (
     <Cover
       text="Somos la compañia tecnológica líder en gestión odontológica de Argentina"
       paragraph="Nuestro propósito es facilitar la administración de los 2.000 consultorios y clínicas que confían en nosotros día a día."
+      gradientBg="green"
+      hasButtons={false}
     />
     <FeatureImg
-      imgSrc="https://d2k1ftgv7pobq7.cloudfront.net/meta/p/res/images/0cad30a99820b0d840a5b48635d00b6e/updated-layouts-collab.png"
-      imgAlt="Laboratorio - Pedidos"
+      imgSrc="/static/illus-para-vos.svg"
+      imgAlt="About - Pensado para vos"
       copy={false}
       title="Pensado para vos"
       description="Bilog es un software simple, pensado
@@ -25,8 +27,8 @@ export default () => (
       buttonHref="/bilogApp"
     />
     <FeatureImg
-      imgSrc="https://d2k1ftgv7pobq7.cloudfront.net/meta/p/res/images/0cad30a99820b0d840a5b48635d00b6e/updated-layouts-collab.png"
-      imgAlt="Laboratorio - Pedidos"
+      imgSrc="/static/illus-elegirnos.svg"
+      imgAlt="About - Porque elegirnos"
       copy={false}
       title="¿Por qué elegirnos?"
       description="Nuestro objetivo es facilitar las
