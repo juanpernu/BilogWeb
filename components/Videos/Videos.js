@@ -11,9 +11,9 @@ const GeneratedVideos = ({type}) => {
       width="720"
       height="405"
       src={videos[type]}
-      frameborder="0"
-      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen>
+      frameBorder="0"
+      allow="accelerometer; autoplay; encrypted-media; picture-in-picture"
+      allowFullScreen>
     </iframe>
   )
 }
