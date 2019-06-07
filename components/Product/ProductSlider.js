@@ -37,8 +37,9 @@ class ProductSlider extends React.Component {
   }
 
   validateVersion() {
-    if(this.state.profesionals === 1 && (this.state.adminCheck || this.state.auditoryCheck || this.state.osCheck)) { return "Standard" }
-    else if(this.state.profesionals > 1 && (this.state.adminCheck || this.state.auditoryCheck || this.state.profesionalsCheck)) { return "Full" }
+    if(this.state.profesionals === 1 &&  this.state.profesionalsCheck) { return "Full" }
+    else if(this.state.profesionals > 1 && (this.state.profesionalsCheck || this.state.adminCheck || this.state.auditoryCheck || this.state.profesionalsCheck || this.state.osCheck)) { return "Full" }
+    else if(this.state.profesionals === 1 && (this.state.adminCheck || this.state.auditoryCheck || this.state.osCheck)) { return "Standard" }
     else if(this.state.profesionals > 1) { return "Small Premium" }
     else if(this.state.profesionals === 1) { return "Small" }
   }
@@ -85,10 +86,51 @@ class ProductSlider extends React.Component {
             />
           </aside>
         </div>
+        <div className="versions--more-info">
+          <p>¿Todavía no te decidiste?</p>
+          <Button
+            buttonHref="/versions-detail"
+            customClass="secondary"
+            buttonText='Ver más info'
+          />
+        </div>
         <style jsx>
         {`
           {/* STYLES FOR MOBILE */}
           @media only screen and (max-width: 750px) {
+            .product-slider-container {
+              margin: 0 auto;
+              padding: 80px 0;
+              text-align: center;
+            }
+            .product-slider-card {
+              text-align: center;
+              box-sizing: border-box;
+              background: #fff;
+              box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+              border-radius: 5px;
+              display: flex;
+              flex-direction: column;
+              width: 90%;
+              margin: 0 auto;
+            }
+            .product-slider-card-aside {
+              background: linear-gradient(to bottom, #121212 0%, #323232 100%);
+              border-radius: 0 0 5px 5px;
+              padding: 30px;
+              text-align: left;
+              color: #fff;
+            }
+            .product-version {
+              font-size: 24px;
+              font-weight: 600;
+              margin-top: 16px;
+              color: #fff;
+            }
+            .versions--more-info {
+              width: 90%;
+              margin: 50px auto 0;
+            }
           }
 
           {/* STYLES FOR DESKTOP */}
@@ -121,6 +163,18 @@ class ProductSlider extends React.Component {
               font-weight: 600;
               margin-top: 16px;
               color: #fff;
+            }
+            .versions--more-info {
+              font-size: 14px;
+              max-width: 400px;
+              margin: 40px auto 0;
+              display: flex;
+              align-items: center;
+              justify-content: space-around;
+            }
+            .versions--more-info p {
+              margin: 0;
+              font-size: 14px;
             }
           }
         `}

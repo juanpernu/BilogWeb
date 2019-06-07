@@ -63,11 +63,23 @@ const SliderBar = ({ sliderbarQuestion, functionality, domain, onChangeHandler, 
       @media only screen and (max-width: 750px) {
         .rail {
           position: relative;
-          width: 100%;
+          width: 90%;
           height: 8px;
-          margin-top: 35px;
+          margin: 35px auto 0;
           border-radius: 5px;
           background-color: #e1e1e1;
+        }
+        .sliderbar-text {
+          font-size: 20px;
+          font-weight: 600;
+          margin: 25px 0 15px;
+        }
+        .input-questions--container {
+          margin-bottom: 20px;
+        }
+        .slider-handles {
+          width: 90%;
+          margin: 0 auto;
         }
       }
 

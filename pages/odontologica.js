@@ -1,6 +1,5 @@
 import Layout from '../components/Layout';
 import Cover from '../components/Cover/Cover';
-import Versions from '../components/Version/Versions';
 import BannerCta from '../components/Banner/BannerCta';
 import Feature from '../components/Feature/Feature';
 import Carousel from '../components/Carousel';
@@ -26,7 +25,6 @@ export default () => (
         showModal={true}
       />
       <ProductSlider />
-      <Versions />
       <Cover
         text="Te presentamos Bilog App"
         paragraph="Tu consultorio, a donde sea que vayas."
