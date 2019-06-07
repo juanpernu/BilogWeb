@@ -15,7 +15,8 @@ export default () => (
         paragraph="Tené en una sola ventana todo el control de tu clínica para una mejor gestión."
         position="lf"
         hasButtons={false}
-        bgImg='10'
+        gradientBg="default"
+        coverImage="odontologica"
       />
       <Feature {...MockedFeatures} />
       <BannerCta
@@ -33,7 +34,8 @@ export default () => (
         buttonHref="/bilogApp"
         product={true}
         position="lf"
-        bgImg='12'
+        gradientBg="default"
+        coverImage="app"
       />
       <Carousel/>
     </Layout>

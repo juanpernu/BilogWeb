@@ -84,7 +84,6 @@ class FeatureImage extends React.Component {
               display: flex;
               flex-direction: column;
               text-align: left;
-              max-width: 400px;
               align-self: center;
             }
             .feature-image-content--copy {
