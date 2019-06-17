@@ -36,6 +36,10 @@ class FormContainer extends React.Component {
         <div className="form-aside">
           <p className="form-aside--title">Encontranos en</p>
           <ContactItem
+            text="+54 (011) 5263-2220"
+            icon="phone"
+          />
+          <ContactItem
             text="José Hernandes 2276, CABA, Buenos Aires, Argentina"
             icon="address"
           />

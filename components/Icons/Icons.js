@@ -21,6 +21,7 @@ import Twitter from './Twitter';
 import Address from './Address';
 import Tables from './Tables';
 import Process from './Process';
+import Phone from './Phone';
 
 const icons = {
   check: Check,
@@ -32,6 +33,7 @@ const icons = {
   focus: Focus,
   agenda: Agenda,
   person: Person,
+  phone: Phone,
   process: Process,
   chart: Chart,
   money: Money,
@@ -80,6 +82,7 @@ GeneratedIcon.propTypes = {
     'innovation',
     'focus',
     'person',
+    'phone',
     'process',
     'money',
     'instagram',

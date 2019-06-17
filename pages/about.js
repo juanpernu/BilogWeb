@@ -40,7 +40,7 @@ export default () => (
       hasCta
       imageAlign="right"
       bgGrey
-      buttonText="Empezá a usarlo ahora"
+      buttonText="Contactate ahora"
       buttonHref="/contact"
     />
   </Layout>
