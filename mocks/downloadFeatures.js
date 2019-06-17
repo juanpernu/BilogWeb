@@ -15,6 +15,6 @@ module.exports = [
     title: "Instalador",
     description: "Ejecutable para la instalación de la aplicación de escritorio.",
     amount: "three",
-    href: "http://bilog.com.ar.tapir.avnam.net/clientes/public_html/DescargarPartes/Sistema.rar"
+    href: "http://bilog.com.ar/clientes/public_html/DescargarPartes/Sistema.rar"
   }
 ];
