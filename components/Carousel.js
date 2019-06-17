@@ -13,7 +13,7 @@ const Carousel = () => {
       <Title
         title="¿Qué dicen nuestros usuarios?"
         subtitle="Miles de profesionales como vos usan Bilog"
-        alignCenter={true}
+        alignCenter
       />
       <ReactSwipe
         className="carousel"

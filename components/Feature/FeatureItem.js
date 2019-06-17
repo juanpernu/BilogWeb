@@ -1,10 +1,12 @@
-import Icons from '../Icons/Icons'
+import Icons from '../Icons/Icons';
+import ExternalButton from '../ExternalButton';
 
-const FeatureItem = ({title, description, icons}) => (
+const FeatureItem = ({title, description, icons, isExternal, buttonHref, buttonText}) => (
   <div className="feature-item">
     {icons && <Icons type={icons}/>}
     <h3 className="feature-item--title">{title}</h3>
     <p className="feature-item--description">{description}</p>
+    { isExternal && <ExternalButton externalLink={buttonHref} text={buttonText}/>}
     <style jsx>
     {`
       {/* STYLES FOR MOBILE */}

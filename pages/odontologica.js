@@ -23,16 +23,16 @@ export default () => (
         title="¿Todavía tenés dudas? Mirá la demo."
         buttonText="Ver video"
         modalContent={<GeneratedVideos type='intro'/>}
-        showModal={true}
+        showModal
       />
       <ProductSlider />
       <Cover
         text="Te presentamos Bilog App"
         paragraph="Tu consultorio, a donde sea que vayas."
-        hasButtons={true}
+        hasButtons
         buttonText="Ver más"
         buttonHref="/bilogApp"
-        product={true}
+        product
         position="lf"
         gradientBg="default"
         coverImage="app"

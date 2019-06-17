@@ -10,7 +10,7 @@ class Download extends React.Component {
         <Title
           title="Descargar Bilog"
           subtitle="La mejor forma de conocer Bilog, es usándolo."
-          alignCenter={true}
+          alignCenter
         />
         <ExternalButton
           externalLink="http://bilog.com.ar.tapir.avnam.net/clientes/public_html/DescargarPartes/NetFramework.rar"

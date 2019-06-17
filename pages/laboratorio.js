@@ -22,7 +22,7 @@ export default () => (
         title="Administrar tu laboratorio puede ser muy fácil. Mirá la demo."
         buttonText="Ver video"
         modalContent={<GeneratedVideos type='intro'/>}
-        showModal={true}
+        showModal
       />
       <FeatureImg
         imgSrc="/static/illus-labo-pedidos.svg"
@@ -42,7 +42,7 @@ export default () => (
         description="Una vez realizada la entrega, el remito tendrá el valor del trabajo realizado y el saldo acumulado en la cta. cte como recordatorio para el profesional, la cual podes mandar por mail."
         hasCta={false}
         imageAlign="right"
-        bgGrey={true}
+        bgGrey
       />
       <FeatureImg
         imgSrc="/static/illus-labo-estadisticas.svg"

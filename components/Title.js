@@ -2,7 +2,7 @@ const Title = ({title, subtitle, alignCenter}) => {
   return (
     <div className={alignCenter && 'text-align-center'}>
       <h2 className="feature--title">{title}</h2>
-      <p className="feature--subtitle">{subtitle}</p>
+      {subtitle && <p className={`feature--subtitle ${!alignCenter && 'align-left'}`}>{subtitle}</p>}
       <style jsx>
         {`
           {/* STYLES FOR MOBILE */}
@@ -45,9 +45,6 @@ const Title = ({title, subtitle, alignCenter}) => {
               font-size: 20px;
               line-height: 1.5;
               margin-bottom: 30px;
-            }
-            .text-align-center .feature--title {
-              text-align: center;
             }
             .text-align-center .feature--title {
               text-align: center;

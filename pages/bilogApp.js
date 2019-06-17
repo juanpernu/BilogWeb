@@ -11,7 +11,7 @@ export default () => (
     <Cover
       text="Presentamos Bilog App"
       paragraph="Administrá tu consultorio en tu celular. Con tu agenda siempre disponible y actualizada organizar tu día se va a volver muy fácil."
-      hasButtons={true}
+      hasButtons
       position="lf"
       buttonText="Descargar App"
       buttonHref="/bilogApp"

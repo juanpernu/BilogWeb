@@ -37,9 +37,9 @@ export default () => (
       hacer la ficha del paciente, cargar el odontograma,
       agregar imágenes y manejar el dinero, es rápido,
       fácil y eficiente."
-      hasCta={true}
+      hasCta
       imageAlign="right"
-      bgGrey={true}
+      bgGrey
       buttonText="Empezá a usarlo ahora"
       buttonHref="/contact"
     />

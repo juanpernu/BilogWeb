@@ -9,7 +9,7 @@ class DownloadUtils extends React.Component {
         <Title
           title="Descargas útiles"
           subtitle="La mejor forma de conocer Bilog, es usándolo."
-          alignCenter={true}
+          alignCenter
         />
         <div className="download-utils--container-cards">
           <Card
@@ -18,7 +18,7 @@ class DownloadUtils extends React.Component {
             subtitle="Team Viewer te permite compartir tu computadora con nosotros de forma segura para que podamos darte soporte instantáneo."
             buttonText="Ir a Team Viewer"
             buttonHref="https://get.teamviewer.com/BilogQS"
-            external={true}
+            external
           />
           <Card
             smallText="Video conferencia"
@@ -26,7 +26,7 @@ class DownloadUtils extends React.Component {
             subtitle="Hangouts es la forma más fácil y segura de realizar video conferencias instantáneas."
             buttonText="Ir a hangouts"
             buttonHref="https://hangouts.google.com"
-            external={true}
+            external
           />
         </div>
         <style jsx>

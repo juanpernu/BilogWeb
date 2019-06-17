@@ -25,9 +25,9 @@ export default () => (
       copy="Bilog App"
       title="Tu consultorio, a donde sea que vayas."
       description="Desde tu teléfono vas a poder llevar todo el control de tu Clínica o Consultorio."
-      hasCta={true}
+      hasCta
       imageAlign="left"
-      bgGrey={true}
+      bgGrey
       buttonText="Ver más"
       buttonHref="/bilogApp"
     />

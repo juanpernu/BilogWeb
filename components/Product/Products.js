@@ -14,7 +14,7 @@ class Product extends React.Component {
           <Title
             title="Nos adaptamos a todas tus necesidades"
             subtitle="Podés elegir entre los diferentes software que mejor se adapten a lo que necesitás."
-            alignCenter={true}
+            alignCenter
           />
           <div className="product--container-cards">
             <Card
@@ -22,7 +22,7 @@ class Product extends React.Component {
               title="Gestión Odontológica"
               subtitle="Ideal para llevar la gestión completa e integral de tu consultorio o clínica."
               buttonText="Ver más"
-              hasCta={true}
+              hasCta
               buttonHref="/odontologica"
             />
             <Card
@@ -30,7 +30,7 @@ class Product extends React.Component {
               title="Auditoría Odontológica"
               subtitle="Perfecto para círculos, gerenciadoras y prepagas. Recibe, audita y paga liquidaciones de prestadores."
               buttonText="Ver más"
-              hasCta={true}
+              hasCta
               buttonHref="/auditoria"
             />
             <Card
@@ -38,7 +38,7 @@ class Product extends React.Component {
               title="Laboratorios Dentales"
               subtitle="Es un software simple y fácil de utilizar, que te ayudará a manejar los pedidos de tus clientes."
               buttonText="Ver más"
-              hasCta={true}
+              hasCta
               buttonHref="/laboratorio"
             />
           </div>

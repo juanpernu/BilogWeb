@@ -39,7 +39,7 @@ export default () => (
         description="Vas a ver en distintos colores el estado de los afiliados y vas a tener la posibilidad de auditar las prácticas de forma manual o dejar que el sistema lo haga por sí mismo, para luego, mandar la liquidación a la obra social y llevar un seguimiento del pago."
         hasCta={false}
         imageAlign="right"
-        bgGrey={true}
+        bgGrey
         buttonText="Ver más"
         buttonHref="/bilogApp"
       />
