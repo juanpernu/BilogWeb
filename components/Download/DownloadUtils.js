@@ -15,17 +15,17 @@ class DownloadUtils extends React.Component {
           <Card
             smallText="Control remoto"
             title="Team Viewer"
-            subtitle="La solución “todo en uno” líder en el mercado. Compre o actualice hoy mismo o descárguelo gratis para uso personal."
-            buttonText="Ir al enlace"
+            subtitle="Team Viewer te permite compartir tu computadora con nosotros de forma segura para que podamos darte soporte instantáneo."
+            buttonText="Ir a Team Viewer"
             buttonHref="https://get.teamviewer.com/BilogQS"
             external={true}
           />
           <Card
             smallText="Video conferencia"
-            title="Quick View"
-            subtitle="La solución “todo en uno” líder en el mercado. Compre o actualice hoy mismo o descárguelo gratis para uso personal."
-            buttonText="Ir al enlace"
-            buttonHref="https://go.teamviewer.com/bilogreunion"
+            title="Google Hangouts"
+            subtitle="Hangouts es la forma más fácil y segura de realizar video conferencias instantáneas."
+            buttonText="Ir a hangouts"
+            buttonHref="https://hangouts.google.com"
             external={true}
           />
         </div>
@@ -51,7 +51,7 @@ class DownloadUtils extends React.Component {
                 .download-utils-section {
                   width: 100%;
                   margin: 0 auto;
-                  padding-top: 180px;
+                  padding: 180px 0 140px;
                   max-width: 1024px;
                   text-align: center;
                 }

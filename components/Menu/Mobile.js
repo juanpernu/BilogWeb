@@ -62,18 +62,9 @@ class Mobile extends React.Component {
           <Link href="/contact">
             <a className="link">Contacto</a>
           </Link>
-          <div className="link">
-            <p className="title">Descargas</p>
-            <Link href="/download-go">
-              <a className="sublink">Gestión odontológica</a>
-            </Link>
-            <Link href="/download-lab">
-              <a className="sublink">Laboratorios dentales</a>
-            </Link>
-            <Link href="/utils">
-              <a className="sublink">Descargas útiles</a>
-            </Link>
-          </div>
+          <Link href="/utils">
+            <a className="link">Descargas útiles</a>
+          </Link>
         </aside>
         <style jsx>
         {`

@@ -61,24 +61,9 @@ class Desktop extends React.Component {
           <Link href="/contact">
             <a className="link">Contacto</a>
           </Link>
-          <div className="link special" onClick={this.showMenuHandler}>
-            <p className="title">
-            Descargas</p><i className="icon-arrow--down" />
-            <div
-              className={`link--dropdown ${this.state.showDownloads == false ? '' : 'is-active'}`}
-              onMouseLeave={this.mouseLeaveHandler}
-            >
-              <Link href="/download-go">
-                <a className="sublink">Gestión odontológica</a>
-              </Link>
-              <Link href="/download-lab">
-                <a className="sublink">Laboratorios dentales</a>
-              </Link>
-              <Link href="/utils">
-                <a className="sublink">Descargas útiles</a>
-              </Link>
-            </div>
-          </div>
+          <Link href="/utils">
+            <a className="link">Descargas útiles</a>
+          </Link>
         </aside>
         <style jsx>
         {`
