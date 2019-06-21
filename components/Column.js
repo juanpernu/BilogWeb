@@ -1,6 +1,7 @@
 import Link from 'next/link';
+import LikeButton from './LikeButton';
 
-const Column = ({items, title}) => {
+const Column = ({items, title, likeButton}) => {
   return(
     <div className="column">
       <h4 className="title">{title}</h4>
@@ -13,6 +14,7 @@ const Column = ({items, title}) => {
           )
         })
       }
+      {likeButton && <LikeButton/>}
       <style jsx>
         {`
           {/* STYLES FOR MOBILE */}

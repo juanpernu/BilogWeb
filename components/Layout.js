@@ -17,6 +17,13 @@ const Layout = ({children}) => (
     <Header />
     {children}
     <Footer />
+    <div id="fb-root"></div>
+    <script
+      async
+      defer
+      crossOrigin="anonymous"
+      src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v3.3&appId=447737902455661"
+    />
     <style jsx>
     {`
       @import url('https://fonts.googleapis.com/css?family=Nunito:300,600,800');
