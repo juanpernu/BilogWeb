@@ -1,10 +1,13 @@
 import Sidebar from './Sidebar';
 import Docs from './Docs';
 
-const DocsWrapper = () => (
+const DocsWrapper = ({documentation}) => (
   <div className="docs-wrapper">
-    <Sidebar/>
-    <Docs/>
+    <Sidebar />
+    <Docs
+      title={documentation.title}
+      item={documentation.item}
+    />
     <style jsx>
     {`
       {/* STYLES FOR MOBILE */}
@@ -16,7 +19,7 @@ const DocsWrapper = () => (
         .docs-wrapper {
           max-width: 1024px;
           margin: 0 auto;
-          padding-top: 86px;
+          padding-top: 120px;
           display: grid;
           grid-template-columns: 1fr 3fr;
         }

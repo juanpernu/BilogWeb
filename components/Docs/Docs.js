@@ -1,7 +1,12 @@
-const Docs = () => (
+import Item from './Item';
+
+const Docs = ({title, item}) => (
   <section className="docs-section">
-    <h1>Title from documentation</h1>
-    <p>Acá va el texto de la documentación que explica de que va esta sección.</p>
+    <h1 className="docs-title">{title}</h1>
+    <Item
+      text={item.text}
+      video={item.video}
+    />
     <style jsx>
     {`
       {/* STYLES FOR MOBILE */}
@@ -10,14 +15,17 @@ const Docs = () => (
 
       {/* STYLES FOR DESKTOP */}
       @media only screen and (min-width: 751px) {
-        .sidebar,
         .docs-section {
-          height: 300px;
-        }
-        .docs-section {
-          background-color: green;
           box-sizing: border-box;
           padding-left: 30px;
+        }
+        .docs-title {
+          font-size: 3rem;
+          line-height: 1.1666em;
+          letter-spacing: -0.066875rem;
+          font-weight: 600;
+          color: #000;
+          margin: 10px 0 30px;
         }
       }
     `}

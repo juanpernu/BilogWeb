@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Bilog - Web site",
   "scripts": {
-    "dev": "now dev",
     "build": "next build",
     "start": "next start -p 8000"
   },
@@ -19,6 +18,9 @@
     "HTML",
     "CSS"
   ],
+  "engines": {
+    "node": "10.2.1"
+  },
   "author": "Juan Manuel Pernumian",
   "license": "ISC",
   "bugs": {
