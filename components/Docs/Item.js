@@ -8,7 +8,7 @@ const Item = ({text, video}) => (
     <iframe
       className="docs-video"
       width="560"
-      height="315"
+      height="405"
       src={video}
       frameBorder="0"
       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
