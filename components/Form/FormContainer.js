@@ -14,7 +14,10 @@ class FormContainer extends React.Component {
         instagram: 'https://www.instagram.com/bilogsoftware',
       }
     }
+
     this.renderSocialMedia = this.renderSocialMedia.bind(this);
+    this.makeCustomMessage = this.makeCustomMessage.bind(this);
+    this.translateAddons = this.translateAddons.bind(this);
   }
 
   renderSocialMedia() {
@@ -29,10 +32,33 @@ class FormContainer extends React.Component {
     )
   }
 
+  translateAddons(addOnsArr) {
+    const addonsText = {
+      osCheck: "Liquidación a obras sociales",
+      profesionalsCheck: "Liquidación a profesionales",
+      auditoryCheck: "Módulo de auditoria",
+      adminCheck: "Módulo de administracion",
+      OSDECheck: "Módulo OSDE",
+    };
+    const translated = addOnsArr.map(addOn => {
+      return addonsText[addOn];
+    })
+    return translated;
+  };
+
+  makeCustomMessage() {
+    const { version, addOns } = this.props.prefetchedData;
+    if (addOns && version) {
+      const addOnsArray = addOns.split(',');
+      const customMessage = `Hola, me gustaría recibir información sobre la versión ${version} con los módulos de ${this.translateAddons(addOnsArray)} incluidos. Muchas grácias!`;
+      return customMessage;
+    }
+  }
+
   render() {
     return (
       <section className="form-container">
-        <Form />
+        <Form customMessage={this.makeCustomMessage()} />
         <div className="form-aside">
           <p className="form-aside--title">Encontranos en</p>
           <ContactItem

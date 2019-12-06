@@ -3,29 +3,18 @@ import Tooltip from './Tooltip'
 class InputQuestion extends React.Component {
   constructor(){
     super();
-    this.state = {
-      show: false,
-    }
-
-    this.handleShowMenu = this.handleShowMenu.bind(this);
-  }
-
-
-  handleShowMenu = () => {
-    setTimeout(() => {
-      this.setState({
-        show: !this.state.show,
-      })
-    }, 300);
+    this.state = { show: false }
   }
 
   render(){    
     const { functionality, handleCheck } = this.props;
     return(
-      <div className="input-questions--container">
+      <div
+        onMouseEnter={() => this.setState({ show: true })}
+        onMouseLeave={() => this.setState({ show: false})}
+        className="input-questions--container"
+      >
         <input
-          onMouseEnter={() => this.handleShowMenu()}
-          onMouseLeave={() => this.handleShowMenu()}
           className="input-questions--text"
           type="checkbox"
           name={functionality.name}
