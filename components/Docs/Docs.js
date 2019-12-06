@@ -3,10 +3,7 @@ import Item from './Item';
 const Docs = ({title, item}) => (
   <section className="docs-section">
     <h1 className="docs-title">{title}</h1>
-    <Item
-      text={item.text}
-      video={item.video}
-    />
+    <Item {...item} />
     <style jsx>
     {`
       {/* STYLES FOR MOBILE */}

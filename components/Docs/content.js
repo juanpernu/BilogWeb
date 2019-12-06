@@ -1,23 +1,22 @@
 import { Fragment } from 'react';
-import Content from './content';
 
-const Item = ({ text, video, content}) => (
+const Content = ({ title, subcontent}) => (
   <Fragment>
-    <p>{text}</p>
-    <iframe
-      className="docs-video"
-      width="560"
-      height="405"
-      src={video}
-      frameBorder="0"
-      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-      allowFullScreen
-    />
-    {content.map(itemContent => (
-      <Content {...itemContent} />
-    ))}
+    <h2>
+      {title}
+    </h2>
+    {subcontent.map(el => {
+      const {subtitle, text, image} = el;
+      return (
+        <div>
+          <h3>{subtitle}</h3>
+          <p>{text}</p>
+          { image && <img src={image} />}
+        </div>
+      )
+    })}
     <style jsx>
-    {`
+      {`
       {/* STYLES FOR MOBILE */}
       @media only screen and (max-width: 750px) {
       }
@@ -41,4 +40,4 @@ const Item = ({ text, video, content}) => (
   </Fragment>
 )
 
-export default Item;
+export default Content;

@@ -5,7 +5,47 @@ module.exports = {
       text: `Su equipo de trabajo puede utilizar esta herramienta para agendar turnos en forma más eficiente.
       Los diferentes colores le permiten localizar rápidamente tiempos muertos, sobreturnos, pacientes de primera
       vez, etc., logrando maximizar la productividad de su consultorio.`,
-      video:"https://www.youtube.com/embed/c98oEfmindU"
+      video:"https://www.youtube.com/embed/c98oEfmindU",
+      content: [
+        {
+          title: "Opciones Generales de la Agenda de Turnos",
+          subcontent: [
+            {
+              subtitle: "Lupa",
+              text: "Busca Pacientes ya cargados en la base de datos del sistema para dar nuevos turnos.",
+              image: null,
+            },
+            {
+              subtitle: "Papel",
+              text: "Busca Pacientes ya cargados en la base de datos del sistema para dar nuevos turnos.",
+              image: null,
+            },
+            {
+              subtitle: "Papelero",
+              text: "Elimina un turno dado.",
+              image: null,
+            },
+            {
+              subtitle: "Triangulo Alerta",
+              text: "Indica que el turno tiene observaciones, si se pulsa clic sobre el triángulo se edita la observación y se puede seguir agregando datos.",
+              image: null,
+            },
+            {
+              subtitle: "Barra de horarios en amarillo",
+              text: "Al hacer clic con botón derecho del Mouse, se despliega el menú contextual con todas las opciones de la agenda.",
+              image: null,
+            },
+            {
+              subtitle: "Ver semana",
+              text: `Permite ver la agenda semanal y dar turnos, si se desea agrandar la pantalla para una mejor visualización utilice el Autohide.
+                Para dar o modificar turnos: puede utilizar drug & drop para copiar y pegar o para repetir turnos de un día a otro, si no también
+                posicionado en la barra de los horarios, se despliega el menú contextual y se selecciona copiar y luego pegar. Pulsando Ver días
+                no Laborables activamos y desactivamos las ausencias o los días no laborables.`,
+              image: "http://bilog.com.ar/images/portfolio-1.jpg",
+            },
+          ]
+        }
+      ]
     }
   },
   "#pacientes": {
