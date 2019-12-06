@@ -2,7 +2,7 @@ import Layout from '../components/Layout';
 import Cover from '../components/Cover/Cover';
 import Form from '../components/Form/FormContainer';
 
-export default () => (
+const Contact = ({ query }) => (
   <Layout>
     <Cover
       text="¡Queremos conocerte!"
@@ -10,6 +10,12 @@ export default () => (
       gradientBg="sea"
       hasButtons={false}
     />
-    <Form/>
+    <Form prefetchedData={query} />
   </Layout>
 )
+
+Contact.getInitialProps = async ({ query }) => {
+  return query ? { query } : null;
+};
+
+export default Contact;

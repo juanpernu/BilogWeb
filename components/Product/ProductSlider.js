@@ -23,6 +23,7 @@ class ProductSlider extends React.Component {
     this.renderVersionsText = this.renderVersionsText.bind(this);
     this.renderVersionsTitle = this.renderVersionsTitle.bind(this);
     this.validateVersion = this.validateVersion.bind(this);
+    this.getAddons = this.getAddons.bind(this);
   }
 
   renderVersionsText() {
@@ -46,15 +47,31 @@ class ProductSlider extends React.Component {
 
   detectProfesionals(e) {
     this.setState({
-      profesionals: e[0]
-    })
-  }
+      profesionals: e[0],
+    });
+  };
 
   detectCheck(e) {
     e.persist();
     this.setState({
-      [e.target.value]: !this.state[e.target.value]
+      [e.target.value]: !this.state[e.target.value],
     });
+  };
+
+  getAddons() {
+    const addons = [
+      'osCheck',
+      'profesionalsCheck',
+      'auditoryCheck',
+      'adminCheck',
+      'OSDECheck'
+    ];
+    const stateElements = this.state;
+    const truthyAddons = [];
+    addons.forEach(function(el) {
+      stateElements[el] && truthyAddons.push(el);
+    });
+    return truthyAddons;
   }
 
   render() {
@@ -82,7 +99,8 @@ class ProductSlider extends React.Component {
             <Button
               customClass="primary"
               buttonText="Contratar ahora"
-              buttonHref="/contact"
+              buttonHref={`/contact?version=${this.renderVersionsTitle()}&addOns=${this.getAddons()}`}
+              hrefAs="/contact"
             />
           </aside>
         </div>

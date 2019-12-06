@@ -3,15 +3,11 @@ import Handle from './Handle';
 import Track from './Track';
 import InputQuestion from './InputQuestion'
 
-const sliderStyles = {
-  padding: 5,
-};
-
 const SliderBar = ({ sliderbarQuestion, functionality, domain, onChangeHandler, checkHandler}) => (
   <div className="sliderbar-container">
     <p className="sliderbar-text">{sliderbarQuestion}</p>
     <Slider
-      rootStyle={sliderStyles}
+      rootStyle={{ padding: 5}}
       domain={domain}
       step={1}
       mode={2}

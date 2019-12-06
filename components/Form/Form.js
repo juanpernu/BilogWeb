@@ -19,7 +19,7 @@ class Form extends React.Component {
         phone: '',
         expertise: '',
       },
-      message: '',
+      message: props.customMessage ? props.customMessage : '',
       isVerified: false,
     }
     this.handleFormSubmit = this.handleFormSubmit.bind(this);
