@@ -2,9 +2,9 @@ import Link from 'next/link';
 import PropTypes from 'prop-types';
 import Button from './Button';
 
-const ButtonLink = ({buttonText, customClass, buttonHref}) => (
+const ButtonLink = ({buttonText, hrefAs, customClass, buttonHref}) => (
   <span className="button--container">
-    <Link href={buttonHref}>
+    <Link href={buttonHref} as={hrefAs}>
       <Button customClass={customClass}>
         {buttonText}
       </Button>
