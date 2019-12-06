@@ -13,27 +13,27 @@ module.exports = {
     {
       title: "Liquidación a obras sociales",
       name: "osCheck",
-      description: "El módulo de liquidación a obras sociales te permite liquidar a todas tus obras sociales."
+      description: "Te permite generar los informes para facturar a las obras sociales, así ahorras tiempo de papeleo y dinero."
     },
     {
       title: "Liquidación a profesionales",
       name: "profesionalsCheck",
-      description: "El módulo de liquidación a obras sociales te permite liquidar a todas tus obras sociales."
+      description: "Definís montos o porcentajes a pagar a cada profesional por la prestación realizada. Incluso podes hacer un mix de valores a pagar a cada uno."
     },
     {
       title: "Módulo de auditoria",
       name: "auditoryCheck",
-      description: "El módulo de auditoria te permite vender falopa sin que se den cuenta."
+      description: "Es sumamente eficaz para aumentar los ingresos y prevenir pérdidas de dinero ya que te avisa si la prestación que estás cargando está fuera de garantía y del posible rechazo de parte de la obra social."
     },
     {
       title: "Módulo de administración",
       name: "adminCheck",
-      description: "El módulo de auditoria te permite vender falopa sin que se den cuenta."
+      description: "Tenés en un sólo módulo todos los ingresos, egresos, pagos a proveedores, compras, etc. Queda registrado quien cargo el pago y podes limitar al usuario a que no visualice ó elimine información delicada."
     },
     {
       title: "Módulo OSDE",
       name: "OSDECheck",
-      description: "El módulo de OSDE te permite lavar dinero sin que te caiga AFIP."
+      description: "Podés liquidar a la prepaga, autorizar carnets, tratamientos de protesis y ortodoncia, pero lo mejor de todo es que después podes liquidar al odontólogo por los tratamientos pagados por la prepaga."
     }
   ]
 };
