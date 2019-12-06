@@ -2,16 +2,16 @@ import { Fragment } from 'react';
 
 const Content = ({ title, subcontent}) => (
   <Fragment>
-    <h2>
+    <h2 className="content-title">
       {title}
     </h2>
-    {subcontent.map(el => {
+    {subcontent.map((el, i) => {
       const {subtitle, text, image} = el;
       return (
-        <div>
-          <h3>{subtitle}</h3>
-          <p>{text}</p>
-          { image && <img src={image} />}
+        <div className="subcontent-wrapper">
+          <h3 className="subcontent-title">{subtitle}</h3>
+          <p className="subcontent-text">{text}</p>
+          {image && <img className="subcontent-image" src={image} />}
         </div>
       )
     })}
@@ -33,6 +33,28 @@ const Content = ({ title, subcontent}) => (
         .docs-video {
           display: block;
           width: 100%;
+        }
+        .content-title {
+          font-size: 24px;
+          font-weight: 300;
+          margin: 70px 0 30px;
+        }
+        .subcontent-wrapper {
+          margin-bottom: 60px;
+        }
+        .subcontent-title {
+          font-weight: 300;
+        }
+        .subcontent-title:first-of-type {
+          margin: 0;
+        }
+        .subcontent-text {
+        }
+        .subcontent-image {
+          max-width: 600px;
+          margin: 50px auto 0;
+          display: block;
+          box-shadow: 0 12px 20px rgba(0,0,0, 0.1);
         }
       }
     `}

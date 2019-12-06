@@ -3,7 +3,7 @@ import Content from './content';
 
 const Item = ({ text, video, content}) => (
   <Fragment>
-    <p>{text}</p>
+    <p className="item-text">{text}</p>
     <iframe
       className="docs-video"
       width="560"
@@ -24,16 +24,16 @@ const Item = ({ text, video, content}) => (
 
       {/* STYLES FOR DESKTOP */}
       @media only screen and (min-width: 751px) {
-        p {
-          margin-top: 0;
-          font-weight: 400;
-          font-size: 14px;
-          line-height: 24px;
-          margin: 20px 0;
-        } 
         .docs-video {
           display: block;
           width: 100%;
+        }
+        .item-text {
+          margin-top: 0;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 1.6;
+          margin: 20px 0;
         }
       }
     `}
