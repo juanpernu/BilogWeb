@@ -19,6 +19,16 @@ export default () => (
       coverImage="app"
     />
     <Feature {...MockedFeatures} />
+    <FeatureImg
+      imgSrc="/static/app-mockup.png"
+      imgAlt="App mockup"
+      copy="Bilog App"
+      title="Sorprendentes funciones"
+      description="Administrá tu consultorio en tu celular, tené tu agenda siempre disponible y actualizada."
+      hasCta={false}
+      imageAlign="left"
+      bgGrey={false}
+    />
     <Carousel/>
   </Layout>
 )

@@ -10,7 +10,7 @@ class FeatureImage extends React.Component {
   }
 
   render() {
-    const { imgSrc, imgHref, imgAlt, copy, hasCta, imageAlign, bgGrey, title, description, buttonText, buttonHref } = this.props;
+    const { imgSrc, imgAlt, copy, hasCta, imageAlign, bgGrey, title, description, buttonText, buttonHref } = this.props;
     return(
       <section className={`feature-image--container ${bgGrey && 'bg-grey'}`}>
         <div className={`feature-image ${imageAlign}`}>
