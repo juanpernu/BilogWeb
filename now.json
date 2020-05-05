@@ -1,6 +1,5 @@
 {
   "version": 2,
-  "alias": "bilog.com.ar",
   "builds": [
     { "src": "next.config.js", "use": "@now/next" },
     { "src": "api/*.js", "use": "@now/node" }

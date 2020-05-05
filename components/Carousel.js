@@ -2,8 +2,7 @@ import React from 'react';
 import ReactSwipe from 'react-swipe';
 import Title from './Title'
 import CardTestimonial from './Card/CardTestimonial'
-
-import mockedTestimonials from '../mocks/testimonials'
+import { testimonials } from '../mocks/general'
 
 const Carousel = () => {
   let reactSwipeEl;
@@ -25,7 +24,7 @@ const Carousel = () => {
         ref={el => (reactSwipeEl = el)}
       >
         {
-          mockedTestimonials.map((testimonial, key) => {
+          testimonials.map((testimonial, key) => {
             return (
               <div key={key}>
                 <CardTestimonial

@@ -5,7 +5,7 @@ import Feature from '../components/Feature/Feature';
 import FeatureImg from '../components/Feature/FeatureImg'
 
 import GeneratedVideos from '../components/Videos/Videos'
-import MockedFeatures from '../mocks/laboratoriosFeatures';
+import { laboratoriosFeatures } from '../mocks/general';
 
 export default () => (
     <Layout>
@@ -17,7 +17,7 @@ export default () => (
         gradientBg="violet"
         coverImage="laboratorio"
       />
-      <Feature {...MockedFeatures} />
+      <Feature {...laboratoriosFeatures} />
       <BannerCta
         title="Administrar tu laboratorio puede ser muy fácil. Mirá la demo."
         buttonText="Ver video"

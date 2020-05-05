@@ -2,7 +2,7 @@ import React from 'react'
 import Title from '../Title'
 import Card from '../Card/Card'
 import ButtonLink from '../Buttons/ButtonLink'
-import versionsFeatures from '../../mocks/versionsFeatures'
+import { versionsFeatures } from '../../mocks/general'
 
 class Versions extends React.Component {
   constructor(){

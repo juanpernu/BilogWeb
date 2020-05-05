@@ -4,8 +4,7 @@ import Feature from '../components/Feature/Feature';
 import FeatureImg from '../components/Feature/FeatureImg';
 import Carousel from '../components/Carousel';
 import Products from '../components/Product/Products';
-
-import MockedFeatures from '../mocks/indexFeatures';
+import {indexFeatures} from '../mocks/general';
 
 export default () => (
   <Layout>
@@ -17,7 +16,7 @@ export default () => (
       gradientBg="default"
       coverImage="home"
     />
-    <Feature {...MockedFeatures} />
+    <Feature {...indexFeatures} />
     <Products />
     <FeatureImg
       imgSrc="/static/bilog-app.png"

@@ -1,6 +1,6 @@
 import React from 'react'
 import CardDetail from '../Card/CardDetail'
-import versionsFeatures from '../../mocks/versionsFeatures'
+import { versionsFeatures } from '../../mocks/general'
 
 class Versions extends React.Component {
   constructor(){

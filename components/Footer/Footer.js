@@ -1,9 +1,8 @@
 import React from 'react'
 import FooterWrapper from './FooterWrapper'
 import Column from '../Column'
-
-
-import { versions, support, contact, socialMedia } from '../../mocks/footer.js'
+import { footer } from '../../mocks/general';
+const { versions, support, contact, socialMedia } = footer;
 
 class Footer extends React.Component {
   constructor(){
