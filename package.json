@@ -4,7 +4,8 @@
   "description": "Bilog - Web site",
   "scripts": {
     "build": "next build",
-    "start": "now dev"
+    "start": "now dev",
+    "deploy": "now --prod"
   },
   "repository": {
     "type": "git",
@@ -29,6 +30,7 @@
   "homepage": "https://github.com/juanpernu/BilogWeb#readme",
   "dependencies": {
     "isomorphic-fetch": "2.2.1",
+    "isomorphic-unfetch": "^3.0.0",
     "micro": "9.3.4",
     "next": "8.0.3",
     "nodemailer": "6.1.1",
