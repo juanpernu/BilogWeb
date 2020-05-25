@@ -4,10 +4,6 @@ module.exports = {
       title: "Un completo set de herramientas para tu auditoría.",
       description: "Realizá la auditoria fácilmente. Vas a ver en distintos colores el estado de los afiliados y si querés podes auditar las prácticas en forma manual o dejar que el sistema haga todo por vos, siempre bajo tu supervisión.",
       hasColorBackground: false,
-      successCase: {
-        text: "Mira cómo Dandy generó más de 50 mil contactos en un mes",
-        href: "https://www.mercadolibre.com.ar/pagar-online-con-mercadopago",
-      },
       featureItems: [
         {
           title: "Procesos",

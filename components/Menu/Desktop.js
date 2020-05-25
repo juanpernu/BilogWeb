@@ -27,7 +27,7 @@ class Desktop extends React.Component {
     return(
       <nav className="menu">
         <Link href="/">
-          <img className="logo" src="/static/logo-bilog.png" alt="Bilog" />
+          <img className="logo" src="/static/logo-bilog.svg" alt="Bilog" />
         </Link>
         <div className="menu--wraper">
           <div className="line top"></div>

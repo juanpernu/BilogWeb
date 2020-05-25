@@ -22,15 +22,13 @@ class FeatureImage extends React.Component {
               description={description}
             />
             {
-              hasCta ?
-              <div className="feature-image--cta">
+              hasCta && <div className="feature-image--cta">
                 <ButtonLink
                   customClass="terciary"
                   buttonHref={buttonHref}
                   buttonText={buttonText}
                 />
-              </div> :
-              null
+              </div>
             }
           </div>
         </div>

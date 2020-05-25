@@ -19,25 +19,21 @@ class Versions extends React.Component {
               smallText={small.data.smallText}
               title={small.data.title}
               features={small.features}
-              price={small.data.price}
             />
             <CardDetail
               smallText={smallPremium.data.smallText}
               title={smallPremium.data.title}
               features={smallPremium.features}
-              price={smallPremium.data.price}
             />
             <CardDetail
               smallText={standard.data.smallText}
               title={standard.data.title}
               features={standard.features}
-              price={standard.data.price}
             />
             <CardDetail
               smallText={full.data.smallText}
               title={full.data.title}
               features={full.features}
-              price={full.data.price}
             />
           </div>
         </div>
@@ -72,7 +68,7 @@ class Versions extends React.Component {
                 text-align: center;
               }
               .versions-extended--container h2 {
-                margin-bottom: 60px;
+                margin: 60px 0;
               }
               .versions-extended--container-cards {
                 display: grid;

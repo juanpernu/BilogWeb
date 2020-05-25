@@ -5,7 +5,7 @@ import FeatureImg from '../components/Feature/FeatureImg'
 export default () => (
   <Layout>
     <Cover
-      text="Somos la compañia tecnológica líder en gestión odontológica de Argentina"
+      text="Somos la compañía tecnológica líder en gestión odontológica de Argentina"
       paragraph="Nuestro propósito es facilitar la administración de los 2.000 consultorios y clínicas que confían en nosotros día a día."
       gradientBg="green"
       hasButtons={false}
@@ -18,7 +18,7 @@ export default () => (
       description="Bilog es un software simple, pensado
       y diseñado especialmente para Odontólogos y sus asistentes.
       Gracias a su diseño intuitivo, fácil y nuestro
-      permanentesoporte, no necesitás pasar horas para
+      permanente soporte, no necesitás pasar horas para
       aprender a usarlo."
       hasCta={false}
       imageAlign="left"

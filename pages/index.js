@@ -4,7 +4,7 @@ import Feature from '../components/Feature/Feature';
 import FeatureImg from '../components/Feature/FeatureImg';
 import Carousel from '../components/Carousel';
 import Products from '../components/Product/Products';
-import {indexFeatures} from '../mocks/general';
+import { indexFeatures } from '../mocks/general';
 
 export default () => (
   <Layout>

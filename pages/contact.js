@@ -7,7 +7,6 @@ const Contact = ({ query }) => (
     <Cover
       text="¡Queremos conocerte!"
       paragraph="¿Preguntas o sugerencias? Nos encantaría escucharlas. Escribinos y te responderemos a la brevedad."
-      gradientBg="sea"
       hasButtons={false}
     />
     <Form prefetchedData={query} />

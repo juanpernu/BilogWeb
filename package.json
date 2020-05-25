@@ -32,7 +32,7 @@
     "isomorphic-fetch": "2.2.1",
     "isomorphic-unfetch": "^3.0.0",
     "micro": "9.3.4",
-    "next": "9.3.2",
+    "next": "^9.4.2",
     "nodemailer": "6.1.1",
     "react": "^16.8.3",
     "react-compound-slider": "1.2.2",

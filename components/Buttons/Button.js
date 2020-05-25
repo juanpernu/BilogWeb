@@ -28,7 +28,7 @@ const Button = ({children, customClass, onClick}) => (
           cursor: pointer;
           text-align: center;
           user-select: none;
-          font-weight: 100;
+          font-weight: 400;
           position: relative;
           overflow: hidden;
           transition: all 0.15s ease;
@@ -75,7 +75,7 @@ const Button = ({children, customClass, onClick}) => (
           cursor: pointer;
           text-align: center;
           user-select: none;
-          font-weight: 100;
+          font-weight: 400;
           position: relative;
           overflow: hidden;
           transition: all 0.15s ease;

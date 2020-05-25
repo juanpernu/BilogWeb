@@ -30,7 +30,7 @@ const BannerCta = ({ title, buttonText, buttonHref, showModal, modalContent }) =
           {/* STYLES FOR MOBILE */}
           @media only screen and (max-width: 750px) {
             .bannerCta--container {
-              background: linear-gradient(to right,#0794f8,#174fce);
+              background: linear-gradient(to right,#4C7ABD,#2F3F94);
             }
             .bannerCta--content {
               padding: 50px 30px;
@@ -54,7 +54,7 @@ const BannerCta = ({ title, buttonText, buttonHref, showModal, modalContent }) =
           {/* STYLES FOR DESKTOP */}
           @media only screen and (min-width: 751px) {
             .bannerCta--container {
-              background: linear-gradient(to right,#0794f8,#174fce);
+              background: linear-gradient(to right,#4C7ABD,#2F3F94);
             }
             .bannerCta--content {
               padding: 50px 0;

@@ -23,7 +23,7 @@ module.exports = {
       ],
     },
     {
-      title: "Maximizá la produtividad de tu consultorio o clínica",
+      title: "Maximizá la productividad de tu consultorio o clínica",
       description: "Con Bilog podes registrar los ingresos y egresos en forma más eficiente y así maximizar la rentabilidad.",
       hasColorBackground: true,
       featureItems: [

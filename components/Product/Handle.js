@@ -23,7 +23,7 @@ const Handle = ({ handle: { id, value, percent }, getHandleProps }) => {
             text-align: center;
             cursor: pointer;
             border-radius: 50%;
-            background: linear-gradient(to right,#0794f8,#174fce);
+            background: linear-gradient(to right,#4C7ABD,#2F3F94);
             color: #333;
           }
 
@@ -47,7 +47,7 @@ const Handle = ({ handle: { id, value, percent }, getHandleProps }) => {
             text-align: center;
             cursor: pointer;
             border-radius: 50%;
-            background: linear-gradient(to right,#0794f8,#174fce);
+            background: linear-gradient(to right,#4C7ABD,#2F3F94);
             color: #333;
           }
 

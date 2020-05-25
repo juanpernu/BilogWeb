@@ -6,7 +6,7 @@ module.exports = {
       hasColorBackground: false,
       successCase: {
         text: "Mira cómo Dandy generó más de 50 mil contactos en un mes",
-        href: "https://www.mercadolibre.com.ar/pagar-online-con-mercadopago",
+        href: "www.mercadolibre.com.ar/pagar-online-con-mercadopago",
       },
       featureItems: [
         {

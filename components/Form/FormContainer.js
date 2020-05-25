@@ -10,8 +10,8 @@ class FormContainer extends React.Component {
     this.state = {
       socialMedia: ['Facebook', 'Instagram'],
       socialMediaUrl: {
-        facebook: 'https://www.facebook.com/Bilog.Soluciones',
-        instagram: 'https://www.instagram.com/bilogsoftware',
+        facebook: 'www.facebook.com/Bilog.Soluciones',
+        instagram: 'www.instagram.com/bilogsoftware',
       }
     }
 

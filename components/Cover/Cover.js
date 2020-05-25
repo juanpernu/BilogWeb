@@ -29,7 +29,7 @@ class Cover extends React.Component {
           @media only screen and (max-width: 750px) {
             .cover {
               height: 100%;
-              background: linear-gradient(to right, #0794f8, #174fce);
+              background: linear-gradient(to right,#4C7ABD,#2F3F94);
             }
             .cover-wrapper {
               display: flex;
@@ -41,7 +41,7 @@ class Cover extends React.Component {
               padding-bottom: 30px;
             }
             .cover.default {
-              background: linear-gradient(to right, #0794f8, #174fce);
+              background: linear-gradient(to right,#4C7ABD,#2F3F94);
             }
             .cover.redish {
               background: linear-gradient(to right, #f80759, #bc4e9c);
@@ -63,7 +63,7 @@ class Cover extends React.Component {
           {/* STYLES FOR DESKTOP 1200px */}
           @media only screen and (min-width: 751px) and (max-width: 1200px) {
             .cover {
-              background: linear-gradient(to right, #0794f8, #174fce);
+              background: linear-gradient(to right,#4C7ABD,#2F3F94);
               padding-top: 60px;
             }
             .cover-wrapper {
@@ -89,7 +89,7 @@ class Cover extends React.Component {
               padding-top: 0;
             }
             .cover.default {
-              background: linear-gradient(to right, #0794f8, #174fce);
+              background: linear-gradient(to right,#4C7ABD,#2F3F94);
             }
             .cover.redish {
               background: linear-gradient(to right, #f80759, #bc4e9c);
@@ -111,7 +111,7 @@ class Cover extends React.Component {
           {/* STYLES FOR DESKTOP +1200px */}
           @media only screen and (min-width: 1201px) {
             .cover {
-              background: linear-gradient(to right, #0794f8, #174fce);
+              background: linear-gradient(to right, #4C7ABD, #2E4194);
               padding-top: 100px;
             }
             .cover-wrapper {
@@ -136,7 +136,7 @@ class Cover extends React.Component {
               padding-top: 0;
             }
             .cover.default {
-              background: linear-gradient(to right, #0794f8, #174fce);
+              background: linear-gradient(to right, #4C7ABD, #2E4194);
             }
             .cover.redish {
               background: linear-gradient(to right, #f80759, #bc4e9c);

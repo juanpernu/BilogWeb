@@ -1,7 +1,7 @@
 const FooterWrapper = () => (
   <div className="wrapper">
     <div className="wrapper--text">
-      <img className="logo" src="/static/logo-bilog.png" alt="Bilog" />
+      <img className="logo" src="/static/logo-bilog.svg" alt="Bilog" />
     </div>
     <div className="wrapper--text">
       <p className="copyright">

@@ -1,13 +1,13 @@
-import Layout from '../components/Layout'
-import VersionsExtended from '../components/Version/VersionsExtended'
-import BannerCta from '../components/Banner/BannerCta'
+import Layout from '../components/Layout';
+import VersionsExtended from '../components/Version/VersionsExtended';
+// import BannerCta from '../components/Banner/BannerCta';
 
 export default () => (
     <Layout>
       <VersionsExtended />
-      <BannerCta
+      {/* <BannerCta
         title="¿Qué estas esperando para probar Bilog?"
         buttonText="Descargar demo"
-      />
+      /> */}
     </Layout>
 )

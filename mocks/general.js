@@ -36,11 +36,11 @@ const footer = {
   socialMedia: [
     {
       text: "Facebook",
-      href: "https://www.facebook.com/Bilog.Soluciones",
+      href: "www.facebook.com/Bilog.Soluciones",
     },
     {
       text: "Instagram",
-      href: "https://www.instagram.com/bilogsoftware",
+      href: "www.instagram.com/bilogsoftware",
     }
   ]
 };
@@ -105,8 +105,8 @@ const indexFeatures = {
       description: "Es el software ideal para llevar la administración de tu consultorio o clínica.",
       hasColorBackground: false,
       successCase: {
-        text: "Mira cómo Dandy generó más de 50 mil contactos en un mes",
-        href: "https://www.mercadolibre.com.ar/pagar-online-con-mercadopago",
+        text: "Mira cómo la Clínica del Dr. Troiano aumentó su productividad",
+        href: "/success",
       },
       featureItems: [
         {
@@ -455,8 +455,8 @@ const versionsFeatures = {
 const laboratoriosFeatures = {
   features: [
     {
-      title: "La administración de tu laboratorio, más fácil",
-      description: "Con Bilog podés gestionar los turnos, centralizar las historias clínicas y controlar las finanzas.",
+      title: "Ideado y diseñado para vos",
+      description: "Es un software de administración de laboratorios dentales que incluye un completo conjunto de módulos e informes para simplificar la administración de tu laboratorio dental.",
       hasColorBackground: false,
       featureItems: [
         {

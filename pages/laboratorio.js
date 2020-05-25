@@ -10,7 +10,7 @@ import { laboratoriosFeatures } from '../mocks/general';
 export default () => (
     <Layout>
       <Cover
-        text="Ideado para vos."
+        text="La administración de tu laboratorio, más fácil."
         paragraph="Simplificá la administración de tu laboratorio con un completo conjunto de módulos e informes."
         position="lf"
         hasButtons={false}
@@ -18,12 +18,12 @@ export default () => (
         coverImage="laboratorio"
       />
       <Feature {...laboratoriosFeatures} />
-      <BannerCta
+      {/* <BannerCta
         title="Administrar tu laboratorio puede ser muy fácil. Mirá la demo."
         buttonText="Ver video"
         modalContent={<GeneratedVideos type='intro'/>}
         showModal={true}
-      />
+      /> */}
       <FeatureImg
         imgSrc="/static/illus-labo-pedidos.svg"
         imgAlt="Laboratorio - Pedidos"

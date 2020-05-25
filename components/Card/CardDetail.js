@@ -18,10 +18,10 @@ const CardDetail = ({smallText, title, subtitle, features, price}) => {
           )
         })
       }
-      <div className="card--price">
+      {price && <div className="card--price">
         <span>{price}</span>
         <small>mensual.</small>
-      </div>
+      </div>}
       <style jsx>
       {`
         {/* STYLES FOR MOBILE */}
