@@ -1,9 +1,9 @@
 import Icons from '../Icons/Icons'
 
-const ContactItem = ({text, icon}) => {  
+const ContactItem = ({ text, icon, width, height}) => {  
   return (
     <div className="address-container">
-      <Icons type={icon}/>
+      <Icons type={icon} width={width} height={height}/>
       <p className="address-text">{text}</p>
       <style jsx>
       {`

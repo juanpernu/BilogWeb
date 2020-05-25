@@ -62,8 +62,16 @@ class FormContainer extends React.Component {
         <div className="form-aside">
           <p className="form-aside--title">Encontranos en</p>
           <ContactItem
-            text="José Hernandes 2276, CABA, Buenos Aires, Argentina"
+            text="José Hernandes 2276, Bs As, Argentina"
             icon="address"
+            width={24}
+            height={24}
+          />
+          <ContactItem
+            text="+54 11 5263-2220"
+            icon="phone"
+            width={24}
+            height={24}
           />
           <p className="form-aside--title">Seguinos en</p>
           {this.renderSocialMedia()}

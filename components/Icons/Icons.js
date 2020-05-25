@@ -1,19 +1,18 @@
 /** React dependencies */
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
 
 /** Components dependencies */
-import Check from './Check'
-import Cross from './Cross'
-import Access from './Access'
-import Complete from './Complete'
-import Simple from './Simple'
-import Innovation from './Innovation'
-import Focus from './Focus'
-import Agenda from './Agenda'
-import Person from './Person'
-import Chart from './Chart'
-import Money from './Money'
+import Check from './Check';
+import Cross from './Cross';
+import Access from './Access';
+import Complete from './Complete';
+import Simple from './Simple';
+import Innovation from './Innovation';
+import Focus from './Focus';
+import Agenda from './Agenda';
+import Person from './Person';
+import Chart from './Chart';
+import Money from './Money';
 import Account from './Account';
 import Instagram from './Instagram';
 import Facebook from './Facebook';
@@ -21,6 +20,7 @@ import Twitter from './Twitter';
 import Address from './Address';
 import Tables from './Tables';
 import Process from './Process';
+import Phone from './Phone';
 
 const icons = {
   check: Check,
@@ -41,6 +41,7 @@ const icons = {
   twitter: Twitter,
   address: Address,
   tables: Tables,
+  phone: Phone,
 };
 
 /**
@@ -61,39 +62,4 @@ const GeneratedIcon = ({ type, width, height, colorStroke, colorFill }) => {
   />;
 };
 
-GeneratedIcon.propTypes = {
-  width: PropTypes.number,
-  height: PropTypes.number,
-  color: PropTypes.string,
-  colorStroke: PropTypes.string,
-  colorFill: PropTypes.string,
-  type: PropTypes.oneOf([
-    'check',
-    'cross',
-    'access',
-    'address',
-    'account',
-    'agenda',
-    'chart',
-    'complete',
-    'simple',
-    'innovation',
-    'focus',
-    'person',
-    'process',
-    'money',
-    'instagram',
-    'facebook',
-    'twitter',
-    'tables',
-  ]).isRequired,
-};
-
-GeneratedIcon.defaultProps = {
-  width: undefined,
-  height: undefined,
-  colorStroke: undefined,
-  colorFill: undefined,
-};
-
-export default GeneratedIcon
+export default GeneratedIcon;

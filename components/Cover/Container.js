@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import WrapperCta from './WrapperCta'
 import Title from './Title'
 
-const Container = ({ text, paragraph, position, hasButtons, buttonText, buttonHref }) => {
+const Container = ({ text, paragraph, position, hasButtons, buttonText, buttonHref, withImage }) => {
   const renderButtons = (hasButtons) => {
     if(hasButtons){
       return (
@@ -17,7 +17,7 @@ const Container = ({ text, paragraph, position, hasButtons, buttonText, buttonHr
   }
   
   return(
-    <div className={`cover--container ${position}`}>
+    <div className={`cover--container ${!withImage && 'strech' } ${position}`}>
       <Title
         text={text}
       />
@@ -42,6 +42,9 @@ const Container = ({ text, paragraph, position, hasButtons, buttonText, buttonHr
             padding: 200px 0;
             text-align: center;
             color: #fff;
+          }
+          .cover--container.strech {
+            padding: 100px 0;
           }
           .cover--container.lf {
             text-align: left;

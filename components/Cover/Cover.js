@@ -1,6 +1,6 @@
-import React from 'react'
-import Container from './Container'
-import PropTypes from 'prop-types'
+import React from 'react';
+import Container from './Container';
+import PropTypes from 'prop-types';
 
 class Cover extends React.Component {
   constructor(){
@@ -20,6 +20,7 @@ class Cover extends React.Component {
             hasButtons={hasButtons}
             buttonText={buttonText}
             buttonHref={buttonHref}
+            withImage={!!coverImage}
           />
           {coverImage && <img className="cover-img" src={`/static/illus-${coverImage}.svg`} />}
         </div>
