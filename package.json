@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Bilog - Web site",
   "scripts": {
-    "build": "next build",
+    "build": "next build && next export",
     "start": "now dev",
     "deploy": "now --prod"
   },
@@ -34,9 +34,9 @@
     "micro": "9.3.4",
     "next": "8.0.3",
     "nodemailer": "6.1.1",
-    "react": "16.8.3",
+    "react": "^16.8.3",
     "react-compound-slider": "1.2.2",
-    "react-dom": "16.8.3",
+    "react-dom": "^16.8.3",
     "react-google-recaptcha": "1.0.5",
     "react-responsive-modal": "3.6.0",
     "react-swipe": "6.0.4",

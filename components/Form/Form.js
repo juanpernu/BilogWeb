@@ -152,7 +152,7 @@ class Form extends React.Component {
         /> {/* About you */}
         <div className="form-captcha">
           <ReCAPTCHA
-            sitekey="6LfFmaAUAAAAAEdFZMoeMjsqBmszOkLJRCTymquy"
+            sitekey="6Lfwz_sUAAAAAFHYFO43VhBKoxbEyCUPYfUTnxp8"
             data-theme="dark"
             onChange={this.handleCaptchaVerification}
             theme="dark"
