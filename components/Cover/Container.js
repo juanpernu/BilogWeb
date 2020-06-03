@@ -1,21 +1,8 @@
-import PropTypes from 'prop-types'
-import WrapperCta from './WrapperCta'
-import Title from './Title'
+import WrapperCta from './WrapperCta';
+import StoreButton from '../Buttons/StoreButtons';
+import Title from './Title';
 
-const Container = ({ text, paragraph, position, hasButtons, buttonText, buttonHref, withImage }) => {
-  const renderButtons = (hasButtons) => {
-    if(hasButtons){
-      return (
-        <WrapperCta
-          position={position}
-          buttonText={buttonText}
-          buttonHref={buttonHref}
-        />
-      )
-    }
-    return null;
-  }
-  
+const Container = ({ text, paragraph, position, hasButtons, buttonText, buttonHref, withImage, appButtons }) => {
   return(
     <div className={`cover--container ${!withImage && 'strech' } ${position}`}>
       <Title
@@ -24,7 +11,14 @@ const Container = ({ text, paragraph, position, hasButtons, buttonText, buttonHr
       <p className="cover--container-paragraph">
         {paragraph}
       </p>
-        {renderButtons(hasButtons)}
+      {hasButtons && <WrapperCta
+        position={position}
+        buttonText={buttonText}
+        buttonHref={buttonHref}
+      />}
+      {
+        appButtons && <StoreButton/>
+      }
       <style jsx>
       {`
         {/* STYLES FOR MOBILE */}
@@ -82,14 +76,6 @@ const Container = ({ text, paragraph, position, hasButtons, buttonText, buttonHr
       </style>
     </div>
   )
-}
-
-Container.propTypes = {
-  gradientBg: PropTypes.string,
-}
-
-Container.defaultProps = {
-  gradientBg: '',
 }
 
 export default Container

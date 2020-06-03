@@ -8,7 +8,18 @@ class Cover extends React.Component {
   }
 
   render() {
-    const { gradientBg, position, text, paragraph, hasButtons, product, buttonText, buttonHref, coverImage } = this.props;
+    const {
+      gradientBg,
+      position,
+      text,
+      paragraph,
+      hasButtons,
+      product,
+      buttonText,
+      buttonHref,
+      coverImage,
+      appButtons
+    } = this.props;
 
     return(
       <section className={`cover ${product && 'no-padding'} ${gradientBg}`}>
@@ -21,6 +32,7 @@ class Cover extends React.Component {
             buttonText={buttonText}
             buttonHref={buttonHref}
             withImage={!!coverImage}
+            appButtons={appButtons}
           />
           {coverImage && <img className="cover-img" src={`/static/illus-${coverImage}.svg`} />}
         </div>

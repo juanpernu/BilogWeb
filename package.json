@@ -4,7 +4,7 @@
   "description": "Bilog - Web site",
   "scripts": {
     "build": "next build && next export",
-    "start": "now dev",
+    "start-dev": "vercel dev",
     "deploy": "now --prod"
   },
   "repository": {
