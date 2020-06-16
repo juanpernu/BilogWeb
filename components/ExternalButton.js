@@ -1,7 +1,7 @@
 const ExternalButton = ({externalLink, text}) => {
   return(
     <span className="button--container">
-      <button className="button primary">
+      <button aria-label="Primary" className="button primary">
         <a href={externalLink}>
           <p>{text}</p>
         </a>

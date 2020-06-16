@@ -34,7 +34,7 @@ class Cover extends React.Component {
             withImage={!!coverImage}
             appButtons={appButtons}
           />
-          {coverImage && <img className="cover-img" src={`/static/illus-${coverImage}.svg`} />}
+          {coverImage && <img className="cover-img" alt="Cover Image" src={`/static/illus-${coverImage}.svg`} />}
         </div>
         <style jsx>
         {`

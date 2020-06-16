@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 const Button = ({children, customClass, onClick}) => (
   <React.Fragment>
-    <button onClick={onClick} className={`button ${customClass}`}>
+    <button aria-label={`Button ${children}`} onClick={onClick} className={`button ${customClass}`}>
       <p>{children}</p>
     </button>
     <style jsx>

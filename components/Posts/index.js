@@ -2,7 +2,7 @@ const Post = ({ content }) => {
   const { title, description, author, link, thumbnail } = content;
   return (
     <div className="post-card">
-      <img className="post-card--thumbnail" src={thumbnail} />
+      <img alt="Post thumbnail" className="post-card--thumbnail" src={thumbnail} />
       <span className="post-card--author">{author}</span>
       <h2 className="post-card--title">{title}</h2>
       <p className="post-card--description">{description}</p>

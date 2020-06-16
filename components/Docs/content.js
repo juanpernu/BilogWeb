@@ -11,7 +11,7 @@ const Content = ({ title, subcontent}) => (
         <div className="subcontent-wrapper">
           <h3 className="subcontent-title">{subtitle}</h3>
           <p className="subcontent-text">{text}</p>
-          {image && <img className="subcontent-image" src={image} />}
+          {image && <img alt="Subcontent Image" className="subcontent-image" src={image} />}
         </div>
       )
     })}

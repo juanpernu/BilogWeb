@@ -122,7 +122,7 @@ class Desktop extends React.Component {
               border: 0;
               font-size: 14px;
               padding: 10px;
-              color: #999;
+              color: #777;
               text-transform: uppercase;
               text-decoration: none;
               transition: 0.3s ease;

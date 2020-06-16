@@ -1,10 +1,10 @@
-import Head from 'next/head';
+import { Helmet } from "react-helmet";
 import Header from './Header';
 import Footer from './Footer/Footer';
 
 const Layout = ({children}) => (
   <div className="layout">
-    <Head>
+    <Helmet htmlAttributes={{ lang: 'es' }}>
       <meta charSet="utf-8" />
       <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -13,14 +13,15 @@ const Layout = ({children}) => (
       <title>Bilog - Soluciones Informáticas</title>
       <link rel="shortcut icon" href="/static/fav.png" />
       <link rel="canonical" href="http://www.bilog.com.ar" />
-    </Head>
+      <link href="https://fonts.googleapis.com/css?family=Nunito:300,600,800" rel="stylesheet"/>
+    </Helmet>
     <Header />
     {children}
     <Footer />
     <style jsx>
     {`
-      @import url('https://fonts.googleapis.com/css?family=Nunito:300,600,800');
       :global(body) {
+        font-display: swap;
         font-family: 'Nunito', sans-serif;
         margin: 0;
         padding: 0;

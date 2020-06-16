@@ -17,7 +17,7 @@ class Download extends React.Component {
           text="Descargar demo"
         />
         <div className="download-image">
-          <img src="/static/bilog-desktop-mac.png" alt="Descargar demo"/>
+          <img alt="Download demo image" src="/static/bilog-desktop-mac.png" alt="Descargar demo"/>
         </div>
         <p className="download-image--copy">
           En una sola ventana tenés todo el control de tus pacientes y el de tu Clínica o Consultorio

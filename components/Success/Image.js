@@ -2,7 +2,7 @@ const SuccessImg = (props) => {
   const { imgBg, bgPosition } = props;
   return (
     <React.Fragment>
-      <img className="success-img" style={{ backgroundImage: `url(${imgBg})`, backgroundPosition: bgPosition }} />
+      <img alt="Success case image" className="success-img" style={{ backgroundImage: `url(${imgBg})`, backgroundPosition: bgPosition }} />
       <style jsx>
         {`
         {/* STYLES FOR MOBILE */}

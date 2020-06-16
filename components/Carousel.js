@@ -37,14 +37,14 @@ const Carousel = () => {
           })
         }
       </ReactSwipe>
-      <button className="carousel-button left" onClick={() => reactSwipeEl.prev()}>
+      <button aria-label="Carousel Left Button" className="carousel-button left" onClick={() => reactSwipeEl.prev()}>
         <svg width="32" height="32" viewBox="9 1 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g>
             <path d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98" fill="#000"></path>
           </g>
         </svg>
       </button>
-      <button className="carousel-button right" onClick={() => reactSwipeEl.next()}>
+      <button aria-label="Carousel Right Button" className="carousel-button right" onClick={() => reactSwipeEl.next()}>
         <svg width="32" height="32" viewBox="9 1 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g>
             <path d="M16.14 9.93L22.21 16l-6.07 6.07M8.23 16h13.98" fill="#000"></path>
