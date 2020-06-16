@@ -106,7 +106,7 @@ const indexFeatures = {
       hasColorBackground: false,
       successCase: {
         text: "Mira cómo el Dr. Lenarduzzi aumentó la productividad de sus clínicas",
-        href: "/success?case=ordono",
+        href: "/success-ordono",
       },
       featureItems: [
         {

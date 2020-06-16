@@ -2,8 +2,8 @@ import Layout from '../components/Layout';
 import SuccessImg from '../components/Success/Image';
 import content from '../contents/success/content';
 
-const SuccessCases = ({ query }) => {
-  const { title, bgImg, section: { first, second, third = null } } = content[query.case];
+const SuccessCasesCalcagno = () => {
+  const { title, bgImg, section: { first, second, third = null } } = content['calcagno'];
   return (
     <Layout>
       <section className="success-container">
@@ -72,8 +72,4 @@ const SuccessCases = ({ query }) => {
   )
 };
 
-SuccessCases.getInitialProps = async ({ query }) => {
-  return query ? { query } : null;
-};
-
-export default SuccessCases;
+export default SuccessCasesCalcagno;

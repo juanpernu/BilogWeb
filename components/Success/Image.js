@@ -7,6 +7,14 @@ const SuccessImg = (props) => {
         {`
         {/* STYLES FOR MOBILE */}
         @media only screen and (max-width: 750px) {
+          .success-img {
+            width: 100%;
+            height: 250px;
+            display: block;
+            background-size: cover;
+            background-position: center center;
+            margin: 10px 0;
+          }
         }
 
         {/* STYLES FOR DESKTOP */}

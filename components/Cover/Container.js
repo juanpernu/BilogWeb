@@ -28,6 +28,12 @@ const Container = ({ text, paragraph, position, hasButtons, buttonText, buttonHr
             text-align: left;
             color: #fff;
           }
+          .cover--container.strech {
+            padding: 30px;
+          }
+          .cover--container.strech .cover--container-paragraph {
+            margin-bottom: 0;
+          }
         }
 
         {/* STYLES FOR DESKTOP 1200px */}
