@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import SidebarSection from './SidebarSection';
-import SidebarContent from '../..//documentation/sidebar';
+import SidebarContent from '../../contents/documentation/sidebar';
 
 const Sidebar = () => (
   <aside className="sidebar">

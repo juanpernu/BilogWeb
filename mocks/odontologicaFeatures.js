@@ -3,6 +3,10 @@ module.exports = {
     {
       title: "Llevá todo el control de tus pacientes",
       description: "Con Bilog podés gestionar los turnos, centralizar las historias clínicas y controlar las finanzas.",
+      successCase: {
+        text: "Mira cómo la Dra. Calcagno mejoró el presentismo de sus consultorios",
+        href: "/success?case=calcagno",
+      },
       hasColorBackground: false,
       featureItems: [
         {

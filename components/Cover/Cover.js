@@ -102,7 +102,8 @@ class Cover extends React.Component {
               padding-top: 0;
             }
             .cover.default {
-              background: linear-gradient(to right,#4C7ABD,#2F3F94);
+              background: url('/static/illus-home-bg.png'), linear-gradient(to right, #4C7ABD, #2E4194);
+              background-size: cover;
             }
             .cover.redish {
               background: linear-gradient(to right, #f80759, #bc4e9c);
@@ -149,7 +150,8 @@ class Cover extends React.Component {
               padding-top: 0;
             }
             .cover.default {
-              background: linear-gradient(to right, #4C7ABD, #2E4194);
+              background: url('/static/illus-home-bg.png'), linear-gradient(to right, #4C7ABD, #2E4194);
+              background-size: cover;
             }
             .cover.redish {
               background: linear-gradient(to right, #f80759, #bc4e9c);

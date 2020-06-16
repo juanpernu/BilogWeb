@@ -2,7 +2,7 @@ import Layout from '../components/Layout';
 import DocsWrapper from '../components/Docs/DocsWrapper';
 import DocsProvider from '../contexts/docContext';
 
-const documentationContent = require('../documentation/content');
+const documentationContent = require('../contents/documentation/content');
 
 export default () => (
   <Layout>

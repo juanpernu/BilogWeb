@@ -105,8 +105,8 @@ const indexFeatures = {
       description: "Es el software ideal para llevar la administración de tu consultorio o clínica.",
       hasColorBackground: false,
       successCase: {
-        text: "Mira cómo la Clínica del Dr. Troiano aumentó su productividad",
-        href: "/success",
+        text: "Mira cómo el Dr. Lenarduzzi aumentó la productividad de sus clínicas",
+        href: "/success?case=ordono",
       },
       featureItems: [
         {
