@@ -4,7 +4,7 @@ import BannerCta from '../components/Banner/BannerCta';
 import Feature from '../components/Feature/Feature';
 import FeatureImg from '../components/Feature/FeatureImg'
 
-import GeneratedVideos from '../components/Videos/Videos'
+import GeneratedVideos from '../components/Videos/Videos';
 import { laboratoriosFeatures } from '../mocks/general';
 
 export default () => (

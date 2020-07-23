@@ -14,7 +14,6 @@ class Cover extends React.Component {
       text,
       paragraph,
       hasButtons,
-      product,
       buttonText,
       buttonHref,
       coverImage,
@@ -22,8 +21,8 @@ class Cover extends React.Component {
     } = this.props;
 
     return(
-      <section className={`cover ${product && 'no-padding'} ${gradientBg}`}>
-        <div className={`cover-wrapper ${!coverImage && 'no-image'}`}>
+      <section className={`cover ${gradientBg}`}>
+        <div className={`cover-wrapper ${!coverImage ? 'no-image' : ''}`}>
           <Container
             text={text}
             paragraph={paragraph}
@@ -106,13 +105,15 @@ class Cover extends React.Component {
               background-size: cover;
             }
             .cover.redish {
-              background: linear-gradient(to right, #f80759, #bc4e9c);
+              background: url('/static/illus-aud-bg.png'), linear-gradient(to right, #f80759, #bc4e9c);
+              background-size: cover;
             }
             .cover.sea {
               background: radial-gradient(ellipse farthest-side at 100% 100%,#dbf6c8 5%,#1cafc6 50%,#012690 110%);
             }
             .cover.violet {
-              background: linear-gradient(to right, #8f94fb, #4e54c8);
+              background: url('/static/illus-labo-bg.png'), linear-gradient(to right, #8f94fb, #4e54c8);
+              background-size: cover;
             }
             .cover.green {
               background: linear-gradient(to right bottom,#58c1d2,#2288a2);
@@ -154,13 +155,15 @@ class Cover extends React.Component {
               background-size: cover;
             }
             .cover.redish {
-              background: linear-gradient(to right, #f80759, #bc4e9c);
+              background: url('/static/illus-aud-bg.png'), linear-gradient(to right, #f80759, #bc4e9c);
+              background-size: cover;
             }
             .cover.sea {
               background: radial-gradient(ellipse farthest-side at 100% 100%,#dbf6c8 5%,#1cafc6 50%,#012690 110%);
             }
             .cover.violet {
-              background: linear-gradient(to right, #8f94fb, #4e54c8);
+              background: url('/static/illus-labo-bg.png'), linear-gradient(to right, #8f94fb, #4e54c8);
+              background-size: cover;
             }
             .cover.green {
               background: linear-gradient(to right bottom,#58c1d2,#2288a2);
