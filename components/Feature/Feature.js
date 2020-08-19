@@ -33,9 +33,13 @@ class Feature extends React.Component {
               />
               {this.renderSuccessCase(feature.successCase)}
               <div className="feature-item--container">
-                {feature.featureItems.map((item, index) => {
-                  return <FeatureItem key={index} icons={item.icon} title={item.title} description={item.description}/>
-                })}
+                {feature.featureItems.map((item, index) => <FeatureItem
+                  key={index}
+                  icons={item.icon}
+                  title={item.title}
+                  description={item.description}
+                  button={item.button}
+                />)}
               </div>
             </div>
             <style jsx>
@@ -76,9 +80,8 @@ class Feature extends React.Component {
                 }
                 .feature-item--container {
                   padding-top: 26px;
-                  display: flex;
-                  flex-direction: row;
-                  justify-content: space-around;
+                  display: grid;
+                  grid-template-columns: auto auto auto;
                 }
                 :global(a.link--primary) {
                   margin: 30px 0;

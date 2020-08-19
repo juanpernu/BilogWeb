@@ -15,12 +15,8 @@ const footer = {
   ],
   support: [
     {
-      text: "Suscripción",
-      href: "/",
-    },
-    {
-      text: "Ayuda",
-      href: "/",
+      text: "Preguntas frecuentes",
+      href: "https://bilog-help.crisp.help/es/",
     }
   ],
   contact: [
@@ -36,11 +32,11 @@ const footer = {
   socialMedia: [
     {
       text: "Facebook",
-      href: "www.facebook.com/Bilog.Soluciones",
+      href: "https://facebook.com/Bilog.Soluciones",
     },
     {
       text: "Instagram",
-      href: "www.instagram.com/bilogsoftware",
+      href: "https://instagram.com/bilogsoftware",
     }
   ]
 };
@@ -106,7 +102,7 @@ const indexFeatures = {
       hasColorBackground: false,
       successCase: {
         text: "Mira cómo el Dr. Lenarduzzi aumentó la productividad de sus clínicas",
-        href: "/success-ordono",
+        href: "/success-orono",
       },
       featureItems: [
         {
@@ -132,21 +128,57 @@ const indexFeatures = {
 const downloadFeatures = {
   features: [
     {
-      title: "¿Problemas con la descarga?",
-      description: "Si estás experimentando algún problema con la descarga, probá bajarlo por partes.",
+      title: "Descargar Bilog Gestión Odontológica",
+      description: "En esta sección vas a encontrar todo lo que necesitas para instalar nuestro software de Gestión Odontológica.",
       hasColorBackground: false,
       featureItems: [
         {
           title: ".NET Framework",
-          description: "Ingresá desde cualquier dispositivo, donde quiera que te encuentres. Con Geblix tu información siempre estará disponible y segura.",
+          description: ".NET Framework es un framework desarrollado por Microsoft que se corre, principalmente, en Microsoft Windows.",
+          button: {
+            text: "Descargar",
+            link: "http://bilog.com.ar/clientes/public_html/DescargarPartes/NetFramework.rar"
+          }
         },
         {
-          title: "Crystal Report, VBPowerPacks y otros flavors",
-          description: "Encontrá soluciones diseñadas junto a profesionales como vos. Relevamos cada una de tus tareas y desarrollamos herramientas que ayudan a realizarlas de forma eficiente.",
+          title: "Dependencias",
+          description: "Acá vas a encontrar dependencias como Cristal Report, VBPowerPacks, entre otras, necesarias para instalar nuestro software de Gestión Odontológica.",
+          button: {
+            text: "Descargar",
+            link: "http://bilog.com.ar/clientes/public_html/DescargarPartes/Varios.rar"
+          }
         },
         {
           title: "Instalador",
-          description: "Trabajamos día a día con una premisa, hacerlo simple. Con Geblix, la gestión de tus tareas será muy fácil e intuitiva.",
+          description: "Efectivamente, el instalador de Bilog Gestión Odontológica.",
+          button: {
+            text: "Descargar",
+            link: "http://bilog.com.ar/clientes/public_html/DescargarPartes/Sistema.rar"
+          }
+        },
+        {
+          title: "Cliente SQL 32 bits",
+          description: "Cliente de instalación de SQL para sistemas operativos de 32 bits.",
+          button: {
+            text: "Descargar",
+            link: "http://bilog.com.ar/clientesSQL/2005/32/sqlncli_2005_32.msi"
+          }
+        },
+        {
+          title: "Cliente SQL 64 bits",
+          description: "Cliente de instalación de SQL para sistemas operativos de 64 bits.",
+          button: {
+            text: "Descargar",
+            link: "http://bilog.com.ar/clientesSQL/2005/64/sqlncli_2005_64.msi"
+          }
+        },
+        {
+          title: "WinRAR",
+          description: "Software para descomprimir archivos, entre otros, los .rar.",
+          button: {
+            text: "Descargar",
+            link: "http://www.winrar.es/descargas/winrar"
+          }
         }
       ],
     }

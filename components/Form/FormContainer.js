@@ -10,8 +10,8 @@ class FormContainer extends React.Component {
     this.state = {
       socialMedia: ['Facebook', 'Instagram'],
       socialMediaUrl: {
-        facebook: 'www.facebook.com/Bilog.Soluciones',
-        instagram: 'www.instagram.com/bilogsoftware',
+        facebook: 'https://www.facebook.com/Bilog.Soluciones',
+        instagram: 'https://www.instagram.com/bilogsoftware',
       }
     }
 
@@ -48,10 +48,12 @@ class FormContainer extends React.Component {
 
   makeCustomMessage() {
     const { version, addOns } = this.props.prefetchedData;
-    if (addOns && version) {
-      const addOnsArray = addOns.split(',');
-      const customMessage = `Hola, me gustaría recibir información sobre la versión ${version} con los módulos de ${this.translateAddons(addOnsArray)} incluidos. Muchas grácias!`;
-      return customMessage;
+    if (version) {
+      if (addOns) {
+        const addOnsArray = addOns.split(',');
+        return `Hola, me gustaría recibir información sobre la versión ${version} con los módulos de ${this.translateAddons(addOnsArray)} incluidos. Muchas gracias!`;
+      }
+      return `Hola, me gustaría recibir información sobre la versión ${version}. Muchas gracias!`;
     }
   }
 

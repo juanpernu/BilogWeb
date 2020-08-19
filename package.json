@@ -38,6 +38,7 @@
     "react-compound-slider": "1.2.2",
     "react-dom": "^16.8.3",
     "react-google-recaptcha": "1.0.5",
+    "react-gtm-module": "^2.0.10",
     "react-helmet": "^6.1.0",
     "react-responsive-modal": "3.6.0",
     "react-swipe": "6.0.4",

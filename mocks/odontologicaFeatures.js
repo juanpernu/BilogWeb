@@ -20,9 +20,9 @@ module.exports = {
           icon: 'person',
         },
         {
-          title: "Historia clínica",
-          description: "Revisá la historia clínica de tus pacientes desde donde estés con todo el historial de evoluciones.",
-          icon: 'chart',
+          title: "Administración",
+          description: "Registrá los ingresos y egresos de forma más eficiente para maximizar la productividad de tu trabajo",
+          icon: 'account',
         }
       ],
     },
@@ -32,9 +32,9 @@ module.exports = {
       hasColorBackground: true,
       featureItems: [
         {
-          title: "Cta. Cte. de pacientes",
-          description: "Agendá turnos en forma más eficiente. Los diferentes colores te van a ayudar a visibilizar tiempos muertos, sobreturnos, pacientes de primera vez, entre otras cosas más.",
-          icon: 'account',
+          title: "Copia de Seguridad",
+          description: "La seguridad de tus datos es lo más importante para nosotros. Por eso el sistema cuenta con la función de copias de seguridad automáticas.",
+          icon: 'cloud',
         },
         {
           title: "Estadísticas",
@@ -42,8 +42,8 @@ module.exports = {
           icon: 'chart',
         },
         {
-          title: "Liquidaciones a profesionales",
-          description: "Controla las entradas y salidas de todos tus insumos, Bilog te avisa cuando debes comprar más insumos.",
+          title: "Liquidaciones",
+          description: "Liquidá a profesionales, obras sociales y laboratorios. Llevá el control de tus finanzas y de tu trabajo.",
           icon: 'money',
         }
       ],

@@ -1,17 +1,18 @@
 module.exports = {
   exportPathMap: async function (defaultPathMap, { dev, dir, outDir, distDir, buildId }) {
     return {
-      '/new/index': { page: '/index' },
-      '/new/about': { page: '/about' },
-      '/new/auditoria': { page: '/auditoria' },
-      '/new/bilogApp': { page: '/bilogApp' },
-      '/new/contact': { page: '/contact' },
-      '/new/success-calcagno': { page: '/success-calcagno' },
-      '/new/success-ordono': { page: '/success-ordono' },
-      '/new/laboratorio': { page: '/laboratorio' },
-      '/new/odontologica': { page: '/odontologica' },
-      '/new/utils': { page: '/utils' },
-      '/new/versions-detail': { page: '/versions-detail' },
+      '/index': { page: '/index' },
+      '/about/index': { page: '/about' },
+      '/auditoria/index': { page: '/auditoria' },
+      '/bilogApp/index': { page: '/bilogApp' },
+      '/contact/index': { page: '/contact' },
+      '/success-calcagno/index': { page: '/success-calcagno' },
+      '/success-orono/index': { page: '/success-orono' },
+      '/laboratorio/index': { page: '/laboratorio' },
+      '/odontologica/index': { page: '/odontologica' },
+      '/utils/index': { page: '/utils' },
+      '/versions-detail/index': { page: '/versions-detail' },
+      '/descarga/index': { page: '/download-go' },
     }
   },
 }

@@ -4,6 +4,7 @@ import React from 'react';
 /** Components dependencies */
 import Check from './Check';
 import Cross from './Cross';
+import Cloud from './Cloud';
 import Access from './Access';
 import Complete from './Complete';
 import Simple from './Simple';
@@ -25,6 +26,7 @@ import Phone from './Phone';
 const icons = {
   check: Check,
   cross: Cross,
+  cloud: Cloud,
   access: Access,
   complete: Complete,
   simple: Simple,

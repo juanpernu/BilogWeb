@@ -1,10 +1,7 @@
 import Layout from '../components/Layout'
 import Cover from '../components/Cover/Cover'
-import Feature from '../components/Feature/Feature'
 import FeatureImg from '../components/Feature/FeatureImg'
 import Carousel from '../components/Carousel'
-
-import MockedFeatures from '../mocks/appFeatures'
 
 export default () => (
   <Layout>
@@ -16,7 +13,6 @@ export default () => (
       coverImage="app"
       appButtons
     />
-    <Feature {...MockedFeatures} />
     <FeatureImg
       imgSrc="/static/app-mockup.png"
       imgAlt="App mockup"
@@ -25,7 +21,7 @@ export default () => (
       description="Administrá tu consultorio en tu celular, tené tu agenda siempre disponible y actualizada."
       hasCta={false}
       imageAlign="left"
-      bgGrey={false}
+      bgGrey
     />
     <Carousel/>
   </Layout>

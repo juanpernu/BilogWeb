@@ -19,12 +19,14 @@ export default () => (
         coverImage="odontologica"
       />
       <Feature {...MockedFeatures} />
-      <BannerCta
+      {/* 
+        TODO: Update the video of this banner to render this component
+        <BannerCta
         title="¿Todavía tenés dudas? Mirá la demo."
         buttonText="Ver video"
         modalContent={<GeneratedVideos type='intro'/>}
         showModal={true}
-      />
+      /> */}
       <ProductSlider />
       <Cover
         text="Te presentamos Bilog App"

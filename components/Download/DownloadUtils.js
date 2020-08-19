@@ -8,7 +8,7 @@ class DownloadUtils extends React.Component {
       <section className="download-utils-section">
         <Title
           title="Descargas útiles"
-          subtitle="La mejor forma de conocer Bilog, es usándolo."
+          subtitle="Nuestro objetivo es facilitarte el trabajo, por eso acá vas a poder encontrar algunas herramientas útiles"
           alignCenter={true}
         />
         <div className="download-utils--container-cards">

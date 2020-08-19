@@ -1,25 +1,50 @@
+import React from 'react';
 import { Helmet } from "react-helmet";
+import TagManager from 'react-gtm-module';
 import Header from './Header';
 import Footer from './Footer/Footer';
 
-const Layout = ({children}) => (
-  <div className="layout">
-    <Helmet htmlAttributes={{ lang: 'es' }}>
-      <meta charSet="utf-8" />
-      <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      <meta name="description" content="Bilog Soluciones Informáticas. El nuevo software para la administración del consultorio y/o clínica Odontológica." />
-      <meta name="HandheldFriendly" content="True" />
-      <title>Bilog - Soluciones Informáticas</title>
-      <link rel="shortcut icon" href="/static/fav.png" />
-      <link rel="canonical" href="http://www.bilog.com.ar" />
-      <link href="https://fonts.googleapis.com/css?family=Nunito:300,600,800" rel="stylesheet"/>
-    </Helmet>
-    <Header />
-    {children}
-    <Footer />
-    <style jsx>
-    {`
+const tagManagerArgs = {
+  gtmId: 'GTM-WF5KDWF'
+}
+
+class Layout extends React.Component {
+  constructor(props) {
+    super(props);
+  } 
+
+  componentDidMount() {
+    window.$crisp = [];
+    window.CRISP_WEBSITE_ID = "c73aa550-242c-4c6a-a7ed-836fc4e127b7";
+    const d = document;
+    const s = d.createElement("script");
+    s.src = "https://client.crisp.chat/l.js";
+    s.async = 1;
+    d.getElementsByTagName("head")[0].appendChild(s);
+    TagManager.initialize(tagManagerArgs);
+  }
+
+  render(){
+    const { children } = this.props;
+
+    return(
+      <div className="layout">
+        <Helmet htmlAttributes={{ lang: 'es' }}>
+          <meta charSet="utf-8" />
+          <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+          <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+          <meta name="description" content="Bilog Soluciones Informáticas. El nuevo software para la administración del consultorio y/o clínica Odontológica." />
+          <meta name="HandheldFriendly" content="True" />
+          <title>Bilog - Soluciones Informáticas</title>
+          <link rel="shortcut icon" href="/static/fav.png" />
+          <link rel="canonical" href="http://www.bilog.com.ar" />
+          <link href="https://fonts.googleapis.com/css?family=Nunito:300,600,800" rel="stylesheet" />
+        </Helmet>
+        <Header />
+        {children}
+        <Footer />
+        <style jsx>
+          {`
       :global(body) {
         font-display: swap;
         font-family: 'Nunito', sans-serif;
@@ -40,8 +65,11 @@ const Layout = ({children}) => (
       @media only screen and (min-width: 751px) {
       }
     `}
-    </style>
-  </div>
-)
+        </style>
+      </div>
+    )
+  }
+
+}
 
 export default Layout

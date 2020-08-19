@@ -1,16 +1,16 @@
-const ordono = {
-  title: 'Optimización del tiempo y organización efectiva, el método de las clínicas Ordoño Dent.',
+const orono = {
+  title: 'Optimización del tiempo y organización efectiva, el método de las clínicas Oroño Dent.',
   bgImg: [
     {
-      src: 'https://scontent.faep8-1.fna.fbcdn.net/v/t1.0-9/971306_493975197338418_665908168_n.jpg?_nc_cat=101&_nc_sid=d2e176&_nc_ohc=vn-FeAftj6gAX9c9kwI&_nc_ht=scontent.faep8-1.fna&oh=1f01160949e0519b8cf680db37b82e08&oe=5F027B46',
+      src: '/static/orono_1.jpg',
       position: 'center center',
     },
     {
-      src: 'https://scontent.faep8-1.fna.fbcdn.net/v/t31.0-8/13923880_1142410782494853_8952984330501092358_o.jpg?_nc_cat=111&_nc_sid=9267fe&_nc_ohc=ubW5XB5g37cAX-MPYIS&_nc_ht=scontent.faep8-1.fna&oh=f8fcbb1b2aa40a1ebb493ba66bb64806&oe=5F031F5B',
-      position: 'center 20%',
+      src: '/static/orono_2.jpg',
+      position: 'center 60%',
     },
     {
-      src: 'https://scontent.faep8-1.fna.fbcdn.net/v/t1.0-9/417869_493962074006397_1843304714_n.jpg?_nc_cat=110&_nc_sid=cdbe9c&_nc_ohc=qneQhZPp0cEAX-tIbiQ&_nc_ht=scontent.faep8-1.fna&oh=72d3afaf6ab8b0b3119d4b8f94d7cfc3&oe=5F01655C',
+      src: '/static/orono_3.jpg',
       position: 'center 70%',
     },
   ],
@@ -49,16 +49,16 @@ const calcagno = {
   title: 'Trayectoria, motivación y buena comunicación, la fórmula del éxito de Espacio Dental.',
   bgImg: [
     {
-      src: 'https://scontent.faep8-1.fna.fbcdn.net/v/t1.0-9/82570140_2764741926918553_8192538104372920320_o.jpg?_nc_cat=111&_nc_sid=a26aad&_nc_ohc=KNgG1XEBB2AAX_jnYhX&_nc_ht=scontent.faep8-1.fna&oh=6976261c816261dd9ed37d253a4bc2b2&oe=5F0EF3BE',
+      src: '/static/calcagno_1.jpg',
       position: 'center center',
     },
     {
-      src: 'https://scontent.faep8-2.fna.fbcdn.net/v/t1.0-9/13178832_1084562121603217_4997219386334214472_n.jpg?_nc_cat=107&_nc_sid=8bfeb9&_nc_ohc=St4RQnKRvjkAX_GSJbz&_nc_ht=scontent.faep8-2.fna&oh=ed0a84e033974932c93e610cfc32d7a8&oe=5F0EC82F',
-      position: 'center 20%',
+      src: '/static/calcagno_2.jpg',
+      position: 'center 50%',
     },
     {
-      src: 'https://scontent.faep8-2.fna.fbcdn.net/v/t31.0-8/10904511_865635450162553_3547655712566753588_o.jpg?_nc_cat=109&_nc_sid=cdbe9c&_nc_ohc=DqPoI6gX77UAX-ZgQ6K&_nc_ht=scontent.faep8-2.fna&oh=d132034be1b4ec030e0a83182091f652&oe=5F0C78C4',
-      position: 'center 70%',
+      src: '/static/calcagno_3.jpg',
+      position: 'center 30%',
     },
   ],
   section: {
@@ -77,6 +77,6 @@ const calcagno = {
 };
 
 export default {
-  ordono,
+  orono,
   calcagno
 }

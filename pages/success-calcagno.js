@@ -26,6 +26,31 @@ const SuccessCasesCalcagno = () => {
         {`
       {/* STYLES FOR MOBILE */}
       @media only screen and (max-width: 750px) {
+        .success-container {
+          color: #505656;
+          margin: 0 auto;
+          display: flex;
+          flex-direction: column;
+        }
+        .success-container--title {
+          margin: 0 auto;
+          font-size: 22px;
+          padding: 20px;
+        }
+        .success-container--text {
+          font-size: 16px;
+          line-height: 1.6;
+          padding: 10px 20px;
+        }
+        .success-container--text.cta {
+          color: #000;
+          font-weight: 600;
+        }
+        .success-container--text.cta a {
+          color: #0090ff;
+          text-decoration: none;
+          transition: 0.3s ease;
+        }
       }
 
       {/* STYLES FOR DESKTOP */}

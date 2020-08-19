@@ -18,36 +18,57 @@ class Form extends React.Component {
         email: '',
         phone: '',
         expertise: '',
+        message: props.customMessage ? props.customMessage : '',
       },
-      message: props.customMessage ? props.customMessage : '',
       isVerified: false,
+      submitted: false,
+      submittedWhitError: false,
+      requiredFields: false,
     }
     this.handleFormSubmit = this.handleFormSubmit.bind(this);
     this.handleClearForm = this.handleClearForm.bind(this);
-    this.handleFullName = this.handleFullName.bind(this);
     this.handleInput = this.handleInput.bind(this);
-    this.handleMessage = this.handleMessage.bind(this);
-    this.handleEmail = this.handleEmail.bind(this);
-    this.handlePhone = this.handlePhone.bind(this);
     this.handleCaptchaVerification = this.handleCaptchaVerification.bind(this);
   }
 
   handleFormSubmit(e) {
     e.preventDefault();
+    const { newUser: { name, email, phone, expertise, message }, isVerified } = this.state;
+    const requiredFields = (!name || name === '') || (!email || email === '') || (!phone || phone === '') || (!message || message === '');
+    
+    if (requiredFields) {
+      return this.setState({ requiredFields: true });
+    }
 
-    if(!this.state.isVerified) {
+    if(!isVerified) {
       return alert('Necesitamos saber que sos humano, por favor completá el captcha.');
     }
 
-    fetch('/api/contact.js', {
-      method: 'post',
-      headers: {
-        'Accept': 'application/json, text/plain, */*',
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(this.state)
+    const form = document.getElementById('contact-form');
+    const formData = new FormData(form);
+
+    formData.append('name', name);
+    formData.append('email', email);
+    formData.append('phone', phone);
+    formData.append('expertise', expertise);
+    formData.append('message', message);
+
+    fetch('/php/email-sender.php', {
+      method: 'POST',
+      body: formData,
     }).then((res) => {
-      res.status === 200 ? this.setState({ submitted: true }) : ''
+      if (res.status === 200) {
+        this.setState({ submitted: true })
+        const dataAutoresponse = new FormData(form);
+        dataAutoresponse.append('recipient', email);
+
+        fetch('/php/email-automatic-response.php', {
+          method: 'POST',
+          body: dataAutoresponse,
+        })
+      }
+    }).catch((err) => {
+      err ? this.setState({ submittedWhitError: true }) : ''
     })
   };
 
@@ -64,75 +85,53 @@ class Form extends React.Component {
         phone: '',
         expertise: '',
         skills: [],
+        message: '',
       },
-      message: '',
     })
-  };
-
-  handleFullName(e) {
-    let value = e.target.value;
-    this.setState((prevState) => (
-      {newUser: {...prevState.newUser, name: value}}
-    ));
-  };
-
-  handleEmail(e) {
-    let value = e.target.value;
-    this.setState((prevState) => (
-      {newUser: {...prevState.newUser, email: value}}
-    ));
-  };
-
-  handlePhone(e) {
-    let value = e.target.value;
-    this.setState((prevState) => (
-      {newUser: {...prevState.newUser, phone: value}}
-    ));
   };
 
   handleInput(e) {
     let value = e.target.value;
     let name = e.target.name;
-    this.setState(
-      (prevState) => {return {newUser : {...prevState.newUser, [name]: value}}},
-      () => console.log(this.state.newUser)
-    );
-  };
-
-  handleMessage(e) {
-    let value = e.target.value;
-    this.setState((prevState) => {return {message : prevState.message, message: value}});
+    this.setState((prevState) => {return {newUser : {...prevState.newUser, [name]: value}}});
   };
 
   render() {
     const expertiseOptions = ['Odontólogo/a', 'Laboratorista', 'Secretario/a', 'Administrador/a', 'Otro'];
+    const { submitted, submittedWhitError, requiredFields } = this.state;
     return (
-      <form className="form" onSubmit={this.handleFormSubmit}>
+      <form id='contact-form' className="form" onSubmit={this.handleFormSubmit}>
         <p className="form-title">Formulario de contacto</p>
+        {submitted && <p className="submitted success">Mensaje enviado correctamente</p>}
+        {submittedWhitError && <p className="submitted error">Ups! Algo ocurrió, por favor intentalo de nuevo</p>}
+        {requiredFields && <p className="submitted error">Por favor, completá los campos requeridos</p>}
         <div className="form-interactive_area">
           <Input
+            required
             type = {'text'}
             title = {'Nombre y apellido'} 
             name = {'name'}
             value ={this.state.newUser.name} 
             placeholder = {'Escribí tu nombre acá'}
-            handleChange = {this.handleFullName}
+            handleChange = {this.handleInput}
           /> {/* Name of the user */}
           <Input
+            required
             type = {'text'}
             title = {'Email'}
             name = {'email'}
             value = {this.state.newUser.email} 
             placeholder = {'Escribí tu email acá'}
-            handleChange = {this.handleEmail}
+            handleChange = {this.handleInput}
           /> {/* Input for Email */}
           <Input
-            type = {'text'}
+            required
+            type = {'number'}
             title = {'Teléfono'}
             name = {'phone'}
             value = {this.state.newUser.phone} 
             placeholder = {'+54 011'}
-            handleChange = {this.handlePhone}
+            handleChange = {this.handleInput}
           /> {/* Input for Phone number */}
           <Select
             title={'Profesión'}
@@ -147,9 +146,11 @@ class Form extends React.Component {
           title={'Mensaje'}
           type={'text'}
           name={'message'}
-          value={this.state.message}
-          handleChange={this.handleMessage}
+          value={this.state.newUser.message}
+          handleChange={this.handleInput}
+          required
         /> {/* About you */}
+        <p className="required-copy">* campos requeridos</p>
         <div className="form-captcha">
           <ReCAPTCHA
             sitekey="6Lfwz_sUAAAAAFHYFO43VhBKoxbEyCUPYfUTnxp8"
@@ -186,6 +187,19 @@ class Form extends React.Component {
             .form-captcha {
               margin-top: 20px;
             }
+            .submitted {
+              padding: 20px;
+              margin-bottom: 10px;
+              border-radius: 5px;
+              width: 100%;
+              color: #fff;
+            }
+            .submitted.success {
+              background-color: #39B54A;
+            }
+            .submitted.error {
+              background-color: #F23D4F;
+            }
           }
 
           {/* STYLES FOR DESKTOP */}
@@ -208,6 +222,23 @@ class Form extends React.Component {
             }
             .form-captcha {
               margin-top: 20px;
+            }
+            .submitted {
+              padding: 20px;
+              margin-bottom: 10px;
+              border-radius: 5px;
+              width: 100%;
+              color: #fff;
+            }
+            .submitted.success {
+              background-color: #39B54A;
+            }
+            .submitted.error {
+              background-color: #F23D4F;
+            }
+            .required-copy {
+              font-size: 12px;
+              color: #777;
             }
           }
         `}

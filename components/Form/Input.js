@@ -1,15 +1,17 @@
 const Input = (props) => {
+  const { name, type, title, value, handleChange, placeholder, required } = props;
   return (  
     <div className="form-group">
-      <label htmlFor={props.name} className="form-label">{props.title}</label>
+      <label htmlFor={name} className="form-label">{title}{required && ' *'}</label>
       <input
         className="form-input"
-        id={props.name}
-        name={props.name}
-        type={props.type}
-        value={props.value}
-        onChange={props.handleChange}
-        placeholder={props.placeholder} 
+        id={name}
+        name={name}
+        type={type}
+        value={value}
+        onChange={handleChange}
+        placeholder={placeholder} 
+        required={required}
       />
       <style jsx>
         {`

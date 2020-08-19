@@ -1,15 +1,16 @@
 const TextArea = (props) => {
+  const { name, title, type, value, handleChange, required } = props;
   return (  
     <div className="form-group">
-      <label htmlFor={props.name} className="form-label">{props.title}</label>
+      <label htmlFor={name} className="form-label">{title}{required && ' *'}</label>
       <textarea
         className="form-textarea"
-        id={props.name}
-        name={props.name}
-        type={props.type}
-        value={props.value}
+        id={name}
+        name={name}
+        type={type}
+        value={value}
         rows={5}
-        onChange={props.handleChange}
+        onChange={handleChange}
       />
       <style jsx>
         {`

@@ -5,7 +5,7 @@ const FooterWrapper = () => (
     </div>
     <div className="wrapper--text">
       <p className="copyright">
-        Copyright © 2019 Bilog, Inc. All rights reserved.
+        Copyright © {new Date().getFullYear()} Bilog, Inc. All rights reserved.
       </p>
     </div>
     <style jsx>

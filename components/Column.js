@@ -7,9 +7,11 @@ const Column = ({items, title}) => {
       {
         items.map((item, index) => {
           return(
-            <Link key={index} href={`${item.href}`}>
-              <a className="link">{item.text}</a>
-            </Link>
+            item.href.includes('http') ?
+              <a className="link" href={`${item.href}`}>{item.text}</a> :
+              <Link key={index} href={`${item.href}`}>
+                <a className="link">{item.text}</a>
+              </Link>
           )
         })
       }

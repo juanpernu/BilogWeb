@@ -62,7 +62,7 @@ class Desktop extends React.Component {
             <a className="link">Contacto</a>
           </Link>
           <Link href="/utils">
-            <a className="link">Descargas útiles</a>
+            <a className="link">Útiles</a>
           </Link>
         </aside>
         <style jsx>
