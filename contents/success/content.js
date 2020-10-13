@@ -45,6 +45,45 @@ const orono = {
   }
 };
 
+const marion = {
+  title: 'La estrategia de la Dra. Laura Marion para mejorar el control de su clínica.',
+  bgImg: [
+    {
+      src: '/static/marion_1.png',
+      position: 'center center',
+    },
+    {
+      src: '/static/marion_2.JPG',
+      position: 'center 5%',
+    },
+    {
+      src: '/static/marion_3.jpg',
+      position: 'center 35%',
+    },
+  ],
+  section: {
+    first: [
+      `<b>Optimización de tiempos y organización en el desarrollo de su profesión fue lo que motivó, hace 12 años, a la Dra. Maria Laura Marion a elegirnos como compañeros de trabajo.</b>
+      Hace más de 10 años, la Doctora la Dra. M. Laura Marion, tenía como desafío organizar sus Historias Clínicas, tenerlas a mano, saber rápidamente que tenía que hacer al paciente, nos
+      contaba que en ese momento tenían la necesidad de organizarse, de digitalizarse, de tener control sobre su clínica.`,
+      `Hoy el <b>Lic. en Administración Diego Pérez</b>, responsable de la Gestión de la <b>Clínica Marion Odontología y Estética Dental</b> de la ciudad de Córdoba Capital nos comenta cómo ayuda la
+      implementación de nuestro software en sus tareas cotidianas.`
+    ],
+    second: [
+      `“Nos ayuda mucho a tener mejor y más centralizada la información. También es muy útil a la hora de liquidar los honorarios a los profesionales y realizar
+      la facturación de las prepagas y obras sociales. Ni hablar de la eficiencia de los recordatorios de turnos para minimizar el ausentismo.”`,
+      `<b>“Bilog es una herramienta que simplifica tareas.”</b>`,
+      `Cuando le preguntamos, por qué recomendaría Bilog a sus colegas, nos respondió:</br>
+      <i>"Porque  es un software <b>confiable, amigable e intuitivo que tiene un buen soporte técnico</b> y que resuelve muy bien la parte odontológica.
+      Tiene distintas versiones y módulos que se adaptan perfectamente a las necesidades de un profesional o de una clínica de mayor tamaño."</i>`,
+    ],
+    third: [
+      `Como comentario final, nos dice: <i>“No duden, vale la pena y es indispensable hoy en día tener las cosas ordenadas en un software que ofrece múltiples soluciones”.</i>`,
+      `Gracias Maria Laura  y Diego por contarnos su experiencia y seguir confiando en Bilog todos los días. Nos llena de orgullo trabajar codo a codo con profesionales como ustedes.`,
+    ]
+  }
+};
+
 const calcagno = {
   title: 'Trayectoria, motivación y buena comunicación, la fórmula del éxito de Espacio Dental.',
   bgImg: [
@@ -78,5 +117,6 @@ const calcagno = {
 
 export default {
   orono,
-  calcagno
+  calcagno,
+  marion
 }
