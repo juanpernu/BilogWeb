@@ -1,3 +1,97 @@
+const main = [
+  {
+    case: "Dental Centro Posadas",
+    title: 'Dental Centro Posadas, una idea nacida de la motivación y potencial de dos jóvenes odontólogos.',
+    href: '/success-corti',
+    cover: {
+      src: '/static/corti_1.jpg',
+      position: 'center 20%',
+    },
+    preview: `Dental Centro Posadas, ubicada en el corazón céntrico de Posadas, Misiones, es una clínica odontológica que nació de
+    las motivaciones y potenciales de los jóvenes odontólogos Dr. Enzo Corti y Dr. Maximiliano Esequiel Agolti.`,
+  },
+  {
+    case: "Oroño Dent",
+    title: 'Optimización del tiempo y organización efectiva, el método de las clínicas Oroño Dent.',
+    href: '/success-orono',
+    cover: {
+      src: '/static/orono_1.jpg',
+      position: 'center center',
+    },
+    preview: `Todo comenzó hace más de diez años con la necesidad de una herramienta para potenciar y organizar el día a día de sus clínicas.
+    Actualmente, las clínicas de los doctores Lenarduzzi, Roberto y Mauro, trabajan codo a codo con el equipo de Bilog, en la administración
+    de los recursos de las clínicas generando un impacto directo en la optimización del tiempo y la organización de la clínica.`,
+  },
+  {
+    case: "Espacio Dental",
+    title: 'Trayectoria, motivación y buena comunicación, la fórmula del éxito de Espacio Dental.',
+    href: '/success-calcagno',
+    cover: {
+      src: '/static/calcagno_1.jpg',
+      position: 'center center',
+    },
+    preview: `Hablamos con una de nuestras más fieles usuarias, que nosotros consideramos una increíble compañera de trabajo. Les queremos contar
+    el caso de Liliana Calcagno, odontóloga con una gran trayectoria de más de 41 años, especializada en la atención de pacientes con discapacidad
+    haciendo foco, sobre todo, en los niños. Hoy, ya hace más de 5 años, trabaja en conjunto con su hijo Mauro Martinelli.`,
+  },
+  {
+    case: "Clínica Marion Odontología y Estética Dental",
+    title: 'La estrategia de la Dra. Laura Marion para mejorar el control de su clínica.',
+    href: '/success-marion',
+    cover: {
+      src: '/static/marion_1.png',
+      position: 'center center',
+    },
+    preview: `Optimización de tiempos y organización en el desarrollo de su profesión fue lo que motivó, hace 12 años, a la Dra. Maria Laura Marion
+    a elegirnos como compañeros de trabajo. Hace más de 10 años, la Doctora la Dra.M.Laura Marion, tenía como desafío organizar sus Historias Clínicas,
+    tenerlas a mano, saber rápidamente que tenía que hacer al paciente, nos contaba que en ese momento tenían la necesidad de organizarse, de digitalizarse,
+    de tener control sobre su clínica.`,
+    no_divider: true,
+  },
+];
+
+const corti = {
+  title: 'Dental Centro Posadas, una idea nacida de la motivación y potencial de dos jóvenes odontólogos.',
+  bgImg: [
+    {
+      src: '/static/corti_1.jpg',
+      position: 'center 20%',
+    },
+    {
+      src: '/static/corti_2.jpg',
+      position: 'center 20%',
+    },
+    {
+      src: '/static/corti_3.jpg',
+      position: 'center center',
+    },
+  ],
+  section: {
+    first: [
+      `<b>Dental Centro Posadas</b>, ubicada en el corazón céntrico de Posadas, Misiones, es una clínica odontológica que nació de las
+      motivaciones y potenciales de los jóvenes odontólogos Dr. Enzo Corti y Dr. Maximiliano Esequiel Agolti.`,
+      `<b>El desafío</b> <br>
+      La Clínica se enfrentaba a problemas de organización y optimización de las agendas de turnos y la eficiencia en el manejo de los datos del pacientes.
+      <i>“Queríamos ordenar, tener al día la información de nuestra clínica. Sabíamos que para poder brindar un buen servicio a nuestros pacientes, necesitábamos
+      un software que nos ayude a organizarnos”</i>, nos comenta Enzo.`,
+    ],
+    second: [
+      `<b>La solución</b> <br>
+      Hicimos un relevamiento y mediante charlas pudimos conocer en profundidad cuáles eran los requerimientos que la clínica estaba necesitando para
+      poder brindarle una solución a su medida. Dice el Dr. Enzo Corti: <i>“Hace más de 5 años que utilizamos Bilog y nos ayudó mucho a optimizar la administración,
+      a mejorar la experiencia de nuestros pacientes, a tener el control de nuestras finanzas”</i> - y continúa:`,
+      `<i>“Cada día le encontramos más utilidad. Los Módulos de Administración y Auditoría maximizaron nuestra productividad ya que son sumamente necesarios a la hora
+      de gestionar un plantel de profesionales y un gran caudal de pacientes.”</i>`,
+    ],
+    third: [
+      `<b>Si tuvieses que recomendar Bilog a un colega, ¿qué le dirías?</b> <br>
+      <i>“¡Siempre lo recomiendo!  A todos les digo que organizarse e invertir en un software tiene un costo. Pero el desorden tiene un costo superior!
+      Bilog es una herramienta muy completa, que llegó para organizar y sistematizar nuestra clínica, sin lugar a dudas la evolución del software
+      y las mejoras continuas lo hacen muy versátil e intuitivo de manejar."</i>`,
+    ]
+  }
+};
+
 const orono = {
   title: 'Optimización del tiempo y organización efectiva, el método de las clínicas Oroño Dent.',
   bgImg: [
@@ -53,7 +147,7 @@ const marion = {
       position: 'center center',
     },
     {
-      src: '/static/marion_2.JPG',
+      src: '/static/marion_2.jpg',
       position: 'center 5%',
     },
     {
@@ -116,7 +210,9 @@ const calcagno = {
 };
 
 export default {
+  main,
   orono,
   calcagno,
-  marion
+  marion,
+  corti
 }

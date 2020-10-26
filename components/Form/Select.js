@@ -1,15 +1,25 @@
 const Select = (props) => {
+  const {
+    name,
+    title,
+    required,
+    value,
+    handleChange,
+    placeholder,
+    options,
+   } = props;
+
   return(
     <div className="form-group">
-      <label className="form-label" htmlFor={props.name}> {props.title} </label>
+      <label className="form-label" htmlFor={name}> {title} {required && ' *'}</label>
       <select
         className="form-select"
-        name={props.name}
-        value={props.value}
-        onChange={props.handleChange}
+        name={name}
+        value={value}
+        onChange={handleChange}
         >
-        <option value="" disabled>{props.placeholder}</option>
-        {props.options.map(option => {
+        <option value="" disabled>{placeholder}</option>
+        {options.map(option => {
           return (
             <option
               key={option}

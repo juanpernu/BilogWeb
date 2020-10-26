@@ -12,12 +12,13 @@ class Form extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = {
+    this.state = {  
       newUser: {
         name: '',
         email: '',
         phone: '',
         expertise: '',
+        preference: '',
         message: props.customMessage ? props.customMessage : '',
       },
       isVerified: false,
@@ -33,8 +34,12 @@ class Form extends React.Component {
 
   handleFormSubmit(e) {
     e.preventDefault();
-    const { newUser: { name, email, phone, expertise, message }, isVerified } = this.state;
-    const requiredFields = (!name || name === '') || (!email || email === '') || (!phone || phone === '') || (!message || message === '');
+    const { newUser: { name, email, phone, expertise, preference, message }, isVerified } = this.state;
+    const requiredFields = (!name || name === '') ||
+      (!email || email === '') ||
+      (!phone || phone === '') ||
+      (!message || message === '') ||
+      (!preference || preference === '');;
     
     if (requiredFields) {
       return this.setState({ requiredFields: true });
@@ -51,6 +56,7 @@ class Form extends React.Component {
     formData.append('email', email);
     formData.append('phone', phone);
     formData.append('expertise', expertise);
+    formData.append('preference', preference);
     formData.append('message', message);
 
     fetch('/php/email-sender.php', {
@@ -84,6 +90,7 @@ class Form extends React.Component {
         email: '',
         phone: '',
         expertise: '',
+        preference: '',
         skills: [],
         message: '',
       },
@@ -98,6 +105,7 @@ class Form extends React.Component {
 
   render() {
     const expertiseOptions = ['Odontólogo/a', 'Laboratorista', 'Secretario/a', 'Administrador/a', 'Otro'];
+    const preferenceOptions = ['Mail', 'Llamado telefónico', 'Whatsapp'];
     const { submitted, submittedWhitError, requiredFields } = this.state;
     return (
       <form id='contact-form' className="form" onSubmit={this.handleFormSubmit}>
@@ -140,6 +148,15 @@ class Form extends React.Component {
             value = {this.state.newUser.expertise}
             placeholder = {'Elegí tu profesión'}
             handleChange = {this.handleInput}
+          /> {/* Age Selection */}
+          <Select
+            required
+            title={'¿Cómo preferís que te contactemos?'}
+            name={'preference'}
+            options={preferenceOptions}
+            value={this.state.newUser.preference}
+            placeholder={'Forma de contacto'}
+            handleChange={this.handleInput}
           /> {/* Age Selection */}
         </div>
         <TextArea
