@@ -83,21 +83,21 @@ const tantera = {
       escuchar sus necesidades, evaluar su problemática y pensar un plan que solucione las dificultades que se le presentaban
       en la tarea cotidiana le mostramos cómo con nuestra herramienta podríamos aportar a mejorar su gestión del negocio. <br>`,
       `Tuvimos que vencer su escepticismo, ya que provenía de una larga y decepcionante experiencia de uso de un software al que encontraban
-      difícil de usar y con graves carencias de soporte al usuario. En palabras de Tania: <i>"Gracias por la eficiencia, no sabés lo que pasé con el otro programa. Ya me los instalaron y están agendadas las capacitaciones. Estoy chocha".”</i>`,
+      difícil de usar y con graves carencias de soporte al usuario. En palabras de Tania: <i><b>Gracias por la eficiencia, no sabés lo que pasé con el otro programa.
+      Ya me los instalaron y están agendadas las capacitaciones. Estoy chocha".</i></b>`,
     ],
     second: [
-      `<b>La solución</b> <br>
-      Hicimos un relevamiento y mediante charlas pudimos conocer en profundidad cuáles eran los requerimientos que la clínica estaba necesitando para
-      poder brindarle una solución a su medida. Dice el Dr. Enzo Corti: <i>“Hace más de 5 años que utilizamos Bilog y nos ayudó mucho a optimizar la administración,
-      a mejorar la experiencia de nuestros pacientes, a tener el control de nuestras finanzas”</i> - y continúa:`,
-      `<i>“Cada día le encontramos más utilidad. Los Módulos de Administración y Auditoría maximizaron nuestra productividad ya que son sumamente necesarios a la hora
-      de gestionar un plantel de profesionales y un gran caudal de pacientes.”</i>`,
+      `Le pedimos a Tania que nos cuente con sus palabras cuáles eran sus obstáculos diarios y cómo ayudó Bilog a resolverla. Nos comenta:
+      <i><b>"Teníamos un programa, engorroso y que no podíamos usarlo al 100%. Estábamos un poco descreídas de la utilización de internet para
+      llevar nuestra actividad diaria en el consultorio, pero decidimos arriesgarnos con Bilog y la verdad es que funcionó e hizo el trabajo más
+      fácil, estamos súper agradecidas!"</i></b><br><br>
+      Le preguntamos qué significa, para ella, Bilog en relación con su trabajo diario y, citando, nos dice: <i><b>“Es indispensable, tengo la comodidad
+      de poder actualizar el trabajo atrasado desde casa”</i></b>. No cabe duda que aparecen muchas resistencias al cambio, pero estamos para contenerlos y acompañarlos para siempre.`,
     ],
     third: [
-      `<b>Si tuvieses que recomendar Bilog a un colega, ¿qué le dirías?</b> <br>
-      <i>“¡Siempre lo recomiendo!  A todos les digo que organizarse e invertir en un software tiene un costo. Pero el desorden tiene un costo superior!
-      Bilog es una herramienta muy completa, que llegó para organizar y sistematizar nuestra clínica, sin lugar a dudas la evolución del software
-      y las mejoras continuas lo hacen muy versátil e intuitivo de manejar."</i>`,
+      `Conociendo las necesidades de Tania y en pro de mejorar la productividad hemos acompañado en todo momento en el proceso de digitalización y organización de la clínica a través de Bilog,
+      nos sentimos satisfechos y orgullosos de ser parte del proceso de crecimiento de nuestros usuarios. <br><br>
+      Por último, le preguntamos: ¿Si tuvieses que recomendar Bilog a un colega, ¿qué le dirías? <i><b>“¡Que dejen de usar papeles y se animen, porque es súper recomendable!”</i></b>`,
     ]
   }
 };

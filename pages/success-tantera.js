@@ -20,7 +20,7 @@ const SuccessCasesOrono = () => {
         {
           third && third.map(el => <p className="success-container--text" dangerouslySetInnerHTML={{ __html: el }} />)
         }
-        <p className="success-container--text cta">Vos también podes mejorar tu negocio, retener clientes e incrementar tus ganancias. Nuestro equipo te acompaña en todo el trayecto, basándose en tus necesidades y objetivos. <a href="/contact">¡Contactanos!</a></p>
+        <p className="success-container--text cta">Seguimos smando casos de éxito. ¿Y vos que estás esperando? <a href="/contact">¡Contactanos!</a></p>
       </section>
       <style jsx>
         {`
