@@ -1,5 +1,16 @@
 const main = [
   {
+    case: "Clínicas Alvarado Careggio",
+    title: 'Elección, apuesta y cambio son los 3 factores clave del éxito de la experiencia de las Clínicas Alvarado Careggio.',
+    href: '/success-alvarado',
+    cover: {
+      src: '/static/alvarado_3.jpg',
+      position: 'center 25%',
+    },
+    preview: `El Dr. Antonio Alvarado, Odontólogo especialista en Rehabilitación Oral e Implantes y Director de Clínica Odontológica Alvarado
+    Careggio, tenía como objetivo mejorar los procesos administrativos de la clínica y por sobre todo ordenar las Historias Clínicas de los Pacientes.`,
+  },
+  {
     case: "Dra. Tania Tantera",
     title: 'Evolución e innovación tecnológica fue la apuesta de la Dra. Tania Tantera.',
     href: '/success-tantera',
@@ -60,6 +71,50 @@ const main = [
     no_divider: true,
   },
 ];
+
+const alvarado = {
+  title: 'Elección, apuesta y cambio son los 3 factores clave del éxito de la experiencia de las Clínicas Alvarado Careggio',
+  bgImg: [
+    {
+      src: '/static/alvarado_3.jpg',
+      position: 'center 25%',
+    },
+    {
+      src: '/static/alvarado_1.jpg',
+      position: 'center 65%',
+    },
+    {
+      src: '/static/alvarado_2.jpg',
+      position: 'center 70%',
+    },
+  ],
+  section: {
+    first: [
+      `<i><span style="font-size: 24px; color: #0090ff;">"El cambio vale la pena", es hoy la reflexión del director de la clínica, sobre lo que fue hace 13 años elegirnos como compañeros de trabajo diario.<span></i> <br>`,
+      `El Dr. Antonio Alvarado, Odontólogo especialista en Rehabilitación Oral e Implantes y Director de Clínica Odontológica Alvarado Careggio, tenía como objetivo
+      mejorar los procesos administrativos de la clínica y por sobre todo ordenar las Historias Clínicas de los Pacientes. Antonio y sus colegas querían minimizar el uso del papel por todo lo
+      que significaba (desorden, pérdida de tiempo, dinero y por ende falta de información tangible sobre la gestión).`,
+      `Nos dice: <i><b>“Buscaba la eliminación del papel, tanto para historias clínicas como agendas y demás.”</b></i>`
+    ],
+    second: [
+      `Luego de determinar las debilidades y él referirse a las deficiencias en la gestión diaria, entendimos que a nosotros como empresa </b>se nos presentaba un gran desafío: implementar el
+      uso de un software en una clínica en funcionamiento, con dueños de gran prestigio y trayectoria</b> probada y que tenían toda una manera previa de organizarse. Para nosotros, el esfuerzo sería doble`,
+      `Nos propusimos trabajar en conjunto hasta lograr un funcionamiento aceitado de todos los procesos, que van desde la recepción hasta la salida del paciente del consultorio, luego, la facturación y los cobros.
+      Para lograrlo fue fundamental el aporte y las críticas de los odontólogos experimentados y la contribución del equipo de secretarias y administradoras.`,
+      `Su interés y necesidad de realizar un cambio en la dinámica diaria, y nuestra solución propició la transformación tecnológica.`
+    ],
+    third: [
+      `Luego de haber experimentado la modificación de su rutina diaria le preguntamos qué significa Bilog en relación con su trabajo diario, y nos dice:`,
+      `<i><span style="font-size: 24px; color: #0090ff;">“Es primordial. No podemos trabajar sin él. Significa orden, eficiencia y control. Encontré en Bilog una herramienta que brinda todo eso.”<span></i> <br>`,
+      `<b>Si tuvieses que recomendar Bilog a un colega, ¿qué le dirías?<b> `,
+      `<i><span style="font-size: 24px; color: #0090ff;">“El cambio vale la pena. Una vez que el sistema está en funcionamiento todo el trabajo fluye fácilmente.”<span></i> <br>`,
+      `La organización es indispensable para lograr resultados favorables, la transformación digital era el cambio que necesitaba, en nuestra herramienta y en nuestro equipo de trabajo encontró el mejor aliado.
+      Con el tiempo al ir creciendo fuimos implementando nuestros softwares en sus consultorios de Barrio Norte en Capital Federal con todos los requerimientos de facturación de las prepagas.`,
+      `Estamos convencidos que la clave del éxito está en acompañar a nuestros usuarios en cada paso de la implementación de la solución y brindarles tranquilidad y seguridad en la tarea cotidiana y en el resguardo de los datos.
+      Entendemos que el corazón del negocio es la información y trabajamos para resguardarla.`
+    ]
+  }
+};
 
 const tantera = {
   title: 'Evolución e innovación tecnológica fue la apuesta de la Dra. Tania Tantera.',
@@ -267,5 +322,6 @@ export default {
   calcagno,
   marion,
   corti,
-  tantera
+  tantera,
+  alvarado
 }

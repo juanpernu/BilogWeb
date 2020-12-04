@@ -43,6 +43,11 @@ const footer = {
 
 const testimonials = [
   {
+    avatarSrc: "/static/testimonial-13.jpg",
+    userName: "Alfredo Malano",
+    testimonialText: "BILOG es una excelente herramienta de gestión, que nos permite estar organizados y obtener información financiera, estadística y administrativa. Es un sistema de fácil manejo, de fundamental importancia en mis consultorios."
+  },
+  {
     avatarSrc: "/static/testimonial-12.jpg",
     userName: "Belén Trias",
     testimonialText: "Después de probar otros programas de gestión, nos decidimos por Bilog, los pasos para hacer todo se acompaña con lo que vas pensando. Nos soluciona toda la gestión de la clínica."

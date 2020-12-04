@@ -12,6 +12,7 @@ module.exports = {
       '/success-marion/index': { page: '/success-marion' },
       '/success-corti/index': { page: '/success-corti' },
       '/success-tantera/index': { page: '/success-tantera' },
+      '/success-alvarado/index': { page: '/success-alvarado' },
       '/laboratorio/index': { page: '/laboratorio' },
       '/odontologica/index': { page: '/odontologica' },
       '/utils/index': { page: '/utils' },
