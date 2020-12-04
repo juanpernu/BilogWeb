@@ -11,6 +11,7 @@ module.exports = {
       '/success-orono/index': { page: '/success-orono' },
       '/success-marion/index': { page: '/success-marion' },
       '/success-corti/index': { page: '/success-corti' },
+      '/success-tantera/index': { page: '/success-tantera' },
       '/laboratorio/index': { page: '/laboratorio' },
       '/odontologica/index': { page: '/odontologica' },
       '/utils/index': { page: '/utils' },

@@ -3,7 +3,7 @@ session_cache_limiter('nocache');
 header('Expires: ' . gmdate('r', 0));
 header('Content-type: application/json');
 
-$Recipient = 'juan.pernumian@gmail.com; juan.pernumian@bilog.com.ar; info@bilog.com.ar; aldo.pernumian@gmail.com; celestefortiz@bilog.com.ar'; // <-- Set your email here
+$Recipient = 'juan.pernumian@gmail.com; info@bilog.com.ar;'; // <-- Set your email here
 
 if($Recipient) {
   echo json_encode($_POST);

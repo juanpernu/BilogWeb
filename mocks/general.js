@@ -43,6 +43,16 @@ const footer = {
 
 const testimonials = [
   {
+    avatarSrc: "/static/testimonial-12.jpg",
+    userName: "Belén Trias",
+    testimonialText: "Después de probar otros programas de gestión, nos decidimos por Bilog, los pasos para hacer todo se acompaña con lo que vas pensando. Nos soluciona toda la gestión de la clínica."
+  },
+  {
+    avatarSrc: "/static/testimonial-11.jpg",
+    userName: "Gonzalo Gianera",
+    testimonialText: "El software me ayudó a organizar la Clínica de la mejor manera posible. Es tan completo que, aún hoy, después de varios años de usarlo le sigo descubriendo utilidades que optimizan aún más el rendimiento de la Clínica."
+  },
+  {
     avatarSrc: "/static/testimonial-01.jpg",
     userName: "Juan Eugenio Caride Sierra",
     testimonialText: "Excelente software y excelente servicio post venta, lo recomiendo en cada una de mis consultorías y lo uso en mi clínica."
