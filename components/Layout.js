@@ -1,11 +1,17 @@
 import React from 'react';
 import { Helmet } from "react-helmet";
 import TagManager from 'react-gtm-module';
+import { hotjar } from 'react-hotjar';
 import Header from './Header';
 import Footer from './Footer/Footer';
 
 const tagManagerArgs = {
   gtmId: 'GTM-WF5KDWF'
+}
+
+const hotsjarArgs = {
+  hjid: 2135805,
+  hjsv: 6,
 }
 
 class Layout extends React.Component {
@@ -22,6 +28,19 @@ class Layout extends React.Component {
     s.async = 1;
     d.getElementsByTagName("head")[0].appendChild(s);
     TagManager.initialize(tagManagerArgs);
+    hotjar.initialize(hotsjarArgs.hjid, hotsjarArgs.hjsv);
+
+    window.smartlook || (function (d) {
+      let smartlook = function () { smartlook.api.push(arguments) }, h = d.getElementsByTagName('head')[0];
+      let c = d.createElement('script');
+      smartlook.api = new Array();
+      c.async = true;
+      c.type = 'text/javascript';
+      c.charset = 'utf-8';
+      c.src = 'https://rec.smartlook.com/recorder.js';
+      h.appendChild(c);
+    })(document);
+    smartlook('init', '86f32ec50ba1a540fed11db7b4b11e6af3e772b0');
   }
 
   render(){
