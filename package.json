@@ -43,6 +43,7 @@
     "react-hotjar": "^2.2.1",
     "react-responsive-modal": "3.6.0",
     "react-swipe": "6.0.4",
+    "smartlook-client": "^4.6.1",
     "swipe-js-iso": "2.1.5"
   }
 }

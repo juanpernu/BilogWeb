@@ -2,6 +2,7 @@ import React from 'react';
 import { Helmet } from "react-helmet";
 import TagManager from 'react-gtm-module';
 import { hotjar } from 'react-hotjar';
+import smartlookClient from 'smartlook-client';
 import Header from './Header';
 import Footer from './Footer/Footer';
 
@@ -27,20 +28,10 @@ class Layout extends React.Component {
     s.src = "https://client.crisp.chat/l.js";
     s.async = 1;
     d.getElementsByTagName("head")[0].appendChild(s);
+    window.$crisp.push(["safe", true]);
     TagManager.initialize(tagManagerArgs);
     hotjar.initialize(hotsjarArgs.hjid, hotsjarArgs.hjsv);
-
-    window.smartlook || (function (d) {
-      let smartlook = function () { smartlook.api.push(arguments) }, h = d.getElementsByTagName('head')[0];
-      let c = d.createElement('script');
-      smartlook.api = new Array();
-      c.async = true;
-      c.type = 'text/javascript';
-      c.charset = 'utf-8';
-      c.src = 'https://rec.smartlook.com/recorder.js';
-      h.appendChild(c);
-    })(document);
-    smartlook('init', '86f32ec50ba1a540fed11db7b4b11e6af3e772b0');
+    smartlookClient.init('86f32ec50ba1a540fed11db7b4b11e6af3e772b0');
   }
 
   render(){
