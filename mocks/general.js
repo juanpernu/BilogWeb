@@ -43,6 +43,11 @@ const footer = {
 
 const testimonials = [
   {
+    avatarSrc: "/static/testimonial-14.jpg",
+    userName: "Alejandro Correa Silva",
+    testimonialText: "¡El software es excelente! Organiza muy bien las agendas y la facturación junto con la parte administrativa. El soporte post-venta es muy bueno, cualquier duda que te surge enseguida te lo solucionan.De verdad es muy recomendable, para mi es lejos el mejor software del mercado."
+  },
+  {
     avatarSrc: "/static/testimonial-13.jpg",
     userName: "Alfredo Malano",
     testimonialText: "BILOG es una excelente herramienta de gestión, que nos permite estar organizados y obtener información financiera, estadística y administrativa. Es un sistema de fácil manejo, de fundamental importancia en mis consultorios."
