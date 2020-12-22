@@ -56,3 +56,4 @@ old/
 .now
 
 .DS_Store
+.vercel

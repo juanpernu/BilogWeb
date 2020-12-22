@@ -1,5 +1,16 @@
 const main = [
   {
+    case: "Odontología Nueva Córdoba",
+    title: 'Una clínica odontológica donde además de la salud, la experiencia del paciente es lo que más importa.',
+    href: '/success-bustamante',
+    cover: {
+      src: '/static/bustamante_3.jpg',
+      position: 'center 90%',
+    },
+    preview: `En las charlas que inician la búsqueda una solución tecnológica para su empresa, la directora y titular del centro Odontología Nueva Córdoba,
+    la Dra. María Soledad Bustamante, Odontóloga con 18 años de experiencia, Ex-Profesora por concurso de la facultad de Odontología...`,
+  },
+  {
     case: "Clínicas Alvarado Careggio",
     title: 'Elección, apuesta y cambio son los 3 factores clave del éxito de la experiencia de las Clínicas Alvarado Careggio.',
     href: '/success-alvarado',
@@ -71,6 +82,43 @@ const main = [
     no_divider: true,
   },
 ];
+
+const bustamante = {
+  title: 'Odontología Nueva Córdoba, una clínica odontológica donde además de la salud, la experiencia del paciente es lo que más importa.',
+  bgImg: [
+    {
+      src: '/static/bustamante_3.jpg',
+      position: 'center 90%',
+    },
+    {
+      src: '/static/bustamante_2.jpg',
+      position: 'center 30%',
+    },
+    {
+      src: '/static/bustamante_1.jpg',
+      position: 'center 70%',
+    },
+  ],
+  section: {
+    first: [
+      `En las charlas que inician la búsqueda una solución tecnológica para su empresa, la directora y titular del centro Odontología Nueva Córdoba, la Dra. María Soledad
+      Bustamante, Odontóloga con 18 años de experiencia, Ex-Profesora por concurso de la facultad de Odontología UNC y Especialista en Endodoncia, nos explica la premisa de
+      su centro odontológico: <i>“ofrecer al paciente una experiencia de calidad y confort y cuidado personal, acompañándolo en cada una de las etapas de su tratamiento y que éste concluya con el grado más alto de satisfacción.”</i>`,
+      `Su éxito profesional es fruto de su forma de ver la vida: "Hazlo una vez excelente y no muchas mal! Es mi motor, por eso pongo tanta pasión a que cada cosa salga bien de una."`
+    ],
+    second: [
+      `Soledad tenía muy claro el problema y la solución. Sabía que el camino era apoyarse en la tecnología.`,
+      `Dice la doctora: “La problemática era que comenzamos a crecer como centro y necesitábamos una herramienta que nos ayude en la gestión y administración para lograr los objetivos que teníamos.”`,
+      `<i><span style="font-size: 24px; color: #0090ff;">“Es por ello que desde el año 2013 decidimos confiar en Bilog y desde entonces es una herramienta fundamental en la labor diaria.”<span></i> <br>`,
+      `Trabajamos en equipo con Soledad para aceitar todos los procesos y satisfacer la excelencia requerida por ella. <b>Fue clave para el éxito:</b> <br>
+      - Disponer de un equipo de soporte técnico y capacitación al usuario de atención permanente. <br>
+      - Escuchar sus pedidos de desarrollo, pensados para mejorar el trabajo operativo de su equipo administrativo y odontológico.`
+    ],
+    third: [
+      `Al preguntarle si recomendaría Bilog, nos dice: <i><b>“Lo he recomendado a muchísimos colegas. Sobre todo, cuando veo que gran parte de su problemática en el crecimiento es el procesamiento de la información de su consultorio o centro.”</b></i>`,
+    ]
+  }
+};
 
 const alvarado = {
   title: 'Elección, apuesta y cambio son los 3 factores clave del éxito de la experiencia de las Clínicas Alvarado Careggio',
@@ -323,5 +371,6 @@ export default {
   marion,
   corti,
   tantera,
-  alvarado
+  alvarado,
+  bustamante
 }

@@ -8,6 +8,7 @@ module.exports = {
       '/contact/index': { page: '/contact' },
       '/success/index': { page: '/success' },
       '/success-calcagno/index': { page: '/success-calcagno' },
+      '/success-bustamante/index': { page: '/success-bustamante' },
       '/success-orono/index': { page: '/success-orono' },
       '/success-marion/index': { page: '/success-marion' },
       '/success-corti/index': { page: '/success-corti' },

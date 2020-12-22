@@ -2,7 +2,6 @@ import React from 'react';
 import { Helmet } from "react-helmet";
 import TagManager from 'react-gtm-module';
 import { hotjar } from 'react-hotjar';
-import smartlookClient from 'smartlook-client';
 import Header from './Header';
 import Footer from './Footer/Footer';
 
@@ -31,7 +30,6 @@ class Layout extends React.Component {
     window.$crisp.push(["safe", true]);
     TagManager.initialize(tagManagerArgs);
     hotjar.initialize(hotsjarArgs.hjid, hotsjarArgs.hjsv);
-    smartlookClient.init('86f32ec50ba1a540fed11db7b4b11e6af3e772b0');
   }
 
   render(){
