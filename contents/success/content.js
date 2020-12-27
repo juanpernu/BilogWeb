@@ -7,7 +7,7 @@ const main = [
       src: '/static/bustamante_3.jpg',
       position: 'center 90%',
     },
-    preview: `En las charlas que inician la búsqueda una solución tecnológica para su empresa, la directora y titular del centro Odontología Nueva Córdoba,
+    preview: `En las charlas que inician la búsqueda de una solución tecnológica para su empresa, la directora y titular del centro Odontología Nueva Córdoba,
     la Dra. María Soledad Bustamante, Odontóloga con 18 años de experiencia, Ex-Profesora por concurso de la facultad de Odontología...`,
   },
   {
