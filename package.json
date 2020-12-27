@@ -20,7 +20,7 @@
     "CSS"
   ],
   "engines": {
-    "node": "10.2.1"
+    "node": ">=10.16.0"
   },
   "author": "Juan Manuel Pernumian",
   "license": "ISC",
