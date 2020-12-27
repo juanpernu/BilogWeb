@@ -29,10 +29,10 @@
   },
   "homepage": "https://github.com/juanpernu/BilogWeb#readme",
   "dependencies": {
-    "isomorphic-fetch": "2.2.1",
+    "isomorphic-fetch": "^3.0.0",
     "isomorphic-unfetch": "^3.0.0",
     "micro": "9.3.4",
-    "next": "^9.4.2",
+    "next": "^10.0.4",
     "nodemailer": "6.1.1",
     "react": "^16.8.3",
     "react-compound-slider": "1.2.2",
