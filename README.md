@@ -3,7 +3,7 @@ Front-end for http://www.bilog.com.ar.
 
 ## Getting Started
 1. Make sure to have installed the last [Node.js](https://nodejs.org).
-2. Install [Vercel](https://vercel.com/) globally with `npm i vercel -g`.
+2. Install [Vercel](https://vercel.com/) globally with `npm i -g vercel`.
 2. Clone this repo.
 3. On your terminal, run `npm install` to install all the required dependencies.
 4. Run `npm run start-dev` to start the server.
