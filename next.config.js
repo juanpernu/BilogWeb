@@ -16,7 +16,6 @@ module.exports = {
       '/success-alvarado/index': { page: 'success-alvarado' },
       '/laboratorio/index': { page: 'laboratorio' },
       '/odontologica/index': { page: 'odontologica' },
-      '/utils/index': { page: 'utils' },
       '/versions-detail/index': { page: 'versions-detail' },
       '/descarga/index': { page: 'download-go' },
       '/users/index': { page: 'users'},
