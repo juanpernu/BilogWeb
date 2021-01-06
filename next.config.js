@@ -1,7 +1,7 @@
 module.exports = {
   exportPathMap: async function (defaultPathMap, { dev, dir, outDir, distDir, buildId }) {
     return {
-      '/': { page: 'index' },
+      '/index': { page: 'index' },
       '/about/index': { page: 'about' },
       '/auditoria/index': { page: 'auditoria' },
       '/bilogApp/index': { page: 'bilogApp' },
@@ -19,6 +19,7 @@ module.exports = {
       '/utils/index': { page: 'utils' },
       '/versions-detail/index': { page: 'versions-detail' },
       '/descarga/index': { page: 'download-go' },
+      '/users/index': { page: 'users'},
     }
   },
 }
