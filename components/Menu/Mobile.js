@@ -68,7 +68,7 @@ class Mobile extends React.Component {
           <Link href="/success">
             <a className="link">Casos de éxito</a>
           </Link>
-          <Link href="/usuarios">
+          <Link href="/users">
             <a className="link">Usuarios</a>
           </Link>
         </aside>
