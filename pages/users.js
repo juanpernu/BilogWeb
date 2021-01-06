@@ -1,6 +1,6 @@
 import Layout from '../components/Layout';
 import Cover from '../components/Cover/Cover';
-import DownloadUtils from '../components/Download';
+import DownloadUtils from '../components/Download/DownloadUtils';
 
 export default () => (
   <Layout>
