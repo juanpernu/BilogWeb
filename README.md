@@ -1,5 +1,5 @@
 # Bilog - Web Site
-Front-end for http://www.bilog.com.ar.
+Front-end App for http://www.bilog.com.ar.
 
 ## Getting Started
 1. Make sure to have installed the last [Node.js](https://nodejs.org).
