@@ -19,6 +19,7 @@ module.exports = {
       '/utils/index': { page: 'utils' },
       '/versions-detail/index': { page: 'versions-detail' },
       '/descarga/index': { page: 'download-go' },
+      '/users/index': { page: 'users'},
     }
   },
 }
