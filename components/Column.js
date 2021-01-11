@@ -8,9 +8,9 @@ const Column = ({items, title}) => {
         items.map((item, index) => {
           return(
             item.href.includes('http') ?
-              <a className="link" href={`${item.href}`}>{item.text}</a> :
+                <a key={index} className="link" href={`${item.href}`}>{item.text}</a> :
               <Link key={index} href={`${item.href}`}>
-                <a className="link">{item.text}</a>
+                <a key={index} className="link">{item.text}</a>
               </Link>
           )
         })

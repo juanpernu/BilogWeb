@@ -13,7 +13,7 @@ class Footer extends React.Component {
     return(
       <footer className="footer light">
         <div className="footer--links">
-          <Column title="Sistemas" items={versions} />
+          <Column title="Sistemas" items={versions}/>
           <Column title="Compañía" items={contact} />
           <Column title="Soporte" items={support} />
           <Column title="Social Media" items={socialMedia} />
