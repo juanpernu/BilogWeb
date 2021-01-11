@@ -35,7 +35,6 @@ const Column = ({items, title}) => {
               display: block;
             }
           }
-
           {/* STYLES FOR DESKTOP */}
           @media only screen and (min-width: 751px) {
             .column {

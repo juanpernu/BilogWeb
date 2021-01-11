@@ -32,6 +32,7 @@ const Card = ({smallText, title, subtitle, hasCta, external, buttonText, buttonH
       {hasCta ? renderCtaButton() : null}
       {external ? renderExternalLink() : null}
       <style jsx>
+      
       {`
         {/* STYLES FOR MOBILE */}
         @media only screen and (max-width: 750px) {

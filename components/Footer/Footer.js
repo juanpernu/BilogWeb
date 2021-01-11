@@ -32,7 +32,6 @@ class Footer extends React.Component {
               grid-template-columns: 1fr 1fr;
             }
           }
-
           {/* STYLES FOR DESKTOP */}
           @media only screen and (min-width: 751px) {
             .footer--links {
