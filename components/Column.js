@@ -10,7 +10,7 @@ const Column = ({items, title}) => {
             item.href.includes('http') ?
                 <a key={index} className="link" href={`${item.href}`}>{item.text}</a> :
               <Link key={index} href={`${item.href}`}>
-                <a key={index} className="link">{item.text}</a>
+                <a className="link">{item.text}</a>
               </Link>
           )
         })
