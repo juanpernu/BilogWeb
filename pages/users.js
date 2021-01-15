@@ -5,7 +5,7 @@ import DownloadUtils from '../components/Download/DownloadUtils';
 export default () => (
   <Layout>
     <Cover
-      text="¡Bienvenido al centro de Usarios!"
+      text="¡Bienvenido al centro de clientes!"
       paragraph="Aqui podras encontrar documentación, preguntas mas frecuentes, testimonios y como ponerte en contacto."
       hasButtons={false}
     />
