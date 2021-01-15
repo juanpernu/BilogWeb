@@ -9,15 +9,15 @@ const documents = {
           },
           {
             name: "Agenda de Contactos",
-            urlHash: "#contact-shedule",
+            urlHash: "#contact-schedule",
           },
           {
             name: "Agenda de Tareas",
-            urlHash: "#task-shedule",
+            urlHash: "#task-schedule",
           },
           {
             name: "Pacientes",
-            urlHash: "#patient",
+            urlHash: "#patients",
           },
           {
             name: "Profesionales",
