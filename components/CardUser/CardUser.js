@@ -79,7 +79,7 @@ const CardUser = ({title, img, url}) => {
 
             .card:hover{
                 transform: translate(0px, -7%);
-                transition-delay: 0.1s;
+                transition: all .3s ease;
             }
             
             .card-image{
