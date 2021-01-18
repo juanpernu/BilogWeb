@@ -20,6 +20,7 @@ function Accordion({ data }) {
               .faqs-container {
                   background: #fff;
                   margin: 0 auto;
+                  max-width: 646px;
               }
           }
 
@@ -34,8 +35,8 @@ function Accordion({ data }) {
               .faqs-container {
                   background: #fff;
                   margin: 0 auto;
-                  padding 15px 30px 15px 30px;
-                  width: 50%;
+                  padding: 15px 30px;
+                  max-width: 646px;
               }
           }
       `}

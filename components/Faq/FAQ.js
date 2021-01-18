@@ -18,7 +18,7 @@ function FAQ({ faq: { question, answer }, index }) {
               padding: 15px;
               background-color: #FFF;
               border-radius: 4px;
-              box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+              box-shadow: 0px 10px 30px rgba(0,0,0,0.12);
             }
             .faq-item.open {
               max-height: 1000px;
@@ -29,10 +29,11 @@ function FAQ({ faq: { question, answer }, index }) {
             }
             .faq-question {
               position: relative;
-              font-size: 20px;
+              font-size: 18px;
               text-align: left;
             }
             .faq-answer {
+              font-size: 14px;
               width: 96%;
               text-align: left;
               opacity: 0;
@@ -49,13 +50,13 @@ function FAQ({ faq: { question, answer }, index }) {
             .faq-item.open > .faq-answer {
               max-height: 100%;
               opacity: 1;
-              padding-top: 10px;
+              padding-top: 20px;
             }
             .icon-arrow--down {
               content: url('/static/bilog-arrow-down.svg');
               margin-left: 10px;
               display: inline-block;
-              width: 20px;
+              width: 15px;
               height: auto;
             }
             .faq-item.open > .question-container > .icon-arrow--down {
@@ -71,7 +72,7 @@ function FAQ({ faq: { question, answer }, index }) {
               padding: 15px;
               background-color: #FFF;
               border-radius: 4px;
-              box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+              box-shadow: 0px 10px 30px rgba(0,0,0,0.12);
             }
             .faq-item.open {
               max-height: 1000px;
@@ -81,10 +82,11 @@ function FAQ({ faq: { question, answer }, index }) {
               justify-content: space-between;
             }
             .faq-question {
-              font-size: 20px;
+              font-size: 18px;
               text-align: left;
             }
             .faq-answer {
+              font-size: 14px;
               width: 97%;
               text-align: left;
               opacity: 0;
@@ -101,13 +103,13 @@ function FAQ({ faq: { question, answer }, index }) {
             .faq-item.open > .faq-answer {
               max-height: 100%;
               opacity: 1;
-              padding-top: 10px;
+              padding-top: 20px;
             }
             .icon-arrow--down {
               content: url('/static/bilog-arrow-down.svg');
               margin-left: 10px;
               display: inline-block;
-              width: 20px;
+              width: 15px;
               height: auto;
             }
             .faq-item.open > .question-container > .icon-arrow--down {
