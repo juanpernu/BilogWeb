@@ -15,7 +15,7 @@ function FAQ({ faq: { question, answer }, index }) {
           @media only screen and (max-width: 750px) {
             .faq-item {
               margin: 15px;
-              padding: 15px;
+              padding: 32px;
               background-color: #FFF;
               border-radius: 4px;
               box-shadow: 0px 10px 30px rgba(0,0,0,0.12);
@@ -69,7 +69,7 @@ function FAQ({ faq: { question, answer }, index }) {
           @media only screen and (min-width: 751px) {
             .faq-item {
               margin: 15px;
-              padding: 15px;
+              padding: 32px;
               background-color: #FFF;
               border-radius: 4px;
               box-shadow: 0px 10px 30px rgba(0,0,0,0.12);
