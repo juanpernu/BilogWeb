@@ -320,10 +320,17 @@ const documents = {
         hash:"#reports",
         featureContent:[
           {
+            title:"Informes",
+            copy: false,
+            text: false,
+            image: false,
+            video: false,
+          },
+          {
             title: "Pedidos Pendientes de Entrega (No disponible en Versión Small)",
             copy: false,
             text: "Este reporte le informa sobre todos los pedidos de laboratorio que no han sido entregados, lo que le ayudara a mantener un optimo seguimiento sobre ellos.",
-            image:'laimagen.png',
+            image: 'laimagen.png',
             video: false,
           },
           {
@@ -387,6 +394,13 @@ const documents = {
       {
         hash:"#users",
         featureContent:[
+          {
+            title:"Sistema",
+            copy:false,
+            text:false,
+            image:false,
+            video:false,
+          },
           {
             title: "Rutas de Acceso y Backup",
             copy: false,
@@ -490,7 +504,8 @@ const documents = {
       },
       {
         hash:"#solp-module",
-        featureContent:[{
+        featureContent:[
+          {
           title: "Liquidación S.O.L.P.",
           copy: false,
           text: "Seleccionando la Obra Social y el Profesional, el sistema lee todas las prestaciones realizadas por este, teniendo en cuenta si aún no fueron liquidadas a la S.O.L.P, las muestra en pantalla, permitiendole a Ud. la opción de liquidarla o no. Realiza automáticamente el cálculo de porcentaje según le corresponda al Profesional. También cuenta la cantidad de prácticas, cantidad de fichas, cantidad de Rx y la cantidad de Historias Clínicas.",
