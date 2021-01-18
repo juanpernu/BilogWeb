@@ -13,12 +13,12 @@ class Footer extends React.Component {
     return(
       <footer className="footer light">
         <div className="footer--links">
-          <Column title="Sistemas" items={versions} />
-          <Column title="Compañía" items={contact} />
-          <Column title="Soporte" items={support} />
-          <Column title="Social Media" items={socialMedia} />
+          <Column title="Sistemas" items={versions}/>
+          <Column title="Compañía" items={contact}/>
+          <Column title="Soporte" items={support}/>
+          <Column title="Social Media" items={socialMedia}/>
         </div>
-        <FooterWrapper />
+        <FooterWrapper/>
         <style jsx>
         {`
           {/* STYLES FOR MOBILE */}
@@ -32,7 +32,6 @@ class Footer extends React.Component {
               grid-template-columns: 1fr 1fr;
             }
           }
-
           {/* STYLES FOR DESKTOP */}
           @media only screen and (min-width: 751px) {
             .footer--links {
