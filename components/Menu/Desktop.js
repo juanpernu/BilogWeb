@@ -64,7 +64,7 @@ class Desktop extends React.Component {
           <Link href="/success">
             <a className="link">Casos de éxito</a>
           </Link>
-          <Link href="/users">
+          <Link href="/customer-area">
             <a className="link">Centro de clientes</a>
           </Link>
         </aside>
