@@ -51,7 +51,7 @@ class DownloadUtils extends React.Component {
                 .download-utils-section {
                   width: 100%;
                   margin: 0 auto;
-                  padding: 180px 0 140px;
+                  padding: 0px 0 140px;
                   max-width: 1024px;
                   text-align: center;
                 }

@@ -19,7 +19,7 @@ const CardUser = ({title, img, url}) => {
         {/* STYLES FOR MOBILE */}
         @media only screen and (max-width: 750px){
             .card{
-                width: 15em;
+                width: 90%;
                 height: 11em;
                 border-radius: 5px;
                 overflow: hidden;
