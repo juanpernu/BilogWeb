@@ -19,6 +19,8 @@ module.exports = {
       '/versions-detail/index': { page: 'versions-detail' },
       '/descarga/index': { page: 'download-go' },
       '/customer-area/index': { page: 'customer-area'},
+      '/users/index': { page: 'users' },
+      '/testimonials/index': { page: 'testimonials' },
     }
   },
 }
