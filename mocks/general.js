@@ -278,6 +278,18 @@ const versionsFeatures = {
         text: "Liquidación a Profesionales",
         check: false,
       },
+      {
+        text: "Módulo Administración",
+        check: false,
+      },
+      {
+        text: "Módulo Auditoría",
+        check: false,
+      },
+      {
+        text: "Módulo OSDE",
+        check: true,
+      },
     ]
   },
   standard: {
@@ -351,6 +363,18 @@ const versionsFeatures = {
       {
         text: "Liquidación a Profesionales",
         check: false,
+      },
+      {
+        text: "Módulo Administración",
+        check: true,
+      },
+      {
+        text: "Módulo Auditoría",
+        check: true,
+      },
+      {
+        text: "Módulo OSDE",
+        check: true,
       },
     ]
   },
@@ -426,6 +450,18 @@ const versionsFeatures = {
         text: "Liquidación a Profesionales",
         check: false,
       },
+      {
+        text: "Módulo Administración",
+        check: false,
+      },
+      {
+        text: "Módulo Auditoría",
+        check: false,
+      },
+      {
+        text: "Módulo OSDE",
+        check: true,
+      },
     ]
   },
   full: {
@@ -498,6 +534,18 @@ const versionsFeatures = {
       },
       {
         text: "Liquidación a Profesionales",
+        check: true,
+      },
+      {
+        text: "Módulo Administración",
+        check: true,
+      },
+      {
+        text: "Módulo Auditoría",
+        check: true,
+      },
+      {
+        text: "Módulo OSDE",
         check: true,
       },
     ]
