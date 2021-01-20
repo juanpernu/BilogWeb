@@ -18,8 +18,8 @@ module.exports = {
       '/odontologica/index': { page: 'odontologica' },
       '/versions-detail/index': { page: 'versions-detail' },
       '/descarga/index': { page: 'download-go' },
-      '/faqs/index': { page: 'faqs'},
       '/customer-area/index': { page: 'customer-area'},
+      '/testimonials/index': { page: 'testimonials' },
     }
   },
 }
