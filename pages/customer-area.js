@@ -7,8 +7,8 @@ export default () => (
   <>
   <Layout>
     <Cover
-      text="¡Bienvenido al centro de clientes!"
-      paragraph="Aqui podras encontrar documentación, preguntas mas frecuentes, testimonios y como ponerte en contacto."
+      text="¡Bienvenido al centro de usuarios!"
+      paragraph="Aqui podras encontrar documentación, las preguntas más frecuentes, testimonios y como ponerte en contacto."
       hasButtons={false}
     />
     <CardUserList/>
