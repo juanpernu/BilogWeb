@@ -42,9 +42,5 @@ module.exports = [
         title: "Sistema / Usuarios",
         hash: "documentation#sistema"
       },
-      {
-        title: "Configuración de tablas",
-        hash: "documentation#config"
-      }
   ]}
 ];

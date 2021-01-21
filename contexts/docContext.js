@@ -3,17 +3,7 @@ import React from 'react';
 
 export const DocsContext = React.createContext();
 
-/**
- * Provider component of DocsContext. This component
- * provides a context for the documentation and is the
- * handler of the content of each section.
- * It's owner of documentation information.
- */
 class DocsProvider extends React.Component {
-  /**
-   * The constructor of the component.
-   * @constructor
-   */ 
   constructor(props) {
     super(props);
     this.state = {

@@ -444,36 +444,5 @@ module.exports = {
         }
       ]
     }
-  },
-  "#config": {
-    section: "Configuración de tablas",
-    item: {
-      text: `Desde el menú Tablas se definen todos los parámetros de carga de datos del sistema, como ser
-      Profesionales, Obras Sociales, Feriados, Especialidades, etc.`,
-      video:"https://www.youtube.com/embed/2f__9eDBc4g",
-      content: [
-        {
-          title: "Opciones Generales de la Agenda de Turnos",
-          subcontent: [
-            {
-              subtitle: "Ver semana",
-              text: `Permite ver la agenda semanal y dar turnos, si se desea agrandar la pantalla para una mejor visualización utilice el Autohide.
-                Para dar o modificar turnos: puede utilizar drag & drop para copiar y pegar o para repetir turnos de un día a otro, si no también
-                posicionado en la barra de los horarios, se despliega el menú contextual y se selecciona copiar y luego pegar. Pulsando Ver días
-                no Laborables activamos y desactivamos las ausencias o los días no laborables.`,
-              image: "http://bilog.com.ar/images/portfolio-1.jpg",
-            },
-            {
-              subtitle: "Ver semana",
-              text: `Permite ver la agenda semanal y dar turnos, si se desea agrandar la pantalla para una mejor visualización utilice el Autohide.
-                Para dar o modificar turnos: puede utilizar drag & drop para copiar y pegar o para repetir turnos de un día a otro, si no también
-                posicionado en la barra de los horarios, se despliega el menú contextual y se selecciona copiar y luego pegar. Pulsando Ver días
-                no Laborables activamos y desactivamos las ausencias o los días no laborables.`,
-              image: "http://bilog.com.ar/images/portfolio-1.jpg",
-            }
-          ]
-        }
-      ]
-    }
   }
 }
