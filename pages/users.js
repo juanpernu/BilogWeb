@@ -1,6 +1,8 @@
 import Layout from '../components/Layout';
 import Cover from '../components/Cover/Cover';
 import DownloadUtils from '../components/Download/DownloadUtils';
+import  documents  from '../mocks/docs'
+import NavDoc from '../components/NavDoc/NavDoc';
 
 export default () => (
   <Layout>
@@ -10,5 +12,6 @@ export default () => (
       hasButtons={false}
     />
     <DownloadUtils/>
+    <NavDoc data={documents.navigation} />
   </Layout>
 );
