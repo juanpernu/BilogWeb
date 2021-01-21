@@ -4,7 +4,7 @@ import Content from './content';
 const Item = ({ text, video, content}) => (
   <Fragment>
     <p className="item-text">{text}</p>
-    <iframe
+    {video && <iframe
       className="docs-video"
       width="560"
       height="405"
@@ -12,7 +12,7 @@ const Item = ({ text, video, content}) => (
       frameBorder="0"
       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
       allowFullScreen
-    />
+    />}
     {content.map(itemContent => (
       <Content {...itemContent} />
     ))}
@@ -31,7 +31,7 @@ const Item = ({ text, video, content}) => (
         .item-text {
           margin-top: 0;
           font-weight: 400;
-          font-size: 16px;
+          font-size: 14px;
           line-height: 1.6;
           margin: 20px 0;
         }
