@@ -20,6 +20,8 @@ module.exports = {
       '/descarga/index': { page: 'download-go' },
       '/faqs/index': { page: 'faqs'},
       '/customer-area/index': { page: 'customer-area'},
+      '/users/index': { page: 'users' },
+      '/testimonials/index': { page: 'testimonials' },
     }
   },
 }
