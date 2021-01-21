@@ -7,8 +7,8 @@ module.exports = {
         users: [
           {
             name: "Dra. Ana Campuzano",
-          },
-        ],
+          }
+        ]
       },
       {
         comment: `"El sistema es bárbaro ya que me cuesta bastante tener en orden el papelerнo. Me ayudó a tener todo bien organizado. Tengo todo guardado en el sistema!"`,
@@ -17,8 +17,8 @@ module.exports = {
         users: [
           {
             name: "Dr. César Aguirre",
-          },
-        ],
+          }
+        ]
       },
       {
         comment: `"El software está funcionando muy bien, me ha sacado mucho papelerнo del escritorio y tengo todo mucho más organizado."`,
@@ -27,8 +27,8 @@ module.exports = {
         users: [
           {
             name: "Dr. Jorge Aguilar",
-          },
-        ],
+          }
+        ]
       },
       {
         comment: `"El software funciona excelente y es: ágil, dinámico y práctico. Todo es muy bueno, la post venta y el soporte técnico."`,
@@ -37,8 +37,8 @@ module.exports = {
         users: [
           {
             name: "Dr. Roman Abramor",
-          },
-        ],
+          }
+        ]
       },
       {
         comment: `"Estamos muy contentos. Todo es excelente, el producto y la atención post venta y el soporte técnico también es bárbaro."`,
@@ -50,8 +50,8 @@ module.exports = {
           },
           {
             name: "Dr. Gonzalo Rivera",
-          },
-        ],
+          }
+        ]
       },
       {
         comment: `"Me gustaría decir que el Software de Gestión para Laboratorios de Bilog nos ha solucionado toda la parte administrativa del laboratorio. Estamos muy contentos y cumple con las expectativas que teníamos."`,
@@ -60,8 +60,8 @@ module.exports = {
         users: [
           {
             name: "Dr. Eduardo Rodríguez Endrek",
-          },
-        ],
+          }
+        ]
       },
       {
         comment: `"El programa anda muy bien. Me agiliza todo el funcionamiento del consultorio."`,
@@ -70,8 +70,8 @@ module.exports = {
         users: [
           {
             name: "Dra. Ana María Rodriguez Alonso",
-          },
-        ],
+          }
+        ]
       },
       {
         comment: `"Nunca he tenido un inconveniente con el software. Estoy muy conforme con el sistema, me ayudó a organizar el consultorio."`,
@@ -80,8 +80,8 @@ module.exports = {
         users: [
           {
             name: "Dr. Juan Pablo Risi",
-          },
-        ],
+          }
+        ]
       },
       {
         comment: `"Utilizo mucho la parte de Ortodoncia del sistema. En cuanto a la atención es muy buena, y como me resulta muy fácil de usar no necesito soporte."`,
@@ -90,8 +90,8 @@ module.exports = {
         users: [
           {
             name: "Dra. Patricia Rios",
-          },
-        ],
+          }
+        ]
       },
       {
         comment: `"Estamos muy conformes con el programa. Todo funciona muy bien. Nos agilizó la organización del consultorio."`,
@@ -100,8 +100,8 @@ module.exports = {
         users: [
           {
             name: "Dr. Darío Toucedo",
-          },
-        ],
+          }
+        ]
       },
       {
         comment: `"Estoy muy satisfecho con el software. Lo usa mi secretaria muy bien y nos agilizó las tareas administrativas del consultorio."`,
@@ -110,8 +110,8 @@ module.exports = {
         users: [
           {
             name: "Dr. Alberto Tribiño",
-          },
-        ],
+          }
+        ]
       },
       {
         comment: `"Estoy muy conforme con el sistema."`,
@@ -120,8 +120,8 @@ module.exports = {
         users: [
           {
             name: "Dr. Ramón Rubén Ugartemendía",
-          },
-        ],
+          }
+        ]
       },
       {
         comment: `"Estamos muy conformes con el sistema y la atención. Todo funciona muy bien."`,
@@ -130,8 +130,8 @@ module.exports = {
         users: [
           {
             name: "Dr. Luis Valenzuela",
-          },
-        ],
+          }
+        ]
       },
       {
         comment: `"El software me parece muy bueno. Estamos muy conformes."`,
@@ -140,8 +140,8 @@ module.exports = {
         users: [
           {
             name: "Dr. Leandro Valeri",
-          },
-        ],
+          }
+        ]
       },
       {
         comment: `"Estoy muy conforme con el software. Todo muy bueno."`,
@@ -150,8 +150,8 @@ module.exports = {
         users: [
           {
             name: "Dra. Ileana Valussi",
-          },
-        ],
+          }
+        ]
       },
       {
         comment: `"El software es muy bueno."`,
@@ -160,8 +160,8 @@ module.exports = {
         users: [
           {
             name: "Dra. Maria Elena Veliz",
-          },
-        ],
+          }
+        ]
       },
       {
         comment: `"Destaco la excelencia en el servicio, la buena predisposición y el trato."`,
@@ -170,8 +170,8 @@ module.exports = {
         users: [
           {
             name: "Dr. Matías Vento",
-          },
-        ],
+          }
+        ]
       },
       {
         comment: `"El software está muy bueno. Mejor a otros que he utilizado. Estoy totalmente conforme."`,
@@ -180,8 +180,8 @@ module.exports = {
         users: [
           {
             name: "Dr. Sergio Viñolo",
-          },
-        ],
+          }
+        ]
       },
       {
         comment: `"Respecto al software está todo muy bien. Y el soporte y la capacitación ha sido excelente."`,
@@ -190,8 +190,8 @@ module.exports = {
         users: [
           {
             name: "Dr. Claudio Vollmer",
-          },
-        ],
+          }
+        ]
       },
       {
         comment: `"El sistema me resultó muy bueno. Me ha dado muy buen resultado."`,
@@ -200,8 +200,8 @@ module.exports = {
         users: [
           {
             name: "Dra. Maria José Williams",
-          },
-        ],
+          }
+        ]
       },
     ]
   };
