@@ -8,9 +8,9 @@ cardListData :[
         
     },
     {
-        title:"Documentacion" ,
+        title:"Documentación" ,
         img:"../../static/card-user-2.png",
-        url:"/documents",
+        url:"/documentation",
         
     },
     {

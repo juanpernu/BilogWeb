@@ -20,10 +20,11 @@ class DocsProvider extends React.Component {
       initialId: '#agenda',
       content: {},
       section: null,
+      copy: '',
       item: {},
-      allContent: (contentId) => this.getDocumentationContent(contentId),
+      allContent: contentId => this.setDocumentationContent(contentId),
     };
-    this.getDocumentationContent = this.getDocumentationContent.bind(this);
+    this.setDocumentationContent = this.setDocumentationContent.bind(this);
   }
 
   /**
@@ -38,10 +39,11 @@ class DocsProvider extends React.Component {
     this.state.allContent(this.state.initialId);
   }
 
-  getDocumentationContent(contentId) {
+  setDocumentationContent(contentId) {
     this.setState({
       content: this.props.content[contentId],
       section: this.props.content[contentId].section,
+      copy: this.props.content[contentId].copy,
       item: this.props.content[contentId].item,
     });
   };

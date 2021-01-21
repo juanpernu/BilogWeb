@@ -18,7 +18,7 @@ module.exports = {
       '/odontologica/index': { page: 'odontologica' },
       '/versions-detail/index': { page: 'versions-detail' },
       '/descarga/index': { page: 'download-go' },
-      '/document/index':{ page: 'document' },
+      '/documentation/index':{ page: 'documentation' },
       '/faqs/index': { page: 'faqs'},
       '/customer-area/index': { page: 'customer-area'},
     }

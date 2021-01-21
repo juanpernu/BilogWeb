@@ -10,7 +10,10 @@ const Sidebar = () => (
           <Fragment key={key}>
             <h2 className="label">{content.title}</h2>
             <div className="posts">
-              {content.docs.map((docText, key) => (<SidebarSection key={key} text={docText.title} link={docText.link} />))}
+              {content.docs.map((docText, key) => {
+                const { title, hash } = docText;
+                return <SidebarSection key={key} text={title} link={hash} />
+              })}
             </div>
           </Fragment>
         ))

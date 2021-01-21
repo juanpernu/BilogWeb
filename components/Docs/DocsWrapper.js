@@ -5,13 +5,14 @@ import Docs from './Docs';
 import { DocsContext } from '../../contexts/docContext';
 
 const DocsWrapper = () => {
-  const { section, item } = useContext(DocsContext);
+  const { section, copy, item } = useContext(DocsContext);
 
   return (
     <div className="docs-wrapper">
       <Sidebar />
       <Docs
         title={section}
+        copy={copy}
         item={item}
       />
       <style jsx>
