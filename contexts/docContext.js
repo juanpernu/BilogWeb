@@ -17,13 +17,6 @@ class DocsProvider extends React.Component {
     this.setDocumentationContent = this.setDocumentationContent.bind(this);
   }
 
-  /**
-   * This method will execute before render component. At
-   * this moment, the context has the offer prices but it
-   * doesn't have the percents and errors. Ejecuting this
-   * method, we have that information for use on client
-   * and server side rendering
-   */
   // eslint-disable-next-line camelcase
   UNSAFE_componentWillMount() {
     this.state.allContent(this.state.initialId);
@@ -38,9 +31,6 @@ class DocsProvider extends React.Component {
     });
   };
 
-  /** 
-   * A method that render the provider
-   */
   render() {
     return (<DocsContext.Provider
       key="provider"
