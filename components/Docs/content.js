@@ -2,9 +2,7 @@ import { Fragment } from 'react';
 
 const Content = ({ title, subcontent}) => (
   <Fragment>
-    <h2 className="content-title">
-      {title}
-    </h2>
+    {title && <h2 className="content-title">{title}</h2>}
     {subcontent.map((el, i) => {
       const {subtitle, text, image} = el;
       return (
