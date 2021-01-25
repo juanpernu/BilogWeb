@@ -1,5 +1,4 @@
-module.exports = {
-    testimonials: [
+const TestimonialsMock = [
       {
         comment: `"Estoy Feliz con mi software, tiene todo lo que necesito para mi consultorio, además lo mas importante, el servicio técnico excelente!!!."`,
         clinic: "Clinica Odontológica Vitaclinica",
@@ -202,6 +201,7 @@ module.exports = {
             name: "Dra. Maria José Williams",
           }
         ]
-      },
+      }
     ]
-  };
+
+module.exports = { TestimonialsMock }
