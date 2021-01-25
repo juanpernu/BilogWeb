@@ -1,7 +1,7 @@
-import React from 'react';
-import Title from '../Title';
-import Testimonials from '../../mocks/testimonials';
-import Badge from './Badge';
+import React from "react";
+import Title from "../Title";
+import { TestimonialsMock } from "../../mocks/testimonials";
+import Badge from "./Badge";
 
 const Testimonials = () => {
   return (
@@ -11,23 +11,23 @@ const Testimonials = () => {
         subtitle="Miles de profesionales como vos usan Bilog"
         alignCenter={true}
       />
-      {
-          TestimonialsMock.map((testimonial, key) => {
-            return (
-              <div key={key}>
-                <Badge
-                  user={testimonial.user}
-                  clinic={testimonial.clinic}
-                  comment={testimonial.comment}
-                  location={testimonial.location}
-                />
-              </div>
-            )
-          })
-        }
+      {TestimonialsMock.map((testimony, key) => {
+        const { users, clinic, comment, location } = testimony;
+        return (
+          <div key={key}>
+            <Badge
+              users={users}
+              clinic={clinic}
+              comment={comment}
+              location={location}
+            />
+          </div>)
+      })}
       <style jsx>
         {`
-          {/* STYLES FOR MOBILE */}
+           {
+            /* STYLES FOR MOBILE */
+          }
           @media only screen and (max-width: 750px) {
             .testimonial--container {
               padding: 50px 0;
@@ -36,7 +36,9 @@ const Testimonials = () => {
             }
           }
 
-          {/* STYLES FOR DESKTOP */}
+           {
+            /* STYLES FOR DESKTOP */
+          }
           @media only screen and (min-width: 751px) {
             .testimonial--container {
               padding: 90px 0 50px;
@@ -45,9 +47,9 @@ const Testimonials = () => {
             }
           }
         `}
-        </style>
+      </style>
     </div>
-    );
+  );
 };
 
-export default Testimonials
+export default Testimonials;
