@@ -1,53 +1,70 @@
-import React from "react";
+import React, { Fragment } from "react";
 import Title from "../Title";
 import { TestimonialsMock } from "../../mocks/testimonials";
 import Badge from "./Badge";
 
 const Testimonials = () => {
   return (
-    <div className="testimonial--container">
-      <Title
-        title="¿Qué dicen nuestros usuarios?"
-        subtitle="Miles de profesionales como vos usan Bilog"
-        alignCenter={true}
-      />
-      {TestimonialsMock.map((testimony, key) => {
-        const { users, clinic, comment, location } = testimony;
-        return (
-          <div key={key}>
-            <Badge
-              users={users}
-              clinic={clinic}
-              comment={comment}
-              location={location}
-            />
-          </div>)
-      })}
+    <div>
+      <div className="title--container">
+        <Title
+          title="¿Qué dicen nuestros usuarios?"
+          subtitle="Miles de profesionales como vos usan Bilog"
+          alignCenter={true}
+        />
+      </div>
+      <div className="testimonial--container">
+        {TestimonialsMock.map((testimony, key) => {
+          const { users, clinic, comment, location } = testimony;
+          return (
+            <Fragment key={key}>
+              <Badge
+                users={users}
+                clinic={clinic}
+                comment={comment}
+                location={location}
+              />
+            </Fragment>)
+        })}
+      </div>
       <style jsx>
-        {`
-           {
-            /* STYLES FOR MOBILE */
-          }
-          @media only screen and (max-width: 750px) {
-            .testimonial--container {
-              padding: 50px 0;
-              background: #fff;
-              border-bottom: 1px solid #eaeaea;
+          {`
+            {
+              /* STYLES FOR MOBILE */
             }
-          }
+            @media only screen and (max-width: 750px) {
+              .title--container {
+                padding-top: 50px;
+              }
+              .testimonial--container {
+                background: #fff;
+                border-bottom: 1px solid #eaeaea;
+                display: flex;
+                flex-direction: column;
+                padding-bottom: 20px;
+              }
+            }
 
-           {
-            /* STYLES FOR DESKTOP */
-          }
-          @media only screen and (min-width: 751px) {
-            .testimonial--container {
-              padding: 90px 0 50px;
-              background: #fff;
-              border-bottom: 1px solid #eaeaea;
+            {
+              /* STYLES FOR DESKTOP */
             }
-          }
-        `}
-      </style>
+            @media only screen and (min-width: 751px) {
+              .title--container {
+                padding: 90px 0 50px;
+              }
+              .testimonial--container {
+                background: #fff;
+                border-bottom: 1px solid #eaeaea;
+                display: flex;
+                flex-direction: row;
+                flex-flow: row wrap;
+                max-width: 1024px;
+                margin: 0 auto;
+                padding-bottom: 20px;
+              }
+            }
+          `}
+        </style>
     </div>
   );
 };
