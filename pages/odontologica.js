@@ -4,19 +4,19 @@ import BannerCta from '../components/Banner/BannerCta';
 import Feature from '../components/Feature/Feature';
 import Carousel from '../components/Carousel';
 import ProductSlider from '../components/Product/ProductSlider';
-
 import GeneratedVideos from '../components/Videos/Videos'
 import MockedFeatures from '../mocks/odontologicaFeatures';
+import  Data  from '../mocks/odontologicaMock';
 
 export default () => (
     <Layout>
       <Cover
-        text="El software que te merecés."
-        paragraph="Tené en una sola ventana todo el control de tu clínica para una mejor gestión."
-        position="lf"
-        hasButtons={false}
-        gradientBg="default"
-        coverImage="odontologica"
+        text={Data.productCover.text}
+        paragraph={Data.productCover.paragraph}
+        position={Data.productCover.position}
+        hasButtons={Data.productCover.hasButtons}
+        gradientBg={Data.productCover.gradientBg}
+        coverImage={Data.productCover.coverImage}
       />
       <Feature {...MockedFeatures} />
       {/* 
@@ -29,15 +29,14 @@ export default () => (
       /> */}
       <ProductSlider />
       <Cover
-        text="Te presentamos Bilog App"
-        paragraph="Tu consultorio, a donde sea que vayas."
-        hasButtons={true}
-        buttonText="Ver más"
-        buttonHref="/bilogApp"
-        product={true}
-        position="lf"
-        gradientBg="default"
-        coverImage="app"
+        text={Data.appCover.text}
+        paragraph={Data.appCover.paragraph}
+        hasButtons={Data.appCover.hasButtons}
+        buttonText={Data.appCover.buttonText}
+        buttonHref={Data.appCover.buttonHref}
+        position={Data.appCover.position}
+        gradientBg={Data.appCover.gradientBg}
+        coverImage={Data.appCover.coverImage}
       />
       <Carousel/>
     </Layout>
