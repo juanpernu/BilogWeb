@@ -1,26 +1,41 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 
 import { DocsContext } from '../../contexts/docContext';
 
-const SidebarSection = ({text, link}) => {
+const SidebarSection = ({text, hash}) => {
   const { allContent } = useContext(DocsContext);
+  const [link, setLink] = useState(hash);
 
-  const handleOnClick = (link) => {
-    const regexp = new RegExp(/\#(.*)/gm)
-    const contentId = link.match(regexp);
+  useEffect(() => {
+    if(window) {
+      let url = window.location.href;
+      const lastNonCharacter = new RegExp(/(\/)$/gm);
+      setLink(`${url}${hash}`);
+
+      // Workarround to handle hash match
+      if(url.match(lastNonCharacter)) {
+        url.replace(lastNonCharacter, '');
+        setLink(`${url}${hash}`);
+      }
+    }
+  }, []);
+
+  const handleOnClick = () => {
+    const regexp = new RegExp(/\#(.*)/gm);
+    const contentId = hash.match(regexp);
     allContent(contentId);
   };
 
   return (
     <div className="link">
       <div className="nav-link">
-        <a onClick={() => handleOnClick(link)} href={link}>{text}</a>
+        <a onClick={() => handleOnClick()} href={link}>{text}</a>
       </div>
       <style jsx>
       {`
         {/* STYLES FOR MOBILE */}
         @media only screen and (max-width: 750px) {
-        }
+        } 
 
         {/* STYLES FOR DESKTOP */}
         @media only screen and (min-width: 751px) {
