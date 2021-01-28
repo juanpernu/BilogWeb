@@ -4,7 +4,6 @@ import Feature from '../components/Feature/Feature';
 import Carousel from '../components/Carousel';
 import ProductSlider from '../components/Product/ProductSlider';
 import GeneratedVideos from '../components/Videos/Videos'
-import MockedFeatures from '../mocks/odontologicaFeatures';
 import  { productCover, appCover, features }  from '../mocks/odontologicaMock';
 
 export default () => (
