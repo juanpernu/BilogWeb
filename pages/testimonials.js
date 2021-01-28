@@ -1,6 +1,6 @@
 import Layout from '../components/Layout';
 import Cover from '../components/Cover/Cover';
-import Testimonials from '../components/Testimonials/index';
+import Testimonials from '../components/Testimonials';
 
 export default () => (
   <Layout>
