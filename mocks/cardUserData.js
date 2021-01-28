@@ -16,7 +16,7 @@ cardListData :[
     {
         title:"Testimonios",
         img:"../../static/card-user-3.png",
-        url:"/testimony",
+        url:"/testimonials",
         
     },
     {

@@ -1,5 +1,4 @@
-module.exports = {
-    testimonials: [
+const TestimonialsMock = [
       {
         comment: `"Estoy Feliz con mi software, tiene todo lo que necesito para mi consultorio, además lo mas importante, el servicio técnico excelente!!!."`,
         clinic: "Clinica Odontológica Vitaclinica",
@@ -11,7 +10,7 @@ module.exports = {
         ]
       },
       {
-        comment: `"El sistema es bárbaro ya que me cuesta bastante tener en orden el papelerнo. Me ayudó a tener todo bien organizado. Tengo todo guardado en el sistema!"`,
+        comment: `"El sistema es bárbaro ya que me cuesta bastante tener en orden el papelerío. Me ayudó a tener todo bien organizado. Tengo todo guardado en el sistema!"`,
         clinic: "Consultorio Odontológico",
         location: "San Fernando del Valle de Catamarca, Catamarca.",
         users: [
@@ -86,7 +85,7 @@ module.exports = {
       {
         comment: `"Utilizo mucho la parte de Ortodoncia del sistema. En cuanto a la atención es muy buena, y como me resulta muy fácil de usar no necesito soporte."`,
         clinic: "Consultorio Odontológico",
-        location: "Chajarí, Entre Rнos.",
+        location: "Chajarí, Entre Ríos.",
         users: [
           {
             name: "Dra. Patricia Rios",
@@ -202,6 +201,7 @@ module.exports = {
             name: "Dra. Maria José Williams",
           }
         ]
-      },
+      }
     ]
-  };
+
+module.exports = { TestimonialsMock }
