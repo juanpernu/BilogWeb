@@ -21,6 +21,7 @@ module.exports = {
       '/documentation/index':{ page: 'documentation' },
       '/faqs/index': { page: 'faqs'},
       '/customer-area/index': { page: 'customer-area'},
+      '/testimonials/index': { page: 'testimonials' },
     }
   },
 }

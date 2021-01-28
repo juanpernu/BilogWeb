@@ -22,6 +22,7 @@ module.exports = {
             title:"Contacto",
             img:"../../static/card-user-4.png",
             url:"/contact", 
+
         }
     ]
-  }
+}
