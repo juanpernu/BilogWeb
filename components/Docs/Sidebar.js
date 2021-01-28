@@ -12,7 +12,7 @@ const Sidebar = () => (
             <div className="posts">
               {content.docs.map((docText, key) => {
                 const { title, hash } = docText;
-                return <SidebarSection key={key} text={title} link={hash} />
+                return <SidebarSection key={key} text={title} hash={hash} />
               })}
             </div>
           </Fragment>

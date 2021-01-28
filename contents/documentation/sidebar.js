@@ -4,43 +4,43 @@ module.exports = [
     docs: [
       {
         title: "Agenda de turnos",
-        hash: "documentation#agenda"
+        hash: "#agenda"
       },
       {
         title: "Agenda de contactos",
-        hash: "documentation#agenda-contactos"
+        hash: "#agenda-contactos"
       },
       {
         title: "Agenda de tareas",
-        hash: "documentation#agenda-tareas"
+        hash: "#agenda-tareas"
       },
       {
         title: "Pacientes",
-        hash: "documentation#pacientes"
+        hash: "#pacientes"
       },
       {
         title: "Profesionales",
-        hash: "documentation#profesionales"
+        hash: "#profesionales"
       },
       {
         title: "Obras Sociales / Prepagas",
-        hash: "documentation#obras-sociales"
+        hash: "#obras-sociales"
       },
       {
         title: "Laboratorios",
-        hash: "documentation#laboratorios"
+        hash: "#laboratorios"
       },
       {
         title: "Stock / Economato",
-        hash: "documentation#stock"
+        hash: "#stock"
       },
       {
         title: "Informes",
-        hash: "documentation#informes"
+        hash: "#informes"
       },
       {
         title: "Sistema / Usuarios",
-        hash: "documentation#sistema"
+        hash: "#sistema"
       },
   ]}
 ];
