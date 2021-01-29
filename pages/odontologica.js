@@ -1,26 +1,23 @@
 import Layout from '../components/Layout';
 import Cover from '../components/Cover/Cover';
-import FeatureImg from '../components/Feature/FeatureImg';
-import BannerCta from '../components/Banner/BannerCta';
 import Feature from '../components/Feature/Feature';
 import Carousel from '../components/Carousel';
 import ProductSlider from '../components/Product/ProductSlider';
-
 import GeneratedVideos from '../components/Videos/Videos'
-import MockedFeatures from '../mocks/odontologicaFeatures';
+import  { productCover, appCover, features }  from '../mocks/odontologicaMock';
 
 export default () => (
-  <Layout>
-    <Cover
-      text="El software que te merecés."
-      paragraph="Tené en una sola ventana todo el control de tu clínica para una mejor gestión."
-      position="lf"
-      hasButtons={false}
-      gradientBg="default"
-      coverImage="illus-odontologica.svg"
-    />
-    <Feature {...MockedFeatures} />
-    {/* 
+    <Layout>
+      <Cover
+        text={productCover.text}
+        paragraph={productCover.paragraph}
+        position={productCover.position}
+        hasButtons={productCover.hasButtons}
+        gradientBg={productCover.gradientBg}
+        coverImage={productCover.coverImage}
+      />
+      <Feature features={features} />
+      {/* 
         TODO: Update the video of this banner to render this component
         <BannerCta
         title="¿Todavía tenés dudas? Mirá la demo."
@@ -28,19 +25,17 @@ export default () => (
         modalContent={<GeneratedVideos type='intro'/>}
         showModal={true}
       /> */}
-    <ProductSlider />
-    <FeatureImg
-      imgSrc="/static/landing-nativa/illustration.png"
-      imgAlt="Bilog app illustration"
-      copy="¡Nueva!"
-      title="Organizá y optimizá el rendimiento de tu clínica con Bilog App"
-      description="Administrá tu consultorio en tu celular, tené tu agenda siempre disponible y actualizada."
-      hasCta
-      imageAlign="left"
-      bgGrey
-      buttonText="Descargá la app"
-      buttonHref="/bilogApp"
-    />
-    <Carousel />
-  </Layout>
+      <ProductSlider />
+      <Cover
+        text={appCover.text}
+        paragraph={appCover.paragraph}
+        hasButtons={appCover.hasButtons}
+        buttonText={appCover.buttonText}
+        buttonHref={appCover.buttonHref}
+        position={appCover.position}
+        gradientBg={appCover.gradientBg}
+        coverImage={appCover.coverImage}
+      />
+      <Carousel/>
+    </Layout>
 )
