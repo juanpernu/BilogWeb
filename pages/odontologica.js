@@ -1,24 +1,22 @@
 import Layout from '../components/Layout';
 import Cover from '../components/Cover/Cover';
-import BannerCta from '../components/Banner/BannerCta';
 import Feature from '../components/Feature/Feature';
 import Carousel from '../components/Carousel';
 import ProductSlider from '../components/Product/ProductSlider';
-
 import GeneratedVideos from '../components/Videos/Videos'
-import MockedFeatures from '../mocks/odontologicaFeatures';
+import  { productCover, appCover, features }  from '../mocks/odontologicaMock';
 
 export default () => (
     <Layout>
       <Cover
-        text="El software que te merecés."
-        paragraph="Tené en una sola ventana todo el control de tu clínica para una mejor gestión."
-        position="lf"
-        hasButtons={false}
-        gradientBg="default"
-        coverImage="odontologica"
+        text={productCover.text}
+        paragraph={productCover.paragraph}
+        position={productCover.position}
+        hasButtons={productCover.hasButtons}
+        gradientBg={productCover.gradientBg}
+        coverImage={productCover.coverImage}
       />
-      <Feature {...MockedFeatures} />
+      <Feature features={features} />
       {/* 
         TODO: Update the video of this banner to render this component
         <BannerCta
@@ -29,15 +27,14 @@ export default () => (
       /> */}
       <ProductSlider />
       <Cover
-        text="Te presentamos Bilog App"
-        paragraph="Tu consultorio, a donde sea que vayas."
-        hasButtons={true}
-        buttonText="Ver más"
-        buttonHref="/bilogApp"
-        product={true}
-        position="lf"
-        gradientBg="default"
-        coverImage="app"
+        text={appCover.text}
+        paragraph={appCover.paragraph}
+        hasButtons={appCover.hasButtons}
+        buttonText={appCover.buttonText}
+        buttonHref={appCover.buttonHref}
+        position={appCover.position}
+        gradientBg={appCover.gradientBg}
+        coverImage={appCover.coverImage}
       />
       <Carousel/>
     </Layout>
