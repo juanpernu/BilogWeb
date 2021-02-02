@@ -16,13 +16,12 @@ const Feature = ({ features }) => {
                   title={title}
                   subtitle={description}
                 />
-                {successCase ?
+                {successCase &&
                   <Link className="link--display" href={`${successCase.href}`}>
                     <a className="link--primary">{successCase.text}</a>
                   </Link>
-                  : <></>
                 }
-                <div className={`${layout == 'horizontal' ? "" : "vertical-layout"}`}>
+                <div className={`${layout == 'portrait' ? "portrait-layout" : ""}`}>
                   {image ?
                     <div className="feature-img--container">
                       <img className="feature-img" src={image}></img>
@@ -74,7 +73,7 @@ const Feature = ({ features }) => {
                             .feature-img--container .feature-img {
                               width: 100%;
                             }
-                            .vertical-layout .feature-img--container .feature-img {
+                            .feature-img--container .feature-img {
                               width: 100%;
                               height: 95%;
                             }
@@ -122,18 +121,18 @@ const Feature = ({ features }) => {
                             .feature-img--container .feature-img {
                               width: 100%;
                             }
-                            .vertical-layout {
+                            .portrait-layout {
                               display: flex;
                               flex-direction: row-reverse;
                             }
-                            .vertical-layout .feature-img--container {
+                            .portrait-layout .feature-img--container {
                               flex: 1;
                             }
-                            .vertical-layout .feature-item--container {
+                            .portrait-layout .feature-item--container {
                               flex: 1;
                               display: inline-table;
                             }
-                            .vertical-layout .feature-img--container .feature-img {
+                            .portrait-layout .feature-img--container .feature-img {
                               width: 100%;
                               height: 100%;
                             }

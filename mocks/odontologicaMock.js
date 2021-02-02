@@ -30,7 +30,7 @@ module.exports = {
         href: "/success-calcagno",
       },
       hasColorBackground: false,
-      layout: "vertical",
+      layout: "portrait",
       image: "../../../static/alvarado_3.jpg",
       featureItems: [
         {
@@ -54,7 +54,7 @@ module.exports = {
       title: "Maximizá la productividad de tu consultorio o clínica",
       description: "Con Bilog podes registrar los ingresos y egresos en forma más eficiente y así maximizar la rentabilidad.",
       hasColorBackground: true,
-      layout: "horizontal",
+      layout: "landscape",
       image: "../../../static/alvarado_2.jpg",
       featureItems: [
         {
