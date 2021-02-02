@@ -23,6 +23,15 @@ const Sidebar = () => (
     {`
       {/* STYLES FOR MOBILE */}
       @media only screen and (max-width: 750px) {
+        .sidebar{
+          margin:0;
+          padding: 0 16px;
+        }
+        .label{
+          font-size: 3.1rem;
+          letter-spacing:0.09rem;
+          line-height: 4rem;
+        }
       }
 
       {/* STYLES FOR DESKTOP */}

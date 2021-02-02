@@ -20,6 +20,21 @@ const Item = ({ text, video, content}) => (
     {`
       {/* STYLES FOR MOBILE */}
       @media only screen and (max-width: 750px) {
+        .item-text {
+          margin:0;
+          padding: 18px;
+          text-align:start;
+          font-size: 1.5rem;
+          font-weight: 400;
+          line-height: 1.3;
+        }
+
+        .docs-video{
+          display: block;
+          margin:0;
+          padding-left:17px;
+          width: 90%;
+        }
       }
 
       {/* STYLES FOR DESKTOP */}

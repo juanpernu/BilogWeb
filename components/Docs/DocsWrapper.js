@@ -19,6 +19,15 @@ const DocsWrapper = () => {
       {`
         {/* STYLES FOR MOBILE */}
         @media only screen and (max-width: 750px) {
+          .docs-wrapper{
+            max-width:750px;
+            font-size:14px;
+          }
+          .label{
+            font-size: 3rem;
+            letter-spacing: -.066875rem;
+            font-weight: 700;
+          }
         }
 
         {/* STYLES FOR DESKTOP */}
@@ -33,12 +42,6 @@ const DocsWrapper = () => {
           .sidebar,
           .docs-section {
             height: 300px;
-          }
-          .sidebar {
-            background-color: red;
-          }
-          .docs-section {
-            background-color: green;
           }
         }
       `}
