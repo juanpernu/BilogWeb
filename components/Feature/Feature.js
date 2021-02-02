@@ -22,10 +22,11 @@ const Feature = ({ features }) => {
                   </Link>
                 }
                 <div className={`${layout == 'portrait' ? "portrait-layout" : ""}`}>
-                  {image ?
+                  {image &&
                     <div className="feature-img--container">
                       <img className="feature-img" src={image}></img>
-                    </div> : <></>}
+                    </div>
+                  }
                   <div className="feature-item--container">
                     {featureItems.map((item, index) => <FeatureItem
                       key={index}
