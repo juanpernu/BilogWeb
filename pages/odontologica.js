@@ -6,7 +6,7 @@ import ProductSlider from '../components/Product/ProductSlider';
 import GeneratedVideos from '../components/Videos/Videos'
 import { productCover, appCover, features } from '../mocks/odontologicaMock';
 
-export default () => (
+const Odontologica = () => (
   <Layout>
     <Cover
       text={productCover.text}
@@ -39,3 +39,5 @@ export default () => (
     <Carousel />
   </Layout>
 )
+
+export default Odontologica;
