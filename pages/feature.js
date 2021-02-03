@@ -3,7 +3,7 @@ import Cover from '../components/Cover/Cover';
 import Feature from '../components/Feature/Feature';
 import { productCover, appCover, features } from '../mocks/featureTest';
 
-const Feature = () => (
+const FeatureTest = () => (
     <Layout>
         <Cover
             text={productCover.text}
@@ -27,4 +27,4 @@ const Feature = () => (
     </Layout>
 )
 
-export default Feature;
+export default FeatureTest;
