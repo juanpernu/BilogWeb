@@ -30,8 +30,8 @@ module.exports = {
         href: "/success-calcagno",
       },
       hasColorBackground: false,
-      layout: "portrait",
-      image: "../../../static/alvarado_3.jpg",
+      layout: "landscape",
+      image: false,
       featureItems: [
         {
           title: "Agenda de Turnos",
@@ -55,7 +55,7 @@ module.exports = {
       description: "Con Bilog podes registrar los ingresos y egresos en forma más eficiente y así maximizar la rentabilidad.",
       hasColorBackground: true,
       layout: "landscape",
-      image: "../../../static/alvarado_2.jpg",
+      image: false,
       featureItems: [
         {
           title: "Copia de Seguridad",
