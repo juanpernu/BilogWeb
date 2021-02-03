@@ -77,7 +77,7 @@ const Content = ({ title, subcontent}) => (
           margin-bottom: 60px;
         }
         .subcontent-title {
-          font-weight: 400;
+          font-weight: 600;
         }
         .subcontent-title:first-of-type {
           margin: 0;
