@@ -16,16 +16,16 @@ const Docs = ({title, item, copy}) => (
         }
         .docs-title{
           text-align:left;
-          font-size: 2.25rem;
+          font-size: 3.21rem;
           letter-spacing: -.049375rem;
           font-weight: 600;
-          padding:0 18px;
+          padding:0 17px;
         }
         .docs-copy{
+          font-size: 1.9rem;
           font-weight: 400;
-          font-size:1.2rem;
           text-align:start;
-          padding: 0 0.9rem;
+          padding: 0 1.1rem;
           line-height:1.3;
         }
       }

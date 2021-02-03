@@ -26,7 +26,7 @@ const Content = ({ title, subcontent}) => (
         .content-title{
           padding:14px;
           font-size:1.9rem;
-          font-weight: 600;
+          font-weight: 400;
         }
 
         .subcontent-image {

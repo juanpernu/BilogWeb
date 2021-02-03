@@ -24,7 +24,7 @@ const Item = ({ text, video, content}) => (
           margin:0;
           padding: 18px;
           text-align:start;
-          font-size: 1.5rem;
+          font-size: 1.15rem;
           font-weight: 400;
           line-height: 1.3;
         }
