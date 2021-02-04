@@ -1,19 +1,26 @@
 import Icons from '../Icons/Icons';
 import ExternalButton from '../ExternalButton';
 
-const FeatureItem = ({title, description, icons, button}) => (
+const FeatureItem = ({ title, description, icons, button }) => (
   <div className="feature-item">
-    {icons && <Icons type={icons}/>}
+    {icons && <Icons type={icons} />}
     <h3 className="feature-item--title">{title}</h3>
     <p className="feature-item--description">{description}</p>
-    {button && <ExternalButton
-      externalLink={button.link}
-      text={button.text}
-    />}
+    {button &&
+      <div>
+        <ExternalButton
+          externalLink={button.link}
+          text={button.text}
+        />
+      </div>
+    }
     <style jsx>
-    {`
+      {`
       {/* STYLES FOR MOBILE */}
       @media only screen and (max-width: 750px) {
+        .feature-item {
+          padding-bottom: 20px;
+        }
         .feature-item--title {
           font-size: 18px;
           margin: 10px 0 10px;
