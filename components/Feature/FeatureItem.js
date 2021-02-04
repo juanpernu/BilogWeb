@@ -19,7 +19,7 @@ const FeatureItem = ({ title, description, icons, button }) => (
       {/* STYLES FOR MOBILE */}
       @media only screen and (max-width: 750px) {
         .feature-item {
-          padding-bottom: 20px;
+          margin: 10px 0 30px 0;
         }
         .feature-item--title {
           font-size: 18px;
@@ -38,7 +38,7 @@ const FeatureItem = ({ title, description, icons, button }) => (
       {/* STYLES FOR DESKTOP */}
       @media only screen and (min-width: 751px) {
         .feature-item {
-          margin: 0 20px;
+          margin: 0 20px 20px 20px;
           text-align: left;
           max-width: 400px;
         }
@@ -47,9 +47,6 @@ const FeatureItem = ({ title, description, icons, button }) => (
           font-weight: 600;
           margin-top: 16px;
           margin-bottom: 13px;
-        }
-        .feature-item--button {
-
         }
       }
     `}
