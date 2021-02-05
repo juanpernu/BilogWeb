@@ -1,16 +1,15 @@
 import Icons from '../Icons/Icons';
-import ExternalButton from '../ExternalButton';
+import Button from '../Buttons/Button';
 
-const FeatureItem = ({ title, description, icons, button }) => (
+const FeatureItem = ({ title, description, icons, button, onClickHandler }) => (
   <div className="feature-item">
     {icons && <Icons type={icons} />}
     <h3 className="feature-item--title">{title}</h3>
     <p className="feature-item--description">{description}</p>
     {button &&
-      <ExternalButton
-        externalLink={button.link}
-        text={button.text}
-      />
+      <Button onClick={() => onClickHandler(button.link)}>
+        {button.text}
+      </Button>
     }
     <style jsx>
       {`

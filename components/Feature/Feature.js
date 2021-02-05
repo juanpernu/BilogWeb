@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Title from '../Title'
 import FeatureItem from './FeatureItem'
 
-const Feature = ({ features }) => {
+const Feature = ({ features, onClick }) => {
   return (
     <>
       {
@@ -34,6 +34,7 @@ const Feature = ({ features }) => {
                       title={item.title}
                       description={item.description}
                       button={item.button}
+                      onClickHandler={onClick}
                     />)}
                   </div>
                 </div>
