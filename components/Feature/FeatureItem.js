@@ -7,12 +7,10 @@ const FeatureItem = ({ title, description, icons, button }) => (
     <h3 className="feature-item--title">{title}</h3>
     <p className="feature-item--description">{description}</p>
     {button &&
-      <div>
-        <ExternalButton
-          externalLink={button.link}
-          text={button.text}
-        />
-      </div>
+      <ExternalButton
+        externalLink={button.link}
+        text={button.text}
+      />
     }
     <style jsx>
       {`
@@ -38,7 +36,7 @@ const FeatureItem = ({ title, description, icons, button }) => (
       {/* STYLES FOR DESKTOP */}
       @media only screen and (min-width: 751px) {
         .feature-item {
-          margin: 0 20px 20px 20px;
+          margin: 0 20px 20px;
           text-align: left;
           max-width: 400px;
         }
