@@ -1,13 +1,17 @@
 import Icons from '../Icons/Icons';
 import Button from '../Buttons/Button';
 
-const FeatureItem = ({ title, description, icons, button, onClickHandler }) => (
-  <div className="feature-item">
+const FeatureItem = ({ title, description, icons, button }) => {
+  return(
+    <div className="feature-item">
     {icons && <Icons type={icons} />}
     <h3 className="feature-item--title">{title}</h3>
     <p className="feature-item--description">{description}</p>
     {button &&
-      <Button onClick={() => onClickHandler(button.link)}>
+      <Button
+        customClass={button.customClass}
+        onClick={() => window.location.href = button.hash}
+      >
         {button.text}
       </Button>
     }
@@ -49,6 +53,7 @@ const FeatureItem = ({ title, description, icons, button, onClickHandler }) => (
     `}
     </style>
   </div>
-)
+  )
+}
 
 export default FeatureItem;

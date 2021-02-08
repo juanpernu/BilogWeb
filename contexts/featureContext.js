@@ -5,20 +5,22 @@ export const FeatureContext = React.createContext();
 class FeatureProvider extends React.Component {
     constructor(props) {
         super(props);
+        const { data, hash } = this.props;
         this.state = {
-            productCover: this.props.data['#odontologica-test'].productCover,
-            appCover: this.props.data['#odontologica-test'].appCover,
-            features: this.props.data['#odontologica-test'].features,
+            productCover: data[hash].productCover,
+            appCover: data[hash].appCover,
+            features: data[hash].features,
             allContent: (contentId) => this.getFeatureContent(contentId),
         };
         this.getFeatureContent = this.getFeatureContent.bind(this);
     }
 
     getFeatureContent(contentId) {
+        const { data } = this.props;
         this.setState({
-            productCover: this.props.content[contentId].productCover,
-            appCover: this.props.content[contentId].appCover,
-            features: this.props.content[contentId].features,
+            productCover: data[contentId].productCover,
+            appCover: data[contentId].appCover,
+            features: data[contentId].features,
         });
     };
 

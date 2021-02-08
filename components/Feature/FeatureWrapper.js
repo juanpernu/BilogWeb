@@ -6,12 +6,6 @@ import { FeatureContext } from '../../contexts/featureContext';
 const FeatureWrapper = () => {
     const { productCover, appCover, features, allContent } = useContext(FeatureContext);
 
-    const handleOnClick = (link) => {
-        const regexp = new RegExp(/\#(.*)/gm)
-        const contentId = link.match(regexp);
-        allContent(contentId);
-    };
-
     return (
         <Fragment>
             <Cover
@@ -24,7 +18,6 @@ const FeatureWrapper = () => {
             />
             <Feature
                 features={features}
-                onClick={handleOnClick}
             />
             <Cover
                 text={appCover.text}
