@@ -19,6 +19,8 @@ module.exports = {
       '/versions-detail/index': { page: 'versions-detail' },
       '/descarga/index': { page: 'download-go' },
       '/utils/index': { page: 'utils'},
+      '/users/index': { page: 'users' },
+      '/features': { page: 'features' },
     }
   },
   images: {

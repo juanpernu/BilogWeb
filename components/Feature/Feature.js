@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Title from '../Title';
 import FeatureItem from './FeatureItem';
 
-const Feature = ({ features, onClick }) => {
+const Feature = ({ features }) => {
   return (
     <>
       {
