@@ -35,6 +35,10 @@ const SidebarSection = ({text, hash}) => {
       {`
         {/* STYLES FOR MOBILE */}
         @media only screen and (max-width: 750px) {
+          .nav-link a{
+            color:#000;
+            text-decoration:none;
+          }
         } 
 
         {/* STYLES FOR DESKTOP */}
