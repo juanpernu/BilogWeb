@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import Layout from '../components/Layout';
 import FeatureProvider from '../contexts/featureContext';
 import FeatureWrapper from '../components/Feature/FeatureWrapper';
