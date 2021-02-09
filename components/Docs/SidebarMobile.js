@@ -38,6 +38,7 @@ const SidebarMobile = () => {
       {/* STYLES FOR MOBILE */}
       @media only screen and (max-width: 750px) {
         .section-buttom{
+          padding-top: 10px;
           padding-left: 10px;
           margin:0;
         }
