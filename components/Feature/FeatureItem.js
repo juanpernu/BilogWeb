@@ -1,5 +1,5 @@
 import Icons from '../Icons/Icons';
-import Button from '../Buttons/Button';
+import Button from '../Buttons/ButtonLink';
 
 const FeatureItem = ({ title, description, icons, button }) => {
   return(
@@ -9,11 +9,10 @@ const FeatureItem = ({ title, description, icons, button }) => {
     <p className="feature-item--description">{description}</p>
     {button &&
       <Button
+        buttonHref={button.hash}
+        buttonText={button.text}
         customClass={button.customClass}
-        onClick={() => window.location.href = button.hash}
-      >
-        {button.text}
-      </Button>
+      />
     }
     <style jsx>
       {`

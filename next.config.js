@@ -1,4 +1,5 @@
 module.exports = {
+  trailingSlash: true,
   exportPathMap: async function (defaultPathMap, { dev, dir, outDir, distDir, buildId }) {
     return {
       '/': { page: '/' },
@@ -20,7 +21,7 @@ module.exports = {
       '/descarga/index': { page: 'download-go' },
       '/utils/index': { page: 'utils'},
       '/users/index': { page: 'users' },
-      '/features': { page: 'features' },
+      '/features/index': { page: 'features' },
     }
   },
   images: {

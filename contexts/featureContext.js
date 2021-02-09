@@ -5,7 +5,7 @@ export const FeatureContext = React.createContext();
 class FeatureProvider extends React.Component {
     constructor(props) {
         super(props);
-        const { data, hash } = this.props;
+        const { data, hash = 'agenda' } = this.props;
         this.state = {
             productCover: data[hash].productCover,
             appCover: data[hash].appCover,
