@@ -1,10 +1,18 @@
-import { Fragment, useContext } from 'react';
+import { Fragment, useContext, useEffect } from 'react';
 import Cover from '../Cover/Cover';
 import Feature from '../Feature/Feature';
 import { FeatureContext } from '../../contexts/featureContext';
 
 const FeatureWrapper = () => {
     const { productCover, appCover, features, allContent } = useContext(FeatureContext);
+    useEffect(() => {
+        if(window) {
+            const url = window.location.href;
+            const regexp = new RegExp(/\#(.*)/gm)
+            const contentId = url.match(regexp);
+            allContent(contentId[0]);
+        }
+    }, []);
 
     return (
         <Fragment>

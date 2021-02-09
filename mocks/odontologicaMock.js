@@ -38,7 +38,7 @@ module.exports = {
           description: "Agendá turnos en forma más eficiente. Los diferentes colores te van a ayudar a visibilizar tiempos muertos, sobreturnos, pacientes de primera vez, entre otras cosas más.",
           icon: 'agenda',
           button: {
-            hash: "/features?key=agenda",
+            hash: "/features#agenda",
             text: "Ver más",
             customClass: 'primary'
           },
@@ -48,7 +48,7 @@ module.exports = {
           description: "Bilog te ayuda con la carga de los datos personales de tus pacientes. Siempre vas a tener a la vista el saldo actual de tus pacientes, vas a poder agregar su foto, enviarle un mail sin salir del sistema o un mensaje.",
           icon: 'person',
           button: {
-            hash: "/features?key=pacientes",
+            hash: "/features#pacientes",
             text: "Ver más",
             customClass: 'primary'
           },
@@ -58,7 +58,7 @@ module.exports = {
           description: "Registrá los ingresos y egresos de forma más eficiente para maximizar la productividad de tu trabajo",
           icon: 'account',
           button: {
-            hash: "/features?key=administracion",
+            hash: "/features#administracion",
             text: "Ver más",
             customClass: 'primary'
           },

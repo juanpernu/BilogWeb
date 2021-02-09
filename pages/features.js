@@ -1,18 +1,14 @@
+import { useEffect } from 'react';
 import Layout from '../components/Layout';
 import FeatureProvider from '../contexts/featureContext';
 import FeatureWrapper from '../components/Feature/FeatureWrapper';
 
 const featureContent = require('../contents/feature/content');
 
-Features.getInitialProps = ctx => {
-    const { key } = ctx.query;
-    return { hash: key };
-}
-
-function Features({ hash }) {
+function Features() {
     return (
         <Layout>
-            <FeatureProvider data={featureContent} hash={hash} >
+            <FeatureProvider data={featureContent} >
                 <FeatureWrapper />
             </FeatureProvider>
         </Layout>
