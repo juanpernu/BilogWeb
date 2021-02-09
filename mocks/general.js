@@ -120,6 +120,7 @@ const indexFeatures = {
       title: "Hacemos fácil la gestión de la odontología",
       description: "Es el software ideal para llevar la administración de tu consultorio o clínica.",
       hasColorBackground: false,
+      layout: "landscape",
       successCase: {
         text: "Mira cómo el Dr. Lenarduzzi aumentó la productividad de sus clínicas",
         href: "/success-orono",
