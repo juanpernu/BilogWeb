@@ -1,7 +1,9 @@
 import Icons from '../Icons/Icons';
-import Button from '../Buttons/ButtonLink';
+import Button from '../Buttons/Button';
 
 const FeatureItem = ({ title, description, icons, button }) => {
+  const onClickHandler = () => window.location.href = button.hash;
+
   return(
     <div className="feature-item">
     {icons && <Icons type={icons} />}
@@ -9,10 +11,11 @@ const FeatureItem = ({ title, description, icons, button }) => {
     <p className="feature-item--description">{description}</p>
     {button &&
       <Button
-        buttonHref={button.hash}
-        buttonText={button.text}
+        onClick={onClickHandler}
         customClass={button.customClass}
-      />
+      >
+        {button.text}
+      </Button>
     }
     <style jsx>
       {`
