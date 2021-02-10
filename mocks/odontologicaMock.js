@@ -77,7 +77,7 @@ module.exports = {
           description: "La seguridad de tus datos es lo más importante para nosotros. Por eso el sistema cuenta con la función de copias de seguridad automáticas.",
           icon: 'cloud',
           button: {
-            hash: "/features?key=copia-de-seguridad",
+            hash: "/features#copia-de-seguridad",
             text: "Ver más",
             customClass: 'primary'
           },
@@ -87,7 +87,7 @@ module.exports = {
           description: "Llevá un registro de tus finanzas de una forma más eficiente para maximizar y optimizar la productividad de tu profesión.",
           icon: 'chart',
           button: {
-            hash: "/features?key=estadisticas",
+            hash: "/features#estadisticas",
             text: "Ver más",
             customClass: 'primary'
           },
@@ -97,7 +97,7 @@ module.exports = {
           description: "Liquidá a profesionales, obras sociales y laboratorios. Llevá el control de tus finanzas y de tu trabajo.",
           icon: 'money',
           button: {
-            hash: "/features?key=liquidaciones",
+            hash: "/features#liquidaciones",
             text: "Ver más",
             customClass: 'primary'
           },
