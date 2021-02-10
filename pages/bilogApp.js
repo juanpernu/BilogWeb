@@ -2,8 +2,9 @@ import Layout from '../components/Layout'
 import Cover from '../components/Cover/Cover'
 import FeatureImg from '../components/Feature/FeatureImg'
 import Carousel from '../components/Carousel'
+import ArrowScrollDown from '../components/ArrowScrollDown'
 
-export default () => (
+const BilogApp = () => (
   <Layout>
     <Cover
       text="Presentamos Bilog App"
@@ -12,6 +13,7 @@ export default () => (
       gradientBg="blue"
       coverImage="app"
       appButtons
+      hasArrow
     />
     <FeatureImg
       imgSrc="/static/app-mockup.png"
@@ -23,6 +25,8 @@ export default () => (
       imageAlign="left"
       bgGrey
     />
-    <Carousel/>
+    <Carousel />
   </Layout>
 )
+
+export default BilogApp

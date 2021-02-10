@@ -1,9 +1,10 @@
 import React from 'react';
 import Container from './Container';
 import PropTypes from 'prop-types';
+import ArrowScrollDown from '../ArrowScrollDown';
 
 class Cover extends React.Component {
-  constructor(){
+  constructor() {
     super();
   }
 
@@ -17,10 +18,11 @@ class Cover extends React.Component {
       buttonText,
       buttonHref,
       coverImage,
-      appButtons
+      appButtons,
+      hasArrow,
     } = this.props;
 
-    return(
+    return (
       <section className={`cover ${gradientBg}`}>
         <div className={`cover-wrapper ${!coverImage ? 'no-image' : ''}`}>
           <Container
@@ -34,9 +36,10 @@ class Cover extends React.Component {
             appButtons={appButtons}
           />
           {coverImage && <img className="cover-img" alt="Cover Image" src={`/static/illus-${coverImage}.svg`} />}
+          {hasArrow && <ArrowScrollDown src={"/static/arrow-scroll-down.svg"} />}
         </div>
         <style jsx>
-        {`
+          {`
           {/* STYLES FOR MOBILE */}
           @media only screen and (max-width: 750px) {
             .cover {
