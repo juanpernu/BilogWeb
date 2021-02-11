@@ -1,4 +1,4 @@
-import React, {Fragment, useState} from 'react';
+import React, {useState} from 'react';
 import SidebarSection from './SidebarSection';
 import SidebarContent from '../../contents/documentation/sidebar';
 
@@ -11,9 +11,9 @@ const SidebarMobile = () => {
       setIsSidebarOpen(!isSidebarOpen)
     }
     return(
-  <Fragment>
+  <div className={`container ${isSidebarOpen ? "open-container" : ""}`}>
     <section className="section-buttom">
-      <button className={`btn-menu ${isSidebarOpen ? "open-buttom" : "close-buttom"}`} onClick={changeState} type="button">
+      <button className={`btn-menu ${isSidebarOpen ? "open-buttom" : ""}`} onClick={changeState} type="button">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm2 12l-4.5 4.5 1.527 1.5 5.973-6-5.973-6-1.527 1.5 4.5 4.5z"/></svg>
       </button>
     </section>
@@ -32,15 +32,15 @@ const SidebarMobile = () => {
           </div>
         ))
       }
-    </aside>
-  <style jsx>
-    {`
+      </aside>
+    <style jsx>
+      {`
       {/* STYLES FOR MOBILE */}
       @media only screen and (max-width: 750px) {
         .section-buttom{
-          padding-top: 10px;
-          padding-left: 10px;
+          padding: 5px 10px 0;
           margin:0;
+          opacity:0.50;
         }
 
         .btn-menu{
@@ -50,42 +50,36 @@ const SidebarMobile = () => {
           text-decoration:none;
           outline:none;
           border-style:none;
+          transition: all 1.5s;
         }
 
         .open-buttom{
-          transform: translateX(20rem) rotate(-180deg);
-          transition: all 1.5s;
-        }
-
-        .close-buttom{
-          transition: all 1.5s;
+          transform: translateX(15rem) rotate(-180deg);
         }
 
         .sidebar{
           transform: translateX(-300px);
-          height:5px;
+          height:auto;
+          width:17rem;
+          background-color:gray;
+          transition: all 1.5s;
+          position:absolute;
+          z-index:1;
         }
 
         .open{
-          transform: translate(15px);
-          height: auto;
-          transition: all 1.5s; 
-          max-width:305px;
+          transform: translateX(0rem);
+          height: auto; 
           padding:0;
           margin:0;
           box-sizing:border-box;
           color:#000;
         }
-        
+
         .category{
           color:#000;
-          max-width:300px;
+          width:300px;
           text-decoration:none;
-          transition: all 3s;
-        }
-        
-        .post{
-          background-color:orange;
           transition: all 3s;
         }
       }
@@ -100,9 +94,9 @@ const SidebarMobile = () => {
           display:none;
         }
       }
-    `}
+      `}
     </style>
-</Fragment>
+  </div>
 )}
 
 export default SidebarMobile;

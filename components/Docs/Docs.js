@@ -9,6 +9,9 @@ const Docs = ({title, item, copy}) => (
     {`
       {/* STYLES FOR MOBILE */}
       @media only screen and (max-width: 750px) {
+        .docs-section{
+          position:relative;
+        }
       }
 
       {/* STYLES FOR DESKTOP */}
