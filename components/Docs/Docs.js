@@ -17,7 +17,7 @@ const Docs = ({title, item, copy}) => (
         .docs-title{
           text-align:left;
           font-size: 3.21rem;
-          letter-spacing: -.049375rem;
+          letter-spacing: 0.2px;
           font-weight: 600;
           padding:0 17px;
         }

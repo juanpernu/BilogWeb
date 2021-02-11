@@ -23,11 +23,6 @@ const DocsWrapper = () => {
             max-width:750px;
             font-size:14px;
           }
-          .label{
-            font-size: 3rem;
-            letter-spacing: -.066875rem;
-            font-weight: 700;
-          }
         }
 
         {/* STYLES FOR DESKTOP */}

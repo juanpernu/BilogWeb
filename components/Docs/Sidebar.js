@@ -21,11 +21,6 @@ const Sidebar = () => (
     </div>
     <style jsx>
     {`
-      {/* STYLES FOR MOBILE */}
-      @media only screen and (max-width: 750px) {
-        
-      }
-
       {/* STYLES FOR DESKTOP */}
       @media only screen and (min-width: 751px) {
         .sidebar,
@@ -70,20 +65,3 @@ const Sidebar = () => (
 )
 
 export default Sidebar;
-
-/* .sidebar{
-          margin:0;
-          padding: 0 16px;
-        } */
-        /* .label{
-          font-size: 3.1rem;
-          letter-spacing:0.09rem;
-          line-height: 4rem;
-        } */
-        /*.nav-link a {
-          text-decoration: none;
-          font-size:1.2rem;
-          font-weight:300;
-          color: #222;
-          box-sizing: border-box;
-        }*/

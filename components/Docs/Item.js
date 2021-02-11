@@ -27,13 +27,14 @@ const Item = ({ text, video, content}) => (
           font-size: 1.15rem;
           font-weight: 400;
           line-height: 1.3;
+          width:90%;
         }
 
         .docs-video{
           display: block;
           margin:0;
           padding-left:17px;
-          width: 90%;
+          width: 91%;
         }
       }
 
