@@ -1,7 +1,7 @@
-import React from 'react'
-import Link from 'next/link'
-import Title from '../Title'
-import FeatureItem from './FeatureItem'
+import React from 'react';
+import Link from 'next/link';
+import Title from '../Title';
+import FeatureItem from './FeatureItem';
 
 const Feature = ({ features }) => {
   return (
