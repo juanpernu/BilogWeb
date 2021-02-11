@@ -2,19 +2,31 @@ import React, {useState} from 'react';
 import SidebarSection from './SidebarSection';
 import SidebarContent from '../../contents/documentation/sidebar';
 
-
+const blockScroll = (byClassName, byTagName) => {
+  const [a] = document.getElementsByClassName(byClassName);
+  const [b] = document.getElementsByTagName(byTagName);
+  [a, b].forEach(el => {
+    if(el.style.overflow) {
+      el.removeAttribute("style");
+    } else {
+      el.style.overflow = 'hidden';  
+    }
+  })
+}
 
 const SidebarMobile = () => {
-    const [isSidebarOpen, setIsSidebarOpen] = useState(false);
-  
-    const changeState = ()=>{
-      setIsSidebarOpen(!isSidebarOpen)
-    }
-    return(
-  <div className={`container ${isSidebarOpen ? "open-container" : ""}`}>
-    <section className="section-buttom">
-      <button className={`btn-menu ${isSidebarOpen ? "open-buttom" : ""}`} onClick={changeState} type="button">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm2 12l-4.5 4.5 1.527 1.5 5.973-6-5.973-6-1.527 1.5 4.5 4.5z"/></svg>
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const onClickHandler = () => {
+    setIsSidebarOpen(!isSidebarOpen);
+    blockScroll('layout', 'body');
+  };
+
+  return(
+  <div className={`container ${isSidebarOpen ? "open" : ""}`}>
+    <section className="section-button">
+      <button className="btn-menu" onClick={onClickHandler} type="button">
+        <p>Documentación</p>
+        <svg className="icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z"/></svg>
       </button>
     </section>
 
@@ -22,7 +34,8 @@ const SidebarMobile = () => {
       {
         SidebarContent.map((content, key) => (
           <div className="category" key={key}>
-            <h2 className="label">{content.title}</h2>
+            <h2>Documentación</h2>
+            <p className="label">{content.title}</p>
             <div className="posts">
               {content.docs.map((docText, key) => {
                 const { title, hash } = docText;
@@ -32,61 +45,85 @@ const SidebarMobile = () => {
           </div>
         ))
       }
-      </aside>
+    </aside>
+    <div className="grey-bg" onClick={onClickHandler} />
     <style jsx>
       {`
       {/* STYLES FOR MOBILE */}
       @media only screen and (max-width: 750px) {
-        .section-buttom{
-          padding: 5px 10px 0;
-          margin:0;
-          opacity:0.50;
+        .section-button {
+          margin: 0;
         }
 
-        .btn-menu{
-          border-radius:50%;
-          width:40px;
-          height:40px;
-          text-decoration:none;
+        .btn-menu {
+          display: flex;
+          align-items: center;
           outline:none;
           border-style:none;
-          transition: all 1.5s;
+          width: 100%;
+          text-align: left;
+          padding: 5px 12px;
+        }
+        
+        .btn-menu .icon {
+          width: 12px;
+          margin-left: 10px;
         }
 
-        .open-buttom{
-          transform: translateX(15rem) rotate(-180deg);
-        }
-
-        .sidebar{
+        .sidebar {
           transform: translateX(-300px);
-          height:auto;
-          width:17rem;
-          background-color:gray;
-          transition: all 1.5s;
-          position:absolute;
-          z-index:1;
+          transition: transform .5s;
+          height: 100vh;
+          padding: 0;
+          margin: 0;
+          color: #000;
+          position: absolute;
+          z-index: 1000;
+          width: 80%;
+          background-color: #fff;
+          top: 0;
+          box-sizing: border-box;
+          overflow: hidden;
         }
 
-        .open{
+        .sidebar.open {
           transform: translateX(0rem);
-          height: auto; 
-          padding:0;
-          margin:0;
-          box-sizing:border-box;
-          color:#000;
         }
 
-        .category{
-          color:#000;
-          width:300px;
-          text-decoration:none;
-          transition: all 3s;
+        .container.open .grey-bg {
+          content: '';
+          display: block;
+          width: 100%;
+          height: 100vh;
+          background-color: rgba(0,0,0, .5);
+          position: absolute;
+          top: 0;
+          z-index: 999;
+        }
+
+        .category {
+          color: #000;
+          padding: 20px;
+          text-decoration: none;
+          font-size: 16px;
+        }
+
+        .category h2 {
+          font-size: 24px;
+          font-weight: 200;
+        }
+
+        .category .label {
+          font-size: 16px;
+          font-weight: 600;
+          margin: 0 0 8px;
+          padding: 0;
         }
       }
 
       {/* STYLES FOR DESKTOP */}
       @media only screen and (min-width: 751px) {
-        .section-buttom{
+        .section-button {
           display:none;
         }
 

@@ -39,6 +39,22 @@ const SidebarSection = ({text, hash}) => {
             color:#000;
             text-decoration:none;
           }
+
+          .nav-link {
+            margin: 0 0 8px;
+            padding: 0 0 0 12px;
+          }
+          .nav-link:before {
+            content: '';
+            display: inline-block;
+            border-radius: 50%;
+            width: 3px;
+            height: 3px;
+            background-color: #000;
+            position: relative;
+            bottom: 5px;
+            margin-right: 10px;
+          }
         } 
 
         {/* STYLES FOR DESKTOP */}
