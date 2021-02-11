@@ -82,6 +82,8 @@ class Cover extends React.Component {
                 text-align: center;
               }
               .arrow-container > i {
+                width: 40px;
+                bottom: 30px;
                 position: relative;
               }
               .icon-arrow--scroll-down {
@@ -178,6 +180,8 @@ class Cover extends React.Component {
                 text-align: center;
               }
               .arrow-container > i {
+                width: 40px;
+                bottom: 30px;
                 position: relative;
               }
               .icon-arrow--scroll-down {
@@ -273,6 +277,8 @@ class Cover extends React.Component {
                 text-align: center;
               }
               .arrow-container > i {
+                width: 40px;
+                bottom: 30px;
                 position: relative;
               }
               .icon-arrow--scroll-down {
