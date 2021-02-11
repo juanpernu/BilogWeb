@@ -2,7 +2,6 @@ import Layout from '../components/Layout'
 import Cover from '../components/Cover/Cover'
 import FeatureImg from '../components/Feature/FeatureImg'
 import Carousel from '../components/Carousel'
-import ArrowScrollDown from '../components/ArrowScrollDown'
 
 const BilogApp = () => (
   <Layout>
