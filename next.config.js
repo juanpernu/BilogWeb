@@ -1,7 +1,7 @@
 module.exports = {
   exportPathMap: async function (defaultPathMap, { dev, dir, outDir, distDir, buildId }) {
     return {
-      '/index': { page: 'index' },
+      '/': { page: '/' },
       '/about/index': { page: 'about' },
       '/auditoria/index': { page: 'auditoria' },
       '/bilogApp/index': { page: 'bilogApp' },
