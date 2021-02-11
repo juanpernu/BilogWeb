@@ -1,6 +1,7 @@
 import Layout from '../components/Layout'
 import Cover from '../components/Cover/Cover'
 import FeatureImg from '../components/Feature/FeatureImg'
+import BannerCta from '../components/Banner/BannerCta'
 import Carousel from '../components/Carousel'
 
 export default () => (
@@ -23,6 +24,11 @@ export default () => (
       imageAlign="left"
       bgGrey
     />
-    <Carousel/>
+    <BannerCta
+      title="¿Todavía tenés dudas? Contactanos."
+      buttonText="Ir a contacto"
+      buttonHref="/contact"
+    />
+    <Carousel />
   </Layout>
 )
