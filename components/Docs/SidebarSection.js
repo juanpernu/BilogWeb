@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 
 import { DocsContext } from '../../contexts/docContext';
 
-const SidebarSection = ({text, hash}) => {
+const SidebarSection = ({text, hash, onClickHandler}) => {
   const { allContent } = useContext(DocsContext);
   const [link, setLink] = useState(hash);
 
@@ -21,6 +21,7 @@ const SidebarSection = ({text, hash}) => {
   }, []);
 
   const handleOnClick = () => {
+    onClickHandler && onClickHandler();
     const regexp = new RegExp(/\#(.*)/gm);
     const contentId = hash.match(regexp);
     allContent(contentId);

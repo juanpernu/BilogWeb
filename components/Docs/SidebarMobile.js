@@ -11,8 +11,8 @@ const blockScroll = (byClassName, byTagName) => {
     } else {
       el.style.overflow = 'hidden';  
     }
-  })
-}
+  });
+};
 
 const SidebarMobile = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -39,7 +39,7 @@ const SidebarMobile = () => {
             <div className="posts">
               {content.docs.map((docText, key) => {
                 const { title, hash } = docText;
-                return <SidebarSection key={key} text={title} hash={hash} />
+                return <SidebarSection key={key} text={title} hash={hash} onClickHandler={onClickHandler} />
               })}
             </div>
           </div>
@@ -71,7 +71,7 @@ const SidebarMobile = () => {
         }
 
         .sidebar {
-          transform: translateX(-300px);
+          transform: translateX(-400px);
           transition: transform .5s;
           height: 100vh;
           padding: 0;
@@ -91,8 +91,6 @@ const SidebarMobile = () => {
         }
 
         .container.open .grey-bg {
-          content: '';
-          display: block;
           width: 100%;
           height: 100vh;
           background-color: rgba(0,0,0, .5);
@@ -123,11 +121,7 @@ const SidebarMobile = () => {
 
       {/* STYLES FOR DESKTOP */}
       @media only screen and (min-width: 751px) {
-        .section-button {
-          display:none;
-        }
-
-        .sidebar {
+        .container {
           display:none;
         }
       }
