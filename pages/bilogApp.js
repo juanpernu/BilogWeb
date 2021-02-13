@@ -15,9 +15,7 @@ export default () => (
       coverImage={productCover.coverImage}
       appButtons
     />
-
     <Feature features={features} />
-
     <FeatureImg
       imgSrc={featureImg.imgSrc}
       imgAlt={featureImg.imgAlt}
