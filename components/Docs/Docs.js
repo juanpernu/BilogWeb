@@ -9,6 +9,25 @@ const Docs = ({title, item, copy}) => (
     {`
       {/* STYLES FOR MOBILE */}
       @media only screen and (max-width: 750px) {
+        .docs-section{
+          padding:0;
+          margin:0;
+          box-sizing:border-box;
+        }
+        .docs-title{
+          text-align:left;
+          font-size: 3.21rem;
+          letter-spacing: 0.2px;
+          font-weight: 600;
+          padding:0 17px;
+        }
+        .docs-copy{
+          font-size: 1.9rem;
+          font-weight: 400;
+          text-align:start;
+          padding: 0 1.1rem;
+          line-height:1.3;
+        }
       }
 
       {/* STYLES FOR DESKTOP */}
