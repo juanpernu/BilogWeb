@@ -3,32 +3,44 @@ import Cover from '../components/Cover/Cover'
 import FeatureImg from '../components/Feature/FeatureImg'
 import BannerCta from '../components/Banner/BannerCta'
 import Carousel from '../components/Carousel'
+import {productCover, appCover, bannerCta, featureImg, features } from '../mocks/landingMock'
 
 export default () => (
   <Layout>
     <Cover
-      text="Presentamos Bilog App"
-      paragraph="Administrá tu consultorio en tu celular. Con tu agenda siempre disponible y actualizada organizar tu día se va a volver muy fácil."
-      position="lf"
-      gradientBg="blue"
-      coverImage="app"
+      text={productCover.text}
+      paragraph={productCover.paragraph}
+      position={productCover.position}
+      gradientBg={productCover.gradientBg}
+      coverImage={productCover.coverImage}
       appButtons
     />
+    <Feature features={features} />
     <FeatureImg
-      imgSrc="/static/app-mockup.png"
-      imgAlt="App mockup"
-      copy="Bilog App"
-      title="Sorprendentes funciones"
-      description="Administrá tu consultorio en tu celular, tené tu agenda siempre disponible y actualizada."
-      hasCta={false}
-      imageAlign="left"
+      imgSrc={featureImg.imgSrc}
+      imgAlt={featureImg.imgAlt}
+      copy={featureImg.copy}
+      title={featureImg.title}
+      description={featureImg.description}
+      hasCta={featureImg.hasCta}
+      imageAlign={featureImg.imageAlign}
       bgGrey
     />
     <BannerCta
-      title="¿Todavía tenés dudas? Contactanos."
-      buttonText="Ir a contacto"
-      buttonHref="/contact"
+      title={bannerCta.title}
+      buttonText={bannerCta.buttonText}
+      buttonHref={bannerCta.buttonHref}
     />
     <Carousel />
+    <Cover
+      text={appCover.text}
+      paragraph={appCover.paragraph}
+      hasButtons={appCover.hasButtons}
+      buttonText={appCover.buttonText}
+      buttonHref={appCover.buttonHref}
+      position={appCover.position}
+      gradientBg={appCover.gradientBg}
+      coverImage={appCover.coverImage}
+    />
   </Layout>
 )
