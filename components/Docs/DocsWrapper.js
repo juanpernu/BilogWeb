@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import Sidebar from './Sidebar';
 import Docs from './Docs';
+import SidebarMobile from './SidebarMobile'
 
 import { DocsContext } from '../../contexts/docContext';
 
@@ -9,6 +10,7 @@ const DocsWrapper = () => {
 
   return (
     <div className="docs-wrapper">
+      <SidebarMobile className="sidebar-mobile" />
       <Sidebar />
       <Docs
         title={section}
@@ -27,6 +29,10 @@ const DocsWrapper = () => {
 
         {/* STYLES FOR DESKTOP */}
         @media only screen and (min-width: 751px) {
+          .sidebar-mobile{
+            display:none;
+          }
+
           .docs-wrapper {
             max-width: 1024px;
             margin: 0 auto 80px;

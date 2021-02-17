@@ -1,13 +1,12 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import SidebarSection from './SidebarSection';
 import SidebarContent from '../../contents/documentation/sidebar';
 
 const Sidebar = () => (
   <aside className="sidebar">
-    <div className="category">
       {
         SidebarContent.map((content, key) => (
-          <Fragment key={key}>
+          <div className="category" key={key}>
             <h2 className="label">{content.title}</h2>
             <div className="posts">
               {content.docs.map((docText, key) => {
@@ -15,12 +14,17 @@ const Sidebar = () => (
                 return <SidebarSection key={key} text={title} hash={hash} />
               })}
             </div>
-          </Fragment>
+          </div>
         ))
       }
-    </div>
     <style jsx>
     {`
+      {/* STYLES FOR MOBILE */}
+      @media only screen and (max-width: 750px) {
+        display:none;
+        height:0px;
+      }
+
       {/* STYLES FOR DESKTOP */}
       @media only screen and (min-width: 751px) {
         .sidebar,

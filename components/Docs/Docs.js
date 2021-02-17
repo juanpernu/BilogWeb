@@ -10,6 +10,7 @@ const Docs = ({title, item, copy}) => (
       {/* STYLES FOR MOBILE */}
       @media only screen and (max-width: 750px) {
         .docs-section{
+          position:relative;
           padding:0;
           margin:0;
           box-sizing:border-box;
