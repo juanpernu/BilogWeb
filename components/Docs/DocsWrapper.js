@@ -20,6 +20,12 @@ const DocsWrapper = () => {
       <style jsx>
       {`
         {/* STYLES FOR MOBILE */}
+        @media only screen and (max-width: 750px) {
+          .docs-wrapper{
+            max-width:750px;
+            font-size:14px;
+          }
+        }
 
         {/* STYLES FOR DESKTOP */}
         @media only screen and (min-width: 751px) {
@@ -37,12 +43,6 @@ const DocsWrapper = () => {
           .sidebar,
           .docs-section {
             height: 300px;
-          }
-          .sidebar {
-            background-color: red;
-          }
-          .docs-section {
-            background-color: green;
           }
         }
       `}
