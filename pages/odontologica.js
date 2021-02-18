@@ -29,8 +29,8 @@ export default () => (
       /> */}
     <ProductSlider />
     <Cover
-      text="Te presentamos Bilog App"
-      paragraph="Tu consultorio, a donde sea que vayas."
+      text="Bilog App"
+      paragraph="La gestión de tu consultorio al alcance de tu mano."
       hasButtons={true}
       buttonText="Ver más"
       buttonHref="/bilogApp"
