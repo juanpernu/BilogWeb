@@ -1,11 +1,12 @@
 import Layout from '../components/Layout'
 import Cover from '../components/Cover/Cover'
+import Feature from '../components/Feature/Feature'
 import FeatureImg from '../components/Feature/FeatureImg'
 import BannerCta from '../components/Banner/BannerCta'
 import Carousel from '../components/Carousel'
-import {productCover, appCover, bannerCta, featureImg, features } from '../mocks/landingMock'
+import { productCover, appCover, bannerCta, featureImg, features } from '../mocks/landingMock'
 
-export default () => (
+const BilogApp = () => (
   <Layout>
     <Cover
       text={productCover.text}
@@ -14,6 +15,7 @@ export default () => (
       gradientBg={productCover.gradientBg}
       coverImage={productCover.coverImage}
       appButtons
+      hasArrow
     />
     <Feature features={features} />
     <FeatureImg
@@ -44,3 +46,5 @@ export default () => (
     />
   </Layout>
 )
+
+export default BilogApp
