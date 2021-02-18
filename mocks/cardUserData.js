@@ -1,28 +1,24 @@
 module.exports = {
-    cardListData :[
+    cardListData: [
         {
-            title:"Preguntas Frecuentes",
-            img:"../../static/card-user-1.png",
-            url:"/faqs",
-            
+            title: "Preguntas Frecuentes",
+            icon: 'faqs',
+            url: "/faqs",
         },
         {
-            title:"Documentacion" ,
-            img:"../../static/card-user-2.png",
-            url:"/documentation",
-            
+            title: "Documentacion",
+            icon: 'documentation',
+            url: "/documentation",
         },
         {
-            title:"Testimonios",
-            img:"../../static/card-user-3.png",
-            url:"/testimonials",
-            
+            title: "Testimonios",
+            icon: 'testimonials',
+            url: "/testimonials",
         },
         {
-            title:"Contacto",
-            img:"../../static/card-user-4.png",
-            url:"/contact", 
-
+            title: "Contacto",
+            icon: 'contact',
+            url: "/contact",
         }
     ]
 }
