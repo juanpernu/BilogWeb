@@ -75,9 +75,53 @@
         font-size: 12px;
       }
 
+      .header{
+        font-size: 0px; 
+        border-radius: 6px 6px 0 0!important; 
+        padding: 10px 0; 
+        text-align: center; 
+        background: linear-gradient(to right,#3C5DA8,#4777BB); 
+        position: relative; 
+        height: 250px;
+      }
+
+      .header-title{
+        font-size: 30px; 
+        font-weight: 600; 
+        color: #fff; 
+        text-decoration: none; 
+        padding:0px; 
+        margin: 0px
+      }
+
+      .header-text{
+          padding: 10px; 
+          font-size: 0px; 
+        }
+
+      .table-subtitle{
+        text-align: left;
+      }  
+
+      .img-mobile{
+        padding:0; 
+        border: 0px; 
+        max-width: 100%; 
+        position: absolute; 
+        top: -30px; 
+        left: 230px;
+      }
+
       .table-mobile {
         max-width: 620px !important;
       }
+
+      .section-column{
+        height: 450px; 
+        padding-top: 30px; 
+        border: 1px solid pink;
+      }
+
       .stack-column {
         max-width: 193px;
       }
@@ -88,14 +132,118 @@
 
       @media only screen and (min-device-width:320px) and (max-device-width:374px) {
         .email-container {
-          min-width: 320px !important;
+          min-width: 375px !important;
         }
+        .header{
+        font-size: 0px; 
+        border-radius: 6px 6px 0 0!important; 
+        padding: 10px 0;
+        background: linear-gradient(to right,#3C5DA8,#4777BB); 
+        height: 500px;
+        position: relative;
+      }
+
+      .header-title{
+        font-size: 30px; 
+        font-weight: 600; 
+        color: #fff; 
+        text-decoration: none; 
+        padding:30px 0px 0px; 
+        margin: 0px
+      }
+
+        .header-text{
+          padding: 10px; 
+          font-size: 0px; 
+          position: absolute;
+          left: 70px;
+          text-align: center;
+        }
+
+      .table-subtitle{
+        text-align: center;
+        margin-left: 7px;
+      }
+
+      .table-buttom{ 
+        padding-left: 60px;
+      }
+
+        .img-mobile{
+        padding:0;  
+        position: absolute;
+        top: 170px;
+        left: 40px;
+      }
+
+      .section-column{
+        height: 900px; 
+        padding-top: 30px; 
+        border: 1px solid pink;
+      }
       }
 
       @media only screen and (min-device-width:375px) and (max-device-width:413px) {
         .email-container {
           min-width: 375px !important;
         }
+        .header{
+        font-size: 0px; 
+        border-radius: 6px 6px 0 0!important; 
+        padding: 10px 0;
+        background: linear-gradient(to right,#3C5DA8,#4777BB); 
+        height: 500px;
+        position: relative;
+      }
+
+      .header-title{
+        font-size: 30px; 
+        font-weight: 600; 
+        color: #fff; 
+        text-decoration: none; 
+        padding:30px 0px 0px; 
+        margin: 0px
+      }
+
+        .header-text{
+          padding: 10px; 
+          font-size: 0px; 
+          position: absolute;
+          left: 70px;
+          text-align: center;
+        }
+
+      .table-subtitle{
+        text-align: center;
+        margin-left: 7px;
+      }
+
+      .table-buttom{ 
+        padding-left: 60px;
+      }
+
+      .button-primary {
+        background-color: #24ACE2;
+        color: rgb(255, 255, 255);
+        margin: 0; 
+        padding: 10px 0px;
+        text-align: center; 
+        width: 100px;
+        font-weight: 600;
+        font-size: 10px;
+      }
+        .img-mobile{
+        padding:0;  
+        position: absolute;
+        top: 170px;
+        left: 40px;
+      }
+
+      .section-column{
+        height: 900px; 
+        padding-top: 30px; 
+        border: 1px solid pink;
+      }
       }
     </style>
 
@@ -158,28 +306,27 @@
                       <table role="presentation" cellspacing="0" cellpadding="0" width="100%" align="center">
                         <tbody>
                           <tr>
-                            <td valign="middle" align="center"
-                              style="font-size: 0px; border-radius: 6px 6px 0 0!important; padding: 10px 0; text-align: center; background: linear-gradient(to right,#3C5DA8,#4777BB); position: relative; height: 250px;">
+                            <td class="header">
                                 <div
-                                  style="display: inline-block; width: 100%; vertical-align: middle; min-width: 200px; max-width: 270px;">
+                                  style="display: inline-block; width: 100%; min-width: 200px; max-width: 270px;">
                                     <table role="presentation" cellspacing="0" cellpadding="0" width="100%">
                                       <tbody>
                                         <tr>
-                                          <td align="left" dir="ltr" style="padding: 10px; font-size: 0px;">
+                                          <td dir="ltr" class="header-text">
                                             <table>
                                               <tbody>
                                                 <tr>
-                                                  <td align="left" dir="ltr" style="padding: 0px; font-size: 0px;">
+                                                  <td dir="ltr" style="padding: 0px; font-size: 0px;">
                                                     <table cellspacing="0" cellpadding="0" width="100%">
                                                       <tbody>
                                                         <tr>
-                                                          <td align="left" style="padding: 0px; font-size: 0px;">
-                                                              <table cellspacing="0" cellpadding="0" align="left"
+                                                          <td style="padding: 0px; font-size: 0px;">
+                                                              <table cellspacing="0" cellpadding="0"
                                                                 valign="center">
                                                                 <tbody>
                                                                   <tr>
-                                                                    <td align="left" valign="center"
-                                                                      style="font-family: &quot;Nunito&quot;, sans-serif; font-size: 30px; font-weight: 600; color: #fff; text-decoration: none; padding:0px; margin: 0px;">
+                                                                    <td valign="left" class="header-title"
+                                                                      style="font-family: &quot;Nunito&quot;, sans-serif; ">
                                                                       <p style="padding:0; margin:0;">Nueva Bilog App</p>
                                                                   </td>
                                                                   </tr>
@@ -188,12 +335,12 @@
                                                           </td>
                                                         </tr>
                                                         <tr>
-                                                          <td align="left">
-                                                            <table cellspacing="0" cellpadding="0" align="left"
+                                                          <td>
+                                                            <table cellspacing="0" cellpadding="0" class="table-subtitle"
                                                                 valign="center">
                                                               <tbody>
                                                                 <tr>
-                                                                  <td align="left" valign="center"
+                                                                  <td valign="center" class="table-subtitle"
                                                                       style="font-family: &quot;Nunito&quot;, sans-serif; font-size: 20px; font-weight: 400; color: #fff; text-decoration: none; margin:0;">
                                                                     <p style="margin: 5px 0px 15px;">Disponible para <span style="color: #27A6DE;">Android</span> <br> desde el <strong>1° de Marzo.</strong></p>
                                                                   </td>
@@ -203,8 +350,7 @@
                                                           </td>
                                                         </tr>
                                                         <tr>
-                                                          <td align="left"
-                                                              style="font-family: &quot;Nunito&quot;, sans-serif;">
+                                                          <td class="table-buttom" style="font-family: &quot;Nunito&quot;, sans-serif">
                                                             <a href="http://www.bilog.com.ar/odontologica" style="text-decoration: none;">
                                                               <div class="button button-primary">
                                                                 Ver más info
@@ -229,9 +375,9 @@
                                     <tbody>
                                       <tr>
                                         <td valign="top" align="center" style="padding: 0px; font-size: 0px;"><img
-                                            src="../mobile.png"
-                                            alt="El software que te merecés" border="0" height="480"
-                                            style="padding:0; border: 0px; max-width: 100%; position: absolute; top: -30px; left: 230px;"></td>
+                                            src="../mobile.png" class="img-mobile"
+                                            alt="El software que te merecés" border="0" height="480">
+                                        </td>
                                       </tr>
                                     </tbody>
                                   </table>
@@ -242,7 +388,7 @@
                       </table>
                 </td>
                 </tr> 
-                <tr style="height: 450px;">
+                <tr class="section-column">
                   <td dir="ltr" align="center" style="padding: 0px; font-size: 0px;">
                     <div class="stack-column"
                         style="display: inline-block; width: 100%; vertical-align: top; min-width: 170px;">
