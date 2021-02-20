@@ -65,63 +65,20 @@
       }
 
       .button-primary {
-        background-color: #24ACE2;
         color: rgb(255, 255, 255);
-        margin: 0; 
-        padding: 10px 0px;
-        text-align: center; 
-        width: 100px;
-        font-weight: 600;
-        font-size: 12px;
+        background: rgb(0, 122, 255);
+        border: 1px solid #007aff;
       }
 
-      .header{
-        font-size: 0px; 
-        border-radius: 6px 6px 0 0!important; 
-        padding: 10px 0; 
-        text-align: center; 
-        background: linear-gradient(to right,#3C5DA8,#4777BB); 
-        position: relative; 
-        height: 250px;
-      }
-
-      .header-title{
-        font-size: 30px; 
-        font-weight: 600; 
-        color: #fff; 
-        text-decoration: none; 
-        padding:0px; 
-        margin: 0px
-      }
-
-      .header-text{
-          padding: 10px; 
-          font-size: 0px; 
-        }
-
-      .table-subtitle{
-        text-align: left;
-      }  
-
-      .img-mobile{
-        padding:0; 
-        border: 0px; 
-        position: absolute; 
-        top: 0; 
-        left: 250px;
-        width: 70%;
+      .button-secondary {
+        color: rgb(0, 122, 255);
+        background: rgb(255, 255, 255);
+        border: 1px solid #fff;
       }
 
       .table-mobile {
         max-width: 620px !important;
       }
-
-      .section-column{
-        height: 450px; 
-        padding-top: 30px; 
-        border: 1px solid #eee;
-      }
-
       .stack-column {
         max-width: 193px;
       }
@@ -129,80 +86,26 @@
       .product-section {
         max-width: 270px;
       }
+      
+      .button-td {
+        padding: 15px 0px 0px;
+      }
 
-      @media only screen and (min-device-width:375px) and (max-device-width:750px) {
+      @media only screen and (min-device-width:320px) and (max-device-width:374px) {
+        .email-container {
+          min-width: 320px !important;
+        }
+      }
+
+      @media only screen and (min-device-width:375px) and (max-device-width:413px) {
         .email-container {
           min-width: 375px !important;
-          padding: 30px;
-        }
-        .header{
-          font-size: 0px; 
-          border-radius: 6px 6px 0 0!important; 
-          padding: 10px 0;
-          background: linear-gradient(to right,#3C5DA8,#4777BB); 
-          height: 410px;
-          position: relative;
-        }
-
-        .stack-column {
-          padding-top: 40px;
-          max-width: 350px;
-        }
-
-        .header-title{
-          font-size: 30px; 
-          font-weight: 600; 
-          color: #fff; 
-          text-decoration: none; 
-          padding:30px 0px 0px; 
-          margin: 0px
-        }
-
-        .header-text{
-          padding: 10px; 
-          font-size: 0px; 
-          position: absolute;
-          left: 70px;
-          text-align: center;
-        }
-
-        .table-subtitle{
-          text-align: center;
-          margin-left: 7px;
-        }
-
-        .table-buttom{ 
-          padding-left: 60px;
-        }
-
-        .button-primary {
-          background-color: #24ACE2;
-          color: rgb(255, 255, 255);
-          margin: 0; 
-          padding: 10px 0px;
-          text-align: center; 
-          width: 100px;
-          font-weight: 600;
-          font-size: 10px;
-        }
-        .img-mobile{
-          padding: 0;
-          position: absolute;
-          top: 200px;
-          left: 40px;
-          width: 90%;
-        }
-
-        .section-column{
-          height: 900px; 
-          padding-top: 30px; 
-          border: 1px solid #eee;
         }
       }
     </style>
 
     <style>
-      @media only screen and (max-device-width:374px) {
+      @media only screen and (max-device-width:414px) {
         .table-mobile {
           max-width: 93% !important;
         }
@@ -213,33 +116,23 @@
         .stack-column {
           max-width: 80%;
         }
-        .stack-column:first-of-type {
-          padding-top: 50px;
-        }
         .product-section {
           max-width: 308px;
         }
-        .header {
-          height: 380px;
-          display: inline-block;
-          padding-top: 40px;
-        }
-        .img-mobile{
-          padding:0;  
-          position: absolute;
-          top: 200px;
-          left: 40px;
-          width: 90%;
+        .button-td {
+          padding: 15px 0px;
         }
       }
     </style>
+
   </head>
   <body width="100%" style="margin: 0; padding: 0; mso-line-height-rule: exactly;">
     <div style="width: 100%; margin: auto;" class="email-container">
       <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" width="100%"
       class="email-container" style="width: 100%;">
         <tr>
-          <td align="center" valign="middle" style="padding-bottom: 15px; font-size: 14px; color: rgba(255,255,255, .6); font-family: &quot;Nunito&quot;,sans-serif;">
+          <td align="center" valign="middle" style="padding-bottom: 15px; font-size: 12px; color: #000; font-family: &quot;Nunito&quot;,sans-serif;">
+            <p style="padding: 20px 0px 5px; margin: 0px; color: #000; font-family: &quot;Nunito&quot;,sans-serif;"></p>
             <a href="https://www.bilog.com.ar/static/emails/bilog-lanzamiento-1.html">Ver versi&oacute;n online</a>
           </td>
         </tr>
@@ -256,9 +149,9 @@
                     <tbody>
                       <tr>
                         <td class="header-content" align="center" valign="middle" style="padding: 8px 24px;">
-                          <a class="logo-ml" target="_blank" href="http://www.bilog.com.ar/" title="Bilog">
+                          <a class="logo-bilog" target="_blank" href="http://www.bilog.com.ar/" title="Bilog">
                             <img border="0"
-                                src="http://www.bilog.com.ar/static/logo-bilog.svg"
+                                src="http://www.bilog.com.ar/static/logo-bilog.png"
                                 width="102" height="40" alt="Bilog"
                                 style="display: block; max-height: 100%; width: auto; border: 0px; margin-bottom: 10px;">
                           </a>
@@ -266,206 +159,210 @@
                       </tr>
                     </tbody>
                   </table>
+                  <!--[if mso]></td></tr></table><![endif]-->
                 </td>
               </tr>
             </table>
             <table align="center" class="table-mobile" style="margin-bottom: 40px !important; background: #fefefe; border-collapse: collapse; border-radius: 6px !important; border-spacing: 0;" border="0" cellspacing="0" cellpadding="0" width="100%">
               <tr>
-                <td align="center">
-                      <table role="presentation" cellspacing="0" cellpadding="0" width="100%" align="center">
+                <td align="center"
+                  style="border-radius: 6px 6px 0 0; ;padding: 10px 0; background: linear-gradient(to right,#3C5DA8,#4777BB);">
+                  <!--[if mso]><table border="0" cellspacing="0" cellpadding="0" align="center" width="560" style="width: 560px;"><tr><td align="center" valign="top" width="270" style="width: 270px;"><![endif]-->
+                  <div
+                    class="product-section" style="display: inline-block; width: 100%; vertical-align: middle; min-width: 200px; max-width: 270px;">
+                    <a target="_blank"
+                      href="http://www.bilog.com.ar/bilogApp"
+                      title="¿Ya ten&eacute;s la App de Bilog en tu celular?"
+                      style="text-decoration: none; display: block;">
+                      <table cellpadding="0" cellspacing="0" width="100%">
                         <tbody>
                           <tr>
-                            <td class="header">
-                                <div
-                                  style="display: inline-block; width: 100%; min-width: 200px; max-width: 270px;">
-                                    <table role="presentation" cellspacing="0" cellpadding="0" width="100%">
-                                      <tbody>
-                                        <tr>
-                                          <td dir="ltr" class="header-text">
-                                            <table>
-                                              <tbody>
-                                                <tr>
-                                                  <td dir="ltr" style="padding: 0px; font-size: 0px;">
-                                                    <table cellspacing="0" cellpadding="0" width="100%">
-                                                      <tbody>
-                                                        <tr>
-                                                          <td style="padding: 0px; font-size: 0px;">
-                                                              <table cellspacing="0" cellpadding="0"
-                                                                valign="center">
-                                                                <tbody>
-                                                                  <tr>
-                                                                    <td valign="left" class="header-title"
-                                                                      style="font-family: &quot;Nunito&quot;, sans-serif; ">
-                                                                      <p style="padding:0; margin:0;">Nueva Bilog App</p>
-                                                                  </td>
-                                                                  </tr>
-                                                                </tbody>
-                                                              </table>
-                                                          </td>
-                                                        </tr>
-                                                        <tr>
-                                                          <td>
-                                                            <table cellspacing="0" cellpadding="0" class="table-subtitle"
-                                                                valign="center">
-                                                              <tbody>
-                                                                <tr>
-                                                                  <td valign="center" class="table-subtitle"
-                                                                      style="font-family: &quot;Nunito&quot;, sans-serif; font-size: 20px; font-weight: 400; color: #fff; text-decoration: none; margin:0;">
-                                                                    <p style="margin: 5px 0px 15px;">Disponible para <span style="color: #27A6DE;">Android</span> <br> desde el <strong>1&ordm; de Marzo.</strong></p>
-                                                                  </td>
-                                                                </tr>
-                                                              </tbody>
-                                                            </table>
-                                                          </td>
-                                                        </tr>
-                                                        <tr>
-                                                          <td class="table-buttom" style="font-family: &quot;Nunito&quot;, sans-serif">
-                                                            <a href="https://www.bilog.com.ar/bilogApp" style="text-decoration: none;">
-                                                              <div class="button button-primary">
-                                                                Ver m&aacute;s info
-                                                              </div>
-                                                            </a>
-                                                          </td>
-                                                        </tr>
-                                                      </tbody>
-                                                  </table>
-                                                </td>
-                                              </tr>
-                                            </tbody>
-                                          </table>
-                                        </td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                                </div>
-                                <div
-                                style="display: inline-block; width: 100%; vertical-align: middle; min-width: 200px; max-width: 270px; padding:0; ">
-                                  <table cellpadding="0" cellspacing="0" width="100%" style="padding: 0; margin: 0;">
-                                    <tbody>
-                                      <tr>
-                                        <td valign="top" align="center" style="padding: 0px; font-size: 0px;"><img
-                                            src="https://www.bilog.com.ar/static/mobile.png" class="img-mobile"
-                                            alt="El software que te merec&eacute;s" border="0" height="auto">
-                                        </td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
-                                </div>
+                            <td valign="top" align="center" style="padding: 10px; font-size: 0px;"><img
+                                src="http://www.bilog.com.ar/static/mobile-330.png"
+                                alt="¿Ya ten&eacute;s la App de Bilog en tu celular?" border="0" height="244"
+                                style="border: 0px; max-width: 100%; max-height: 244px;"></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </a></div>
+                  <!--[if mso]></td><td align="center" valign="top" width="270" style="width: 270px;"><![endif]-->
+                    <div
+                      class="product-section" style="display: inline-block; width: 100%; vertical-align: middle; min-width: 200px; max-width: 300px;">
+                      <a target="_blank"
+                        href="http://www.bilog.com.ar/bilogApp"
+                        title="¿Ya ten&eacute;s la App de Bilog en tu celular?"
+                        style="text-decoration: none; display: block;">
+                        <table role="presentation" cellspacing="0" cellpadding="0" width="100%">
+                          <tbody>
+                            <tr>
+                              <td align="left"
+                                style="padding: 0px 0px 5px; font-size: 0px;">
+                                <table cellspacing="0" cellpadding="0" align="left"
+                                  valign="center">
+                                  <tbody>
+                                    <tr>
+                                      <td align="left" valign="center"
+                                        style="font-family: &quot;Nunito&quot;, sans-serif; font-size: 12px; font-weight: 400; color: #fff; text-transform: uppercase; text-decoration: none;">
+                                        NUEVA</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="left" style="padding: 0px; font-size: 0px;">
+                                <table cellspacing="0" cellpadding="0" align="left"
+                                  valign="center">
+                                  <tbody>
+                                    <tr>
+                                      <td align="left" valign="center"
+                                        style="font-family: &quot;Nunito&quot;, sans-serif; font-size: 32px; font-weight: 600; color: #fff; text-decoration: none;">
+                                        Bilog App</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="left"
+                                style="padding: 10px 0px 0px; font-size: 0px;">
+                                <table cellspacing="0" cellpadding="0" align="left"
+                                  valign="center">
+                                  <tbody>
+                                    <tr>
+                                      <td align="left" valign="center"
+                                        style="font-family: &quot;Nunito&quot;, sans-serif; font-size: 24px; font-weight: 400; color: #fff; text-decoration: none; padding: 0 0 20px">
+                                        Disponible para Android y iOS desde el <strong>1&ordm; de Marzo</strong></td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td align="left" class="button-td" style="font-family: &quot;Nunito&quot;, sans-serif; padding-bottom: 30px">
+                                <a href="http://www.bilog.com.ar/bilogApp" style="text-decoration: none;">
+                                  <div class="button button-secondary" style="margin: 0; text-align: center;">Ver m&aacute;s info</div>
+                                </a>
                               </td>
                             </tr>
                           </tbody>
-                      </table>
-                </td>
-                </tr> 
-                <tr class="section-column">
-                  <td dir="ltr" align="center" style="padding: 0px; font-size: 0px;">
-                    <div class="stack-column"
-                        style="display: inline-block; width: 100%; vertical-align: top; min-width: 170px;">
-                      <table cellspacing="0" cellpadding="0" width="100%" align="center">
-                        <tbody>
-                          <tr>
-                            <td align="center" style="padding: 20px 30px;">
-                              <table role="presentation" border="0" cellspacing="0" cellpadding="0"
-                                  width="100%" align="center">
-                                <tbody>
-                                  <tr>
-                                    <td align="center" style="padding-bottom: 20px;">
-                                      <img 
-                                        alt="Gesti&oacute;n Odontol&oacute;gica" border="0"
-                                        src="https://www.bilog.com.ar/static/icon-01.png" height="50px" width="40px">
-                                    </td>
-                                  </tr>
-                                  <tr>
-                                    <td align="center"
-                                        style="text-align: center; padding-bottom: 10px; font-family: &quot;Nunito&quot;, sans-serif; font-size: 18px; color: rgb(51, 51, 51); font-weight: 600;">
-                                        Informaci&oacute;n en un solo lugar
-                                    </td>
-                                  </tr>
-                                  <tr>
-                                    <td align="center" valign="middle"
-                                        style="font-weight: 400; color: #777; font-size: 16px; line-height: 1.5; margin-bottom: 30px; font-family: &quot;Nunito&quot;, sans-serif; text-rendering: optimizeLegibility;">
-                                      <p><strong>Cre&aacute;</strong> o <strong>modific&aacute;</strong> la <strong>historia clinica</strong> de todos tus pacientes</p>
-                                    </td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                    <div class="stack-column"
-                        style="display: inline-block; width: 100%; vertical-align: top; min-width: 170px;">
-                      <table cellspacing="0" cellpadding="0" width="100%" align="center">
-                        <tbody>
-                          <tr> 
-                            <td align="center" style="padding: 20px 20px;">
-                              <table role="presentation" border="0" cellspacing="0" cellpadding="0"
-                                  width="100%" align="center">
-                                <tbody>
-                                  <tr>
-                                    <td align="center" style="padding-bottom: 20px;">
-                                        <img
-                                          alt="Auditor&iacute;a Odontol&oacute;gica" border="0"
-                                          src="https://www.bilog.com.ar/static/icon-02.png" alt="Auditor&iacute;a Odontol&oacute;gica" height="50px" width="50px">
-                                    </td>
-                                  </tr>
-                                  <tr>
-                                    <td align="center"
-                                      style="text-align: center; padding-bottom: 10px; font-family: &quot;Nunito&quot;, sans-serif; font-size: 18px; color: rgb(51, 51, 51); font-weight: 600;">
-                                        Reduc&iacute; <br> las ausencias
-                                    </td>
-                                  </tr>
-                                  <tr>
-                                    <td align="center" valign="middle"
-                                      style="font-weight: 400; color: #777; font-size: 16px; line-height: 1.5; margin-bottom: 30px; font-family: &quot;Nunito&quot;, sans-serif; text-rendering: optimizeLegibility;">
-                                      <p>Envi&aacute; de <strong>forma autom&aacute;tica</strong> un SMS a tus pacintes con el <strong>recordatorio de su turno.</strong></p>
-                                    </td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                    <div class="stack-column"
-                        style="display: inline-block; width: 100%; vertical-align: top; min-width: 170px;">
-                      <table cellspacing="0" cellpadding="0" width="100%" align="center">
-                        <tbody>
-                          <tr>
-                            <td align="center" style="padding: 20px 20px;">
-                              <table role="presentation" border="0" cellspacing="0" cellpadding="0"
-                                  width="100%" align="center">
-                                <tbody>
-                                  <tr>
-                                    <td align="center" style="padding-bottom: 20px;">
-                                      <img
-                                          alt="Laboratorios Dentales" border="0"
-                                          src="https://www.bilog.com.ar/static/icon-03.png" alt="Laboratorios Dentales" height="50px" width="50px">
-                                    </td>
-                                  </tr>
-                                  <tr>
-                                    <td align="center"
-                                        style="text-align: center; padding-bottom: 10px; font-family: &quot;Nunito&quot;, sans-serif; font-size: 18px; color: rgb(51, 51, 51); font-weight: 600;">
-                                        Consult&aacute; tu agenda donde sea
-                                    </td>
-                                  </tr>
-                                  <tr>
-                                    <td align="center" valign="middle"
-                                      style="font-weight: 400; color: #777; font-size: 16px; line-height: 1.5; margin-bottom: 30px; font-family: &quot;Nunito&quot;, sans-serif; text-rendering: optimizeLegibility;">
-                                        <p><strong>Acced&eacute;</strong> de <br>forma simult&aacute;nea desde <strong>distintos dispositivos.</strong></p>
-                                    </td>
-                                  </tr>
-                                </tbody>
-                              </table>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
+                        </table>
+                      </a></div>
+                    <!--[if mso]></td></tr></table><![endif]-->
                   </td>
-                </tr>
+              </tr>
+              <tr>
+                <td dir="ltr" align="center" style="padding: 0px; font-size: 0px;">
+                  <!--[if mso]></td><td align="center" valign="top" width="193" style="width: 193px;"><![endif]-->
+                  <div class="stack-column"
+                      style="display: inline-block; width: 100%; vertical-align: top; min-width: 170px;">
+                    <table cellspacing="0" cellpadding="0" width="100%" align="center">
+                      <tbody>
+                        <tr>
+                          <td align="center" style="padding: 20px 30px;">
+                            <table role="presentation" border="0" cellspacing="0" cellpadding="0"
+                                width="100%" align="center">
+                              <tbody>
+                                <tr>
+                                  <td align="center" style="padding-bottom: 20px;">
+                                    <img 
+                                      alt="Gesti&oacute;n Odontol&oacute;gica" border="0"
+                                      src="https://www.bilog.com.ar/static/icon-01.png" height="50px" width="40px">
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td align="center"
+                                      style="text-align: center; padding-bottom: 5px; font-family: &quot;Nunito&quot;, sans-serif; font-size: 18px; color: rgb(51, 51, 51); font-weight: 600;">
+                                      Informaci&oacute;n en un solo lugar
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td align="center" valign="middle"
+                                      style="font-weight: 400; color: #777; font-size: 14px; line-height: 1.5; margin-bottom: 30px; font-family: &quot;Nunito&quot;, sans-serif; text-rendering: optimizeLegibility;">
+                                      <strong>Cre&aacute;</strong> o <strong>modific&aacute;</strong> la <strong>historia clinica</strong> de todos tus pacientes
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!--[if mso]></td><td align="center" valign="top" width="193" style="width: 193px;"><![endif]-->
+                  <div class="stack-column"
+                      style="display: inline-block; width: 100%; vertical-align: top; min-width: 170px;">
+                    <table cellspacing="0" cellpadding="0" width="100%" align="center">
+                      <tbody>
+                        <tr> 
+                          <td align="center" style="padding: 20px 20px;">
+                            <table role="presentation" border="0" cellspacing="0" cellpadding="0"
+                                width="100%" align="center">
+                              <tbody>
+                                <tr>
+                                  <td align="center" style="padding-bottom: 20px;">
+                                      <img
+                                        alt="Auditor&iacute;a Odontol&oacute;gica" border="0"
+                                        src="https://www.bilog.com.ar/static/icon-02.png" alt="Auditor&iacute;a Odontol&oacute;gica" height="50px" width="50px">
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td align="center"
+                                    style="text-align: center; padding-bottom: 5px; font-family: &quot;Nunito&quot;, sans-serif; font-size: 18px; color: rgb(51, 51, 51); font-weight: 600;">
+                                      Reduc&iacute; las ausencias
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td align="center" valign="middle"
+                                    style="font-weight: 400; color: #777; font-size: 14px; line-height: 1.5; margin-bottom: 30px; font-family: &quot;Nunito&quot;, sans-serif; text-rendering: optimizeLegibility;">
+                                    Envi&aacute; de <strong>forma autom&aacute;tica</strong> un SMS a tus pacintes con el <strong>recordatorio de su turno.</strong>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!--[if mso]></td><td align="center" valign="top" width="193" style="width: 193px;"><![endif]-->
+                  <div class="stack-column"
+                      style="display: inline-block; width: 100%; vertical-align: top; min-width: 170px;">
+                    <table cellspacing="0" cellpadding="0" width="100%" align="center">
+                      <tbody>
+                        <tr>
+                          <td align="center" style="padding: 20px 20px;">
+                            <table role="presentation" border="0" cellspacing="0" cellpadding="0"
+                                width="100%" align="center">
+                              <tbody>
+                                <tr>
+                                  <td align="center" style="padding-bottom: 20px;">
+                                    <img
+                                        alt="Laboratorios Dentales" border="0"
+                                        src="https://www.bilog.com.ar/static/icon-03.png" alt="Laboratorios Dentales" height="50px" width="50px">
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td align="center"
+                                      style="text-align: center; padding-bottom: 5px; font-family: &quot;Nunito&quot;, sans-serif; font-size: 18px; color: rgb(51, 51, 51); font-weight: 600;">
+                                      Consult&aacute; tu agenda donde sea
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td align="center" valign="middle"
+                                    style="font-weight: 400; color: #777; font-size: 14px; line-height: 1.5; margin-bottom: 30px; font-family: &quot;Nunito&quot;, sans-serif; text-rendering: optimizeLegibility;">
+                                    <strong>Aced&eacute;</strong> de forma simult&aacute;nea desde <strong>distintos dispositivos.</strong>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </td>
+              </tr>
             </table>
             <table align="center" class="table-mobile" border="0" cellspacing="0" cellpadding="0" width="100%">
               <tr>
@@ -492,7 +389,6 @@
                         Ley N&ordm; 25.326, tiene la atribuci&oacute;n de atender las denuncias y reclamos que se
                         interpongan con relaci&oacute;n al incumplimiento de las normas sobre protecci&oacute;n de datos
                         personales.<br>P.O. Box - Leandro N. Alem 518, piso 11, CP 1001, CABA, Argentina.
-                  
                 </td>
               </tr>
             </table>
