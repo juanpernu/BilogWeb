@@ -18,31 +18,25 @@ const BilogApp = () => (
       hasArrow
     />
     <Feature features={features} />
-    <FeatureImg
-      imgSrc={featureImg.imgSrc}
-      imgAlt={featureImg.imgAlt}
-      copy={featureImg.copy}
-      title={featureImg.title}
-      description={featureImg.description}
-      hasCta={featureImg.hasCta}
-      imageAlign={featureImg.imageAlign}
-      bgGrey
-    />
+    <Carousel />
+    {
+      featureImg.map(el => <FeatureImg
+        imgSrc={el.imgSrc}
+        imgAlt={el.imgAlt}
+        copy={el.copy}
+        title={el.title}
+        description={el.description}
+        imageAlign={el.imageAlign}
+        bgGrey={el.bgGrey}
+        hasCta={el.hasCta}
+        buttonText={el.buttonText}
+        buttonHref={el.buttonHref}
+      />)
+    }
     <BannerCta
       title={bannerCta.title}
       buttonText={bannerCta.buttonText}
       buttonHref={bannerCta.buttonHref}
-    />
-    <Carousel />
-    <Cover
-      text={appCover.text}
-      paragraph={appCover.paragraph}
-      hasButtons={appCover.hasButtons}
-      buttonText={appCover.buttonText}
-      buttonHref={appCover.buttonHref}
-      position={appCover.position}
-      gradientBg={appCover.gradientBg}
-      coverImage={appCover.coverImage}
     />
   </Layout>
 )

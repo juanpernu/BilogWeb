@@ -2,11 +2,11 @@ import React from 'react';
 
 const StoreButton = () => (
   <div className="store-buttons">
-    <a href="https://apps.apple.com/ar/app/bilog-gestion-odontologica/id1014624099?l=es" className="button">
-      <p>Ver en Apple Store</p>
+    <a href="https://apps.apple.com/ar/app/bilog-gesti%C3%B3n-odontol%C3%B3gica/id1014624099" className="button">
+      <p>Descargar en Apple Store</p>
     </a>
-    <a href="https://play.google.com/store/apps/details?id=com.app.bilog" className="button">
-      <p>Ver en Google Play</p>
+    <a href="https://play.google.com/store/apps/details?id=com.bilog.gomobile" className="button">
+      <p>Descargar en Google Play</p>
     </a>
     <style jsx>
       {`

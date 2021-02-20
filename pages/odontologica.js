@@ -16,7 +16,7 @@ export default () => (
       position="lf"
       hasButtons={false}
       gradientBg="default"
-      coverImage="odontologica"
+      coverImage="illus-odontologica.svg"
     />
     <Feature {...MockedFeatures} />
     {/* 
@@ -28,17 +28,6 @@ export default () => (
         showModal={true}
       /> */}
     <ProductSlider />
-    <Cover
-      text="Bilog App"
-      paragraph="La gestión de tu consultorio al alcance de tu mano."
-      hasButtons={true}
-      buttonText="Ver más"
-      buttonHref="/bilogApp"
-      product={true}
-      position="lf"
-      gradientBg="default"
-      coverImage="app"
-    />
     <Carousel />
   </Layout>
 )
