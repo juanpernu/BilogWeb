@@ -118,8 +118,7 @@
 
       .section-column{
         height: 450px; 
-        padding-top: 30px; 
-        border: 1px solid pink;
+        padding-top: 30px;
       }
 
       .stack-column {
@@ -131,12 +130,13 @@
       }
 
       @media only screen and (min-device-width:320px) and (max-device-width:374px) {
-        .email-container {
-          min-width: 375px !important;
-        }
-        .header{
-        font-size: 0px; 
-        border-radius: 6px 6px 0 0!important; 
+      .email-container {
+        width: 100%;
+        margin-left: 12px;
+      }
+
+      .header{
+        border-radius: 6px 6px 0 0; 
         padding: 10px 0;
         background: linear-gradient(to right,#3C5DA8,#4777BB); 
         height: 500px;
@@ -152,13 +152,13 @@
         margin: 0px
       }
 
-        .header-text{
-          padding: 10px; 
-          font-size: 0px; 
-          position: absolute;
-          left: 70px;
-          text-align: center;
-        }
+      .header-text{
+        padding: 10px; 
+        font-size: 0px; 
+        position: absolute;
+        left: 34px;
+        text-align: center;
+      }
 
       .table-subtitle{
         text-align: center;
@@ -169,7 +169,18 @@
         padding-left: 60px;
       }
 
-        .img-mobile{
+      .button-primary {
+        background-color: #24ACE2;
+        color: rgb(255, 255, 255);
+        margin: 0; 
+        padding: 10px 0px;
+        text-align: center; 
+        width: 100px;
+        font-weight: 600;
+        font-size: 10px;
+      }
+
+      .img-mobile{
         padding:0;  
         position: absolute;
         top: 170px;
@@ -177,16 +188,93 @@
       }
 
       .section-column{
-        height: 900px; 
-        padding-top: 30px; 
-        border: 1px solid pink;
+        height: 1000px;  
       }
       }
 
       @media only screen and (min-device-width:375px) and (max-device-width:413px) {
+      .email-container {
+        width: 100%;
+        margin-left: 13px;
+      }
+    
+      .header{
+        border-radius: 6px 6px 0 0; 
+        padding: 10px 0;
+        background: linear-gradient(to right,#3C5DA8,#4777BB); 
+        height: 500px;
+        position: relative;
+      }
+
+      .header-title{
+        font-size: 30px; 
+        font-weight: 600; 
+        color: #fff; 
+        text-decoration: none; 
+        padding:30px 0px 0px; 
+        margin: 0px
+      }
+
+      .header-text{
+        padding: 10px; 
+        font-size: 0px; 
+        position: absolute;
+        left: 70px;
+        text-align: center;
+      }
+
+      .table-subtitle{
+        text-align: center;
+        margin-left: 7px;
+      }
+
+      .table-buttom{ 
+        padding-left: 60px;
+      }
+
+      .button-primary {
+        background-color: #24ACE2;
+        color: rgb(255, 255, 255);
+        margin: 0; 
+        padding: 10px 0px;
+        text-align: center; 
+        width: 100px;
+        font-weight: 600;
+        font-size: 10px;
+      }
+      
+      .img-mobile{
+        padding:0;  
+        position: absolute;
+        top: 170px;
+        left: 40px;
+      }
+
+      .section-column{
+        height: 1000px;
+      }
+      }
+    </style>
+    
+    <style>
+      @media only screen and (max-device-width:414px) {
         .email-container {
-          min-width: 375px !important;
+          min-width: 414px !important;
+          padding-top: 40px;
         }
+
+        .table-mobile {
+          width: 93% !important;
+          margin: auto;
+        }
+        
+        .stack-column {
+          max-width: 80%;
+        }
+        .product-section {
+          max-width: 308px;
+        }
+
         .header{
         font-size: 0px; 
         border-radius: 6px 6px 0 0!important; 
@@ -232,7 +320,8 @@
         font-weight: 600;
         font-size: 10px;
       }
-        .img-mobile{
+
+      .img-mobile{
         padding:0;  
         position: absolute;
         top: 170px;
@@ -242,31 +331,13 @@
       .section-column{
         height: 900px; 
         padding-top: 30px; 
-        border: 1px solid pink;
       }
-      }
-    </style>
 
-    <style>
-      @media only screen and (max-device-width:414px) {
-        .table-mobile {
-          max-width: 93% !important;
-        }
-        .email-container {
-          min-width: 414px !important;
-          padding-top: 40px;
-        }
-        .stack-column {
-          max-width: 80%;
-        }
-        .product-section {
-          max-width: 308px;
-        }
-      }
+      }*/
     </style>
   </head>
   <body width="100%" style="margin: 0; padding: 0; mso-line-height-rule: exactly;">
-    <div style="width: 100%; margin: auto;" class="email-container">
+    <div style="width: 100%;" class="email-container">
       <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" width="100%"
       class="email-container" style="width: 100%;">
         <tr>
@@ -386,7 +457,7 @@
                             </tr>
                           </tbody>
                       </table>
-                </td>
+                  </td>
                 </tr> 
                 <tr class="section-column">
                   <td dir="ltr" align="center" style="padding: 0px; font-size: 0px;">
