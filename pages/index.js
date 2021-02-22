@@ -8,6 +8,7 @@ import { indexFeatures } from '../mocks/general';
 
 export default () => (
   <Layout>
+    {/* This will be rendered after the app release
     <Cover
       appButtons
       hasArrow
@@ -16,8 +17,7 @@ export default () => (
       text="Nueva Bilog App"
       paragraph="La gestión de tu consultorio al alcance de tu mano."
       coverImage="landing-nativa/mobile-1.png"
-    />
-    {/* We will be back to this
+    /> */}
       <Cover
       text="Más tiempo libre, mayor control y mejor gestión de tu consultorio o clínica."
       paragraph="Somos la empresa número uno en desarrollo de software para Odontología."
@@ -25,7 +25,7 @@ export default () => (
       position="lf"
       gradientBg="default"
       coverImage="illus-home.svg"
-    /> */}
+    />
     <Feature {...indexFeatures} />
     <Products />
     <FeatureImg

@@ -1,5 +1,6 @@
 import Layout from '../components/Layout';
 import Cover from '../components/Cover/Cover';
+import FeatureImg from '../components/Feature/FeatureImg';
 import BannerCta from '../components/Banner/BannerCta';
 import Feature from '../components/Feature/Feature';
 import Carousel from '../components/Carousel';
@@ -28,6 +29,18 @@ export default () => (
         showModal={true}
       /> */}
     <ProductSlider />
+    <FeatureImg
+      imgSrc="/static/landing-nativa/illustration.png"
+      imgAlt="Bilog app illustration"
+      copy="¡Nueva!"
+      title="Organizá y optimizá el rendimiento de tu clínica con Bilog App"
+      description="Administrá tu consultorio en tu celular, tené tu agenda siempre disponible y actualizada."
+      hasCta
+      imageAlign="left"
+      bgGrey
+      buttonText="Descargá la app"
+      buttonHref="/bilogApp"
+    />
     <Carousel />
   </Layout>
 )

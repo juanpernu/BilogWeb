@@ -22,17 +22,17 @@ module.exports = {
         {
           title: "Soporte técnico",
           description: "Excelencia en la atención desde el primer contacto. Nos ocupamos de acompañarte en cualquier duda que te surja en la instalación o utilización de la app. Un servicio post venta personalizado.",
-          icon: 'agenda',
+          icon: 'support',
         },
         {
           title: "Agenda",
           description: "Consultá la agenda desde tu celular desde donde estés. Bilog App te da la posibilidad de acceder desde distintos dispositivos en forma simultánea y en red, con actualización instantánea de los datos.",
-          icon: 'person',
+          icon: 'agenda',
         },
         {
           title: "Información en un solo lugar",
           description: "Información en un solo lugar. Accedé a la información financiera, estadística y administrativa de todos tus pacientes con un solo click. Mantené toda la información de tu clínica en un mismo lugar y al alcance de tu mano.",
-          icon: 'account',
+          icon: 'info',
         }
       ],
     },
@@ -46,17 +46,17 @@ module.exports = {
         {
           title: "Recordatorios de turnos",
           description: "Tus pacientes van a estar felices al recibir el SMS con el recordatorio de su turno. Bilog App te acompaña a reducir el número de ausencias y así maximizar la rentabilidad de tu clínica.",
-          icon: 'cloud',
+          icon: 'alarm',
         },
         {
           title: "Pacientes",
           description: "Bilog App te permite dar de alta a nuevos pacientes, crear o modificar su historia clínica, cargar prestaciones y datos personales, realizar un seguimiento administrativo y visibilizar sus turnos entre otras funciones.",
-          icon: 'chart',
+          icon: 'person',
         },
         {
           title: "Diseño simple",
           description: "Es una app de fácil manejo y de sencilla instalación. Nos actualizamos constantemente a las necesidades de los clientes. Una herramienta que se volverá fundamental para la organización de tu día.",
-          icon: 'money',
+          icon: 'simple',
         }
       ],
     },

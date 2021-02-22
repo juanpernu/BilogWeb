@@ -22,6 +22,9 @@ import Address from './Address';
 import Tables from './Tables';
 import Process from './Process';
 import Phone from './Phone';
+import Support from './Support';
+import Info from './Info';
+import Alarm from './Alarm';
 
 const icons = {
   check: Check,
@@ -44,6 +47,9 @@ const icons = {
   address: Address,
   tables: Tables,
   phone: Phone,
+  support: Support,
+  info: Info,
+  alarm: Alarm,
 };
 
 /**
