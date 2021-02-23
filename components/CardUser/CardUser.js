@@ -33,8 +33,7 @@ const CardUser = ({ title, icon, url }) => {
                         }
                         
                         .card-image{
-                            height: 5em;
-                            padding: 15px 0 0 0;
+                            padding: 28px 0 0 ;
                         }
                         
                         .card-title {

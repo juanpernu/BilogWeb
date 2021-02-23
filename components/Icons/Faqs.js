@@ -70,8 +70,8 @@ Faqs.propTypes = {
 };
 
 Faqs.defaultProps = {
-    width: 75,
-    height: 75,
+    width: 65,
+    height: 65,
     colorStroke: '#666',
     colorFill: '#45ace1',
 };
