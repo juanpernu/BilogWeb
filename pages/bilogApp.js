@@ -17,8 +17,6 @@ const BilogApp = () => (
       appButtons
       hasArrow
     />
-    <Feature features={features} />
-    <Carousel />
     {
       featureImg.map(el => <FeatureImg
         imgSrc={el.imgSrc}
@@ -33,6 +31,8 @@ const BilogApp = () => (
         buttonHref={el.buttonHref}
       />)
     }
+    <Feature features={features} />
+    <Carousel />
     <BannerCta
       title={bannerCta.title}
       buttonText={bannerCta.buttonText}

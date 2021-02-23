@@ -63,18 +63,6 @@ module.exports = {
   ],
   featureImg: [
     {
-      imgSrc: "/static/landing-nativa/illustration.png",
-      imgAlt: "Bilog app illustration",
-      copy: "¡Nueva!",
-      title: "Organizá y optimizá el rendimiento de tu clínica con Bilog App",
-      description: "Administrá tu consultorio en tu celular, tené tu agenda siempre disponible y actualizada.",
-      imageAlign: "left",
-      hasCta: true,
-      bgGrey: true,
-      buttonText:"Descargá la app",
-      buttonHref:"/bilogApp",
-    },
-    {
       imgSrc: "/static/landing-nativa/mobile-2.png",
       imgAlt: "Bilog app estadísticas",
       copy: "",
@@ -98,6 +86,18 @@ module.exports = {
       buttonText:"",
       buttonHref:"",
     },
+    {
+      imgSrc: "/static/landing-nativa/illustration.png",
+      imgAlt: "Bilog app illustration",
+      copy: "¡Nueva!",
+      title: "Organizá y optimizá el rendimiento de tu clínica con Bilog App",
+      description: "Administrá tu consultorio en tu celular, tené tu agenda siempre disponible y actualizada.",
+      imageAlign: "left",
+      hasCta: true,
+      bgGrey: true,
+      buttonText:"Descargá la app",
+      buttonHref:"/bilogApp",
+    }
   ],
   bannerCta: {
     title: "¿Todavía tenés dudas? Contactanos.",
