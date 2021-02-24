@@ -8,7 +8,7 @@ const CardUser = ({ title, icon, url }) => {
             <Link href={url}>
                 <div className="card" >
                     <div className="card-image">
-                        <Icons type={icon} />
+                        <Icons type={icon} width={60} height={60} />
                     </div>
                     <h3 className="card-title">{title}</h3>
                     <div className="arrow">
@@ -83,15 +83,15 @@ const CardUser = ({ title, icon, url }) => {
                         
                         .card-image{
                             height: 5em;
-                            padding: 15px 0 0 0;
+                            padding: 25px 0 0 0;
                         }
 
                         .card-title{
-                            height: 40px;
+                            height: 30px;
                             font-weight: 150;
                             font-size: 1em;
                             box-sizing: border-box;
-                            padding-top: 1.2em;
+                            padding-top: 10px;
                             margin: 0;
                             color: #333333;
                         }
@@ -104,7 +104,7 @@ const CardUser = ({ title, icon, url }) => {
                         }
                         
                         .arrow img{
-                            padding-top: 1em;
+                            margin-top: 8px;
                             width: 15px;
                             height: 10px;
                         }          

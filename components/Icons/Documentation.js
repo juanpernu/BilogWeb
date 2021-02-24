@@ -39,8 +39,8 @@ Documentation.propTypes = {
 };
 
 Documentation.defaultProps = {
-    width: 65,
-    height: 65,
+    width: 36,
+    height: 36,
     colorStroke: '#666',
     colorFill: '#45ace1',
 };
