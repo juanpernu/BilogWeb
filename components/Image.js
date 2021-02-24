@@ -12,7 +12,7 @@ const Image = ({ src, alt}) => {
               flex-direction: column;
             }
             .image-container img {
-              height: 200px;
+              height: 280px;
               margin: 0 auto;
               vertical-align: middle;
             }

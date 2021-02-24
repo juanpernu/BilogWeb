@@ -15,7 +15,7 @@ export default () => (
         position="lf"
         hasButtons={false}
         gradientBg="violet"
-        coverImage="laboratorio"
+        coverImage="illus-laboratorio.svg"
       />
       <Feature {...laboratoriosFeatures} />
       {/* <BannerCta
