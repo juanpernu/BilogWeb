@@ -50,7 +50,7 @@ const Testimonials = () => {
             }
             @media only screen and (min-width: 751px) {
               .title--container {
-                padding: 90px 0 50px;
+                padding: 180px 0 50px;
               }
               .testimonial--container {
                 background: #fff;
