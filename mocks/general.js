@@ -16,8 +16,12 @@ const footer = {
   support: [
     {
       text: "Preguntas frecuentes",
-      href: "https://bilog-help.crisp.help/es/",
-    }
+      href: "/faqs",
+    },
+    {
+      text: "Documentación",
+      href: "/documentation",
+    },
   ],
   contact: [
     {
@@ -27,6 +31,10 @@ const footer = {
     {
       text: "Nosotros",
       href: "/about",
+    },
+    {
+      text: "Testimonios",
+      href: "/testimonials",
     }
   ],
   socialMedia: [
