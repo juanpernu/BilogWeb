@@ -7,7 +7,7 @@ class DocsProvider extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      initialId: '#agenda',
+      initialId: '#opciones-generales',
       content: {},
       section: null,
       copy: '',

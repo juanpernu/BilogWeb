@@ -3,44 +3,57 @@ module.exports = [
     title: "Gestión Odontológica",
     docs: [
       {
+        title: "Opciones generales",
+        hash: "#opciones-generales"
+      },
+      {
         title: "Agenda de turnos",
         hash: "#agenda"
-      },
-      {
-        title: "Agenda de contactos",
-        hash: "#agenda-contactos"
-      },
-      {
-        title: "Agenda de tareas",
-        hash: "#agenda-tareas"
       },
       {
         title: "Pacientes",
         hash: "#pacientes"
       },
       {
-        title: "Profesionales",
+        title: "Tabla de Profesionales",
         hash: "#profesionales"
       },
       {
-        title: "Obras Sociales / Prepagas",
+        title: "Tabla de Obras sociales",
         hash: "#obras-sociales"
       },
       {
-        title: "Laboratorios",
+        title: "Tabla de Especialidades",
+        hash: "#especialidades"
+      },
+      {
+        title: "Tabla de Feriados",
+        hash: "#feriados"
+      },
+      {
+        title: "Tabla de Laboratorios",
         hash: "#laboratorios"
       },
       {
-        title: "Stock / Economato",
+        title: "Tabla de Proveedores",
+        hash: "#proveedores"
+      },
+      {
+        title: "Tabla de Stock",
         hash: "#stock"
+      },
+      {
+        title: "Administración",
+        hash: "#administración"
       },
       {
         title: "Informes",
         hash: "#informes"
       },
       {
-        title: "Sistema / Usuarios",
+        title: "Sistema",
         hash: "#sistema"
       },
-  ]}
+    ]
+  }
 ];
