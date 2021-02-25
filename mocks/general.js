@@ -14,18 +14,14 @@ const footer = {
     }
   ],
   support: [
-      {
-        text: "Preguntas frecuentes",
-        href: "/faqs",
-      },
-      {
-        text: "Documentación",
-        href: "/documentation",
-      },
-      {
-        text: "Testimonios",
-        href: "/testimonials",
-      }
+    {
+      text: "Preguntas frecuentes",
+      href: "/faqs",
+    },
+    {
+      text: "Documentación",
+      href: "/documentation",
+    },
   ],
   contact: [
     {
@@ -35,6 +31,10 @@ const footer = {
     {
       text: "Nosotros",
       href: "/about",
+    },
+    {
+      text: "Testimonios",
+      href: "/testimonials",
     }
   ],
   socialMedia: [
