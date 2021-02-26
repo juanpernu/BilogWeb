@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-import Icons from '../Icons/Icons';
 
 const CardUser = ({ title, icon, url }) => {
     return (
@@ -8,7 +7,7 @@ const CardUser = ({ title, icon, url }) => {
             <Link href={url}>
                 <div className="card" >
                     <div className="card-image">
-                        <Icons type={icon} width={60} height={60} />
+                        <img src={icon} width='70' height='70' />
                     </div>
                     <h3 className="card-title">{title}</h3>
                     <div className="arrow">
