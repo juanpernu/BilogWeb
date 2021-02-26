@@ -2,22 +2,22 @@ module.exports = {
     cardListData: [
         {
             title: "Preguntas Frecuentes",
-            icon: 'faqs',
+            icon: '../static/bilog-faqs.svg',
             url: "/faqs",
         },
         {
             title: "Documentacion",
-            icon: 'documentation',
+            icon: '../static/bilog-documentation.svg',
             url: "/documentation",
         },
         {
             title: "Testimonios",
-            icon: 'testimonials',
+            icon: '../static/bilog-testimony.svg',
             url: "/testimonials",
         },
         {
             title: "Contacto",
-            icon: 'contact',
+            icon: '../static/bilog-contact.svg',
             url: "/contact",
         }
     ]
