@@ -7,7 +7,7 @@ const CardUser = ({ title, icon, url }) => {
             <Link href={url}>
                 <div className="card" >
                     <div className="card-image">
-                        <img src={icon} width={70} height={70}/>
+                        <img src={icon} width='70' height='70' />
                     </div>
                     <h3 className="card-title">{title}</h3>
                     <div className="arrow">
