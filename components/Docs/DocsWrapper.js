@@ -1,17 +1,16 @@
 import React, { useContext } from 'react';
-import Sidebar from './Sidebar';
+import { Desktop, Mobile } from './sidebar'
 import Docs from './Docs';
-import SidebarMobile from './SidebarMobile'
-
 import { DocsContext } from '../../contexts/docContext';
+import SidebarContent from '../../contents/documentation/sidebar';
 
 const DocsWrapper = () => {
   const { section, copy, item } = useContext(DocsContext);
 
   return (
     <div className="docs-wrapper">
-      <SidebarMobile className="sidebar-mobile" />
-      <Sidebar />
+      <Mobile className="sidebar-mobile" content={SidebarContent} />
+      <Desktop content={SidebarContent} />
       <Docs
         title={section}
         copy={copy}

@@ -8,8 +8,8 @@ const Testimonials = () => {
     <div>
       <div className="title--container">
         <Title
-          title="¿Qué dicen nuestros usuarios?"
-          subtitle="Miles de profesionales como vos usan Bilog"
+          title="¿Qué opinan nuestros usuarios?"
+          subtitle="Miles de profesionales como vos eligen y siguen eligiendo a Bilog"
           alignCenter={true}
         />
       </div>

@@ -1,37 +1,28 @@
 import React, { useContext, useEffect, useState } from 'react';
+import { SubMenu } from './sidebar';
 
 import { DocsContext } from '../../contexts/docContext';
 
-const SidebarSection = ({text, hash, onClickHandler}) => {
+const SidebarSection = ({ text, hash, onClickHandler, childrens }) => {
   const { allContent } = useContext(DocsContext);
   const [link, setLink] = useState(hash);
 
-  useEffect(() => {
-    if(window) {
-      let url = window.location.href;
-      const lastNonCharacter = new RegExp(/(\/)$/gm);
-      setLink(`${url}${hash}`);
-
-      // Workarround to handle hash match
-      if(url.match(lastNonCharacter)) {
-        url.replace(lastNonCharacter, '');
-        setLink(`${url}${hash}`);
-      }
-    }
-  }, []);
-
-  const handleOnClick = () => {
+  const handleOnClick = (hash) => {
     onClickHandler && onClickHandler();
     const regexp = new RegExp(/\#(.*)/gm);
     const contentId = hash.match(regexp);
-    allContent(contentId);
+    return allContent(contentId);
   };
 
   return (
     <div className="link">
-      <div className="nav-link">
-        <a onClick={() => handleOnClick()} href={link}>{text}</a>
-      </div>
+      {
+        hash ?
+        <div className="nav-link">
+          <span onClick={() => handleOnClick(hash)} >{text}</span>
+        </div> :
+        <SubMenu text={text} childrens={childrens} onClick={handleOnClick} />
+      }
       <style jsx>
       {`
         {/* STYLES FOR MOBILE */}
@@ -66,13 +57,13 @@ const SidebarSection = ({text, hash, onClickHandler}) => {
           .link:last-child {
             margin-bottom: 0;
           }
-          .nav-link a {
+          .nav-link span {
             text-decoration: none;
             font-size: 14px;
             color: #666;
             box-sizing: border-box;
           }
-          .nav-link a:hover {
+          .nav-link span:hover {
             cursor: pointer;
             color: #000;
           }

@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
-import SidebarSection from './SidebarSection';
-import SidebarContent from '../../contents/documentation/sidebar';
+import SidebarSection from '../SidebarSection';
 
 const blockScroll = (byClassName, byTagName) => {
   const [a] = document.getElementsByClassName(byClassName);
@@ -14,7 +13,7 @@ const blockScroll = (byClassName, byTagName) => {
   });
 };
 
-const SidebarMobile = () => {
+const SidebarMobile = ({ content }) => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const onClickHandler = () => {
     setIsSidebarOpen(!isSidebarOpen);
@@ -32,14 +31,14 @@ const SidebarMobile = () => {
 
     <aside className={`sidebar ${isSidebarOpen ? "open" : ""}`}>
       {
-        SidebarContent.map((content, key) => (
+        content.map((item, key) => (
           <div className="category" key={key}>
             <h2>Documentación</h2>
-            <p className="label">{content.title}</p>
+            <p className="label">{item.title}</p>
             <div className="posts">
-              {content.docs.map((docText, key) => {
-                const { title, hash } = docText;
-                return <SidebarSection key={key} text={title} hash={hash} onClickHandler={onClickHandler} />
+              {item.sections.map((section, key) => {
+                const { title, hash, childrens = [] } = section;
+                return <SidebarSection key={key} text={title} hash={hash} childrens={childrens} onClickHandler={onClickHandler} />
               })}
             </div>
           </div>

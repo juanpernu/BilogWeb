@@ -78,8 +78,8 @@ class ProductSlider extends React.Component {
     return(
       <section className="product-slider-container">
         <Title
-          title="Hay una versión pensada especialmente para vos"
-          subtitle="Bilog es perfecto para clínicas de cualquier tamaño."
+          title="Perfecto para clínicas de cualquier tamaño"
+          subtitle="Hay una versión pensada especialmente para vos."
           alignCenter={true}
         />
         <div className="product-slider-card">

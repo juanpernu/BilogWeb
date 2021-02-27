@@ -1,7 +1,7 @@
 module.exports = [
   {
     title: "Gestión Odontológica",
-    docs: [
+    sections: [
       {
         title: "Opciones generales",
         hash: "#opciones-generales"
@@ -15,32 +15,38 @@ module.exports = [
         hash: "#pacientes"
       },
       {
-        title: "Tabla de Profesionales",
-        hash: "#profesionales"
-      },
-      {
-        title: "Tabla de Obras sociales",
-        hash: "#obras-sociales"
-      },
-      {
-        title: "Tabla de Especialidades",
-        hash: "#especialidades"
-      },
-      {
-        title: "Tabla de Feriados",
-        hash: "#feriados"
-      },
-      {
-        title: "Tabla de Laboratorios",
-        hash: "#laboratorios"
-      },
-      {
-        title: "Tabla de Proveedores",
-        hash: "#proveedores"
-      },
-      {
-        title: "Tabla de Stock",
-        hash: "#stock"
+        title: "Tablas",
+        hash: null,
+        childrens: [
+          {
+            title: "Profesionales",
+            hash: "#profesionales"
+          },
+          {
+            title: "Obras sociales",
+            hash: "#obras-sociales"
+          },
+          {
+            title: "Especialidades",
+            hash: "#especialidades"
+          },
+          {
+            title: "Feriados",
+            hash: "#feriados"
+          },
+          {
+            title: "Laboratorios",
+            hash: "#laboratorios"
+          },
+          {
+            title: "Proveedores",
+            hash: "#proveedores"
+          },
+          {
+            title: "Stock",
+            hash: "#stock"
+          },
+        ]
       },
       {
         title: "Administración",

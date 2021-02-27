@@ -23,6 +23,7 @@ class DocsProvider extends React.Component {
   }
 
   setDocumentationContent(contentId) {
+    console.log('contentId en context', contentId)
     this.setState({
       content: this.props.content[contentId],
       section: this.props.content[contentId].section,
