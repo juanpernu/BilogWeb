@@ -7,7 +7,7 @@ module.exports = {
     hasButtons: false,
     buttonText: false,
     buttonHref: false,
-    coverImage: "landing-nativa/mobile-1.png",
+    coverImage: "landing-nativa/mobile-1_2.png",
     coverVideo: false,
     appButton: false,
   },
@@ -63,7 +63,7 @@ module.exports = {
   ],
   featureImg: [
     {
-      imgSrc: "/static/landing-nativa/mobile-2.png",
+      imgSrc: "/static/landing-nativa/mobile-2_2.png",
       imgAlt: "Bilog app estadísticas",
       copy: "",
       title: "Estadísticas",
@@ -75,7 +75,7 @@ module.exports = {
       buttonHref:"",
     },
     {
-      imgSrc: "/static/landing-nativa/mobile-3.png",
+      imgSrc: "/static/landing-nativa/mobile-3_2.png",
       imgAlt: "Bilog app servicio adaptado a tu negocio",
       copy: "",
       title: "Servicio adaptado a tu negocio",
