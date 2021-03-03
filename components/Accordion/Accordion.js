@@ -1,11 +1,11 @@
 import React,{useState} from 'react';
-const Accordion = ({text, childrens, onClick}) =>{
+const Accordion = ({text, children, onClick}) =>{
     const [estado, setEstado] = useState(false);
     return (
         <div className="submenu">
           <span className={`${estado ? 'submenu-title__open' : 'submenu-title__close'}`}  onClick={() => setEstado(!estado)}>{text} <span className="icon-arrow--down" /></span>
           <div className={`${estado ? 'submenu-container__open' : 'submenu-container__close'}`}>
-            {childrens.map(child => {
+            {children.map(child => {
               const {title, hash} = child;
               return <span className="submenu-item" onClick={() => onClick(hash)}>{title}</span>
             })}
@@ -58,7 +58,7 @@ const Accordion = ({text, childrens, onClick}) =>{
                 color: #666;
                 display: block;
                 margin: 8px 0;
-                font-size:12px;
+                font-size:16px;
               }
             }
             {/* STYLES FOR DESKTOP */}
@@ -75,7 +75,7 @@ const Accordion = ({text, childrens, onClick}) =>{
                 cursor:pointer;
                 display:flex;
                 flex-direction:row;
-                justify-content: space-between;
+                justify-content: flex-start;
                 font-weight:600;
               }
               .icon-arrow--down {
@@ -83,20 +83,20 @@ const Accordion = ({text, childrens, onClick}) =>{
                 display: inline-block;
                 width: 10px;
                 height: 10px;
-                margin:5px;
+                margin: 5px 0 5px 20px;
               }
               .submenu-title__open .icon-arrow--down {
                 transform: rotate(180deg);
                 width: 10px;
                 height: 10px;
-                margin:5px;
+                margin: 5px 0 5px 20px;
               }
               .submenu-title__close{
                 width:65%;
                 cursor:pointer;
                 display:flex;
                 flex-direction:row;
-                justify-content: space-between;
+                justify-content: flex-start;
               }
               .submenu-title__close:hover{
                 color:#000;
@@ -118,6 +118,7 @@ const Accordion = ({text, childrens, onClick}) =>{
               }
               .submenu-item:hover{
                 color: #000;
+                cursor:pointer;
               }
             }
           `}

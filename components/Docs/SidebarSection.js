@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import { SubMenu } from './sidebar';
 import { DocsContext } from '../../contexts/docContext';
 import Accordion from '../Accordion/Accordion';
-const SidebarSection = ({ text, hash, onClickHandler, childrens }) => {
+const SidebarSection = ({ text, hash, onClickHandler, children }) => {
   const { allContent } = useContext(DocsContext);
   const [link, setLink] = useState(hash);
   const handleOnClick = (hash) => {
@@ -18,7 +18,7 @@ const SidebarSection = ({ text, hash, onClickHandler, childrens }) => {
         <div className="nav-link">
           <span onClick={() => handleOnClick(hash)} >{text}</span>
         </div>:
-        <Accordion classname="acordion"text={text} childrens={childrens} onClick={handleOnClick} />
+        <Accordion classname="acordion"text={text} children={children} onClick={handleOnClick} />
       }
       <style jsx>
       {`
