@@ -6,8 +6,7 @@ const Demo = ()=>{
         <Layout>
             <Cover
                 text="Bienvenidos a la demo Bilog!"
-                paragraph="Observa la demostración guiada de Bilog y descubre por qué somos tu mejor opción como software dental." 
-                hasButtons={false}/>
+                paragraph="Observa la demostración guiada de Bilog y descubre por qué somos tu mejor opción como software dental."/>
         </Layout>
     )
 }
