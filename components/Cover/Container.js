@@ -44,7 +44,7 @@ const Container = ({ text, paragraph, position, hasButtons, buttonText, buttonHr
             color: #fff;
           }
           .cover--container.strech {
-            padding: 100px 0;
+            padding: 40px 0px 10px;
           }
           .cover--container.lf {
             text-align: left;
