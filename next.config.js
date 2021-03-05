@@ -21,4 +21,8 @@ module.exports = {
       '/utils/index': { page: 'utils'},
     }
   },
+  images: {
+    loader: 'imgix',
+    path: 'https://www.bilog.com.ar',
+  },
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import Container from './Container';
 import PropTypes from 'prop-types';
 
@@ -34,7 +35,15 @@ class Cover extends React.Component {
             withImage={!!coverImage}
             appButtons={appButtons}
           />
-          {coverImage && <img className="cover-img" alt="Cover Image" src={`/static/${coverImage}`} />}
+          {coverImage && 
+          <Image
+            src={`/static/${coverImage}`}
+            alt="Cover Image"
+            priority
+            width={500}
+            height={500}
+            className="cover-img"
+          />}
         </div>
         {hasArrow &&
           <div className="arrow-container">

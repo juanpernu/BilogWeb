@@ -1,7 +1,14 @@
+import NImage from 'next/image';
+
 const Image = ({ src, alt}) => {
   return(
     <div className="image-container">
-      <img src={src} alt={alt} />
+      <NImage
+        src={src}
+        alt={alt}
+        width={335}
+        height={400}
+      />
       <style jsx>
         {`
           {/* STYLES FOR MOBILE */}

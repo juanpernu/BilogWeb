@@ -1,7 +1,7 @@
 const Avatar = ({src}) => {
   return (
-    <div>
-      <img className="avatar" src={src} />
+    <div className="avatar">
+      <img className="avatar" src={src} alt="Testimonial image"/>
       <style jsx>
         {`
           {/* STYLES FOR MOBILE */}
