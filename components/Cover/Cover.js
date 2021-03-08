@@ -20,11 +20,13 @@ class Cover extends React.Component {
       coverVideo,
       appButtons,
     } = this.props;
+
+    const image = coverImage ? 'image': " " ;
+    const video = coverVideo ? 'video': " " ;
+
     return(
       <section className={`cover ${gradientBg}`}>
-        <div className={`cover-wrapper ${coverImage ? 'image' 
-                                                    : (coverVideo) ? 'video'
-                                                                   : '' }`}>
+        <div className={`cover-wrapper ${image} ${video}`}>
           <Container
             text={text}
             paragraph={paragraph}
@@ -33,6 +35,7 @@ class Cover extends React.Component {
             buttonText={buttonText}
             buttonHref={buttonHref}
             withImage={!!coverImage}
+            withVideo={!!coverVideo}
             appButtons={appButtons}
           />
           {coverImage && <img className="cover-img" alt="Cover Image" src={`/static/illus-${coverImage}.svg`} />}
@@ -118,7 +121,7 @@ class Cover extends React.Component {
               flex-direction: row;
               margin:0 auto;
             }
-            .cover-wrapper .image{
+            .cover-wrapper.image{
               max-width: 1200px;
               padding: 0 40px;
               margin: 0 auto;
@@ -162,25 +165,14 @@ class Cover extends React.Component {
             .cover.blue {
               background: linear-gradient(to right,#07c0f8,#005aff);
             }
-            .cover-video{
-              width:100%;
-              position:relative;
-              margin: 0px auto;
-            }
-            .container-video{
-              height:450px;
-            }
-            .cover-video::after{
-              content:'';
-              display:block;
-              width:100%;
-              padding-bottom: 56.25%;
+            .container-video {
+              height:490px;
+              padding-bottom: 50px;
             }
             .video{
-              width:90%;
+              width:100%;
               height:100%;
               display:block;
-              margin-buttom:20px;
             }
           }
           {/* STYLES FOR DESKTOP +1200px */}
@@ -188,7 +180,21 @@ class Cover extends React.Component {
             .cover {
               background: linear-gradient(to right, #4C7ABD, #2E4194);
               padding-top: 100px;
-              height:750px;
+            }
+            .cover-wrapper {
+              max-width: 1024px;
+              margin: 0 auto;
+              display: grid;
+              grid-template-columns: 55% 50%;
+              grid-column-gap: 10%;
+            }
+            .cover-wrapper.image{
+              max-width: 1200px;
+              padding: 0 40px;
+              margin: 0 auto;
+              display: grid;
+              grid-template-columns: 45% 45%;
+              grid-column-gap: 10%;
             }
             .cover-wrapper .video{
               max-width: 1240px;
@@ -196,14 +202,6 @@ class Cover extends React.Component {
               margin: 0 auto;
               display: flex;
               flex-directiom: column;
-            }
-            .cover-wrapper .image{
-              max-width: 1200px;
-              padding: 0 40px;
-              margin: 0 auto;
-              display: grid;
-              grid-template-columns: 45% 45%;
-              grid-column-gap: 10%;
             }
             .cover-wrapper {
               max-width: 800px;
@@ -241,27 +239,14 @@ class Cover extends React.Component {
             .cover.blue {
               background: linear-gradient(to right,#07c0f8,#005aff);
             }
-            .cover-video{
-              width:100%;
-              position:relative;
-              margin-left:auto;
-              margin-right:auto;
-            }
-            .container-video{
+            .container-video {
               height:490px;
-              margin-bottom:50px;
-            }
-            .cover-video::after{
-              content:'';
-              display:block;
-              width:100%;
-              padding-bottom: 56.25%;
+              padding-bottom: 50px;
             }
             .video{
               width:100%;
               height:100%;
               display:block;
-              margin-buttom:20px;
             }
           }
         `}
