@@ -1,3 +1,4 @@
+import BannerCta from "../components/Banner/BannerCta";
 import Cover from "../components/Cover/Cover";
 import Layout from "../components/Layout";
 import Feature from "../components/Feature/Feature"
@@ -10,6 +11,10 @@ const Demo = ()=>{
                 text="Bienvenidos a la demo Bilog!"
                 paragraph="Observa la demostración guiada de Bilog y descubre por qué somos tu mejor opción como software dental."/>
             <Feature {...MockedFeatures} />
+            <BannerCta
+                title="¿Todavia tenés dudas? Contactanos."
+                buttonText="Ir a contactos"
+                buttonHref="/contact" />
         </Layout>
     )
 }
