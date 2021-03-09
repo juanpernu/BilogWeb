@@ -1,8 +1,8 @@
-const SubMenu = ({ text, childrens, onClick }) => {
+const SubMenu = ({ text, children, onClick }) => {
   return (
     <div className="submenu">
       <p className="submenu-text">{text}</p>
-      {childrens.map(child => {
+      {children.map(child => {
         const {title, hash} = child;
         return <span className="submenu-item" onClick={() => onClick(hash)}>{title}</span>
       })}

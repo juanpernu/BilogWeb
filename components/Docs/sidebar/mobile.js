@@ -37,8 +37,8 @@ const SidebarMobile = ({ content }) => {
             <p className="label">{item.title}</p>
             <div className="posts">
               {item.sections.map((section, key) => {
-                const { title, hash, childrens = [] } = section;
-                return <SidebarSection key={key} text={title} hash={hash} childrens={childrens} onClickHandler={onClickHandler} />
+                const { title, hash, children = [] } = section;
+                return <SidebarSection key={key} text={title} hash={hash} children={children} onClickHandler={onClickHandler} />
               })}
             </div>
           </div>

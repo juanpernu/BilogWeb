@@ -9,8 +9,8 @@ const Sidebar = ({ content }) => (
             <h2 className="label">{item.title}</h2>
             <div className="posts">
               {item.sections.map((section, key) => {
-                const { title, hash, childrens = [] } = section;
-                return <SidebarSection key={key} text={title} hash={hash} childrens={childrens} />
+                const { title, hash, children = [] } = section;
+                return <SidebarSection key={key} text={title} hash={hash} children={children} />
               })}
             </div>
           </div>

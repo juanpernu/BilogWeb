@@ -17,7 +17,7 @@ module.exports = [
       {
         title: "Tablas",
         hash: null,
-        childrens: [
+        children: [
           {
             title: "Profesionales",
             hash: "#profesionales"
