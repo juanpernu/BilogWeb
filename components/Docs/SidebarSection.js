@@ -1,12 +1,9 @@
-import React, { useContext, useEffect, useState } from 'react';
-import { SubMenu } from './sidebar';
+import React, { useContext, useState } from 'react';
 import { DocsContext } from '../../contexts/docContext';
-import Accordion from '../Accordion/Accordion';
+import { Accordion } from './sidebar'
 const SidebarSection = ({ text, hash, onClickHandler, children }) => {
-  
   const { allContent } = useContext(DocsContext);
-  
-  const [link, setLink] = useState(hash);
+  const [accordionOpened, setAccordionOpened] = useState(null);
   
   const handleOnClick = (hash) => {
     onClickHandler && onClickHandler();
@@ -15,24 +12,19 @@ const SidebarSection = ({ text, hash, onClickHandler, children }) => {
     return allContent(contentId);
   };
 
-  const [accordionOpened, setAccordionOpened] = useState(null);
-
-  const toggleAccordionOpened = (accordion) => {
-    if (accordionOpened === accordion) {
-      setAccordionOpened(null);
-    } else {
-      setAccordionOpened(accordion);
-    }
-  };
-
   return (
     <div className="link">
       {
         hash ?
         <div className="nav-link">
           <span onClick={() => handleOnClick(hash)} >{text}</span>
-        </div>:
-        <Accordion classname="acordion" text={text} children={children} onClick={()=>handleOnClick(hash)} accordionOpened={accordionOpened} setAccordionOpened={toggleAccordionOpened}/>
+        </div> :
+        <Accordion
+          classname="acordion"
+          section={text}
+          children={children}
+          onClick={handleOnClick}
+        />
       }
       <style jsx>
       {`

@@ -22,7 +22,7 @@ module.exports = [
       },
       {
         title: "Pacientes",
-        hash: null, 
+        hash: null,
         childrens: [
           {
             title: "Opciones Generales de Pacientes",
@@ -49,7 +49,7 @@ module.exports = [
       {
         title: "Tablas",
         hash: null,
-        children: [
+        childrens: [
           {
             title: "Profesionales",
             hash: "#profesionales"

@@ -1,26 +1,16 @@
-import React,{useState} from 'react';
-const Accordion = ({text,children, onClick, setAccordionOpened,accordionOpened}) =>{
-    const [state, setState] = useState(false);
+import React,{ useState } from 'react';
 
-    const isOpened = text === accordionOpened;
-    
+const Accordion = ({ section, children, onClick }) =>{
+    const [open, setOpen] = useState(false);
     return (
         <div className="submenu">
-          <span className={'submenu-title__close'} onClick={() => setState(!state)}  /*onClick={() => setAccordionOpened(text)}*/>{text} <span className="icon-arrow--down" /></span>
-          <div className={`${state ? 'submenu-container__open' : 'submenu-container__close'}`}>
+          <span className={`submenu-title ${!open ? 'close' : 'open'}`} onClick={() => setOpen(!open)} >{section} <span className="icon-arrow--down" /></span>
+          <div className={`submenu-container ${open ? 'open' : 'close'}`}>
             {children.map(child => {
               const {title, hash} = child;
               return <span className="submenu-item" onClick={() => onClick(hash)}>{title}</span>
             })}
           </div>
-          
-          
-          {/* {isOpened && <div className={'submenu-container__close'}>
-            {children.map(child => {
-              const {title, hash} = child;
-              return <span className="submenu-item" onClick={()=> onClick(hash)}>{title}</span>
-            })}
-          </div>} */}
           <style jsx>
           {`
           {/* STYLES FOR MOBILE */}
@@ -34,7 +24,7 @@ const Accordion = ({text,children, onClick, setAccordionOpened,accordionOpened})
                 padding-bottom: 7px;
                 color:#000;
               }
-              .submenu-title__open{
+              .submenu-title.open{
                 font-weight:600;
                 display:flex;
                 justify-content:space-between;
@@ -46,22 +36,22 @@ const Accordion = ({text,children, onClick, setAccordionOpened,accordionOpened})
                 height: 10px;
                 margin:5px;
               }
-              .submenu-title__open .icon-arrow--down {
+              .submenu-title.open .icon-arrow--down {
                 transform: rotate(180deg);
                 width: 10px;
                 height: 10px;
                 margin:5px;
               }
-              .submenu-title__close{
+              .submenu-title.close{
                 display:flex;
                 justify-content:space-between;
               }
-              .submenu-container__open{
+              .submenu-container.open{
                 color:#000;
                 width:60%;
                 padding-left:25px;
               }
-              .submenu-container__close{
+              .submenu-container.close{
                 display:none;
               }
               .submenu-item {
@@ -80,14 +70,14 @@ const Accordion = ({text,children, onClick, setAccordionOpened,accordionOpened})
                 box-sizing: border-box;
                 color: #666;
               }
-              .submenu-title__open{
+              .submenu-title.open{
                 height:20px;
                 width:100%;
                 cursor:pointer;
                 display:flex;
                 flex-direction:row;
                 justify-content: space-between;
-                font-weight:600;
+                font-weight:600; 
               }
               .icon-arrow--down {
                 content: url('/static/bilog-arrow-down.svg');
@@ -96,13 +86,13 @@ const Accordion = ({text,children, onClick, setAccordionOpened,accordionOpened})
                 height: 10px;
                 margin: 5px 0 5px 20px;
               }
-              .submenu-title__open .icon-arrow--down {
+              .submenu-title.open .icon-arrow--down {
                 transform: rotate(180deg);
                 width: 10px;
                 height: 10px;
                 margin: 5px 0 5px 20px;
               }
-              .submenu-title__close{
+              .submenu-title.close{
                 width:100%;
                 cursor:pointer;
                 display:flex;
@@ -110,16 +100,15 @@ const Accordion = ({text,children, onClick, setAccordionOpened,accordionOpened})
                 justify-content: space-between;
                 
               }
-              .submenu-title__close:hover{
+              .submenu-title.close:hover{
                 color:#000;
               }
-              .submenu-container__open{
-                color:#000;
-                width:100%;
+              .submenu-container.open{
+                color: #000;
+                width: 100%;
                 padding: 0px;
-                border:1px solid red;
               }
-              .submenu-container__close{
+              .submenu-container.close{
                 display:none;
               }
               .submenu-item {
