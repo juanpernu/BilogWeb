@@ -9,7 +9,7 @@ module.exports = [
       {
         title: "Agenda de turnos",
         hash: null,
-        children: [
+        childrens: [
           {
             title: "Opciones Generales de Agenda",
             hash:"#general-agenda-options"
@@ -23,7 +23,11 @@ module.exports = [
       {
         title: "Pacientes",
         hash: null, 
+<<<<<<< HEAD
         children: [
+=======
+        childrens: [
+>>>>>>> f9a2c7eb82b85a72419c76e85500863cc76a5145
           {
             title: "Opciones Generales de Pacientes",
             hash: "#general-patient-options"
@@ -87,7 +91,11 @@ module.exports = [
       {
         title: "Informes",
         hash: null,
+<<<<<<< HEAD
         children:[
+=======
+        childrens:[
+>>>>>>> f9a2c7eb82b85a72419c76e85500863cc76a5145
           {
             title: "Opciones Generales",
             hash: "#general-options"
@@ -105,7 +113,11 @@ module.exports = [
       {
         title: "Sistema",
         hash: null,
+<<<<<<< HEAD
         children:[
+=======
+        childrens:[
+>>>>>>> f9a2c7eb82b85a72419c76e85500863cc76a5145
           {
             title: "Parámetros",
             hash: "#parameters"
