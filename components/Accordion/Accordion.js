@@ -1,15 +1,26 @@
 import React,{useState} from 'react';
-const Accordion = ({text, children, onClick}) =>{
-    const [estado, setEstado] = useState(false);
+const Accordion = ({text,children, onClick, setAccordionOpened,accordionOpened}) =>{
+    const [state, setState] = useState(false);
+
+    const isOpened = text === accordionOpened;
+    
     return (
         <div className="submenu">
-          <span className={`${estado ? 'submenu-title__open' : 'submenu-title__close'}`}  onClick={() => setEstado(!estado)}>{text} <span className="icon-arrow--down" /></span>
-          <div className={`${estado ? 'submenu-container__open' : 'submenu-container__close'}`}>
+          <span className={'submenu-title__close'} onClick={() => setState(!state)}  /*onClick={() => setAccordionOpened(text)}*/>{text} <span className="icon-arrow--down" /></span>
+          <div className={`${state ? 'submenu-container__open' : 'submenu-container__close'}`}>
             {children.map(child => {
               const {title, hash} = child;
               return <span className="submenu-item" onClick={() => onClick(hash)}>{title}</span>
             })}
           </div>
+          
+          
+          {/* {isOpened && <div className={'submenu-container__close'}>
+            {children.map(child => {
+              const {title, hash} = child;
+              return <span className="submenu-item" onClick={()=> onClick(hash)}>{title}</span>
+            })}
+          </div>} */}
           <style jsx>
           {`
           {/* STYLES FOR MOBILE */}
@@ -71,11 +82,11 @@ const Accordion = ({text, children, onClick}) =>{
               }
               .submenu-title__open{
                 height:20px;
-                width:65%;
+                width:100%;
                 cursor:pointer;
                 display:flex;
                 flex-direction:row;
-                justify-content: flex-start;
+                justify-content: space-between;
                 font-weight:600;
               }
               .icon-arrow--down {
@@ -92,19 +103,21 @@ const Accordion = ({text, children, onClick}) =>{
                 margin: 5px 0 5px 20px;
               }
               .submenu-title__close{
-                width:65%;
+                width:100%;
                 cursor:pointer;
                 display:flex;
                 flex-direction:row;
-                justify-content: flex-start;
+                justify-content: space-between;
+                
               }
               .submenu-title__close:hover{
                 color:#000;
               }
               .submenu-container__open{
                 color:#000;
-                width:65%;
+                width:100%;
                 padding: 0px;
+                border:1px solid red;
               }
               .submenu-container__close{
                 display:none;

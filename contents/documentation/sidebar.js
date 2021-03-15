@@ -9,7 +9,7 @@ module.exports = [
       {
         title: "Agenda de turnos",
         hash: null,
-        childrens: [
+        children: [
           {
             title: "Opciones Generales de Agenda",
             hash:"#general-agenda-options"
@@ -23,7 +23,7 @@ module.exports = [
       {
         title: "Pacientes",
         hash: null, 
-        childrens: [
+        children: [
           {
             title: "Opciones Generales de Pacientes",
             hash: "#general-patient-options"
@@ -87,7 +87,7 @@ module.exports = [
       {
         title: "Informes",
         hash: null,
-        childrens:[
+        children:[
           {
             title: "Opciones Generales",
             hash: "#general-options"
@@ -105,7 +105,7 @@ module.exports = [
       {
         title: "Sistema",
         hash: null,
-        childrens:[
+        children:[
           {
             title: "Parámetros",
             hash: "#parameters"

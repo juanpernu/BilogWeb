@@ -3,14 +3,28 @@ import { SubMenu } from './sidebar';
 import { DocsContext } from '../../contexts/docContext';
 import Accordion from '../Accordion/Accordion';
 const SidebarSection = ({ text, hash, onClickHandler, children }) => {
+  
   const { allContent } = useContext(DocsContext);
+  
   const [link, setLink] = useState(hash);
+  
   const handleOnClick = (hash) => {
     onClickHandler && onClickHandler();
     const regexp = new RegExp(/\#(.*)/gm);
     const contentId = hash.match(regexp);
     return allContent(contentId);
   };
+
+  const [accordionOpened, setAccordionOpened] = useState(null);
+
+  const toggleAccordionOpened = (accordion) => {
+    if (accordionOpened === accordion) {
+      setAccordionOpened(null);
+    } else {
+      setAccordionOpened(accordion);
+    }
+  };
+
   return (
     <div className="link">
       {
@@ -18,7 +32,7 @@ const SidebarSection = ({ text, hash, onClickHandler, children }) => {
         <div className="nav-link">
           <span onClick={() => handleOnClick(hash)} >{text}</span>
         </div>:
-        <Accordion classname="acordion"text={text} children={children} onClick={handleOnClick} />
+        <Accordion classname="acordion" text={text} children={children} onClick={()=>handleOnClick(hash)} accordionOpened={accordionOpened} setAccordionOpened={toggleAccordionOpened}/>
       }
       <style jsx>
       {`
@@ -37,6 +51,7 @@ const SidebarSection = ({ text, hash, onClickHandler, children }) => {
         @media only screen and (min-width: 751px) {
           .link {
             margin: 0 0 10px 15px;
+            width:80%;
           }
           .link:last-child {
             margin-bottom: 0;
