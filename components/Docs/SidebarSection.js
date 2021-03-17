@@ -1,24 +1,30 @@
-import React, { useContext, useEffect, useState } from 'react';
-import { SubMenu } from './sidebar';
+import React, { useContext, useState } from 'react';
 import { DocsContext } from '../../contexts/docContext';
-import Accordion from '../Accordion/Accordion';
+import { Accordion } from './sidebar'
 const SidebarSection = ({ text, hash, onClickHandler, children }) => {
   const { allContent } = useContext(DocsContext);
-  const [link, setLink] = useState(hash);
+  const [accordionOpened, setAccordionOpened] = useState(null);
+  
   const handleOnClick = (hash) => {
     onClickHandler && onClickHandler();
     const regexp = new RegExp(/\#(.*)/gm);
     const contentId = hash.match(regexp);
     return allContent(contentId);
   };
+
   return (
     <div className="link">
       {
         hash ?
         <div className="nav-link">
           <span onClick={() => handleOnClick(hash)} >{text}</span>
-        </div>:
-        <Accordion classname="acordion"text={text} children={children} onClick={handleOnClick} />
+        </div> :
+        <Accordion
+          classname="acordion"
+          section={text}
+          children={children}
+          onClick={handleOnClick}
+        />
       }
       <style jsx>
       {`
@@ -37,6 +43,7 @@ const SidebarSection = ({ text, hash, onClickHandler, children }) => {
         @media only screen and (min-width: 751px) {
           .link {
             margin: 0 0 10px 15px;
+            width:80%;
           }
           .link:last-child {
             margin-bottom: 0;

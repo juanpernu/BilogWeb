@@ -1,10 +1,11 @@
-import React,{useState} from 'react';
-const Accordion = ({text, children, onClick}) =>{
-    const [estado, setEstado] = useState(false);
+import React,{ useState } from 'react';
+
+const Accordion = ({ section, children, onClick }) =>{
+    const [open, setOpen] = useState(false);
     return (
         <div className="submenu">
-          <span className={`${estado ? 'submenu-title__open' : 'submenu-title__close'}`}  onClick={() => setEstado(!estado)}>{text} <span className="icon-arrow--down" /></span>
-          <div className={`${estado ? 'submenu-container__open' : 'submenu-container__close'}`}>
+          <span className={`submenu-title ${!open ? 'close' : 'open'}`} onClick={() => setOpen(!open)} >{section} <span className="icon-arrow--down" /></span>
+          <div className={`submenu-container ${open ? 'open' : 'close'}`}>
             {children.map(child => {
               const {title, hash} = child;
               return <span className="submenu-item" onClick={() => onClick(hash)}>{title}</span>
@@ -23,7 +24,7 @@ const Accordion = ({text, children, onClick}) =>{
                 padding-bottom: 7px;
                 color:#000;
               }
-              .submenu-title__open{
+              .submenu-title.open{
                 font-weight:600;
                 display:flex;
                 justify-content:space-between;
@@ -35,22 +36,22 @@ const Accordion = ({text, children, onClick}) =>{
                 height: 10px;
                 margin:5px;
               }
-              .submenu-title__open .icon-arrow--down {
+              .submenu-title.open .icon-arrow--down {
                 transform: rotate(180deg);
                 width: 10px;
                 height: 10px;
                 margin:5px;
               }
-              .submenu-title__close{
+              .submenu-title.close{
                 display:flex;
                 justify-content:space-between;
               }
-              .submenu-container__open{
+              .submenu-container.open{
                 color:#000;
                 width:60%;
                 padding-left:25px;
               }
-              .submenu-container__close{
+              .submenu-container.close{
                 display:none;
               }
               .submenu-item {
@@ -69,14 +70,14 @@ const Accordion = ({text, children, onClick}) =>{
                 box-sizing: border-box;
                 color: #666;
               }
-              .submenu-title__open{
+              .submenu-title.open{
                 height:20px;
-                width:65%;
+                width:100%;
                 cursor:pointer;
                 display:flex;
                 flex-direction:row;
-                justify-content: flex-start;
-                font-weight:600;
+                justify-content: space-between;
+                font-weight:600; 
               }
               .icon-arrow--down {
                 content: url('/static/bilog-arrow-down.svg');
@@ -85,28 +86,29 @@ const Accordion = ({text, children, onClick}) =>{
                 height: 10px;
                 margin: 5px 0 5px 20px;
               }
-              .submenu-title__open .icon-arrow--down {
+              .submenu-title.open .icon-arrow--down {
                 transform: rotate(180deg);
                 width: 10px;
                 height: 10px;
                 margin: 5px 0 5px 20px;
               }
-              .submenu-title__close{
-                width:65%;
+              .submenu-title.close{
+                width:100%;
                 cursor:pointer;
                 display:flex;
                 flex-direction:row;
-                justify-content: flex-start;
+                justify-content: space-between;
+                
               }
-              .submenu-title__close:hover{
+              .submenu-title.close:hover{
                 color:#000;
               }
-              .submenu-container__open{
-                color:#000;
-                width:65%;
+              .submenu-container.open{
+                color: #000;
+                width: 100%;
                 padding: 0px;
               }
-              .submenu-container__close{
+              .submenu-container.close{
                 display:none;
               }
               .submenu-item {

@@ -110,8 +110,8 @@ module.exports = {
       ]
     }
   },
-  "#agenda": {
-    section: "Agenda de turnos",
+  "#general-agenda-options": {
+    section: "Opciones Generales de Agenda",
     copy: null,
     item: {
       text: null,
@@ -316,9 +316,20 @@ module.exports = {
               image: null,
             },
           ]
-        },
+        }
+      ]
+    }
+  },
+  "#shift-options": {
+    section: "Opciones de Turno",
+    copy: null,
+    item: {
+      text: null,
+      sectionVideo: null,
+      sectionImage: "https://bilog.com.ar/recursos/ayuda/imagenes/Pac_datos.jpg",
+      content: [
         {
-          title: "Opciones de Turnos",
+          title: "Opciones Generales de Pacientes",
           subcontent: [
             {
               subtitle: "¿Cómo dar turnos?",
@@ -541,6 +552,497 @@ module.exports = {
         }
       ]
     }
+  },
+  "#general-patient-options": {
+    section: "Opciones Generales de Pacientes",
+    copy: null,
+    item: {
+      text: null,
+      sectionVideo: null,
+      sectionImage: "https://bilog.com.ar/recursos/ayuda/imagenes/Pac_datos.jpg",
+      content: [
+        {
+          title: "Opciones Generales de Pacientes",
+          subcontent: [
+            {
+              subtitle: "Datos Personales (CTRL+D)",
+              text: `Se cargan los datos de identificación del paciente, y se carga la alerta que se desee.
+              Una vez finalizada la carga, pulse guardar.`,
+              image: null,
+            },
+            {
+              subtitle: null,
+              text: `Si realiza cambios en los datos del paciente o si agrega o modifica datos de la alerta guarde la alerta y luego guarde el paciente.`,
+              image: null,
+            },
+            {
+              subtitle: null,
+              text: `Puede cargarle una foto para identificar al paciente, se recomienda que sean de tamaños razonables.
+              Con el botón + busca y agrega la foto, con la x elimina la foto y el pincel le permite editar la foto para realizar cambios.`,
+              image: null,
+            },
+            {
+              subtitle: null,
+              text: `Si está cargando un paciente y no tiene definida la Obra Social a la que pertenece, directamente seleccione Tablas (del menú principal), defina la nueva OS y guarde.
+              Regrese a pacientes (queda en donde estaba cargando los datos), actualice las tablas con el botón refrescar Obras Sociales y Planes (botón amarillo ubicado a la derecha de obra social) y queda la OS cargada.`,
+              image: null,
+            },
+            {
+              subtitle: null,
+              text: `El botón refrescar también sirve para actualizar cambios realizados en los nomencladores de los planes del las OS.`,
+              image: null,
+            },
+            {
+              subtitle: "Botón de Chequeo online",
+              text: `Le permite chequear la credencial para solicitar el Apto Servicio si está o no habilitado el carnet para la obra social.`,
+              image: "https://bilog.com.ar/recursos/ayuda/imagenes/chequeo.jpg",
+            },
+            {
+              subtitle: null,
+              text: `El chequeo puede ser:`,
+              image: null,
+            },
+            {
+              subtitle: "On line",
+              text: `Se conecta con la OS y le da el numero de transacción.`,
+              image: null,
+            },
+            {
+              subtitle: "Manual",
+              text: `Cuando se llama por teléfono para solicitar el Apto Servicio ó la Autorización para Ortodoncia.`,
+              image: null,
+            },
+            {
+              subtitle: null,
+              text: `La obra social da un nº de transacción para Apto Servicio y en el caso de la autorización para una prestación de ortodoncia, la obra social da un número de autorización y otro de transacción.
+              Ambos se cargan con la fecha correspondiente, la condición del paciente y si se desea una observación.`,
+              image: null,
+            },
+            {
+              subtitle: "Condición",
+              text: `Gravado: Adherente directo. dependiendo de las condiciones de la OS, ésta paga al prestador un IVA del 10.5% sobre la prestación que envía.
+              No gravado: obligatorio, la OS no paga IVA.
+              Estos dos items se relacionan con la liquidación mensual de la obra social.`,
+              image: null,
+            },
+            {
+              subtitle: "Alertas",
+              text: `Carga en modo texto la alerta que desee. Cuando abre el paciente el cuadro de alerta se abre y le muestra lo cargado. Cuando grabe una alerta también guarde el paciente.`,
+              image: null,
+            },
+            {
+              subtitle: "Datos Importantes",
+              text: `Si fuera necesario para tener una rápida vista de la salud del paciente, coloque con el botón derecho del Mouse la tilde en alguno de estos ítems.`,
+              image: null,
+            },
+            {
+              subtitle: "Observaciones",
+              text: `Puede escribir en modo texto lo que necesite sobre el paciente.`,
+              image: null,
+            },
+            {
+              subtitle: "Titular",
+              text: `Si el paciente es el titular coloca la tilde.
+              Si el paciente no es titular, colocar el nombre del titular. Si el titular está cargado en la base de datos utiliza Buscar Titular.`,
+              image: null,
+            },
+            {
+              subtitle: "Módulo Socios",
+              text: null,
+              image: "https://bilog.com.ar/recursos/ayuda/imagenes/selecsociotitu.jpg",
+            },
+            {
+              subtitle: null,
+              text: `En caso de tener socios en su clínica, previamente usted definió cual es el nombre de su "propia obra social" en (Sistema / Parámetros), si el paciente no es el titular del grupo, pulsa Buscar Titular y se abre la búsqueda de Pacientes para poder seleccionarlo y que quede guardado el nombre del titular del grupo con sus adherentes.`,
+              image: null,
+            },
+            {
+              subtitle: "Buscar Paciente (F3)",
+              text: null,
+              image: "https://bilog.com.ar/recursos/ayuda/imagenes/buscpac2.jpg",
+            },
+            {
+              subtitle: null,
+              text: `Tiene muchas utilidades como por ejemplo, si un paciente llama para preguntarle cuando es su turno porque no lo recuerda, pulsa F3 y busca el paciente y en la misma pantalla le muestra el próximo turno y el nombre del profesional.`,
+              image: null,
+            },
+            {
+              subtitle: null,
+              text: `Se abre la Pantalla de búsqueda de pacientes.`,
+              image: null,
+            },
+            {
+              subtitle: null,
+              text: `Puede realizar la búsqueda por Nombre y Apellido, Número de Afiliado, Número de Historia Clínica, Número de Documento, Fecha de Nacimiento, Dirección o Número de teléfono.`,
+              image: null,
+            },
+            {
+              subtitle: null,
+              text: `Si coloca la inicial o las primeras letras o números de lo que busca y pulsa enter le busca todos los datos que comienzan con lo que usted colocó.`,
+              image: null,
+            },
+            {
+              subtitle: "Que el dato este contenido",
+              text: `Si hace clic del Mouse coloca la tilde para activar la búsqueda, si por ejemplo está buscando el paciente Stegman, en donde titila el cursor en Dato a Buscar coloca Steg y pulsa Enter o Buscar y automáticamente le muestra en la grilla todos los pacientes cuyos nombre y apellidos contienen "Steg".`,
+              image: null,
+            },
+            {
+              subtitle: null,
+              text: `Una vez que encontré el paciente, pulsa Enter o doble click con el mouse y el paciente queda activado en pantalla. Puede utilizar este tipo de búsqueda con cualquiera de las formas a buscar.`,
+              image: null,
+            },
+            {
+              subtitle: "Ver Autofiltro",
+              text: `Le permite filtrar la busqueda que Ud. acaba de realizar.`,
+              image: null,
+            },
+            {
+              subtitle: "Grilla de Pacientes",
+              text: `Contiene los datos del paciente, incluso el teléfono por si necesita llamarlo, de esta manera no necesita ir a los datos personales del paciente.`,
+              image: null,
+            },
+            {
+              subtitle: "Chequear",
+              text: `Le permite chequear únicamente on line (para chequeo manual ir a Datos del paciente) y solicitar el Apto Servicio.`,
+              image: null,
+            },
+            {
+              subtitle: null,
+              text: `En esta misma ventana de búsqueda puede ver la Asistencia del Paciente, la estadística de turnos del paciente con el objeto decidir si priorizarlo o no.`,
+              image: null,
+            },
+            {
+              subtitle: null,
+              text: `También le muestra la Fecha de la Última Visita y el nombre del profesional que lo atendió, así como también la Fecha del Próximo Turno y el nombre del profesional.`,
+              image: null,
+            },
+            {
+              subtitle: "Ver Turnos",
+              text: `Abre la ventana de Turnos del Paciente.`,
+              image: null,
+            },
+            {
+              subtitle: "Visualiza el Saldo actual del paciente.",
+              text: null,
+              image: null,
+            },
+            {
+              subtitle: "Especialidades",
+              text: `Se encuentran las fichas de Cirugía con Anamnesis y consentimiento Informado para la firma del paciente.
+              También las Fichas de Implantes, Ortodoncia y Periodoncia.`,
+              image: "https://bilog.com.ar/recursos/ayuda/imagenes/especialidades.jpg",
+            },
+            {
+              subtitle: null,
+              text: `Las distintas opciones dentro de las fichas se encuentran en las solapas. Las fichas se completan colocando tildes en los campos y en modo texto. Si es SI coloca la tilde sino lo deja en blanco.`,
+              image: null,
+            },
+            {
+              subtitle: "Cirugía",
+              text: `Anamnesis con el cuestionario completo sobre la salud del paciente y el consentimiento informado para la firma del paciente.
+              Puede imprimir el protocolo quirúrgico para la firma del paciente para someterse a un procedimiento quirúrgico e Imprimir el Consentimiento Informado para la colocación de implantes.`,
+              image: "https://bilog.com.ar/recursos/ayuda/imagenes/protoqui_1.jpg",
+            },
+            {
+              subtitle: null,
+              text: null,
+              image: "https://bilog.com.ar/recursos/ayuda/imagenes/protoqui_2.jpg",
+            },
+            {
+              subtitle: null,
+              text: null,
+              image: "https://bilog.com.ar/recursos/ayuda/imagenes/proquinfo.jpg",
+            },
+            {
+              subtitle: "Implantes",
+              text: `Por cada implante que se coloca se puede abrir una ficha, cada solapa contiene los datos Generales, Análisis Estado, Rx (radiografías pre-operatorias) Modelos de Estudios, Informes (médico, implantológico y protético). Cuando se abre una ficha queda grabada en Descripción, luego para consultar o agregar datos se puede seleccionar del combo.`,
+              image: null,
+            },
+            {
+              subtitle: "Ortodoncia",
+              text: `Esta Ficha le permite tener la Historia Médica del Paciente, la Historial Dental, el Diagnóstico de Modelos, el Diagnóstico Clínico, el Estado Periodontal de la ATM, los Estudios Radiográficos, el Resumen del Diagnóstico y Tratamiento, Anclaje y las distintas Fases del tratamiento con la evolución y el fin del mismo.`,
+              image: null,
+            },
+            {
+              subtitle: null,
+              text: `También puede guardar los valores cefalométricos de los estudios Ricketts y Bjork- Jarabak del paciente, con la medida, norma y valor.`,
+              image: null,
+            },
+            {
+              subtitle: "Periodoncia",
+              text: `Desde esta ficha podrá cargar la Ficha Periodontal del paciente.
+              Se pueden guardar las fichas segun la variación del estado del paciente.`,
+              image: null,
+            },
+            {
+              subtitle: null,
+              text: `Posicionado sobre la pieza y pulsando el botón derecho del mouse sobre la pieza se depliega el menu contextual para seleccionar las opciones, y aumentar o disminuir los valores.`,
+              image: null,
+            },
+            {
+              subtitle: "Imagenes",
+              text: `El menu de Imágenes permite almacenarlas en la Ficha del Paciente activo.`,
+              image: null,
+            },
+            {
+              subtitle: null,
+              text: `Si posee una cámara digital, intraoral o un scanner (para escanear la RXs) el sistema le permite complementar la información del paciente con imágenes de tratamientos previos y posteriores.
+              Las imágenes también pueden visualizarse en pantalla completa, esto facilita el entendimiento y aceptación del tratamiento por parte del paciente.`,
+              image: null,
+            },
+            {
+              subtitle: "Eliminar el paciente seleccionado",
+              text: `Elimina el paciente activo (el que tiene a la vista cargado). En el caso que existan pagos o pedidos a laboratorios, NO SE PODRA BORRAR EL PACIENTE.`,
+              image: null,
+            },
+            {
+              subtitle: "Parámetros",
+              text: `Colocando las tildes con el Mouse, condiciona la carga de los datos del paciente, obligando a completar los datos seleccionados, si ellos no se cargan el sistema no le permitirá guardar el paciente.`,
+              image: null,
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "#odontogram": {
+      section: "Odontograma",
+      copy: `El sistema le permite visualizar el odontograma Standard o 3D, usted puede elegir cual desea que se abra en forma predeterminada (ver Sistema / Parámetros / Odontograma).`,
+      item: {
+        text:null,
+        sectionVideo:null,
+        sectionImage: "https://bilog.com.ar/recursos/ayuda/imagenes/odontog3dstd.jpg",
+        content:[
+            {
+              title:"",
+              subcontent:[
+                {
+                  subtitle: "Opción Tipo de odontograma - Ver Prestaciones",
+                  text: `Puede seleccionar el tipo de odontograma que desea ver.
+                  Así como también, los tipos de prestaciones que desee visualizar. Simplemente seleccione del combo con la flecha abajo.`,
+                  image: null,
+                },
+                {
+                  subtitle: null,
+                  text: `Si necesita ver las prestaciones de un período para enviar a la obra social, elija Desde Hasta y asigne un período.`,
+                  image: "https://bilog.com.ar/recursos/ayuda/imagenes/tipoodonto.jpg",
+                },
+                {
+                  subtitle: "Prestación nueva",
+                  text: null,
+                  image: "https://bilog.com.ar/recursos/ayuda/imagenes/nueva_prest.jpg",
+                },
+                {
+                  subtitle: "Carga de prestaciones",
+                  text: `Hay 3 maneras de cargar prestaciones, 2 formas diferentes en el mismo odontograma ó sino en la solapa Prestaciones, usted elegirá la que le quede más comoda.`,
+                  image: null,
+                },
+                {
+                  subtitle: null,
+                  text: `Acá veremos la carga de prestaciones directamente en el odontograma. Se pueden cargar prestaciones anteriores, a realizar y realizadas, esto significa que en un solo lugar puede Fichar y Facturar.`,
+                  image: null,
+                },
+                {
+                  subtitle: null,
+                  text: `Las prestaciones que se despliegan en cualquiera de las opciones son personalizadas por usted, en sus nomencladores. (Ver Tablas / Obras Sociales / Prestaciones).`,
+                  image: null,
+                },
+                {
+                  subtitle: null,
+                  text: `Los colores de las prestaciones Anterior, A Realizar y Realizadas también las define Usted en (Sistema / Parametros).`,
+                  image: null,
+                },
+                {
+                  subtitle: "Botón Refrescar Profesionales",
+                  text: `Actualiza la Tabla de Profesionales, si en el momento usted no tenía cargado un profesional, lo puede dar de alta en la tabla de Profesionales (Ver Tablas / Profesionales) y luego regresa a pacientes y pulsando el botón refrescar inmediatamente lo va a visualizar en profesionales.`,
+                  image: null,
+                },
+                {
+                  subtitle: "Botón Refrescar Prestaciones",
+                  text: `Carga, agrega o modifica Obras Sociales, Planes y Prestaciones.`,
+                  image: null,
+                },
+                {
+                  subtitle: null,
+                  text: `Si está cargando un paciente y no tiene la OS a la que pertenece, directamente seleccione tablas, cargue la nueva OS y guarde. (Ver Tablas / Obras Sociales / Prestaciones).`,
+                  image: null,
+                },
+                {
+                  subtitle: null,
+                  text: `Regrese a pacientes (queda en donde estaba cargando los datos) actualice las tablas con el botón Refrescar Prestaciones (botón amarillo ubicado a la derecha de obra social) y le queda la OS cargada. Este botón también le sirve para actualizar cambios realizados en los nomencladores de los planes del las OS.`,
+                  image: null,
+                },
+                {
+                  subtitle: null,
+                  text: `En el odontograma, si carga una prestación sin dibujo cuando modifica la prestación y le asigna representación en el odontograma se actualiza cuando refresca las prestaciones.`,
+                  image: null,
+                },
+                {
+                  subtitle: null,
+                  text: `Para su mayor comodida no necesita salir del paciente.
+                  Puede elegir la fecha de la prestación a cargar, el profesional que la realiza.`,
+                  image: null,
+                },
+                {
+                  subtitle: "Ingresar Nuevas Prestaciones - Carga sobre la Pieza Dental",
+                  text: `Debe situarse sobre la pieza a cargar y luego pulsando boton derecho del mouse se depliega el menu contextual de carga, le indica la pieza en que está ubicado, y puede elegir la prestación a cargar.`,
+                  image: null,
+                },
+                {
+                  subtitle: null,
+                  text: `Veamos un ejemplo, cargando una prestación anterior, Composite Anterior en 13 O.`,
+                  image: "https://bilog.com.ar/recursos/ayuda/imagenes/cpant_s_pieza.jpg",
+                },
+                {
+                  subtitle: null,
+                  text: `Veamos un ejemplo, cargando una prestación a realizar, Amalgama a Realizar en 16 V.`,
+                  image: "https://bilog.com.ar/recursos/ayuda/imagenes/cparealiz_s_pieza.jpg",
+                },
+                {
+                  subtitle: null,
+                  text: `Veamos un ejemplo, cargando una prestación realizada, (para facturarla) Tratamiento de Conducto en 24.
+                  Se depliega el nomenclador de la obra social del paciente o del nomenclador de privados.`,
+                  image: "https://bilog.com.ar/recursos/ayuda/imagenes/cprealizada_s_pieza.jpg",
+                },
+                {
+                  subtitle: "Eliminar una prestación",
+                  text: `Veamos un ejemplo, eliminemos la Amalgama a Realizar en el 16 V porque nos equivocamos y era la cara O.
+                  Se sitúa sobre la pieza, pulsa botón derecho, Ver Prestaciones, aparece la grilla con el detalle de las prestaciones de la pieza, selecciona la que dese eliminar y pulsa el botón eliminar.`,
+                  image: "https://bilog.com.ar/recursos/ayuda/imagenes/elim_prealizada_s_pieza.jpg",
+                },
+                {
+                  subtitle: null,
+                  text: `Grilla Ver Prestaciones es el historial de la pieza, contiene datos valiosos para tenerlos a la vista.
+                  Visualiza la fecha, el profesional que la realizó, el código de la prestación, el código de prestación de la obra social, la descripción, la obra social, el plan, el diente y la cara, el importe a pagar por la OS, el importe a pagar por el paciente, las observaciones cargadas en al prestación, el período, si está o no liquidada SOLP o al a OS, si está rechazada ó no por la OS y si está liquidada o no al profesional.`,
+                  image: null,
+                },
+                {
+                  subtitle: "Ingresar Nuevas Prestaciones - Carga con el boton izquierdo del mouse",
+                  text: `De esta manera: coloque la tilde en el Click izquierdo del mouse ingresa nuevas prestaciones.
+                  Pulsa flecha abajo en el combo de Prestación Nueva, la selecciona del nomenclador y "cargada en el mouse" pulsa sobre la pieza que necesita, en este caso estamos cargando un TC en el 15.`,
+                  image: "https://bilog.com.ar/recursos/ayuda/imagenes/cprealizada_c_mou.jpg",
+                },
+                {
+                  subtitle: "Prestaciones",
+                  text: `Se visualizan todas las prestaciones de la historia clínica del paciente. Tambien se pueden cargar nuevas, modificar y eliminar prestaciones.`,
+                  image: null,
+                },
+                {
+                  subtitle: "Historia Clínica",
+                  text: `Se puede visualizar cada anotación que se realizó. Automáticamente trae la fecha del día para la carga, y una vez guardada queda cerrada y ordenada por fecha.
+                  se pueden modificar cada una de las entradas o bien agregarle datos, si es que el sistema está configurado para ello, si no quedarán los datos sin posibilidad de cambiarlos.
+                  Todas las anotaciones pueden ser impresas o consultadas con el botón Imprimir, el informe muestra el historial de las entradas de la historia clínica.`,
+                  image: "https://bilog.com.ar/recursos/ayuda/imagenes/hc.jpg",
+                }
+            ]
+          }
+        ]
+    } 
+  },
+  "#budgets": {
+      section: "Presupuesto",
+      copy: '',
+      item: {
+        text:null,
+        sectionVideo:null,
+        sectionImage: "https://bilog.com.ar/recursos/ayuda/imagenes/odontog3dstd.jpg",
+        content:[
+          {
+            title:"",
+            subcontent:[
+            {
+              subtitle: null,
+              text: `Se visualizan todos los presupuestos emitidos al paciente seleccionado. Se pueden realizar nuevos, modificar y eliminar presupuestos.`,
+              image: "https://bilog.com.ar/recursos/ayuda/imagenes/presupuesto.jpg",
+            },
+            {
+              subtitle: null,
+              text: `Los presupuestos permiten informar al paciente del valor total y parcial de un tratamiento a realizar. Tambien se pueden definir distintas formas de pagos, agregando descuentos o intereses a aplicar. Las prestaciones a agregar en el presupuesto son leidas desde el nomenclador de la obra social seleccionada, estos pueden ser modificados (solamente para el presupuesto).
+              Estas también podrán cargarse de forma manual, sin que tengan que estar en el nomenclador. Se deberá poner la tielde en la opción Prestación manual.`,
+              image: "https://bilog.com.ar/recursos/ayuda/imagenes/nva_prest_ppto.jpg",
+            },
+            {
+              subtitle: null,
+              text: `Cada presupuesto tiene 3 estados:
+              a) SIN MOVIMIENTO, indica que el presupuesto no tiene ningun pago registrado.
+              b) CON MOVIMIENTO, indica que existen pagos realizados al mismo pero aun no se encuentra saldado.
+              c) SALDADO, el presupuesto esta saldado.`,
+              image: null,
+            }
+          ]
+        }
+      ]
+    }
+  },
+  '#payments':{
+      section:"Pagos - Cta Cte.",
+      copy:'Se visualizan todos los pagos realizados por el paciente y todas aquellas prestaciones que tiene importe a cargo del paciente.',
+      item:{
+        text:null,
+        sectionVideo:null,
+        sectionImage:"https://bilog.com.ar/recursos/ayuda/imagenes/cta_cte.jpg",
+        content:[
+          {
+            title:"",
+            subcontent:[
+            {
+              subtitle: null,
+              text: `Se pueden cargar nuevos pagos, modificar, eliminar y anular pagos.
+              Al cargar un nuevo pago el sistema calculará automaticamente el saldo actual del paciente, dependiendo de todas las prestaciones a pagar que tenga el mismo y de todos los pagos que haya realizado. Aquellos pagos que estuviesen anulados, no se tendrán en cuenta en el saldo actual.`,
+              image: null,
+            },
+            {
+              subtitle: null,
+              text: `La forma de pago puede ser en Efectivo, Cheque, Tarjeta y Otro. En el caso de seleccionar Tarjeta, deberá tener definidas las tarjetas en el menu de Administración.
+              Si Ud. es Responsable Inscripto, podrá poner el porcentaje de IVA que corresponda al pago, esto permitira que se pueda calcular el Libro de IVA Ventas.`,
+              image: null,
+            },
+            {
+              subtitle: null,
+              text: `Tambien se podrán cambiar los porcentajes o valores a pagar al profesional.`,
+              image: null,
+            }
+          ]
+        }
+      ] 
+    }     
+  },
+  '#laboratory':{
+      section:"Laboratorios",
+      copy:'',
+      item:{
+        text:null,
+        sectionVideo: null,
+        sectionImage: "https://bilog.com.ar/recursos/ayuda/imagenes/labo.jpg",
+        content:[
+          {
+            title:"",
+            subcontent:[
+            {
+              subtitle: null,
+              text: `Al cargar un nuevo pedido de trabajo, se deberá poner la fecha estimada de entrega del mecanico, esto permitirá al sistema calcular a diario todos los trabajos pendientes de entrega.`,
+              image: null,
+            },
+            {
+              subtitle: null,
+              text: `Luego de recibido el trabajo, se deberá cargar la fecha de recibido y también el nro. de remito y/o factura del mecanico y el importe facturado por el mismo. Esto permitirá al sistema realizar una auditoría de importes, o sea se comparan los importes según la tabla de precios del mecanico que Ud. tenga y el importe facturado por este.`,
+              image: null,
+            },
+            {
+              subtitle: null,
+              text: `También se podrán cambiar los porcentajes a descontar al profesional en el momento de realizar la liquidación del mismo.`,
+              image: null,
+            },
+            {
+              subtitle: "Ver Turnos",
+              text: `Se visualiza el historial de turnos del paciente.
+              En color verde, los turnos PRESENTES, en color naranja los turnos AUSENTE CON AVISO y en rojo los turnos AUSENTE SIN AVISO.`,
+              image: "https://bilog.com.ar/recursos/ayuda/imagenes/turnos.jpg",
+            },
+          ]
+        }
+      ]
+    }  
   },
   "#pacientes": {
     section: "Pacientes",
@@ -1609,8 +2111,8 @@ module.exports = {
       ]
     }
   },
-  "#informes": {
-    section: "Informes",
+  "#general-options": {
+    section: "Opciones Generales",
     copy: null,
     item: {
       text: null,
@@ -1618,7 +2120,7 @@ module.exports = {
       sectionImage: null,
       content: [
         {
-          title: "Opciones Generales de Informes",
+          title: null,
           subcontent: [
             {
               subtitle: "Auditoría - Auditoría de Prestaciones",
@@ -1737,12 +2239,23 @@ module.exports = {
               subtitle: "Stock Mínimo",
               text: null,
               image: "https://bilog.com.ar/recursos/ayuda/imagenes/Inf_Stock.jpg",
-            },
-            {
-              subtitle: null,
-              text: `Esta opción permite la consulta de todos los productos de su stock que se encuentran bajo el stock mínimo.`,
-              image: null,
-            },
+            }
+          ]
+        }  
+      ]
+      }
+    },
+  "#liquidations":{
+      section: "Liquidaciones",
+      copy: 'Esta opción permite la consulta de todos los productos de su stock que se encuentran bajo el stock mínimo.',
+      item: {
+        text:null,
+        sectionVideo:null,
+        sectionImage:null,
+        content: [  
+          {
+            title: null,
+            subcontent: [  
             {
               subtitle: "Liquidar Obras Sociales",
               text: null,
@@ -1844,13 +2357,24 @@ module.exports = {
               subtitle: "Liquidar Bilog",
               text: null,
               image: "https://bilog.com.ar/recursos/ayuda/imagenes/Inf_Liq_Bilog.jpg",
-            },
-            {
-              subtitle: null,
-              text: `Si la Obra Social o la gerenciadora con la cual Ud. tiene contrato, tiene nuestro software de Auditoría, podrá realizar la liquidación desde esta opción.
-              Esto generará un archivo que Ud. enviará por email, CD, diskette o el medio magnetico que Ud. seleccione.`,
-              image: null,
-            },
+            }
+          ]
+        }  
+      ] 
+    }    
+  },  
+  "#statistics":{
+      section:"Estadísticas",
+      copy: `Si la Obra Social o la gerenciadora con la cual Ud. tiene contrato, tiene nuestro software de Auditoría, podrá realizar la liquidación desde esta opción.
+      Esto generará un archivo que Ud. enviará por email, CD, diskette o el medio magnetico que Ud. seleccione.`,
+      item: {
+        text:null,
+        sectionVideo:null,
+        sectionImage:null,
+        content:[
+          {
+            title:null,
+            subcontent: [
             {
               subtitle: "Estadísticas de Prestaciones Realizadas",
               text: null,
@@ -1916,8 +2440,8 @@ module.exports = {
       ]
     }
   },
-  "#sistema": {
-    section: "Sistema",
+  "#parameters": {
+    section: "Parámetros",
     copy: null,
     item: {
       text: null,
@@ -2036,9 +2560,25 @@ module.exports = {
               subtitle: null,
               text: `Y por último, los porcentajes de IVA que utilizará el sistema para la carga de pagos de pacientes.`,
               image: null,
-            },
+            }
+          ]    
+        }  
+      ]
+    }    
+  },
+  "#users":{
+    section:"Usuarios",
+    copy:null,
+    item: {
+      text:null,
+      sectionVideo:null,
+      sectionImage:null,
+      content:[
+        {          
+          title:"",
+          subcontent: [
             {
-              subtitle: "Usuarios",
+              subtitle: null,
               text: null,
               image: "https://bilog.com.ar/recursos/ayuda/imagenes/Sis_Usuarios.jpg",
             },
@@ -2047,7 +2587,7 @@ module.exports = {
               text: `Aquí se definirán los usuarios a acceder al sistema y los permisos correspondientes de cada uno.
               Si un usuario no trabaja mas en su clínica, simplemente elija la opción usuario habilitado.`,
               image: null,
-            },
+            }
           ]
         }
       ]

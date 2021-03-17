@@ -8,16 +8,48 @@ module.exports = [
       },
       {
         title: "Agenda de turnos",
-        hash: "#agenda"
+        hash: null,
+        childrens: [
+          {
+            title: "Opciones Generales de Agenda",
+            hash:"#general-agenda-options"
+          },
+          {
+            title: "Opciones de Turno",
+            hash:"#shift-options"
+          }
+        ]
       },
       {
         title: "Pacientes",
-        hash: "#pacientes"
+        hash: null,
+        childrens: [
+          {
+            title: "Opciones Generales de Pacientes",
+            hash: "#general-patient-options"
+          },
+          {
+            title: "Odontograma",
+            hash: "#odontogram"
+          },
+          {
+            title: "Presuestos",
+            hash: "#budgets"
+          },
+          {
+            title: "Pagos - Cta Cte.",
+            hash: "#payments"
+          },
+          {
+            title: "Laboratorios",
+            hash: "#laboratory"
+          }
+        ]
       },
       {
         title: "Tablas",
         hash: null,
-        children: [
+        childrens: [
           {
             title: "Profesionales",
             hash: "#profesionales"
@@ -54,11 +86,35 @@ module.exports = [
       },
       {
         title: "Informes",
-        hash: "#informes"
+        hash: null,
+        childrens:[
+          {
+            title: "Opciones Generales",
+            hash: "#general-options"
+          },
+          {
+            title: "Liquidaciones",
+            hash: "#liquidations"
+          },
+          {
+            title: "Estadísticas",
+            hash: "#statistics"
+          } 
+        ]
       },
       {
         title: "Sistema",
-        hash: "#sistema"
+        hash: null,
+        childrens:[
+          {
+            title: "Parámetros",
+            hash: "#parameters"
+          },
+          {
+            title: "Usuarios",
+            hash: "#users"
+          }
+        ]
       },
     ]
   }

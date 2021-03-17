@@ -43,6 +43,19 @@ const SubMenu = ({ text, children, onClick }) => {
             bottom: 2px;
             margin-right: 5px;
           }
+          .icon-arrow--down {
+            content: url('/static/bilog-arrow-down.svg');
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            margin:5px;
+          }
+          .submenu-title__open .icon-arrow--down {
+            transform: rotate(180deg);
+            width: 10px;
+            height: 10px;
+            margin:5px;
+          }
         } 
 
         {/* STYLES FOR DESKTOP */}
@@ -78,6 +91,19 @@ const SubMenu = ({ text, children, onClick }) => {
             margin-right: 10px;
             width: 4px;
             height: 4px;
+          }
+          .icon-arrow--down {
+            content: url('/static/bilog-arrow-down.svg');
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            margin: 5px 0 5px 20px;
+          }
+          .submenu-title__open .icon-arrow--down {
+            transform: rotate(180deg);
+            width: 10px;
+            height: 10px;
+            margin: 5px 0 5px 20px;
           }
         }
       `}
