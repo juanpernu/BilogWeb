@@ -1,8 +1,9 @@
-import BannerCta from "../components/Banner/BannerCta";
-import Cover from "../components/Cover/Cover";
 import Layout from "../components/Layout";
+import Cover from "../components/Cover/Cover";
 import Feature from "../components/Feature/Feature"
 import MockedFeatures from '../mocks/odontologicaFeatures'
+import BannerCta from "../components/Banner/BannerCta";
+import Carousel from '../components/Carousel';
 
 const Demo = ()=>{
     return(
@@ -16,6 +17,7 @@ const Demo = ()=>{
                 title="¿Todavia tenés dudas? Contactanos."
                 buttonText="Ir a contactos"
                 buttonHref="/contact" />
+            <Carousel/>    
         </Layout>
     )
 }
