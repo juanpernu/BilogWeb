@@ -17,12 +17,16 @@ class Cover extends React.Component {
       buttonText,
       buttonHref,
       coverImage,
-      appButtons
+      coverVideo,
+      appButtons,
     } = this.props;
+
+    const image = coverImage ? 'image': " " ;
+    const video = coverVideo ? 'video': " " ;
 
     return(
       <section className={`cover ${gradientBg}`}>
-        <div className={`cover-wrapper ${!coverImage ? 'no-image' : ''}`}>
+        <div className={`cover-wrapper ${image} ${video}`}>
           <Container
             text={text}
             paragraph={paragraph}
@@ -31,9 +35,22 @@ class Cover extends React.Component {
             buttonText={buttonText}
             buttonHref={buttonHref}
             withImage={!!coverImage}
+            withVideo={!!coverVideo}
             appButtons={appButtons}
           />
           {coverImage && <img className="cover-img" alt="Cover Image" src={`/static/illus-${coverImage}.svg`} />}
+          {coverVideo && 
+            <div className="container-video">
+              <iframe
+                className="video"
+                width="90%"
+                src={coverVideo}
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen>
+              </iframe>
+            </div>
+          }
         </div>
         <style jsx>
         {`
@@ -70,15 +87,41 @@ class Cover extends React.Component {
             .cover.blue {
               background: linear-gradient(to right,#07c0f8,#005aff);
             }
+            .container-video{
+              height:350px;
+            }
+            .cover-video{
+              width:85%;
+              position:relative;
+              margin-left:auto;
+              margin-right:auto;
+            }
+            .cover-video::after{
+              content:'';
+              display:block;
+              width:100%;
+              padding-bottom: 10%; 
+            }
+            .video{
+              display:block;
+              margin: 0px auto;
+              height:90%;
+            }
           }
-
           {/* STYLES FOR DESKTOP 1200px */}
           @media only screen and (min-width: 751px) and (max-width: 1200px) {
             .cover {
               background: linear-gradient(to right,#4C7ABD,#2F3F94);
               padding-top: 60px;
+              height:700px;
             }
             .cover-wrapper {
+              max-width: 800px;
+              display: flex;
+              flex-direction: row;
+              margin:0 auto;
+            }
+            .cover-wrapper.image{
               max-width: 1200px;
               padding: 0 40px;
               margin: 0 auto;
@@ -86,10 +129,11 @@ class Cover extends React.Component {
               grid-template-columns: 45% 45%;
               grid-column-gap: 10%;
             }
-            .cover-wrapper.no-image {
-              max-width: 800px;
+            .cover-wrapper .video{
+              padding: 5px;
+              margin: 0 auto;
               display: flex;
-              flex-direction: row;
+              flex-directiom: column;
             }
             .cover-img {
               width: 100%;
@@ -121,8 +165,16 @@ class Cover extends React.Component {
             .cover.blue {
               background: linear-gradient(to right,#07c0f8,#005aff);
             }
+            .container-video {
+              height:490px;
+              padding-bottom: 50px;
+            }
+            .video{
+              width:100%;
+              height:100%;
+              display:block;
+            }
           }
-
           {/* STYLES FOR DESKTOP +1200px */}
           @media only screen and (min-width: 1201px) {
             .cover {
@@ -136,10 +188,26 @@ class Cover extends React.Component {
               grid-template-columns: 55% 50%;
               grid-column-gap: 10%;
             }
-            .cover-wrapper.no-image {
+            .cover-wrapper.image{
+              max-width: 1200px;
+              padding: 0 40px;
+              margin: 0 auto;
+              display: grid;
+              grid-template-columns: 45% 45%;
+              grid-column-gap: 10%;
+            }
+            .cover-wrapper .video{
+              max-width: 1240px;
+              padding: 15px 5px;
+              margin: 0 auto;
+              display: flex;
+              flex-directiom: column;
+            }
+            .cover-wrapper {
               max-width: 800px;
               display: flex;
               flex-direction: row;
+              margin:0 auto;
             }
             .cover-img {
               width: 100%;
@@ -170,6 +238,15 @@ class Cover extends React.Component {
             }
             .cover.blue {
               background: linear-gradient(to right,#07c0f8,#005aff);
+            }
+            .container-video {
+              height:490px;
+              padding-bottom: 50px;
+            }
+            .video{
+              width:100%;
+              height:100%;
+              display:block;
             }
           }
         `}
