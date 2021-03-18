@@ -3,7 +3,7 @@ import Cover from '../components/Cover/Cover';
 import Feature from '../components/Feature/Feature';
 import Carousel from '../components/Carousel';
 import ProductSlider from '../components/Product/ProductSlider';
-import GeneratedVideos from '../components/Videos/Videos'
+import GeneratedVideos from '../components/Videos/Videos';
 import { productCover, appCover, features } from '../mocks/odontologicaMock';
 
 const Odontologica = () => (
@@ -39,5 +39,4 @@ const Odontologica = () => (
     <Carousel />
   </Layout>
 )
-
 export default Odontologica;
