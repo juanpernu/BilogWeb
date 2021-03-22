@@ -11,7 +11,7 @@ module.exports = [
         hash: null,
         childrens: [
           {
-            title: "Opciones Generales de Agenda",
+            title: "Opciones Generales",
             hash:"#general-agenda-options"
           },
           {
@@ -25,7 +25,7 @@ module.exports = [
         hash: null,
         childrens: [
           {
-            title: "Opciones Generales de Pacientes",
+            title: "Opciones Generales",
             hash: "#general-patient-options"
           },
           {
@@ -33,7 +33,7 @@ module.exports = [
             hash: "#odontogram"
           },
           {
-            title: "Presuestos",
+            title: "Prespuestos",
             hash: "#budgets"
           },
           {

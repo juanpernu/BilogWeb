@@ -5,7 +5,7 @@ module.exports = {
     item: {
       text: null,
       sectionVideo: null,
-      sectionImage: "https://bilog.com.ar/recursos/ayuda/imagenes/Inicio.jpg",
+      sectionImage: "https://bilog.com.ar/recursos/inicio.png",
       content: [
         {
           title: "Opciones Generales de Inicio",
@@ -111,7 +111,7 @@ module.exports = {
     }
   },
   "#general-agenda-options": {
-    section: "Opciones Generales de Agenda",
+    section: "Opciones Generales",
     copy: null,
     item: {
       text: null,
@@ -119,7 +119,7 @@ module.exports = {
       sectionImage: "https://bilog.com.ar/recursos/ayuda/imagenes/Agenda.jpg",
       content: [
         {
-          title: "Opciones Generales de la Agenda de Turnos",
+          title: "Opciones Generales",
           subcontent: [
             {
               subtitle: "Lupa (CTRL+N)",
@@ -329,7 +329,7 @@ module.exports = {
       sectionImage: "https://bilog.com.ar/recursos/ayuda/imagenes/Pac_datos.jpg",
       content: [
         {
-          title: "Opciones Generales de Pacientes",
+          title: "Opciones Generales",
           subcontent: [
             {
               subtitle: "¿Cómo dar turnos?",
@@ -554,7 +554,7 @@ module.exports = {
     }
   },
   "#general-patient-options": {
-    section: "Opciones Generales de Pacientes",
+    section: "Opciones Generales",
     copy: null,
     item: {
       text: null,
@@ -807,7 +807,7 @@ module.exports = {
   },
   "#odontogram": {
       section: "Odontograma",
-      copy: `El sistema le permite visualizar el odontograma Standard o 3D, usted puede elegir cual desea que se abra en forma predeterminada (ver Sistema / Parámetros / Odontograma).`,
+      copy: `El sistema le permite visualizar el odontograma Standard o 3D, usted puede elegir cuál desea que se abra en forma predeterminada.`,
       item: {
         text:null,
         sectionVideo:null,
@@ -1487,7 +1487,7 @@ module.exports = {
     }
   },
   "#profesionales": {
-    section: "Tablas de Profesionales",
+    section: "Profesionales",
     copy: null,
     item: {
       text: null,
@@ -1605,7 +1605,7 @@ module.exports = {
     }
   },
   "#obras-sociales": {
-    section: "Tablas de Obras Sociales",
+    section: "Obras Sociales",
     copy: null,
     item: {
       text: null,
@@ -1716,7 +1716,7 @@ module.exports = {
     }
   },
   "#especialidades": {
-    section: "Tabla de Especialidades",
+    section: "Especialidades",
     copy: null,
     item: {
       text: null,
@@ -1738,7 +1738,7 @@ module.exports = {
     }
   },
   "#feriados": {
-    section: "Tabla de Feriados",
+    section: "Feriados",
     copy: null,
     item: {
       text: null,
@@ -1759,7 +1759,7 @@ module.exports = {
     }
   },
   "#laboratorios": {
-    section: "Tabla de Laboratorios",
+    section: "Laboratorios",
     copy: null,
     item: {
       text: null,
@@ -1802,7 +1802,7 @@ module.exports = {
     }
   },
   "#proveedores": {
-    section: "Tabla de Proveedores",
+    section: "Proveedores",
     copy: null,
     item: {
       text: null,
@@ -1829,7 +1829,7 @@ module.exports = {
     }
   },
   "#stock": {
-    section: "Tabla de Stock",
+    section: "Stock",
     copy: null,
     item: {
       text: null,
@@ -1867,7 +1867,7 @@ module.exports = {
   },
   "#administración": {
     section: "Administración",
-    copy: null,
+    copy: "En un sólo lugar gestionas los pagos a los proveedores y  profesionales, y controlas los pagos que ingresan a tu clínica, inclusive auditas los cierres de caja por sucursal y por usuario.",
     item: {
       text: null,
       sectionVideo: null,
@@ -2365,8 +2365,7 @@ module.exports = {
   },  
   "#statistics":{
       section:"Estadísticas",
-      copy: `Si la Obra Social o la gerenciadora con la cual Ud. tiene contrato, tiene nuestro software de Auditoría, podrá realizar la liquidación desde esta opción.
-      Esto generará un archivo que Ud. enviará por email, CD, diskette o el medio magnetico que Ud. seleccione.`,
+      copy: `Si la obra social o gerenciadora con la cual Ud. tiene contrato, posee nuesto software de Auditoría, podrá realizar la liquidación correspondiente desde esta opción. Esta función generará un archivo digital que Ud. podrá enviar.`,
       item: {
         text:null,
         sectionVideo:null,
