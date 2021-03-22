@@ -33,7 +33,7 @@ module.exports = [
             hash: "#odontogram"
           },
           {
-            title: "Presuestos",
+            title: "Prespuestos",
             hash: "#budgets"
           },
           {
