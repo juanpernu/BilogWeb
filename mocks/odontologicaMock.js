@@ -7,7 +7,7 @@ module.exports = {
     hasButtons: false,
     buttonText: false,
     buttonHref: false,
-    coverImage: "odontologica",
+    coverImage: "illus-odontologica.svg",
     appButtons: false
   },
   appCover: {
@@ -18,7 +18,7 @@ module.exports = {
     hasButtons: true,
     buttonText: "Ver más",
     buttonHref: "/bilogApp",
-    coverImage: "app",
+    coverImage: "illus-app.svg",
     appButtons: false
   },
   features: [

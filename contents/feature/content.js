@@ -48,7 +48,7 @@ module.exports = {
     banner: {
       title: "Y ahora podés llevar todo el control de tu agenda desde tu celular.",
       description: "Descargate Bilog App y lleva todo el control de tu consultorio desde tu celular. Ya disponible para iOS y Android.",
-      imrSrc: "../../static/illustration.png",
+      imgSrc: "../../static/landing-nativa/illustration.png",
       imgAlt: "Bilog App",
       imgAlign: "left",
       buttonText: "Descargá la app",
@@ -105,7 +105,7 @@ module.exports = {
     banner: {
       title: "Y ahora podés llevar todo el control de tus pacientes desde tu celular.",
       description: "Descargate Bilog App y lleva todo el control de tu negocio desde tu celular. Ya disponible para iOS y Android.",
-      imrSrc: "../../static/illustration.png",
+      imgSrc: "../../static/landing-nativa/illustration.png",
       imgAlt: "Bilog App",
       imgAlign: "left",
       buttonText: "Descargá la app",
@@ -162,7 +162,7 @@ module.exports = {
     banner: {
       title: "Y ahora podés llevar todo el control desde la palma de tu mano.",
       description: "Descargate Bilog App y lleva todo el control de tu clínica o consultorio desde tu celular. Ya disponible para iOS y Android.",
-      imrSrc: "../../static/illustration.png",
+      imgSrc: "../../static/landing-nativa/illustration.png",
       imgAlt: "Bilog App",
       imgAlign: "left",
       buttonText: "Descargá la app",
@@ -179,7 +179,7 @@ module.exports = {
       hasButtons: false,
       buttonText: false,
       buttonHref: false,
-      coverImage: "odontologica",
+      coverImage: "illus-odontologica.svg",
       appButtons: false,
     },
     appCover: {
@@ -190,7 +190,7 @@ module.exports = {
       hasButtons: true,
       buttonText: "Ver más",
       buttonHref: "/bilogApp",
-      coverImage: "app",
+      coverImage: "illus-app.svg",
       appButtons: false,
     },
     features: [
@@ -267,7 +267,7 @@ module.exports = {
       hasButtons: false,
       buttonText: false,
       buttonHref: false,
-      coverImage: "odontologica",
+      coverImage: "illus-odontologica.svg",
       appButtons: false,
     },
     appCover: {
@@ -278,7 +278,7 @@ module.exports = {
       hasButtons: true,
       buttonText: "Ver más",
       buttonHref: "/bilogApp",
-      coverImage: "app",
+      coverImage: "illus-app.svg",
       appButtons: false,
     },
     features: [
@@ -355,7 +355,7 @@ module.exports = {
       hasButtons: false,
       buttonText: false,
       buttonHref: false,
-      coverImage: "odontologica",
+      coverImage: "illus-odontologica.svg",
       appButtons: false,
     },
     appCover: {
@@ -366,7 +366,7 @@ module.exports = {
       hasButtons: true,
       buttonText: "Ver más",
       buttonHref: "/bilogApp",
-      coverImage: "app",
+      coverImage: "illus-app.svg",
       appButtons: false,
     },
     features: [

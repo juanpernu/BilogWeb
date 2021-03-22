@@ -34,6 +34,8 @@ const FeatureWrapper = () => {
                 hasButtons={appCover.hasButtons}
                 gradientBg={appCover.gradientBg}
                 coverImage={appCover.coverImage}
+                buttonHref={appCover.buttonHref}
+                buttonText={appCover.buttonText}
             />}
             {banner && 
             <FeatureImg
