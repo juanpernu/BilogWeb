@@ -8,9 +8,9 @@ const CardTestimonial = ({avatarSrc, userName, testimonialText}) => {
           src={avatarSrc}
         />
       </div>
-      <h5 className="card--testimonial-user">
+      <p className="card--testimonial-user">
         {userName}
-      </h5>
+      </p>
       <p className="card--testimonial-text">
         {`"${testimonialText}"`}
       </p>

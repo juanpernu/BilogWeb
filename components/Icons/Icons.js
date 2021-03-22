@@ -26,6 +26,9 @@ import Faqs from './Faqs';
 import Documentation from './Documentation';
 import Contact from './Contact';
 import Testimonials from './Testimonials';
+import Support from './Support';
+import Info from './Info';
+import Alarm from './Alarm';
 
 const icons = {
   check: Check,
@@ -52,6 +55,9 @@ const icons = {
   documentation: Documentation,
   testimonials: Testimonials,
   contact: Contact,
+  support: Support,
+  info: Info,
+  alarm: Alarm,
 };
 
 /**

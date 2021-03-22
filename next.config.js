@@ -24,4 +24,8 @@ module.exports = {
       '/testimonials/index': { page: 'testimonials' },
     }
   },
+  images: {
+    loader: 'imgix',
+    path: 'https://www.bilog.com.ar',
+  },
 }
