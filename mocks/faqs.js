@@ -5,7 +5,7 @@ const faqs = [
     },
     {
         question: "¿Qué tipo de Sistema Operativo necesito?",
-        answer: "Necesita que su PC o notebook tenga Windows XP, Windows VISTA, Windows 7 o Windows 8."
+        answer: "Necesita que su PC o notebook tenga Windows VISTA, Windows 7 o Windows 8."
     },
     {
         question: "¿Necesito conexión a Internet?",
@@ -17,7 +17,7 @@ const faqs = [
     },
     {
         question: "¿Que soporte técnico tendré luego de la compra del programa?",
-        answer: "Durante 60 dí­as la post venta es gratuita, agendamos capacitaciones ví­a internet y dictamos clases on line para poner en marcha el software. Luego si se desea pueden optar por el Servicio Plus que es nuestro soporte post-venta, que tiene un costo mí­nimo y cubre 100% las necesidades surgidas del uso del sistema, incluso actualizaciones y resguardo de los datos en un servidor on line."
+        answer: "Del momento de la instalación el usuario cuenta con servicio post venta permanente, se agendan capacitaciones para la puesta en marcha del software y tiene a su disposición los WhatsApp de Capacitaciones, Soporte Técnico y Atencion al usuario. Toda la atención Usuario se realiza vía internet y se dictan las clases Online."
     },
     {
         question: "¿Las actualizaciones son gratis?",
