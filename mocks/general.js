@@ -16,8 +16,12 @@ const footer = {
   support: [
     {
       text: "Preguntas frecuentes",
-      href: "https://bilog-help.crisp.help/es/",
-    }
+      href: "/faqs",
+    },
+    {
+      text: "Documentación",
+      href: "/documentation",
+    },
   ],
   contact: [
     {
@@ -27,6 +31,10 @@ const footer = {
     {
       text: "Nosotros",
       href: "/about",
+    },
+    {
+      text: "Testimonios",
+      href: "/testimonials",
     }
   ],
   socialMedia: [
@@ -157,7 +165,7 @@ const downloadFeatures = {
           description: ".NET Framework es un framework desarrollado por Microsoft que se corre, principalmente, en Microsoft Windows.",
           button: {
             text: "Descargar",
-            link: "http://bilog.com.ar/clientes/public_html/DescargarPartes/NetFramework.rar"
+            link: "https://bilog.com.ar/clientes/public_html/DescargarPartes/NetFramework.rar"
           }
         },
         {
@@ -165,7 +173,7 @@ const downloadFeatures = {
           description: "Acá vas a encontrar dependencias como Cristal Report, VBPowerPacks, entre otras, necesarias para instalar nuestro software de Gestión Odontológica.",
           button: {
             text: "Descargar",
-            link: "http://bilog.com.ar/clientes/public_html/DescargarPartes/Varios.rar"
+            link: "https://bilog.com.ar/clientes/public_html/DescargarPartes/Varios.rar"
           }
         },
         {
@@ -173,7 +181,7 @@ const downloadFeatures = {
           description: "Efectivamente, el instalador de Bilog Gestión Odontológica.",
           button: {
             text: "Descargar",
-            link: "http://bilog.com.ar/clientes/public_html/DescargarPartes/Sistema.rar"
+            link: "https://bilog.com.ar/clientes/public_html/DescargarPartes/Sistema.rar"
           }
         },
         {
@@ -181,7 +189,7 @@ const downloadFeatures = {
           description: "Cliente de instalación de SQL para sistemas operativos de 32 bits.",
           button: {
             text: "Descargar",
-            link: "http://bilog.com.ar/clientesSQL/2005/32/sqlncli_2005_32.msi"
+            link: "https://bilog.com.ar/clientesSQL/2005/32/sqlncli_2005_32.msi"
           }
         },
         {
@@ -189,7 +197,7 @@ const downloadFeatures = {
           description: "Cliente de instalación de SQL para sistemas operativos de 64 bits.",
           button: {
             text: "Descargar",
-            link: "http://bilog.com.ar/clientesSQL/2005/64/sqlncli_2005_64.msi"
+            link: "https://bilog.com.ar/clientesSQL/2005/64/sqlncli_2005_64.msi"
           }
         },
         {
@@ -197,7 +205,7 @@ const downloadFeatures = {
           description: "Software para descomprimir archivos, entre otros, los .rar.",
           button: {
             text: "Descargar",
-            link: "http://www.winrar.es/descargas/winrar"
+            link: "https://www.winrar.es/descargas/winrar"
           }
         }
       ],
