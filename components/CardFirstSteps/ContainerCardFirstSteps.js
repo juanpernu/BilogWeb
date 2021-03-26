@@ -6,7 +6,7 @@ const ContainerCardFirstSteps = () => {
         <h2 className="title">Primeros pasos con Bilog ! Elegi tu version y comenza: </h2>
         <section className="container">
             <CardFirstSteps
-                title="Small "
+                title="Small"
                 paragraph="Esta es la version Small"
                 imageSrc="../../static/small.png"
                 imageAlt="Version Small"
