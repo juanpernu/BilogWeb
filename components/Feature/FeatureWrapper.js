@@ -1,10 +1,10 @@
 import { Fragment, useContext, useEffect } from 'react';
 import Cover from '../Cover/Cover';
 import Feature from '../Feature/Feature';
+import FeatureImg from '../Feature/FeatureImg'
 import { FeatureContext } from '../../contexts/featureContext';
-
 const FeatureWrapper = () => {
-    const { productCover, appCover, features, allContent } = useContext(FeatureContext);
+    const { productCover, banner, appCover, features, allContent } = useContext(FeatureContext);
     useEffect(() => {
         if(window) {
             const url = window.location.href;
@@ -13,7 +13,6 @@ const FeatureWrapper = () => {
             allContent(contentId[0]);
         }
     }, []);
-
     return (
         <Fragment>
             <Cover
@@ -26,19 +25,31 @@ const FeatureWrapper = () => {
             />
             <Feature
                 features={features}
-            />
+            /> 
+            {appCover && 
             <Cover
                 text={appCover.text}
                 paragraph={appCover.paragraph}
-                hasButtons={appCover.hasButtons}
-                buttonText={appCover.buttonText}
-                buttonHref={appCover.buttonHref}
                 position={appCover.position}
+                hasButtons={appCover.hasButtons}
                 gradientBg={appCover.gradientBg}
                 coverImage={appCover.coverImage}
-            />
+                buttonHref={appCover.buttonHref}
+                buttonText={appCover.buttonText}
+            />}
+            {banner && 
+            <FeatureImg
+                title={banner.title}
+                description={banner.description}
+                imgSrc={banner.imgSrc}
+                imgAlt={banner.imgAlt}
+                imageAlign={banner.imageAlign}
+                bgGrey
+                hasCta
+                buttonText={banner.buttonText}
+                buttonHref={banner.buttonHref}
+            />}
         </Fragment>
     )
 }
-
 export default FeatureWrapper;

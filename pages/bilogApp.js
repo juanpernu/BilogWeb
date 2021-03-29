@@ -1,28 +1,44 @@
 import Layout from '../components/Layout'
 import Cover from '../components/Cover/Cover'
+import Feature from '../components/Feature/Feature'
 import FeatureImg from '../components/Feature/FeatureImg'
+import BannerCta from '../components/Banner/BannerCta'
 import Carousel from '../components/Carousel'
+import { productCover, appCover, bannerCta, featureImg, features } from '../mocks/landingMock'
 
-export default () => (
+const BilogApp = () => (
   <Layout>
     <Cover
-      text="Presentamos Bilog App"
-      paragraph="Administrá tu consultorio en tu celular. Con tu agenda siempre disponible y actualizada organizar tu día se va a volver muy fácil."
-      position="lf"
-      gradientBg="blue"
-      coverImage="app"
+      text={productCover.text}
+      paragraph={productCover.paragraph}
+      position={productCover.position}
+      gradientBg={productCover.gradientBg}
+      coverImage={productCover.coverImage}
       appButtons
+      hasArrow
     />
-    <FeatureImg
-      imgSrc="/static/app-mockup.png"
-      imgAlt="App mockup"
-      copy="Bilog App"
-      title="Sorprendentes funciones"
-      description="Administrá tu consultorio en tu celular, tené tu agenda siempre disponible y actualizada."
-      hasCta={false}
-      imageAlign="left"
-      bgGrey
+    {
+      featureImg.map(el => <FeatureImg
+        imgSrc={el.imgSrc}
+        imgAlt={el.imgAlt}
+        copy={el.copy}
+        title={el.title}
+        description={el.description}
+        imageAlign={el.imageAlign}
+        bgGrey={el.bgGrey}
+        hasCta={el.hasCta}
+        buttonText={el.buttonText}
+        buttonHref={el.buttonHref}
+      />)
+    }
+    <Feature features={features} />
+    <Carousel />
+    <BannerCta
+      title={bannerCta.title}
+      buttonText={bannerCta.buttonText}
+      buttonHref={bannerCta.buttonHref}
     />
-    <Carousel/>
   </Layout>
 )
+
+export default BilogApp

@@ -7,7 +7,7 @@ module.exports = {
     hasButtons: false,
     buttonText: false,
     buttonHref: false,
-    coverImage: "odontologica",
+    coverImage: "illus-odontologica.svg",
     appButtons: false
   },
   appCover: {
@@ -18,7 +18,7 @@ module.exports = {
     hasButtons: true,
     buttonText: "Ver más",
     buttonHref: "/bilogApp",
-    coverImage: "app",
+    coverImage: "illus-app.svg",
     appButtons: false
   },
   features: [
@@ -35,7 +35,7 @@ module.exports = {
       featureItems: [
         {
           title: "Agenda de Turnos",
-          description: "Agendá turnos en forma más eficiente. Los diferentes colores te van a ayudar a visibilizar tiempos muertos, sobreturnos, pacientes de primera vez, entre otras cosas más.",
+          description: "Agendá turnos en forma eficiente, mantene tu agenda siempre completa, tenes miles de herramientas que te ayudan a gestionarla. ¡Anímate a descubrirlas!",
           icon: 'agenda',
           button: {
             hash: "/features#agenda",
@@ -45,7 +45,7 @@ module.exports = {
         },
         {
           title: "Pacientes",
-          description: "Bilog te ayuda con la carga de los datos personales de tus pacientes. Siempre vas a tener a la vista el saldo actual de tus pacientes, vas a poder agregar su foto, enviarle un mail sin salir del sistema o un mensaje.",
+          description: "Gestiona todos tus pacientes de la manera más fácil y más cómoda. Lleva todo lo referente a tus pacientes en un sólo lugar, Historia Clínica, Presupuestos, Pagos, Laboratorios, y mucho más. ¡Probá el mejor software de gestión de pacientes!",
           icon: 'person',
           button: {
             hash: "/features#pacientes",
@@ -55,7 +55,7 @@ module.exports = {
         },
         {
           title: "Administración",
-          description: "Registrá los ingresos y egresos de forma más eficiente para maximizar la productividad de tu trabajo",
+          description: "La funcionalidad clave para manejar tus finanzas. Intuitivamente manejas los ingresos y egresos. En un sólo lugar gestionas los pagos a los proveedores y  profesionales, y controlas los pagos que ingresan a tu clínica, inclusive auditas los cierres de caja por sucursal y por usuario. ¡Un must en lugares que quieren profesionalizar la gestión administrativa!",
           icon: 'account',
           button: {
             hash: "/features#administracion",

@@ -18,8 +18,13 @@ module.exports = {
       '/odontologica/index': { page: 'odontologica' },
       '/versions-detail/index': { page: 'versions-detail' },
       '/descarga/index': { page: 'download-go' },
+      '/utils/index': { page: 'utils'},
       '/users/index': { page: 'users' },
       '/features/index': { page: 'features' },
     }
+  },
+  images: {
+    loader: 'imgix',
+    path: 'https://www.bilog.com.ar',
   },
 }
