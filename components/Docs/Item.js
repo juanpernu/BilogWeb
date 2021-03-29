@@ -9,7 +9,7 @@ const Item = ({ text, sectionVideo, sectionImage, content }) => (
         className="docs-video"
         width="560"
         height="405"
-        src={video}
+        src={sectionVideo}
         frameBorder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen

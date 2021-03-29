@@ -7,6 +7,8 @@ import SidebarContent from '../../contents/documentation/sidebar';
 const DocsWrapper = () => {
   const { section, copy, item } = useContext(DocsContext);
 
+  console.log('item', item)
+
   return (
     <div className="docs-wrapper">
       <Mobile className="sidebar-mobile" content={SidebarContent} />
