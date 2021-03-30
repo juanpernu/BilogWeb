@@ -17,7 +17,7 @@ const CardFirstSteps = ({title, paragraph, imageSrc, imageAlt, buttonHref, butto
           <h4 className="card-title">{title}</h4>
           <p className="card-paragraph">{paragraph}</p>
           <img className="card-image" src={imageSrc} alt={imageAlt}></img>
-          {external ? renderExternalLink() : null}    
+          {external && renderExternalLink()}    
         </div>
         <style jsx>
         {`
