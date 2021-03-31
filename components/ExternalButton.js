@@ -11,7 +11,6 @@ const ExternalButton = ({externalLink, text}) => {
         {/* STYLES FOR MOBILE */}
         @media only screen and (max-width: 750px) {
           .button--container {
-            margin-right: 20px;
             display: inline-block;
           }
           .button {
@@ -51,7 +50,6 @@ const ExternalButton = ({externalLink, text}) => {
         {/* STYLES FOR DESKTOP */}
         @media only screen and (min-width: 751px) {
           .button--container {
-            margin-right: 20px;
             display: inline-block;
           }
           .button {
