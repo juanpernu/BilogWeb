@@ -1,16 +1,5 @@
 const main = [
   {
-    case: "Odontología Nueva Córdoba",
-    title: 'Una clínica odontológica donde además de la salud, la experiencia del paciente es lo que más importa.',
-    href: '/success-bustamante',
-    cover: {
-      src: '/static/bustamante_3.jpg',
-      position: 'center 90%',
-    },
-    preview: `En las charlas que inician la búsqueda de una solución tecnológica para su empresa, la directora y titular del centro Odontología Nueva Córdoba,
-    la Dra. María Soledad Bustamante, Odontóloga con 18 años de experiencia, Ex-Profesora por concurso de la facultad de Odontología...`,
-  },
-  {
     case: "Clínicas Alvarado Careggio",
     title: 'Elección, apuesta y cambio son los 3 factores clave del éxito de la experiencia de las Clínicas Alvarado Careggio.',
     href: '/success-alvarado',

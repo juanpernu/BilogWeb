@@ -67,7 +67,6 @@ class Layout extends React.Component {
       {/* STYLES FOR MOBILE */}
       @media only screen and (max-width: 750px) {
       }
-
       {/* STYLES FOR DESKTOP */}
       @media only screen and (min-width: 751px) {
       }

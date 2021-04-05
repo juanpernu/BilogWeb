@@ -1,5 +1,6 @@
 import Layout from '../components/Layout';
 import Cover from '../components/Cover/Cover';
+import FeatureImg from '../components/Feature/FeatureImg';
 import BannerCta from '../components/Banner/BannerCta';
 import Feature from '../components/Feature/Feature';
 import Carousel from '../components/Carousel';

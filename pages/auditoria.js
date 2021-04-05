@@ -16,7 +16,7 @@ export default () => (
         gradientBg="redish"
         hasButtons={false}
         gradientBg="redish"
-        coverImage="auditoria"
+        coverImage="illus-auditoria.svg"
       />
       <Feature {...FeaturesProps} />
       <FeatureImg
