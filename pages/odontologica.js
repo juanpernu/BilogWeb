@@ -17,7 +17,7 @@ export default () => (
       position="lf"
       hasButtons={false}
       gradientBg="default"
-      coverImage="odontologica"
+      coverImage="illus-odontologica.svg"
     />
     <Feature {...MockedFeatures} />
     {/* 
