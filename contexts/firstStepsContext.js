@@ -4,7 +4,7 @@ export const FirstStepsContext = React.createContext();
 class FirstStepsProvider extends React.Component {
     constructor(props) {
         super(props);
-        const { data, hash = '#small' } = this.props;
+        const { data, hash = "#small" } = this.props;
         this.state = {
             productCover: data[hash].productCover,
             allContent: (contentId) => this.getFirstStepsContent(contentId),
@@ -14,9 +14,11 @@ class FirstStepsProvider extends React.Component {
 
     getFirstStepsContent(contentId) {
         const { data } = this.props;
-        this.setState({
-            productCover: data[contentId].productCover,
-        });
+        if(data[contentId]) {
+            this.setState({
+                productCover: data[contentId].productCover,
+            });
+        }
     };
     render() {
         return (<FirstStepsContext.Provider
