@@ -29,16 +29,17 @@ export default () => (
         showModal={true}
       /> */}
     <ProductSlider />
-    <Cover
-      text="Te presentamos Bilog App"
-      paragraph="Tu consultorio, a donde sea que vayas."
-      hasButtons={true}
-      buttonText="Ver más"
+    <FeatureImg
+      imgSrc="/static/landing-nativa/illustration.png"
+      imgAlt="Bilog app illustration"
+      copy="¡Nueva!"
+      title="Organizá y optimizá el rendimiento de tu clínica con Bilog App"
+      description="Administrá tu consultorio en tu celular, tené tu agenda siempre disponible y actualizada."
+      hasCta
+      imageAlign="left"
+      bgGrey
+      buttonText="Descargá la app"
       buttonHref="/bilogApp"
-      product={true}
-      position="lf"
-      gradientBg="default"
-      coverImage="app"
     />
     <Carousel />
   </Layout>
