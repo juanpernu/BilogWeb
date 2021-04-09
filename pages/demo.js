@@ -14,8 +14,8 @@ const Demo = () => {
                 coverVideo="https://www.youtube.com/embed/aLe4pjyI4bA?start=4" />
             <Feature {...MockedFeatures} />
             <BannerCta
-                title="¿Todavia tenés dudas? Contactanos."
-                buttonText="Ir a contactos"
+                title="¿Querés saber más sobre Bilog? Llamanos"
+                buttonText="Agendar llamada"
                 buttonHref="/contact" />
             <Carousel />
         </Layout>
