@@ -1,7 +1,7 @@
 import Layout from "../components/Layout";
 import Cover from "../components/Cover/Cover";
-import Feature from "../components/Feature/Feature"
-import MockedFeatures from '../mocks/odontologicaFeatures'
+import Feature from "../components/Feature/Feature";
+import MockedFeatures from '../mocks/demoFeatures';
 import BannerCta from "../components/Banner/BannerCta";
 import Carousel from '../components/Carousel';
 
