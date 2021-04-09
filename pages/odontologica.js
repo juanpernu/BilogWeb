@@ -29,6 +29,11 @@ export default () => (
         showModal={true}
       /> */}
     <ProductSlider />
+    <BannerCta
+      title="¡Vení a ver la demostración guiada!"
+      buttonText="Ver demo"
+      buttonHref="/demo"
+    />
     <FeatureImg
       imgSrc="/static/landing-nativa/illustration.png"
       imgAlt="Bilog app illustration"
