@@ -1,10 +1,9 @@
-import './index.module.scss';
-
+import styled from './index.module.scss';
 const List = ({title, content}) =>{
   return(
-      <div className="list">
-        <h3 className="list-title">{title}</h3>
-        <ul className="list-container">
+      <div className={styled["list"]}>
+        <h3 className={styled["list-title"]}>{title}</h3>
+        <ul className={styled["list-container"]}>
           {content.map((el, index)=>{
             const {text} = el 
             return(
@@ -15,5 +14,4 @@ const List = ({title, content}) =>{
       </div>
     ) 
 }
-
 export default List;
