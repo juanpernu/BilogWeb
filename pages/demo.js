@@ -25,8 +25,8 @@ const Demo = () => {
                 bgGrey={false}
             />
             <BannerCta
-                title="¿Todavia tenés dudas? Contactanos."
-                buttonText="Ir a contactos"
+                title="¿Querés saber más sobre Bilog? Llamanos"
+                buttonText="Agendar llamada"
                 buttonHref="/contact" />
             <Carousel />
         </Layout>
