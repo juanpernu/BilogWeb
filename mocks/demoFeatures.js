@@ -1,7 +1,7 @@
 module.exports = {
     features: [
         {
-            title: "Conocé las funciones que te van a ayudar a impulsar tu negocio",
+            title: "Conocé las funciones que van a impulsar tu negocio",
             description: "Te van a ayudar a mejorar tu consultorio en muy poco tiempo.",
             successCase: {
                 text: "Mira cómo la Dra. Calcagno mejoró el presentismo de sus consultorios",
