@@ -17,7 +17,7 @@ const Demo = () => {
             <FeatureImage
                 imgSrc="/static/illus-labo-estadisticas.svg"
                 imgAlt="Demo - Beneficios"
-                copy="Sabías que"
+                copy="¿Sabías que?"
                 title="Reducí hasta un 40% de trabajo"
                 description="Implementando nuestro software de gestión podes reducir hasta un 40% el trabajo administrativo de tu consultorio o clínica y tener más tiempo para vos."
                 hasCta={false}
