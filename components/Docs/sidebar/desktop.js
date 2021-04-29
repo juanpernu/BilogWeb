@@ -1,25 +1,27 @@
-import React, { Fragment } from 'react';
-import SidebarSection from './SidebarSection';
-import SidebarContent from '../../contents/documentation/sidebar';
+import React from 'react';
+import SidebarSection from '../SidebarSection';
 
-const Sidebar = () => (
+const Sidebar = ({ content }) => (
   <aside className="sidebar">
-    <div className="category">
       {
-        SidebarContent.map((content, key) => (
-          <Fragment key={key}>
-            <h2 className="label">{content.title}</h2>
+        content.map((item, key) => (
+          <div className="category" key={key}>
+            <h2 className="label">{item.title}</h2>
             <div className="posts">
-              {content.docs.map((docText, key) => (<SidebarSection key={key} text={docText.title} link={docText.link} />))}
+              {item.sections.map((section, key) => {
+                const { title, hash, childrens = [] } = section;
+                return <SidebarSection key={key} text={title} hash={hash} children={childrens} />
+              })}
             </div>
-          </Fragment>
+          </div>
         ))
       }
-    </div>
     <style jsx>
     {`
       {/* STYLES FOR MOBILE */}
       @media only screen and (max-width: 750px) {
+        display:none;
+        height:0px;
       }
 
       {/* STYLES FOR DESKTOP */}

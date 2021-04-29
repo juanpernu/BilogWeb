@@ -1,8 +1,10 @@
 import Layout from '../components/Layout';
 import DownloadUtils from '../components/Download/DownloadUtils';
 
-export default () => (
+const Utils = () => (
   <Layout>
     <DownloadUtils/>
   </Layout>
 );
+
+export default Utils;

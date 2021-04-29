@@ -3,7 +3,7 @@ session_cache_limiter('nocache');
 header('Expires: ' . gmdate('r', 0));
 header('Content-type: application/json');
 
-$Recipient = 'juan.pernumian@gmail.com; info@bilog.com.ar;'; // <-- Set your email here
+$Recipient = 'juan.pernumian@gmail.com; info@bilog.com.ar;' // <-- Set your email here
 
 if($Recipient) {
   echo json_encode($_POST);
@@ -15,8 +15,9 @@ if($Recipient) {
 	$Subject = 'Bilog - Contacto desde la Web';
 	$Message = $_POST['message'];
 	$Phone = $_POST['phone'];
-  $Expertise = $_POST['expertise'];
-  $Preference = $_POST['preference'];
+  	$Expertise = $_POST['expertise'];
+  	$Preference = $_POST['preference'];
+	$TalkTo = $_POST['talkTo'];
   
 	$Email_body = "";
 	$Email_body .= "De: " . $Name . "\n" .
@@ -25,7 +26,8 @@ if($Recipient) {
 				   "Telefono: " . $Phone . "\n" .
 				   "Profesion: " . $Expertise . "\n" .
 				   "Quiere que lo/la contacten por: " . $Preference . "\n" .
-           "Mensaje: " . $Message . "\n";
+				   "Quiere hablar con: " . $TalkTo . "\n" .
+           		   "Mensaje: " . $Message . "\n";
 
 	$Email_headers = "";
 	$Email_headers .= 'Desde: Web ' . $Name . ' <' . $Email . '>' . "\r\n".

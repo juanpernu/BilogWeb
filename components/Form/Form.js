@@ -3,22 +3,23 @@ import 'isomorphic-fetch';
 import ReCAPTCHA from 'react-google-recaptcha';
 
 /* Import Components */
-import Input from './Input';  
-import TextArea from './TextArea';  
+import Input from './Input';
+import TextArea from './TextArea';
 import Select from './Select';
 import Button from '../Buttons/Button';
 
-class Form extends React.Component {  
+class Form extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = {  
+    this.state = {
       newUser: {
         name: '',
         email: '',
         phone: '',
         expertise: '',
         preference: '',
+        talkTo: '',
         message: props.customMessage ? props.customMessage : '',
       },
       isVerified: false,
@@ -34,18 +35,19 @@ class Form extends React.Component {
 
   handleFormSubmit(e) {
     e.preventDefault();
-    const { newUser: { name, email, phone, expertise, preference, message }, isVerified } = this.state;
+    const { newUser: { name, email, phone, expertise, preference, talkTo, message }, isVerified } = this.state;
     const requiredFields = (!name || name === '') ||
       (!email || email === '') ||
       (!phone || phone === '') ||
       (!message || message === '') ||
-      (!preference || preference === '');;
-    
+      (!preference || preference === '') ||
+      (!talkTo || talkTo === '');;
+
     if (requiredFields) {
       return this.setState({ requiredFields: true });
     }
 
-    if(!isVerified) {
+    if (!isVerified) {
       return alert('Necesitamos saber que sos humano, por favor completá el captcha.');
     }
 
@@ -57,6 +59,7 @@ class Form extends React.Component {
     formData.append('phone', phone);
     formData.append('expertise', expertise);
     formData.append('preference', preference);
+    formData.append('talkTo', talkTo);
     formData.append('message', message);
 
     fetch('/php/email-sender.php', {
@@ -79,18 +82,19 @@ class Form extends React.Component {
   };
 
   handleCaptchaVerification(value) {
-    value ? this.setState({isVerified: true}) : null;
+    value ? this.setState({ isVerified: true }) : null;
   }
 
   handleClearForm(e) {
     e.preventDefault();
-    this.setState({ 
+    this.setState({
       newUser: {
         name: '',
         email: '',
         phone: '',
         expertise: '',
         preference: '',
+        talkTo: '',
         skills: [],
         message: '',
       },
@@ -100,12 +104,13 @@ class Form extends React.Component {
   handleInput(e) {
     let value = e.target.value;
     let name = e.target.name;
-    this.setState((prevState) => {return {newUser : {...prevState.newUser, [name]: value}}});
+    this.setState((prevState) => { return { newUser: { ...prevState.newUser, [name]: value } } });
   };
 
   render() {
     const expertiseOptions = ['Odontólogo/a', 'Laboratorista', 'Secretario/a', 'Administrador/a', 'Otro'];
     const preferenceOptions = ['Mail', 'Llamado telefónico', 'Whatsapp'];
+    const talkToOptions = ['Soporte', 'Ventas', 'Capacitaciones', 'Otro'];
     const { submitted, submittedWhitError, requiredFields } = this.state;
     return (
       <form id='contact-form' className="form" onSubmit={this.handleFormSubmit}>
@@ -113,38 +118,38 @@ class Form extends React.Component {
         <div className="form-interactive_area">
           <Input
             required
-            type = {'text'}
-            title = {'Nombre y apellido'} 
-            name = {'name'}
-            value ={this.state.newUser.name} 
-            placeholder = {'Escribí tu nombre acá'}
-            handleChange = {this.handleInput}
+            type={'text'}
+            title={'Nombre y apellido'}
+            name={'name'}
+            value={this.state.newUser.name}
+            placeholder={'Escribí tu nombre acá'}
+            handleChange={this.handleInput}
           /> {/* Name of the user */}
           <Input
             required
-            type = {'text'}
-            title = {'Email'}
-            name = {'email'}
-            value = {this.state.newUser.email} 
-            placeholder = {'Escribí tu email acá'}
-            handleChange = {this.handleInput}
+            type={'text'}
+            title={'Email'}
+            name={'email'}
+            value={this.state.newUser.email}
+            placeholder={'Escribí tu email acá'}
+            handleChange={this.handleInput}
           /> {/* Input for Email */}
           <Input
             required
-            type = {'number'}
-            title = {'Teléfono'}
-            name = {'phone'}
-            value = {this.state.newUser.phone} 
-            placeholder = {'+54 011'}
-            handleChange = {this.handleInput}
+            type={'number'}
+            title={'Teléfono'}
+            name={'phone'}
+            value={this.state.newUser.phone}
+            placeholder={'+54 011'}
+            handleChange={this.handleInput}
           /> {/* Input for Phone number */}
           <Select
             title={'Profesión'}
             name={'expertise'}
-            options = {expertiseOptions} 
-            value = {this.state.newUser.expertise}
-            placeholder = {'Elegí tu profesión'}
-            handleChange = {this.handleInput}
+            options={expertiseOptions}
+            value={this.state.newUser.expertise}
+            placeholder={'Elegí tu profesión'}
+            handleChange={this.handleInput}
           /> {/* Age Selection */}
           <Select
             required
@@ -155,6 +160,15 @@ class Form extends React.Component {
             placeholder={'Forma de contacto'}
             handleChange={this.handleInput}
           /> {/* Age Selection */}
+          <Select
+            required
+            title={'Quiero hablar con:'}
+            name={'talkTo'}
+            options={talkToOptions}
+            value={this.state.newUser.talkTo}
+            placeholder={'Elegí con quien hablar'}
+            handleChange={this.handleInput}
+          /> {/* -Talk to- Selection */}
         </div>
         <TextArea
           title={'Mensaje'}
@@ -181,7 +195,7 @@ class Form extends React.Component {
             customClass='primary'
             onClick={this.handleFormSubmit}>
             Enviar
-          </Button> { /*Submit */ }
+          </Button> { /*Submit */}
           <Button
             customClass='secondary'
             onClick={this.handleClearForm}>
@@ -189,7 +203,7 @@ class Form extends React.Component {
           </Button> {/* Clear the form */}
         </div>
         <style jsx>
-        {`
+          {`
           {/* STYLES FOR MOBILE */}
           @media only screen and (max-width: 750px) {
             .form-title {

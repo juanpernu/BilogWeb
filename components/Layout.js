@@ -2,17 +2,9 @@ import React from 'react';
 import { Helmet } from "react-helmet";
 import TagManager from 'react-gtm-module';
 import { hotjar } from 'react-hotjar';
+import { tagManagerConfig, hotsjarConfig } from '../config'
 import Header from './Header';
 import Footer from './Footer/Footer';
-
-const tagManagerArgs = {
-  gtmId: 'GTM-WF5KDWF'
-}
-
-const hotsjarArgs = {
-  hjid: 2135805,
-  hjsv: 6,
-}
 
 class Layout extends React.Component {
   constructor(props) {
@@ -28,8 +20,15 @@ class Layout extends React.Component {
     s.async = 1;
     d.getElementsByTagName("head")[0].appendChild(s);
     window.$crisp.push(["safe", true]);
-    TagManager.initialize(tagManagerArgs);
-    hotjar.initialize(hotsjarArgs.hjid, hotsjarArgs.hjsv);
+
+    // TODO:This could be written better
+    if(!!window.location.host.match(/(bilog.com.ar)/gm)) {
+      TagManager.initialize(tagManagerConfig['AR']);
+    }
+    if(!!window.location.host.match(/(bilog.cl)/gm)) {
+      TagManager.initialize(tagManagerConfig['CL']);
+    }
+    hotjar.initialize(hotsjarConfig.hjid, hotsjarConfig.hjsv);
   }
 
   render(){
@@ -68,7 +67,6 @@ class Layout extends React.Component {
       {/* STYLES FOR MOBILE */}
       @media only screen and (max-width: 750px) {
       }
-
       {/* STYLES FOR DESKTOP */}
       @media only screen and (min-width: 751px) {
       }

@@ -16,9 +16,17 @@ module.exports = {
       '/success-alvarado/index': { page: 'success-alvarado' },
       '/laboratorio/index': { page: 'laboratorio' },
       '/odontologica/index': { page: 'odontologica' },
-      '/utils/index': { page: 'utils' },
       '/versions-detail/index': { page: 'versions-detail' },
       '/descarga/index': { page: 'download-go' },
+      '/demo/index': { page:'demo' },
+      '/documentation/index':{ page: 'documentation' },
+      '/faqs/index': { page: 'faqs'},
+      '/customer-area/index': { page: 'customer-area'},
+      '/testimonials/index': { page: 'testimonials' },
     }
+  },
+  images: {
+    loader: 'imgix',
+    path: 'https://www.bilog.com.ar',
   },
 }
