@@ -11,17 +11,17 @@ module.exports = {
             featureItems: [
                 {
                     title: "Agenda de Turnos",
-                    description: "Agendá turnos en forma más eficiente. Los diferentes colores te van a ayudar a visibilizar tiempos muertos, sobreturnos, pacientes de primera vez, entre otras cosas más.",
+                    description: "Agenda turnos en forma eficiente, mantene tu agenda siempre completa, tenes miles de herramientas como la lista de espera, la confirmación de turnos, y el envío de mails, que te ayudan a gestionarla. ¡Anímate a descubrirlas!",
                     icon: 'agenda',
                 },
                 {
                     title: "Pacientes",
-                    description: "Bilog te ayuda con la carga de los datos personales de tus pacientes. Siempre vas a tener a la vista el saldo actual de tus pacientes, vas a poder agregar su foto, enviarle un mail sin salir del sistema o un mensaje.",
+                    description: "Gestiona todos tus pacientes de la manera más fácil y más cómoda. Lleva todo lo referente a tus pacientes en un sólo lugar, Historia Clínica, Presupuestos, Pagos, Laboratorios, y mucho más. ¡Probá el mejor software de gestión de pacientes!",
                     icon: 'person',
                 },
                 {
                     title: "Administración",
-                    description: "Registrá los ingresos y egresos de forma más eficiente para maximizar la productividad de tu trabajo",
+                    description: "Intuitivamente manejas los ingresos y egresos. En un sólo lugar gestionas los pagos a los proveedores, profesionales y controlas los pagos que ingresan a tu clínica, auditas cierres de caja por sucursal y  usuario. ¡Un must en lugares que quieren profesionalizar la gestión administrativa!",
                     icon: 'account',
                 }
             ],
