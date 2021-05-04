@@ -7,7 +7,7 @@ module.exports = {
     hasButtons: false,
     buttonText: false,
     buttonHref: false,
-    coverImage: "landing-nativa/mobile-1_2.png",
+    coverImage: "static/landing-nativa/mobile-1_2.png",
     coverVideo: false,
     appButton: false,
   },
@@ -87,7 +87,7 @@ module.exports = {
       buttonHref:"",
     },
     {
-      imgSrc: "/static/landing-nativa/illustration.png",
+      imgSrc: "static/landing-nativa/illustration.png",
       imgAlt: "Bilog app illustration",
       copy: "¡Nueva!",
       title: "Organizá y optimizá el rendimiento de tu clínica con Bilog App",
