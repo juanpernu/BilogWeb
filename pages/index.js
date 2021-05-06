@@ -16,7 +16,7 @@ export default () => (
       position="lf"
       text="¡Nueva Bilog App!"
       paragraph="Ya está disponible en todos los stores la nueva app de Bilog. ¿Ya te la bajaste?"
-      coverImage="landing-nativa/illustration.png"
+      coverImage="static/landing-nativa/illustration.png"
     />
     {/* Will be back to this after release
     <Cover

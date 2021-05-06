@@ -17,7 +17,7 @@ export default () => (
       position="lf"
       hasButtons={false}
       gradientBg="default"
-      coverImage="illus-odontologica.svg"
+      coverImage="/static/illus-odontologica.svg"
     />
     <Feature {...MockedFeatures} />
     {/* 
@@ -29,6 +29,11 @@ export default () => (
         showModal={true}
       /> */}
     <ProductSlider />
+    <BannerCta
+      title="¡Vení a ver la demostración guiada!"
+      buttonText="Ver demo"
+      buttonHref="/demo"
+    />
     <FeatureImg
       imgSrc="/static/landing-nativa/illustration.png"
       imgAlt="Bilog app illustration"

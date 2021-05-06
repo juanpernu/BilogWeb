@@ -81,7 +81,7 @@ class Feature extends React.Component {
                 .feature-item--container {
                   padding-top: 26px;
                   display: grid;
-                  grid-template-columns: auto auto auto;
+                  grid-template-columns: 1fr 1fr 1fr;
                 }
                 :global(a.link--primary) {
                   margin: 30px 0;

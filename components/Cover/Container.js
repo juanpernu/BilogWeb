@@ -2,9 +2,9 @@ import WrapperCta from './WrapperCta';
 import StoreButton from '../Buttons/StoreButtons';
 import Title from './Title';
 
-const Container = ({ text, paragraph, position, hasButtons, buttonText, buttonHref, withImage, appButtons }) => {
+const Container = ({ text, paragraph, position, hasButtons, buttonText, buttonHref, withImage, withVideo, appButtons }) => {
   return(
-    <div className={`cover--container ${!withImage && 'strech' } ${position}`}>
+    <div className={`cover--container ${!withImage && 'strech'} ${withVideo && 'no-padding__bottom'} ${position}`}>
       <Title
         text={text}
       />
@@ -16,9 +16,7 @@ const Container = ({ text, paragraph, position, hasButtons, buttonText, buttonHr
         buttonText={buttonText}
         buttonHref={buttonHref}
       />}
-      {
-        appButtons && <StoreButton/>
-      }
+      {appButtons && <StoreButton/>}
       <style jsx>
       {`
         {/* STYLES FOR MOBILE */}
@@ -57,6 +55,9 @@ const Container = ({ text, paragraph, position, hasButtons, buttonText, buttonHr
           .cover--container .cover--container-paragraph {
             font-size: 22px;
           }
+          .cover--container.no-padding__bottom {
+            padding-bottom: 10px;
+          }
         }
 
         {/* STYLES FOR DESKTOP +1200px */}
@@ -76,6 +77,9 @@ const Container = ({ text, paragraph, position, hasButtons, buttonText, buttonHr
           }
           .cover--container .cover--container-paragraph {
             font-size: 22px;
+          }
+          .cover--container.no-padding__bottom {
+            padding-bottom: 10px;
           }
         }
       `}
