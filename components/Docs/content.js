@@ -1,15 +1,23 @@
 import { Fragment } from 'react';
+import List from './List'
 
 const Content = ({ title, subcontent}) => (
   <Fragment>
     {title && <h2 className="content-title">{title}</h2>}
     {subcontent.map((el, i) => {
-      const {subtitle, text, image} = el;
+      const {subtitle, text, image, list = null} = el;
       return (
         <div className="subcontent-wrapper">
           <h3 className="subcontent-title">{subtitle}</h3>
           <p className="subcontent-text">{text}</p>
           {image && <img alt="Subcontent Image" className="subcontent-image" src={image} />}
+          {list && list.map((el)=>{
+              const {title, content} = el
+              return(
+              <List title={title} content={content}/>
+              )
+            })
+          }
         </div>
       )
     })}
