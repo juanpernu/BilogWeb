@@ -1951,12 +1951,7 @@ module.exports = {
             },
             {
               subtitle: null,
-              text: `La opción Agrupado por:`,
-              image: null,
-            },
-            {
-              subtitle: null,
-              text: `Brinda la opción de confeccionar el reporte Sin Agrupar o Agrupado: Por Profesional o por Obra Social.`,
+              text: `La opción "Agrupado por" brinda la opción de confeccionar el reporte Sin Agrupar o Agrupado: Por Profesional o por Obra Social.`,
               image: null,
             },
             {
