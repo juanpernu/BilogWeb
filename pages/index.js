@@ -8,7 +8,7 @@ import { indexFeatures } from '../mocks/general';
 
 export default () => (
   <Layout>
-    <Cover
+    {/* <Cover
       hasButtons
       buttonText='Ver más información'
       buttonHref='/bilogApp'
@@ -17,31 +17,29 @@ export default () => (
       text="¡Nueva Bilog App!"
       paragraph="Ya está disponible en todos los stores la nueva app de Bilog. ¿Ya te la bajaste?"
       coverImage="static/landing-nativa/illustration.png"
-    />
-    {/* Will be back to this after release
-    <Cover
-      text="Más tiempo libre, mayor control y mejor gestión de tu consultorio o clínica."
-      paragraph="Somos la empresa número uno en desarrollo de software para Odontología."
-      hasButtons={false}
-      position="lf"
-      gradientBg="default"
-      coverImage="illus-home.svg"
     /> */}
+    <Cover
+      text="¡Promociones que arden! 🔥"
+      paragraph="Aprovechá todas las ofertas que tenemos para vos en este Hot Week y lleva tu consultorio a la vanguardia tecnológica con todos nuestros productos."
+      buttonText='¡Ver promociones!'
+      buttonHref='/promotions'
+      gradientBg="redish"
+      hasButtons
+    />
     <Feature {...indexFeatures} />
     <Products />
-    {/* Will be back to this after release
     <FeatureImg
       imgSrc="/static/landing-nativa/illustration.png"
       imgAlt="Bilog app illustration"
-      copy="¡Nueva!"
+      copy="¡Nueva Bilog App!"
       title="Organizá y optimizá el rendimiento de tu clínica con Bilog App"
-      description="Administrá tu consultorio en tu celular, tené tu agenda siempre disponible y actualizada."
+      description="Ya está disponible en todos los stores la nueva app de Bilog. ¿Ya te la bajaste?"
       hasCta
       imageAlign="left"
       bgGrey
       buttonText="Descargá la app"
       buttonHref="/bilogApp"
-    /> */}
+    />
     <Carousel/>
   </Layout>
 )

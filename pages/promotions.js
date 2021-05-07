@@ -12,6 +12,7 @@ const Promotions = () => (
             text={promotionsCover.text}
             paragraph={promotionsCover.paragraph}
             hasButtons={promotionsCover.hasButtons}
+            hasArrow={true}
         />
         {
             featureImg.map(el => <FeatureImg

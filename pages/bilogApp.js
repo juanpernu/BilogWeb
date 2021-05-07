@@ -4,7 +4,7 @@ import Feature from '../components/Feature/Feature'
 import FeatureImg from '../components/Feature/FeatureImg'
 import BannerCta from '../components/Banner/BannerCta'
 import Carousel from '../components/Carousel'
-import { productCover, appCover, bannerCta, featureImg, features } from '../mocks/landingMock'
+import { productCover, bannerCta, featureImg, features } from '../mocks/landingMock'
 
 const BilogApp = () => (
   <Layout>
