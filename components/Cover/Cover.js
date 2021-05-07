@@ -195,7 +195,6 @@ class Cover extends React.Component {
             .cover {
               background: linear-gradient(to right,#4C7ABD,#2F3F94);
               padding-top: 60px;
-              height:700px;
             }
             .cover-wrapper {
               max-width: 800px;
