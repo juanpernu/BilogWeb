@@ -3,7 +3,7 @@ import Cover from '../components/Cover/Cover';
 import FeatureImg from '../components/Feature/FeatureImg';
 import Carousel from '../components/Carousel';
 import BannerCta from '../components/Banner/BannerCta';
-import { promotionsCover, bannerCta, featureImg } from '../mocks/promotionsMock';
+import {  promotionsCover,bannerCta, featureImg } from '../mocks/promotionsMock';
 
 const Promotions = () => (
     <Layout>
@@ -12,7 +12,7 @@ const Promotions = () => (
             text={promotionsCover.text}
             paragraph={promotionsCover.paragraph}
             hasButtons={promotionsCover.hasButtons}
-            hasArrow={true}
+            hasArrow={promotionsCover.hasArrow}
         />
         {
             featureImg.map(el => <FeatureImg
