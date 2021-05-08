@@ -1,9 +1,10 @@
 module.exports = {
     promotionsCover: {
         gradientBg: "redish",
-        text: "¡Llegó el Hot Week! 🔥",
-        paragraph: "Aprovechá todas las ofertas que tenemos para vos en este Hot Week y lleva tu consultorio a la vanguardia tecnológica con todos nuestros productos.",
+        text:"¡Llegó el Hot Week! 🔥",
+        paragraph:"Aprovechá todas las ofertas que tenemos para vos en este Hot Week y lleva tu consultorio a la vanguardia tecnológica con todos nuestros productos.",
         hasButtons: false,
+        hasArrow: true,
     },
     featureImg: [
         {

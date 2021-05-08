@@ -13,7 +13,6 @@ export default () => (
         text="Innovación y eficiencia en todas tus auditorías."
         paragraph="Hacé en pocos minutos una auditoría de las liquidaciones de los prestadores, de acuerdo a las reglas definidas anteriormente por vos."
         position="lf"
-        gradientBg="redish"
         hasButtons={false}
         gradientBg="redish"
         coverImage="/static/illus-auditoria.svg"
