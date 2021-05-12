@@ -34,7 +34,7 @@
     "isomorphic-unfetch": "^3.0.0",
     "micro": "9.3.4",
     "next": "^10.0.4",
-    "nodemailer": "6.1.1",
+    "nodemailer": "6.4.16",
     "react": "^16.8.3",
     "react-compound-slider": "1.2.2",
     "react-dom": "^16.8.3",
