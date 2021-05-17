@@ -8,7 +8,7 @@ import { indexFeatures } from '../mocks/general';
 
 export default () => (
   <Layout>
-    {/* <Cover
+    <Cover
       hasButtons
       buttonText='Ver más información'
       buttonHref='/bilogApp'
@@ -17,14 +17,6 @@ export default () => (
       text="¡Nueva Bilog App!"
       paragraph="Ya está disponible en todos los stores la nueva app de Bilog. ¿Ya te la bajaste?"
       coverImage="static/landing-nativa/illustration.png"
-    /> */}
-    <Cover
-      text="¡Promociones que arden! 🔥"
-      paragraph="Aprovechá todas las ofertas que tenemos para vos en este Hot Week y lleva tu consultorio a la vanguardia tecnológica con todos nuestros productos."
-      buttonText='¡Ver promociones!'
-      buttonHref='/promotions'
-      gradientBg="redish"
-      hasButtons
     />
     <Feature {...indexFeatures} />
     <Products />
