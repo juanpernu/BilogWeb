@@ -189,13 +189,59 @@ class Cover extends React.Component {
               margin: 0px auto;
               height:90%;
             }
+            .arrow-container {
+              height: 100%;
+              width: 100%;
+              text-align: center;
+            }
+            .arrow-container > i {
+              width: 40px;
+              bottom: 20px;
+              position: relative;
+            }
+            .icon-arrow--scroll-down {
+              content: url('/static/arrow-scroll-down.svg');
+              height: 50px;
+              width: auto;
+            }
+            .bounce {
+              animation-iteration-count: infinite;
+              animation-duration: 1.5s;
+              animation: bounce 3.6s ease infinite;
+              transform-origin: 50% 50%;
+            }
+            @keyframes bounce {
+              0% {
+                transform: translateY(0);
+              }
+              5.55556% {
+                transform: translateY(0);
+              }
+              11.11111% {
+                transform: translateY(0);
+              }
+              22.22222% {
+                transform: translateY(-15px);
+              }
+              27.77778% {
+                transform: translateY(0);
+              }
+              33.33333% {
+                transform: translateY(-15px);
+              }
+              44.44444% {
+                transform: translateY(0);
+              }
+              100% {
+                transform: translateY(0);
+              }
+            }
           }
           {/* STYLES FOR DESKTOP 1200px */}
           @media only screen and (min-width: 751px) and (max-width: 1200px) {
             .cover {
               background: linear-gradient(to right,#4C7ABD,#2F3F94);
               padding-top: 60px;
-              height:700px;
             }
             .cover-wrapper {
               max-width: 800px;
@@ -255,6 +301,53 @@ class Cover extends React.Component {
               width:100%;
               height:100%;
               display:block;
+            }
+            .arrow-container {
+              height: 100%;
+              width: 100%;
+              text-align: center;
+            }
+            .arrow-container > i {
+              width: 40px;
+              bottom: 30px;
+              position: relative;
+            }
+            .icon-arrow--scroll-down {
+              content: url('/static/arrow-scroll-down.svg');
+              height: 50px;
+              width: auto;
+            }
+            .bounce {
+              animation-iteration-count: infinite;
+              animation-duration: 1.5s;
+              animation: bounce 3.6s ease infinite;
+              transform-origin: 50% 50%;
+            }
+            @keyframes bounce {
+              0% {
+                transform: translateY(0);
+              }
+              5.55556% {
+                transform: translateY(0);
+              }
+              11.11111% {
+                transform: translateY(0);
+              }
+              22.22222% {
+                transform: translateY(-15px);
+              }
+              27.77778% {
+                transform: translateY(0);
+              }
+              33.33333% {
+                transform: translateY(-15px);
+              }
+              44.44444% {
+                transform: translateY(0);
+              }
+              100% {
+                transform: translateY(0);
+              }
             }
           }
           {/* STYLES FOR DESKTOP +1200px */}
@@ -329,6 +422,53 @@ class Cover extends React.Component {
               width:100%;
               height:100%;
               display:block;
+            }
+            .arrow-container {
+              height: 100%;
+              width: 100%;
+              text-align: center;
+            }
+            .arrow-container > i {
+              width: 40px;
+              bottom: 30px;
+              position: relative;
+            }
+            .icon-arrow--scroll-down {
+              content: url('/static/arrow-scroll-down.svg');
+              height: 50px;
+              width: auto;
+            }
+            .bounce {
+              animation-iteration-count: infinite;
+              animation-duration: 1.5s;
+              animation: bounce 3.6s ease infinite;
+              transform-origin: 50% 50%;
+            }
+            @keyframes bounce {
+              0% {
+                transform: translateY(0);
+              }
+              5.55556% {
+                transform: translateY(0);
+              }
+              11.11111% {
+                transform: translateY(0);
+              }
+              22.22222% {
+                transform: translateY(-15px);
+              }
+              27.77778% {
+                transform: translateY(0);
+              }
+              33.33333% {
+                transform: translateY(-15px);
+              }
+              44.44444% {
+                transform: translateY(0);
+              }
+              100% {
+                transform: translateY(0);
+              }
             }
           }
         `}

@@ -1,0 +1,54 @@
+@import "../../styles/variables";
+
+/* STYLES FOR MOBILE */
+
+@media only screen and (max-width: $screen-media-mobile) {
+    .list{
+      &-title{
+        margin:0;
+        padding: 18px;
+        text-align: start;
+        font-size: $font-size-20;
+        font-weight: $fw-regular;
+        line-height: 1.3;
+        width: 90%;
+      }
+
+      &-container{
+        margin:5px 0;
+      
+        li{
+          margin-top: 0;
+          text-align: start;
+          font-weight: $fw-regular;
+          font-size: $font-size-16;
+          width: 93%;
+        }
+      }
+    }
+  }
+  
+/* STYLES FOR DESKTOP */
+@media only screen and (min-width: $screen-media-mobile + 1px) {
+    .list{
+      &-title{
+        margin-top: 0;
+        font-weight: $fw-regular;
+        font-size: $font-size-14;
+        line-height: $bilog-spacing-24;
+        margin: 20px 0; 
+        }  
+
+        &-container{
+        margin: 5px 0;
+        padding: 0;
+        padding-left: 20px;
+         
+        li{
+          margin-top: 0;
+          font-weight: $fw-regular;
+          font-size: $font-size-14;
+        }
+      }
+    }    
+  }

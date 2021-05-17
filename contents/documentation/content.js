@@ -67,38 +67,33 @@ module.exports = {
             },
             {
               subtitle: "Avisos / Alertas",
-              text: `El sistema posee un sistema de recordatorio / alertas. Cada vez que Ud. accede al sistema el mismo mostrará los distintos recordatorios.`,
+              text: null,
               image: null,
-            },
-            {
-              subtitle: null,
-              text: `Cantidad de pacientes propios que tienen turnos hoy.`,
-              image: null,
-            },
-            {
-              subtitle: null,
-              text: `Cantidad de pacientes de primera vez que tienen turnos hoy.`,
-              image: null,
-            },
-            {
-              subtitle: null,
-              text: `Cantidad de pacientes que cumplen años hoy.`,
-              image: null,
-            },
-            {
-              subtitle: null,
-              text: `Cantidad de tareas a realizar hoy.`,
-              image: null,
-            },
-            {
-              subtitle: null,
-              text: `Cantidad de pedidos de laboratorios que tienen que ingresar hoy.`,
-              image: null,
-            },
-            {
-              subtitle: null,
-              text: `Cantidad de productos que se encuentran bajos de stock.`,
-              image: null,
+              list:[
+                {
+                  title: "El sistema posee un sistema de recordatorio / alertas. Cada vez que Ud. accede al sistema el mismo mostrará los distintos recordatorios.",
+                  content: [
+                    {
+                      text:"Cantidad de pacientes propios que tienen turnos hoy."
+                    },
+                    {
+                      text:"Cantidad de pacientes de primera vez que tienen turnos hoy."
+                    },
+                    {
+                      text:"Cantidad de pacientes que cumplen años hoy."
+                    },
+                    {
+                      text:"Cantidad de tareas a realizar hoy."
+                    },
+                    {
+                      text:"Cantidad de pedidos de laboratorios que tienen que ingresar hoy."
+                    },
+                    {
+                      text:"Cantidad de productos que se encuentran bajos de stock."
+                    },
+                  ]
+                }
+              ]
             },
             {
               subtitle: null,
@@ -501,46 +496,34 @@ module.exports = {
               Si desea que un mes le quede posicionado arriba, seleccione con el Mouse el mes y se despliegan los meses, seleccione con el Mouse el mes deseado y sin dejar de pulsar muévase al mes que desea ver arriba de todo.
               Con la flecha derecha e izquierda (al lado del mes) se mueve hacia el mes siguiente o anterior.`,
               image: null,
-            },
-            {
-              subtitle: null,
-              text: `Teclas Rápidas:`,
-              image: null,
-            },
-            {
-              subtitle: null,
-              text: `Tabulador: para ir al calendario.`,
-              image: null,
-            },
-            {
-              subtitle: null,
-              text: `Si desea ir al mismo día del mes posterior: CTRL+flecha abajo.`,
-              image: null,
-            },
-            {
-              subtitle: null,
-              text: `Si desea ir al mismo día del mes anterior: CTRL+flecha arriba.`,
-              image: null,
-            },
-            {
-              subtitle: null,
-              text: `Si desea avanzar día a día: CTRL+ (+).`,
-              image: null,
-            },
-            {
-              subtitle: null,
-              text: `Si desea retroceder día a día: CTRL+ (-).`,
-              image: null,
-            },
-            {
-              subtitle: null,
-              text: `Para ir al mismo día pero del año anterior: CTRL+ Repag (PageUp).`,
-              image: null,
-            },
-            {
-              subtitle: null,
-              text: `Para ir al mismo día pero del año siguiente: CTRL+ Avpag (PageDown).`,
-              image: null,
+              list:[
+                {
+                  title:"Teclas Rápidas:",
+                  content:[
+                    {
+                      text:"Tabulador: para ir al calendario."
+                    },
+                    {
+                      text:"Si desea ir al mismo día del mes posterior: CTRL+flecha abajo."
+                    },
+                    {
+                      text:"Si desea ir al mismo día del mes anterior: CTRL+flecha arriba."
+                    },
+                    {
+                      text:"Si desea avanzar día a día: CTRL+ (+)."
+                    },
+                    {
+                      text:"Si desea retroceder día a día: CTRL+ (-)."
+                    },
+                    {
+                      text:"Para ir al mismo día pero del año anterior: CTRL+ Repag (PageUp)."
+                    },
+                    {
+                      text:"Para ir al mismo día pero del año siguiente: CTRL+ Avpag (PageDown)."
+                    }
+                  ]
+                }
+              ]
             },
             {
               subtitle: "Personalizar vista",
@@ -1468,16 +1451,25 @@ module.exports = {
               subtitle: null,
               text: `Se visualizan todos los movimientos que hayan sido en Efectivo.`,
               image: null,
-            },
-            {
-              subtitle: null,
-              text: `Estos tipos movimientos pueden ser:`,
-              image: null,
-            },
-            {
-              subtitle: null,
-              text: `Pagos de pacientes - Otros Ingresos - Depositos en Bancos - Egresos Varios`,
-              image: null,
+              list:[
+                {
+                title: 'Estos tipos movimientos pueden ser:',
+                content:[
+                  {
+                    text: "Pagos de pacientes"
+                  },
+                  {
+                    text: "Otros ingresos"
+                  },
+                  {
+                    text: "Depositos en bancos "
+                  },
+                  {
+                    text: "Egresos varios"
+                  }
+                 ]
+                }
+              ]
             },
             {
               subtitle: null,
@@ -1494,26 +1486,22 @@ module.exports = {
               text: `Se visualizan todos los cheques recibidos como forma de pago.
               En el menú podrá verlos por separados, segun el destino o estado de los cheques recibidos.`,
               image: null,
-            },
-            {
-              subtitle: null,
-              text: `Estos pueden ser:`,
-              image: null,
-            },
-            {
-              subtitle: null,
-              text: `En cartera, el cheque lo tiene Ud. en su poder.`,
-              image: null,
-            },
-            {
-              subtitle: null,
-              text: `Depositados, aquellos cheques recibidos que hayan sido depositados en su Cta. Cte. bancaria.`,
-              image: null,
-            },
-            {
-              subtitle: null,
-              text: `Entregados a proveedores, aquellos cheques que hayan sido entregados a proveedores como parte de pago.`,
-              image: null,
+              list:[
+                {
+                  title:"Estos pueden ser:", 
+                  content:[
+                    {
+                      text:"En cartera, el cheque lo tiene Ud. en su poder."
+                    },
+                    {
+                      text: "Depositados, aquellos cheques recibidos que hayan sido depositados en su Cta. Cte. bancaria."
+                    },
+                    {
+                      text: "Entregados a proveedores, aquellos cheques que hayan sido entregados a proveedores como parte de pago." 
+                    },
+                  ]
+                }
+              ]
             },
             {
               subtitle: "Tarjetas",
@@ -1525,21 +1513,19 @@ module.exports = {
               text: `Se visualizan todas las tarjetas recibidas como parte de pago.
               En el menú podrá verlas por separados, según el destino o estado de las tarjetas recibidas.`,
               image: null,
-            },
-            {
-              subtitle: null,
-              text: `Estos pueden ser:`,
-              image: null,
-            },
-            {
-              subtitle: null,
-              text: `Acreditadas, la tarjeta ya fue acreditada en su Cta. Cte. bancaria.`,
-              image: null,
-            },
-            {
-              subtitle: null,
-              text: `No Acreditadas, la tarjeta no fue acreditada en su Cta. Cte. bancaria.`,
-              image: null,
+              list:[
+                {
+                  title:"Estos pueden ser:",
+                  content:[
+                    {
+                      text: "Acreditadas, la tarjeta ya fue acreditada en su Cta. Cte. bancaria."
+                    },
+                    {
+                      text: "No Acreditadas, la tarjeta no fue acreditada en su Cta. Cte. bancaria."
+                    },
+                  ]
+                }
+              ]
             },
             {
               subtitle: null,
@@ -1941,21 +1927,22 @@ module.exports = {
               subtitle: null,
               text: `Esta opción permite ver una estadística de prestaciones realizadas en un período dado.`,
               image: null,
-            },
-            {
-              subtitle: null,
-              text: `La consulta puede efectuarse de diferentes maneras:`,
-              image: null,
-            },
-            {
-              subtitle: null,
-              text: `Consultar Todos los Profesionales o uno en particular.`,
-              image: null,
-            },
-            {
-              subtitle: null,
-              text: `Consultar Todas las Obras Sociales o una en particular.`,
-              image: null,
+              list:[
+                {
+                  title:"La consulta puede efectuarse de diferentes maneras:",
+                  content: [
+                    {
+                      text:"Consultar Todos los Profesionales o uno en particular."
+                    },
+                    {
+                      text:"Consultar Todas las Obras Sociales o una en particular."
+                    },
+                    {
+                      text:"Confeccionar el reporte con la opción de agrupar por Profesional o por Obra Social."
+                    },
+                  ]
+                }
+              ]
             },
             {
               subtitle: null,
@@ -1964,12 +1951,7 @@ module.exports = {
             },
             {
               subtitle: null,
-              text: `La opción Agrupado por:`,
-              image: null,
-            },
-            {
-              subtitle: null,
-              text: `Brinda la opción de confeccionar el reporte Sin Agrupar o Agrupado: Por Profesional o por Obra Social.`,
+              text: `La opción "Agrupado por" brinda la opción de confeccionar el reporte Sin Agrupar o Agrupado: Por Profesional o por Obra Social.`,
               image: null,
             },
             {

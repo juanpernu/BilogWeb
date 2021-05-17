@@ -18,30 +18,20 @@ export default () => (
       paragraph="Ya está disponible en todos los stores la nueva app de Bilog. ¿Ya te la bajaste?"
       coverImage="static/landing-nativa/illustration.png"
     />
-    {/* Will be back to this after release
-    <Cover
-      text="Más tiempo libre, mayor control y mejor gestión de tu consultorio o clínica."
-      paragraph="Somos la empresa número uno en desarrollo de software para Odontología."
-      hasButtons={false}
-      position="lf"
-      gradientBg="default"
-      coverImage="illus-home.svg"
-    /> */}
     <Feature {...indexFeatures} />
     <Products />
-    {/* Will be back to this after release
     <FeatureImg
       imgSrc="/static/landing-nativa/illustration.png"
       imgAlt="Bilog app illustration"
-      copy="¡Nueva!"
+      copy="¡Nueva Bilog App!"
       title="Organizá y optimizá el rendimiento de tu clínica con Bilog App"
-      description="Administrá tu consultorio en tu celular, tené tu agenda siempre disponible y actualizada."
+      description="Ya está disponible en todos los stores la nueva app de Bilog. ¿Ya te la bajaste?"
       hasCta
       imageAlign="left"
       bgGrey
       buttonText="Descargá la app"
       buttonHref="/bilogApp"
-    /> */}
+    />
     <Carousel/>
   </Layout>
 )
