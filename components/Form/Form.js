@@ -115,6 +115,9 @@ class Form extends React.Component {
     return (
       <form id='contact-form' className="form" onSubmit={this.handleFormSubmit}>
         <p className="form-title">Formulario de contacto</p>
+        {submitted && <p className="submitted success">Mensaje enviado correctamente</p>}
+        {submittedWhitError && <p className="submitted error">Ups! Algo ocurrió, por favor intentalo de nuevo</p>}
+        {requiredFields && <p className="submitted error">Por favor, completá los campos requeridos</p>}
         <div className="form-interactive_area">
           <Input
             required
@@ -187,9 +190,6 @@ class Form extends React.Component {
             theme="dark"
           />
         </div>
-        {submitted && <p className="submitted success">Mensaje enviado correctamente</p>}
-        {submittedWhitError && <p className="submitted error">Ups! Algo ocurrió, por favor intentalo de nuevo</p>}
-        {requiredFields && <p className="submitted error">Por favor, completá los campos requeridos</p>}
         <div className="form-buttons_area">
           <Button
             customClass='primary'
