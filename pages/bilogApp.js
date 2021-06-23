@@ -1,10 +1,15 @@
-import Layout from '../components/Layout'
-import Cover from '../components/Cover/Cover'
-import Feature from '../components/Feature/Feature'
-import FeatureImg from '../components/Feature/FeatureImg'
-import BannerCta from '../components/Banner/BannerCta'
-import Carousel from '../components/Carousel'
-import { productCover, bannerCta, featureImg, features } from '../mocks/landingMock'
+import Layout from "../components/Layout";
+import Cover from "../components/Cover/Cover";
+import Feature from "../components/Feature/Feature";
+import FeatureImg from "../components/Feature/FeatureImg";
+import BannerCta from "../components/Banner/BannerCta";
+import Carousel from "../components/Carousel";
+import {
+  productCover,
+  bannerCta,
+  featureImg,
+  features,
+} from "../mocks/landingMock";
 
 const BilogApp = () => (
   <Layout>
@@ -17,8 +22,9 @@ const BilogApp = () => (
       appButtons
       hasArrow
     />
-    {
-      featureImg.map(el => <FeatureImg
+    <Feature features={features} />
+    {featureImg.map((el) => (
+      <FeatureImg
         imgSrc={el.imgSrc}
         imgAlt={el.imgAlt}
         copy={el.copy}
@@ -29,9 +35,8 @@ const BilogApp = () => (
         hasCta={el.hasCta}
         buttonText={el.buttonText}
         buttonHref={el.buttonHref}
-      />)
-    }
-    <Feature features={features} />
+      />
+    ))}
     <Carousel />
     <BannerCta
       title={bannerCta.title}
@@ -39,6 +44,6 @@ const BilogApp = () => (
       buttonHref={bannerCta.buttonHref}
     />
   </Layout>
-)
+);
 
-export default BilogApp
+export default BilogApp;
