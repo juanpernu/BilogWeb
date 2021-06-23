@@ -24,6 +24,7 @@ module.exports = {
       '/customer-area/index': { page: 'customer-area' },
       '/testimonials/index': { page: 'testimonials' },
       '/promotions/index': { page: 'promotions' },
+      '/terms-and-conditions/index': { page: 'terms-and-conditions' },
     }
   },
   images: {

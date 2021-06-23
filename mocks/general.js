@@ -35,6 +35,10 @@ const footer = {
     {
       text: "Testimonios",
       href: "/testimonials",
+    },
+    {
+      text: "Términos y condiciones",
+      href: "/terms-and-conditions",
     }
   ],
   socialMedia: [
