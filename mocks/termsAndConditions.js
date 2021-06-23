@@ -1,5 +1,5 @@
 module.exports = {
-  section: "Condiciones Generales de Uso del Software BiLog",
+  section: "Condiciones Generales de Uso del Software Bilog",
   copy: null,
   item: {
     text: null,
@@ -147,8 +147,8 @@ module.exports = {
             siguiente alcance:`,
           },
           {
-            subtitle: "6.1.-",
-            text: `Debido a la naturaleza del Sistema, las particularidades de su operación y la interacción con
+            subtitle: null,
+            text: `6.1.- Debido a la naturaleza del Sistema, las particularidades de su operación y la interacción con
             servicios de terceros (vgr. Energía eléctrica, conectividad a internet, etc.), la Licenciante no puede
             garantizar que su funcionamiento será libre de interrupciones o que no existirán errores en su
             operación. No obstante, la Licenciante garantiza que el Sistema funcionará – en lo sustancial – de
@@ -162,23 +162,23 @@ module.exports = {
             de la Licenciante.`,
           },
           {
-            subtitle: "6.2.- Errores o fallas:",
-            text: `En caso de que el Cliente notifique la ocurrencia de un error o la manifestación
+            subtitle: null,
+            text: `6.2.- Errores o fallas: En caso de que el Cliente notifique la ocurrencia de un error o la manifestación
             de una falla oculta, la Licenciante, previa evaluación del problema, acordará con el Cliente el plazo
             para efectuar la reparación de esos errores o fallas ocultas, sin perjuicio de lo cual, la Licenciante
             empleará todos los recursos razonables para efectuar las reparaciones lo antes posible, en los
             términos del mantenimiento contratado por el Cliente.`,
           },
           {
-            subtitle: "6.3.-",
-            text: `La garantía no será aplicable a condiciones resultantes de uso inadecuado, accidente,
+            subtitle: null,
+            text: `6.3.- La garantía no será aplicable a condiciones resultantes de uso inadecuado, accidente,
             negligencia o cualquier otra causa externa al Sistema, incluidos, pero sin limitarse a, instalación,
             servicio o modificaciones no ejecutadas por la Licenciante o su operación fuera de los parámetros
             especificados por la Licenciante.`,
           },
           {
-            subtitle: "6.4.-",
-            text: `La garantía aquí establecida es la única ofrecida por la Licenciante con relación a errores o
+            subtitle: null,
+            text: `6.4.- La garantía aquí establecida es la única ofrecida por la Licenciante con relación a errores o
             fallas ocultas del Sistema. Vencida la garantía, la prestación de los servicios de mantenimiento
             preventivo y correctivo se prestará de acuerdo a las condiciones de contratación de tales servicios.`,
           },
@@ -187,15 +187,15 @@ module.exports = {
             text: null,
           },
           {
-            subtitle: "7.1.-",
-            text: `El Sistema, desarrollado con tecnología propia de la Licenciante, recopilará automáticamente
+            subtitle: null,
+            text: `7.1.- El Sistema, desarrollado con tecnología propia de la Licenciante, recopilará automáticamente
             determinados datos relacionados con el hardware y el software del sistema operativo de los equipos
             que el Cliente conecte al Sistema. El Sistema utilizará esta información para el funcionamiento del
             servicio, mantener su calidad y su seguridad.`,
           },
           {
-            subtitle: "7.2.-",
-            text: `Consecuentemente, la Licenciante no será responsable por la compatibilidad del Sistema con
+            subtitle: null,
+            text: `7.2.- Consecuentemente, la Licenciante no será responsable por la compatibilidad del Sistema con
             otro software no producido o suministrado por ella o por hardware que no haya especificado
             expresamente. Sin embargo, la Licenciante informará los requerimientos en materia de sistemas
             operativos, bases de datos y demás software de infraestructura y escritorio a fin de que el Cliente
@@ -215,8 +215,8 @@ module.exports = {
             text: null,
           },
           {
-            subtitle: "8.1.-",
-            text: `El precio de las licencias y servicios vinculados al Sistema es el descripto en la Propuesta
+            subtitle: null,
+            text: `8.1.- El precio de las licencias y servicios vinculados al Sistema es el descripto en la Propuesta
             Comercial. Salvo que se indique lo contrario en la referida Propuesta Comercial, el precio es neto.
             Consecuentemente, en caso de corresponder, serán a cargo exclusivo del Cliente y serán adicionado
             a las facturas correspondientes, los siguientes conceptos: (i) el Impuesto al Valor Agregado (IVA.)
@@ -227,13 +227,13 @@ module.exports = {
             cargados en la factura emitida en el período inmediatamente posterior al de la recepción del pago.`,
           },
           {
-            subtitle: "8.2.-",
-            text: `Los servicios se facturarán por adelantado y el Cliente realizará el pago del precio antes del día
+            subtitle: null,
+            text: `8.2.- Los servicios se facturarán por adelantado y el Cliente realizará el pago del precio antes del día
             10 de cada mes, bajo apercibimiento de incurrir el Cliente en mora.`,
           },
           {
-            subtitle: "8.3.-",
-            text: `El precio acordado en la Propuesta Comercial incluye los conceptos allí descriptos. Todo
+            subtitle: null,
+            text: `8.3.- El precio acordado en la Propuesta Comercial incluye los conceptos allí descriptos. Todo
             concepto no incluido (p.e. licencias de acceso adicionales, habilitación de módulos adicionales, etc.),
             requerirá de expresa formulación de Propuesta Comercial y aceptación por parte del del Cliente por
             cualquier medio, la que se considerará aceptada por la Licenciante con la emisión de la factura
@@ -241,8 +241,8 @@ module.exports = {
             que no se hubiere pactado facturación periódica mensual.`,
           },
           {
-            subtitle: "8.4.-",
-            text: `Adicionalmente, y a efectos de evitar diferencias de interpretación, queda expresamente
+            subtitle: null,
+            text: `8.4.- Adicionalmente, y a efectos de evitar diferencias de interpretación, queda expresamente
             aclarado que los términos de prestación de los servicios no incluyen:`,
             list: [
               {
@@ -272,8 +272,8 @@ module.exports = {
             ]
           },
           {
-            subtitle: "8.5.-",
-            text: `Los precios establecidos en la Propuesta Comercial para cada uno de los productos y servicios
+            subtitle: null,
+            text: `8.5.- Los precios establecidos en la Propuesta Comercial para cada uno de los productos y servicios
             solicitados, podrán ser revisados por la Licenciante, con aplicación del índice de precios al
             consumidor (IPC) publicado por el INDEC. La periodicidad de revisión será trimestral salvo que en
             un período inferior se verificare una variación superior al 10%. En caso que se observara un
@@ -288,8 +288,8 @@ module.exports = {
             formato Excel o Acces, según solicitare el Cliente.`,
           },
           {
-            subtitle: "8.6.-",
-            text: `En caso que el Cliente resida fuera de la República Argentina, los servicios será cotizados y
+            subtitle: null,
+            text: `8.6.- En caso que el Cliente resida fuera de la República Argentina, los servicios será cotizados y
             facturados en dólares estadounidenses y los mismos no estarán sujetos a ajuste o incremento
             alguno, salvo aquellos que pudieran derivarse de la contratación de servicios adicionales.`,
           },
@@ -298,8 +298,8 @@ module.exports = {
             text: null,
           },
           {
-            subtitle: "9.1.-",
-            text: `Consiste en la gestión del proyecto de puesta en marcha del Sistema, de manera coordinada y
+            subtitle: null,
+            text: `9.1.- Consiste en la gestión del proyecto de puesta en marcha del Sistema, de manera coordinada y
             consensuada con el Cliente o responsable del proyecto asignado por el Cliente. El servicio incluye
             la capacitación del personal siguiendo la planificación establecida para esta actividad. El objetivo es
             lograr una capacitación de calidad para el personal afectado a la utilización del Sistema e incluye el
@@ -313,8 +313,8 @@ module.exports = {
             text: null,
           },
           {
-            subtitle: "10.1.-",
-            text: `La mora en los pagos debidos por el Cliente se producirá en forma automática, de pleno
+            subtitle: null,
+            text: `10.1.- La mora en los pagos debidos por el Cliente se producirá en forma automática, de pleno
             derecho, por el mero transcurso de los plazos y sin necesidad de interpelación alguna. Operada la
             mora, la Licenciante podrá optar por:`,
             list: [
@@ -337,8 +337,8 @@ module.exports = {
             ]
           },
           {
-            subtitle: "10.2.-",
-            text: `Sin perjuicio de lo determinado anteriormente, en caso que el Cliente omitiera realizar
+            subtitle: null,
+            text: `10.2.- Sin perjuicio de lo determinado anteriormente, en caso que el Cliente omitiera realizar
             cualquier pago en las fechas acordada, la Licenciante podrá, sin necesidad de cualquier aviso o
             notificación: (i) tomar las medidas necesarias para el cobro del monto adeudado, debiendo el Cliente
             pagar los gastos de cobranza, incluso gastos de intimación y honorarios de abogados incurridos por
@@ -350,8 +350,8 @@ module.exports = {
             a los derechos de propiedad intelectual de la Licenciante.`,
           },
           {
-            subtitle: "10.3.-",
-            text: `En la hipótesis de cualquier atraso en el cronograma estipulado por las Partes para la
+            subtitle: null,
+            text: `10.3.- En la hipótesis de cualquier atraso en el cronograma estipulado por las Partes para la
             implementación del Sistema que sea imputable al Cliente, éste se obliga a: (i) realizar el pago de los
             valores adeudados en las fechas inicialmente establecidas en el cronograma, como si el evento
             previsto para fines de facturación hubiera ocurrido; (ii) reembolsar a la Licenciante los costos y gastos
@@ -366,20 +366,20 @@ module.exports = {
             text: null,
           },
           {
-            subtitle: "11.1.1.-",
-            text: `- La Licenciante a su exclusivo criterio podrá ofrecer al Cliente en la Propuesta Comercial un
+            subtitle: null,
+            text: `11.1.1.- La Licenciante a su exclusivo criterio podrá ofrecer al Cliente en la Propuesta Comercial un
             servicio técnico de mantenimiento que incluye tareas de actualización de las funcionalidades
             contratadas, en tanto y en cuanto el Cliente no se encuentre en mora con los pagos debidos a la
             Licenciante conforme al alcance derivado de la Propuesta Comercial.`,
           },
           {
-            subtitle: "11.1.2.-",
-            text: `La Licenciante queda facultada a realizar inspecciones en las oficinas del Cliente para
+            subtitle: null,
+            text: `11.1.2.- La Licenciante queda facultada a realizar inspecciones en las oficinas del Cliente para
             verificar el cumplimiento de éste con las obligaciones asumidas en virtud de la relación contractual.`,
           },
           {
-            subtitle: "11.1.3.-",
-            text: `Sobre el particular, el Cliente se obliga: (i) a pagar el precio que se determine; (ii) cumplir
+            subtitle: null,
+            text: `11.1.3.- Sobre el particular, el Cliente se obliga: (i) a pagar el precio que se determine; (ii) cumplir
             sus obligaciones de acuerdo con las necesidades de implementación cuando fuere aplicable; (iii)
             cooperar con la Licenciante y colocar a su disposición los equipamientos, instalaciones y personal
             que sean necesarios para la ejecución de las tareas.`,
@@ -389,16 +389,16 @@ module.exports = {
             text: null,
           },
           {
-            subtitle: "11.2.1.-",
-            text: `La Licenciante, a su exclusivo criterio y conforme lo acuerde en la Propuesta Comercial,
+            subtitle: null,
+            text: `11.2.1.- La Licenciante, a su exclusivo criterio y conforme lo acuerde en la Propuesta Comercial,
             podrá prestar el servicio de mesa de ayuda a través de su departamento de ayuda y soporte técnico.
             En caso que así se acuerde en la Propuesta Comercial, la Licenciante podrá afectar un referente
             técnico dependiente de la Licenciante que quedará afectado en forma exclusiva al Cliente, debiendo
             el Cliente asumir el costo de dicho recurso humano.`,
           },
           {
-            subtitle: "11.2.2.-",
-            text: `Este servicio incluye tareas de asesoramiento en la configuración del Sistema y/o apoyo en
+            subtitle: null,
+            text: `11.2.2.- Este servicio incluye tareas de asesoramiento en la configuración del Sistema y/o apoyo en
             el análisis de métodos a aplicar en el Sistema, en el horario de lunes a viernes de 10 a 18. La
             Licenciante pone a disposición del Cliente el email info@bilog.com.ar, para comunicación de
             incidentes, obligándose la Licenciante a dar respuesta dentro de las siguientes ocho (8) horas
@@ -411,8 +411,8 @@ module.exports = {
             text: null,
           },
           {
-            subtitle: "12.1.-",
-            text: `La relación contractual derivada de la aceptación de la Propuesta Comercial estará en vigencia
+            subtitle: null,
+            text: `12.1.- La relación contractual derivada de la aceptación de la Propuesta Comercial estará en vigencia
             por tiempo indeterminado, hasta tanto alguna de las Partes notifique su voluntad de dar por
             terminada la relación contractual, preavisando su voluntad en tal sentido con treinta (30) días de
             anticipación a la fecha de terminación propuesta. Instada la terminación contractual, la Licenciante
@@ -421,8 +421,8 @@ module.exports = {
             devengada durante la vigencia contractual.`,
           },
           {
-            subtitle: "12.2.-",
-            text: `Asimismo, la Licenciante podrá rescindir el Acuerdo, con efectos inmediatos, en caso de que
+            subtitle: null,
+            text: `12.2.- Asimismo, la Licenciante podrá rescindir el Acuerdo, con efectos inmediatos, en caso de que
             el Cliente fuere declarado en concurso preventivo o en quiebra, o si se trabase embargo, inhibición
             o cualquier otra medida cautelar sobre los bienes del Cliente, en caso de transferencia del fondo de
             comercio por parte del Cliente; cambio de control accionario y/o su fusión o escisión o en caso de
@@ -430,8 +430,8 @@ module.exports = {
             último caso – al cumplimiento por un período de cinco (5) días hábiles.`,
           },
           {
-            subtitle: "12.3.-",
-            text: `En todos los casos, la Licenciante tendrá el derecho de impedir el acceso del Cliente a su base
+            subtitle: null,
+            text: `12.3.- En todos los casos, la Licenciante tendrá el derecho de impedir el acceso del Cliente a su base
             de datos, limitándose el derecho del Cliente a solicitar la descarga y entrega de estos, en el formato 
             acordado. Operada la rescisión, el Cliente deberá cesar en el uso del Sistema a partir de la fecha de
             terminación propuesta en la comunicación fehaciente de rescisión cursada por la Licenciante, sin
@@ -472,28 +472,28 @@ module.exports = {
             text: null,
           },
           {
-            subtitle: "15.1.- Reclutamiento de Personal",
-            text: `Las Partes están de acuerdo en no contratar empleados o prestadores de servicio de la otra parte
+            subtitle: null,
+            text: `15.1.- Reclutamiento de Personal: Las Partes están de acuerdo en no contratar empleados o prestadores de servicio de la otra parte
             durante la vigencia de la relación contractual derivada de la aceptación de la Propuesta Comercial y
             por un período de 12 (doce) meses después de su término. La Parte que no cumpla esta cláusula
             pagará multa equivalente al valor total pagado a dicho empleado o prestador de servicio durante los
             seis (6) meses precedentes a su contratación.`,
           },
           {
-            subtitle: "15.2.- Cesión y Subcontratación",
-            text: `Los derechos y obligaciones emergentes de la aceptación de la Propuesta Comercial no pueden ser
+            subtitle: null,
+            text: `15.2.- Cesión y Subcontratación: Los derechos y obligaciones emergentes de la aceptación de la Propuesta Comercial no pueden ser
             cedidos por cualquiera de las Partes sin el previo consentimiento por escrito de la otra Parte.`,
           },
           {
-            subtitle: "15.3.- Inexistencia de relación de consumo",
-            text: `El Cliente reconoce que el Sistema será utilizado como herramienta para la ejecución de sus
+            subtitle: null,
+            text: `15.3.- Inexistencia de relación de consumo: El Cliente reconoce que el Sistema será utilizado como herramienta para la ejecución de sus
             actividades profesionales y/o empresariales y que, por lo tanto, no existe relación de consumo de
             ella con la Licenciante.
             `,
           },
           {
-            subtitle: "15.4.- Partes Independientes",
-            text: `La relación contractual derivada de la aceptación de la Propuesta Comercial no constituye sociedad,
+            subtitle: null,
+            text: `15.4.- Partes Independientes: La relación contractual derivada de la aceptación de la Propuesta Comercial no constituye sociedad,
             asociación ni figura asociativa alguna, joint venture o contrato de colaboración empresaria; asimismo,
             no constituye relación laboral entre las Partes. Como consecuencia de ello, cada una de las Partes
             es exclusiva responsable de dar cumplimiento a la totalidad de las obligaciones laborales a su cargo,
@@ -502,29 +502,29 @@ module.exports = {
             Parte recibiere con causa o título en incumplimientos en esta materia.`,
           },
           {
-            subtitle: "15.5.- Nulidad Parcial",
-            text: `En caso de que alguna de las cláusulas de este Acuerdo deviniere nula o inválida, las restantes
+            subtitle: null,
+            text: `15.5.- Nulidad Parcial: En caso de que alguna de las cláusulas de este Acuerdo deviniere nula o inválida, las restantes
             cláusulas de las mismas conservarán su vigor, no pudiéndose solicitar la resolución de la relación
             contractual con dicho fundamento, salvo que dicha cláusula afectara a los elementos esenciales de
             la contratación.`,
           },
           {
-            subtitle: "15.6.- Encabezados",
-            text: `Los títulos de las cláusulas y apartados son meramente referenciales y al solo efecto expositivo.`,
+            subtitle: null,
+            text: `15.6.- Encabezados: Los títulos de las cláusulas y apartados son meramente referenciales y al solo efecto expositivo.`,
           },
           {
             subtitle: "16. Domicilios y Jurisdicción",
             text: null,
           },
           {
-            subtitle: "16.1.-",
-            text: `- A todos los efectos legales derivados de este Acuerdo, las Partes constituyen domicilio en los
+            subtitle: null,
+            text: `16.1.- A todos los efectos legales derivados de este Acuerdo, las Partes constituyen domicilio en los
             indicados en la Propuesta Comercial aplicable. En tales domicilios, se tendrán por válidas y eficaces
             todas las notificaciones.`,
           },
           {
-            subtitle: "16.2.-",
-            text: `Asimismo, las Partes se someten a la jurisdicción y competencia de la Justicia Ordinaria de la
+            subtitle: null,
+            text: `16.2.- Asimismo, las Partes se someten a la jurisdicción y competencia de la Justicia Ordinaria de la
             Capital Federal, con renuncia expresa a cualquier otro fuero y/o jurisdicción que pudiere
             corresponderles.`,
           },
