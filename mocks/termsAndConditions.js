@@ -1,5 +1,5 @@
 module.exports = {
-  section: "Condiciones Generales de Uso del Software Bilog",
+  section: "Condiciones Generales de Uso",
   copy: null,
   item: {
     text: null,
@@ -28,29 +28,29 @@ module.exports = {
                 title: null,
                 content: [
                   {
-                    text: "Condiciones Generales: son estas condiciones generales de uso del Software Bilog."
+                    text: "Condiciones Generales: son estas condiciones generales de uso del Software Bilog.",
                   },
                   {
-                    text: "Sistema: es el software Bilog de gestión odontológica, auditoría odontológica y de laboratorios."
+                    text: "Sistema: es el software Bilog de gestión odontológica, auditoría odontológica y de laboratorios.",
                   },
                   {
-                    text: "Cliente: es la persona física y/o jurídica que ha aceptado una Propuesta Comercial presentada por la Licenciante, debidamente identificada en la factura emitida por la Licenciante."
+                    text: "Cliente: es la persona física y/o jurídica que ha aceptado una Propuesta Comercial presentada por la Licenciante, debidamente identificada en la factura emitida por la Licenciante.",
                   },
                   {
-                    text: "Licenciante: es la Sra. María Celeste Fantini Ortiz, CUIT 27-18476474-7, con domicilio en José Hernández 2276 Piso 4°. Oficina “A”, Ciudad Autónoma de Buenos Aires, C.P.1426"
+                    text: "Licenciante: es la Sra. María Celeste Fantini Ortiz, CUIT 27-18476474-7, con domicilio en José Hernández 2276 Piso 4°. Oficina “A”, Ciudad Autónoma de Buenos Aires, C.P.1426",
                   },
                   {
-                    text: "Acuerdo: es la relación contractual entre el Cliente y la Licenciante, regida por las Condiciones Generales, la Propuesta Comercial y la legislación de fondo aplicable."
+                    text: "Acuerdo: es la relación contractual entre el Cliente y la Licenciante, regida por las Condiciones Generales, la Propuesta Comercial y la legislación de fondo aplicable.",
                   },
                   {
-                    text: "Propuesta Comercial: Es la propuesta de servicios presentada por la Licenciante, conteniendo las diferentes opciones de contratación del Sistema y el régimen económico de cada uno de ellos."
+                    text: "Propuesta Comercial: Es la propuesta de servicios presentada por la Licenciante, conteniendo las diferentes opciones de contratación del Sistema y el régimen económico de cada uno de ellos.",
                   },
                   {
-                    text: "Base de Datos: Es la base de datos del Cliente cuyo servicio de alojamiento está incluido en el precio de la licencia del software."
+                    text: "Base de Datos: Es la base de datos del Cliente cuyo servicio de alojamiento está incluido en el precio de la licencia del software.",
                   },
-                ]
-              }
-            ]
+                ],
+              },
+            ],
           },
           {
             subtitle: "3. Objeto:",
@@ -252,24 +252,24 @@ module.exports = {
                     text: `(i) La atención de nuevos requerimientos de servicios de implementación por transición,
                       migración, instalación, prueba o cualesquiera otros servicios solicitados por el Cliente por la
                       implementación de actualizaciones o nuevas versiones del Sistema y/o adquisición de nuevas
-                      terminales informáticas. Los mismos serán cotizados oportunamente y cobrados por separado.`
+                      terminales informáticas. Los mismos serán cotizados oportunamente y cobrados por separado.`,
                   },
                   {
                     text: `(ii) Asimismo, en caso de que una actualización o nueva versión exija nuevas versiones de
                       productos de terceros (vgr. entorno operativo, administradores de bases de datos, red y demás
                       softwares vinculados), los precios de dichas licencias e implementaciones serán responsabilidad del
-                      Cliente. Si pudieren ser realizados por la Licenciante, serán objeto de cotización específica.`
+                      Cliente. Si pudieren ser realizados por la Licenciante, serán objeto de cotización específica.`,
                   },
                   {
                     text: `(iii) Finalmente, en caso que el Cliente modifique su entorno operativo, administradores de bases
                       de datos, red y demás software o cualquier producto de terceros, a su exclusivo criterio, la
                       Licenciante podrá optar por cotizar los servicios necesarios a la adaptación del Sistema cobrando
                       tales servicios por separado o por no realizar adaptación alguna corriendo por cuenta del Cliente la
-                      responsabilidad respecto al adecuado funcionamiento del Sistema.`
+                      responsabilidad respecto al adecuado funcionamiento del Sistema.`,
                   },
-                ]
-              }
-            ]
+                ],
+              },
+            ],
           },
           {
             subtitle: null,
@@ -326,15 +326,15 @@ module.exports = {
                     importe adeudado, vencido e impago de que se trate por cada día de mora y hasta la efectiva
                     cancelación de las cantidades debidas. Solo se considerará cancelada la deuda en mora si en forma
                     conjunta el Cliente abona, el monto facturado con más sus intereses; esto, aún cuando el Cliente
-                    hubiera recibido el pago sin formular reserva alguna en ese sentido.`
+                    hubiera recibido el pago sin formular reserva alguna en ese sentido.`,
                   },
                   {
                     text: `b) Resolver la relación contractual derivada de la aceptación de la Propuesta Comercial de pleno
-                    derecho y exigir el pago de los daños y perjuicios que el incumplimiento le irrogara.`
+                    derecho y exigir el pago de los daños y perjuicios que el incumplimiento le irrogara.`,
                   },
-                ]
-              }
-            ]
+                ],
+              },
+            ],
           },
           {
             subtitle: null,
@@ -528,8 +528,8 @@ module.exports = {
             Capital Federal, con renuncia expresa a cualquier otro fuero y/o jurisdicción que pudiere
             corresponderles.`,
           },
-        ]
-      }
-    ]
-  }
-}
+        ],
+      },
+    ],
+  },
+};
