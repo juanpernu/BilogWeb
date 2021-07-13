@@ -39,7 +39,11 @@ const footer = {
     {
       text: "Términos y condiciones",
       href: "/terms-and-conditions",
-    }
+    },
+    {
+      text: "Privacidad",
+      href: "/privacy",
+    },
   ],
   socialMedia: [
     {

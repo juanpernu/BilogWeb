@@ -28,6 +28,7 @@ module.exports = {
       "/testimonials/index": { page: "testimonials" },
       "/promotions/index": { page: "promotions" },
       "/terms-and-conditions/index": { page: "terms-and-conditions" },
+      "/privacy/index": { page: "privacy" },
     };
   },
   images: {
